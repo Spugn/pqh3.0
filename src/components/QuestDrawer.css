@@ -1,0 +1,90 @@
+.quest-drawer {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url("../../public/images/webpage/adv_mask_C.png");
+}
+
+.quest-card {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.quest-card--avatar-text {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: white;
+    text-shadow: 1px 1px 2px #000000,
+    1px 1px 2px #000000;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+        0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.main-drops {
+    display: inline-block;
+    margin-right: 1vw
+}
+
+.main-drops img,
+.sub-drops img {
+    display: inline;
+    width: 4vw;
+    height: 4vw;
+    max-width: 48px;
+    max-height: 48px;
+    min-width: 2rem;
+    min-height: 2rem;
+    margin-right: 0.2vw;
+    border-radius: 5px;
+}
+
+.sub-drops {
+    display: inline-block;
+}
+
+.quest-item--memory-piece {
+    width: 2rem;
+    height: 2rem;
+}
+
+.quest-item--disabled {
+    -webkit-filter: grayscale(100%) opacity(50%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%) opacity(50%);
+    transition: all 0.4s ease-out;
+}
+
+.quest-item--disabled:hover {
+    -webkit-filter: grayscale(50%) opacity(80%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(50%) opacity(80%);
+}
+
+.quest-item--priority {
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: #ec4899;
+    z-index: 10;
+}
+
+@media (max-width: 430px) {
+    .quest-card {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .main-drops {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 1vh;
+    }
+
+    .sub-drops {
+        display: block;
+    }
+    .main-drops img,
+    .sub-drops img {
+        margin-right: 0.2rem;
+    }
+}

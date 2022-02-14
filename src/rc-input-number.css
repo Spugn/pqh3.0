@@ -1,0 +1,5 @@
+input.rc-input-number-input {
+    border-radius: 5px;
+    padding: 3px;
+    outline: 1px solid rgba(0, 0, 0, 0.3);
+}

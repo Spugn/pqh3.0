@@ -1,0 +1,156 @@
+/* CUSTOM react-burger-menu CSS BELOW ========== */
+
+/* INDIVIDUAL MENU ITEM */
+.bm-item {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.bm-item:not(.bm-item-current) {
+    cursor: pointer;
+}
+.bm-item span {
+    color: #ffffff;
+    text-decoration: none;
+}
+.bm-item:not(.bm-item-current):hover span,
+.bm-item:not(.bm-item-current):focus span {
+    color: #5dfff7;
+}
+.bm-item:not(.bm-item-current) img {
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0.5;
+}
+.bm-item:not(.bm-item-current):hover img {
+    opacity: 1;
+}
+
+/* INDIVIDUAL ITEM IF CURRENT PAGE IS ACTIVE */
+.bm-item-current span {
+    color: #919191;
+}
+
+/* WRAPPER FOR ITEM LIST */
+
+.bm-item-list div {
+    margin-top: 10px;
+}
+.bm-item-list div span {
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+/* FOOTER TEXT */
+.bm-footer span {
+    font-size: medium;
+}
+@media (min-height: 500px) {
+    .bm-footer {
+        position: absolute;
+        bottom: 10px;
+    }
+    .bm-item-list {
+        /* HIDE SCROLL BAR IF DEVICE HEIGHT IS LARGE ENOUGH */
+        overflow-y: hidden;
+    }
+}
+
+/* COLOR AND SHAPE OF BURGER ICON BARS */
+.bm-burger-bars {
+    background: #373a47;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5);
+    visibility: hidden;
+}
+/* COLOR AND SHAPE OF BURGER ICON BARS ON HOVER */
+.bm-burger-bars-hover {
+    background: #cc00ff;
+}
+
+#react-burger-menu-btn {
+    height: 48px;
+    width: 48px;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    left: 24px;
+    top: 24px;
+    opacity: 0.75;
+    background: url("../public/images/webpage/miyako-menu.png");
+    background-position-y: 0;
+    transition: opacity 0.3s ease-in-out;
+    animation: miyako-ghost-bounce 1s infinite;
+}
+
+.bm-burger-button:hover {
+    animation: miyako-ghost-hover 500ms normal forwards;
+    background-position-y: -48px;
+    opacity: 1.0;
+}
+
+/* HIDE MENU BUTTON WHEN ReactModal IS VISIBLE */
+body.loading-screen--show .bm-burger-button,
+body.ReactModal__Body--open .bm-burger-button,
+body.react-burger-menu--hide .bm-burger-button {
+    animation: none;
+    visibility: hidden;
+}
+
+@keyframes miyako-ghost-hover {
+    50% {
+        transform: rotate(2.5deg) translateY(3px);
+    }
+    to {
+        transform: rotate(-5deg) translateY(-3px);
+    }
+}
+
+@keyframes miyako-ghost-fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 0.75; }
+}
+
+@keyframes miyako-ghost-bounce {
+  0%, 100% {
+    transform: translateY(-7%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+/* DEFAULT react-burger-menu CSS BELOW ========== */
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+/* Color/shape of close button cross */
+.bm-cross {
+    background: #bdc3c7;
+}
+/* General sidebar styles */
+.bm-menu {
+    background: #373a47;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+}
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+    fill: #373a47;
+}
+/* Wrapper for item list */
+.bm-item-list {
+    color: #b8b7ad;
+}
+/* Styling of overlay */
+.bm-overlay {
+    background: rgba(255, 0, 0, 0.3);
+}

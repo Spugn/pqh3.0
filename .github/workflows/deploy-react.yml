@@ -1,0 +1,82 @@
+# This workflow will check committed files and see if any changes were made in the public or src directories.
+# If changes are detected, an optimized production build will be created with gh-pages and published.
+
+name: deploy-react
+on:
+  push:
+    branches: 'master'
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.check.outputs.run }}
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+
+      - name: Check for modified files
+        id: check
+        run: |
+          echo "Modified files:"
+          git diff --name-only HEAD^ HEAD
+
+          echo "Checking paths of modified files:"
+          git diff --name-only HEAD^ HEAD > files.txt
+          while IFS= read -r file
+          do
+            echo $file
+            if [[ $file == public/* ]]; then
+              echo "::set-output name=run::true"
+              break
+            fi
+            if [[ $file == src/* ]]; then
+              echo "::set-output name=run::true"
+              break
+            fi
+          done < files.txt
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: check
+    if: ${{ needs.check.outputs.run }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Use Node.js [16.x]
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+          cache: 'npm'
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: |
+            **/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test
+
+      - name: Build gh-pages
+        run: npm run build
+
+      - name: Deploy gh-pages to Git
+        run: |
+          git config --global user.name $user_name
+          git config --global user.email $user_email
+          git remote set-url origin https://${github_token}@github.com/${repository}
+          npm run deploy
+        env:
+          user_name: 'Spugn'
+          user_email: 'spugn@users.noreply.github.com'
+          github_token: ${{ secrets.DEPLOY_ACCESS_TOKEN }}
+          repository: ${{ github.repository }}

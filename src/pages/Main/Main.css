@@ -1,0 +1,88 @@
+#miyako {
+    display: block;
+    width: 400px;
+    height: 400px;
+    opacity: 0;
+    background: url("../../../public/images/webpage/miyako.png");
+    animation: run 750ms steps(19) infinite, start_move 1s forwards;
+}
+
+#page-cover {
+    background-image: url("../../../public/images/webpage/adv_mask_C.png");
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: 4px 0 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+#loading-div {
+    position: fixed;
+    top: 40vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+
+    /* #loading-div MUST BE ABOVE #page-cover */
+    z-index: 2;
+}
+
+#loading-text {
+    color: white;
+    white-space: nowrap;
+    text-align: center;
+    animation: fade_in 1s forwards;
+}
+
+#page-loading.end #page-cover {
+    animation: cover_reveal 3s forwards;
+}
+
+#page-loading.end #loading-div {
+    animation: end_move 2750ms forwards;
+}
+
+#page-loading.data-read-error #miyako {
+    background: url("../../../public/images/webpage/miyako_death.png");
+    animation: death 1000ms steps(18) forwards;
+}
+
+/* MIYAKO INFINITE RUN ANIMATION */
+@keyframes run {
+    from {background-position-y: 0;}
+    to {background-position-y: -7600px;}
+}
+
+/* MIYAKO RUN-ONCE DEATH ANIMATION */
+@keyframes death {
+    from {background-position-y: 0;}
+    to {background-position-y: -7200px;}
+    100% {opacity: 1;}
+}
+
+/* FADE IN MIYAKO */
+@keyframes start_move {
+    80% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* FADE IN TEXT */
+@keyframes fade_in {
+    0% {opacity: 0;}
+    100% {opacity: 100%;}
+}
+
+/* MOVE LOADING SCREEN BACKGROUND */
+@keyframes cover_reveal {
+    from {left: 0;}
+    to {left: 200vw;}
+    100% {visibility: hidden;}
+}
+
+/* MOVE MIYAKO AND LOADING TEXT */
+@keyframes end_move {
+    from {left: 50vw;}
+    to {left: 250vw;}
+    100% {visibility: hidden;}
+}
