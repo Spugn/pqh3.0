@@ -43,7 +43,7 @@ export default function ProjectBuilder({ data, userState, userDispatch }) {
         <>
             <Button variant="contained" className="m-3"
                 onClick={openModal}
-                endIcon={<img className="h-8" src={`${process.env.PUBLIC_URL}/images/webpage/Projects.png`} alt={'new project'} />}
+                endIcon={<img className="h-8" src={`${process.env.PUBLIC_URL}/images/webpage/projects.png`} alt={'new project'} />}
             >
                 New Project
             </Button>
@@ -105,7 +105,7 @@ function ChooseType({ setStep, project }) {
                         project.current = JSON.parse(JSON.stringify(PROJECT_TEMPLATE.character));
                         setStep(1);
                     }}
-                    startIcon={<img className="h-8" src={`${process.env.PUBLIC_URL}/images/webpage/Characters.png`} alt={'character'} />}
+                    startIcon={<img className="h-8" src={`${process.env.PUBLIC_URL}/images/webpage/characters.png`} alt={'character'} />}
                 >Character</Button>
                 <Button className={css}
                     variant="contained"
@@ -115,7 +115,7 @@ function ChooseType({ setStep, project }) {
                         project.current = JSON.parse(JSON.stringify(PROJECT_TEMPLATE.item));
                         setStep(1);
                     }}
-                    startIcon={<img className="h-8" src={`${process.env.PUBLIC_URL}/images/webpage/Inventory.png`} alt={'item'} />}
+                    startIcon={<img className="h-8" src={`${process.env.PUBLIC_URL}/images/webpage/inventory.png`} alt={'item'} />}
                 >Item</Button>
             </Grid>
         </>

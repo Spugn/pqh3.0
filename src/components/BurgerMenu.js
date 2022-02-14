@@ -104,10 +104,10 @@ function MenuFooter() {
                     src="https://cdn.ko-fi.com/cdn/kofi3.png?v=2"
                     alt="Buy Me a Coffee at ko-fi.com" />
             </a>
-            <a className="inline-block" href="https://github.com/Spugn/pqh" target="_blank" rel="noreferrer">
+            <a className="inline-block" href="https://github.com/Spugn/priconne-quest-helper" target="_blank" rel="noreferrer">
                 <img className="invert"
-                    src={`${process.env.PUBLIC_URL}/images/webpage/Github-Mark.png`}
-                    alt="Github icon" />
+                    src={`${process.env.PUBLIC_URL}/images/webpage/GitHub-Mark.png`}
+                    alt="GitHub icon" />
             </a>
         </div>
     );
