@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useReducer, useRef } from 'react';
+import React, { useState, useEffect, useReducer } from 'react';
 
 import LoadingScreen from '../../components/LoadingScreen';
 import BurgerMenu from '../../components/BurgerMenu';
