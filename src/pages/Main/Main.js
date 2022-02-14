@@ -9,7 +9,6 @@ import Inventory from './Inventory';
 import Settings from './Settings';
 import data_utils from '../../scripts/data_utils';
 import _CONSTANTS, { INIT_USER_STATE, INIT_DATA_STATE } from '../../scripts/constants';
-
 import './Main.css';
 import '../../react-burger-menu.css';
 import { useCallback } from 'react';
