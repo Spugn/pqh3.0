@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.1] - 2022-02-14
+### Added
+- Auto Updater
+### Fixed
+- Fixed broken images
+
 ## [3.0.0] - 2022-02-13
 Initial Commit ; `priconne-quest-helper` v3.0 Start!
 ### Added

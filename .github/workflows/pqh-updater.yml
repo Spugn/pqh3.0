@@ -1,0 +1,317 @@
+# This workflow will auto download a database and push any changes if found
+# note: if more legacy versions are added, get_legacy_database and convert_legacy_database need to have versions updated
+
+name: pqh-updater
+
+on:
+  # run this task every minute 45 of every hr of every day
+  # preload usually happens at minute 45? but actions fires 5mins later
+  schedule:
+  - cron: '45 * * * *'
+
+  # allow this task to be run manually from Actions tab
+  workflow_dispatch:
+
+jobs:
+  # needs access to {{ secrets.DEPLOY_ACCESS_TOKEN }} with at least public_repo scope
+  update_database:
+    runs-on: ubuntu-latest
+    outputs:
+      success: ${{ steps.update_database.outputs.success }}
+      init_truth_version: ${{ steps.update_database.outputs.init_truth_version }}
+      truth_version: ${{ steps.update_database.outputs.truth_version }}
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js [16.x]
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+          cache: 'npm'
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: |
+            **/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+
+      - name: Install dependencies
+        run: npm install @actions/core
+
+      - name: Run update_database.js
+        id: update_database
+        run: node ./.github/workflows/pqh-updater/update_database.js
+
+      # technically could cache files here to have them persist to next job, but i don't trust caches much
+      # in their reliability to make sure i actually have the new files (assuming they changed)
+      # so, uploading them instead as artifacts
+
+      - name: Upload artifact - master.cdb
+        if: ${{ steps.update_database.outputs.success }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: master_${{ steps.update_database.outputs.truth_version }}.cdb
+          path: ./.github/workflows/pqh-updater/database/master.cdb
+
+      - name: Upload artifact - manifest
+        if: ${{ steps.update_database.outputs.success }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: manifest
+          path: ./.github/workflows/pqh-updater/database/manifest
+
+      - name: Upload artifact - version
+        if: ${{ steps.update_database.outputs.success }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: version
+          path: ./public/version
+
+  # download legacy databases
+  get_legacy_database:
+    needs: update_database
+    if: ${{ needs.update_database.outputs.success }}
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 2 # make this equal to how many versions are in matrix
+      matrix:
+        versions: [10011550]
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js [16.x]
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+          cache: 'npm'
+
+      - name: Download legacy database (${{ matrix.versions }})
+        run: node ./.github/workflows/pqh-updater/get_legacy_database.js ${{ matrix.versions }}
+
+      - name: Upload legacy database (${{ matrix.versions }}) artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: master_${{ matrix.versions }}.cdb
+          path: ./.github/workflows/pqh-updater/database/master_${{ matrix.versions }}.cdb
+
+  # download other region dbs if necessary
+  get_region_database:
+    runs-on: ubuntu-latest
+    needs: update_database
+    if: ${{ needs.update_database.outputs.success }}
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js [16.x]
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+          cache: 'npm'
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: |
+            **/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+
+      - name: Install dependencies
+        run: npm install brotli
+
+      - name: Run get_cn_database.js
+        run: node ./.github/workflows/pqh-updater/get_cn_database.js
+
+      - name: Upload CN database artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: redive_cn.db
+          path: ./.github/workflows/pqh-updater/database/redive_cn.db
+
+  # convert legacy master.cdb artifact to master.db
+  convert_legacy_database:
+    runs-on: windows-latest
+    needs: get_legacy_database
+    strategy:
+      max-parallel: 2 # make this equal to how many versions are in matrix
+      matrix:
+        versions: [10011550]
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      # need to download instead of cache because Linux cache won't load on Windows for some reason
+      - name: Download CDB from artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: master_${{ matrix.versions }}.cdb
+          path: ./.github/workflows/pqh-updater/database
+
+      - name: Convert CDB to DB
+        shell: cmd
+        # need to do cd ../../../../../ at the end because if we don't we get some funky error code
+        run: |
+          cd ${{ env.path }}
+          Coneshell_call.exe -cdb ${{ env.cdb }} ${{ env.db }}
+          cd ../../../../../
+        env:
+          path: './.github/workflows/pqh-updater/vendor/coneshell/'
+          coneshell: './.github/workflows/pqh-updater/vendor/coneshell/Coneshell_call.exe'
+          # these file paths are assuming working dir is at ./.github/workflows/pqh-updater/vendor/coneshell/
+          cdb: '../../database/master_${{ matrix.versions }}.cdb'
+          db: '../../database/master_${{ matrix.versions }}.db'
+
+      - name: Upload database artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: master_${{ matrix.versions }}.db
+          path: ./.github/workflows/pqh-updater/database/master_${{ matrix.versions }}.db
+
+  # convert master.cdb artifact to master.db
+  convert_database:
+    runs-on: windows-latest
+    needs: update_database
+    if: ${{ needs.update_database.outputs.success }}
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      # need to download instead of cache because Linux cache won't load on Windows for some reason
+      - name: Download CDB from artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: master_${{ needs.update_database.outputs.truth_version }}.cdb
+          path: ./.github/workflows/pqh-updater/database
+
+      - name: Convert CDB to DB
+        shell: cmd
+        # need to do cd ../../../../../ at the end because if we don't we get some funky error code
+        run: |
+          cd ${{ env.path }}
+          Coneshell_call.exe -cdb ${{ env.cdb }} ${{ env.db }}
+          cd ../../../../../
+        env:
+          path: './.github/workflows/pqh-updater/vendor/coneshell/'
+          coneshell: './.github/workflows/pqh-updater/vendor/coneshell/Coneshell_call.exe'
+          # these file paths are assuming working dir is at ./.github/workflows/pqh-updater/vendor/coneshell/
+          cdb: '../../database/master.cdb'
+          db: '../../database/master.db'
+
+      - name: Upload database artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: master.db
+          path: ./.github/workflows/pqh-updater/database/master.db
+
+  setup_data:
+    runs-on: ubuntu-latest
+    needs: [update_database, convert_database, convert_legacy_database, get_region_database]
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js [16.x]
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+          cache: 'npm'
+
+      - name: Setup Python [3.x]
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: |
+            **/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+
+      - name: Install Node.js dependencies
+        run: npm install sqlite sqlite3 python-shell
+
+      # btw for some reason installing UnityPack here causes issues
+      # it's kind of a pain to debug sooooo UnityPack is provided in vendor/UnityPack
+
+      - name: Install Python dependencies
+        run: pip install lz4 Pillow decrunch
+
+      # delete version (replacing with artifact)
+      - name: Delete existing version file (replacing it soon)
+        run: rm ./public/version
+
+      # download necessary files
+      - name: Download manifest from artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: manifest
+          path: ./.github/workflows/pqh-updater/database
+
+      - name: Download version from artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: version
+          path: ./public
+
+      # download databases
+      - name: Download master.db from artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: master.db
+          path: ./.github/workflows/pqh-updater/database
+
+      - name: Download master_10011550.db from artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: master_10011550.db
+          path: ./.github/workflows/pqh-updater/database
+
+      - name: Download redive_cn.db from artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: redive_cn.db
+          path: ./.github/workflows/pqh-updater/database
+
+      # put it all together
+      - name: Run setup_data.js
+        run: node ./.github/workflows/pqh-updater/setup_data.js
+
+      # assuming there are new changes
+      - name: Update images on Git
+        run: |
+          git config user.name $user_name
+          git config user.email $user_email
+          git add ./public/version
+          git add ./public/data.json
+          git add ./public/data.min.json
+          git add ./public/images
+          git commit -m "[Bot] Data Update - ${{ needs.update_database.outputs.init_truth_version }} to ${{ needs.update_database.outputs.truth_version }}" -m '
+          ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          This is an automated process. Issues may or may not have occured.
+
+          `${{ needs.update_database.outputs.init_truth_version }}` to `${{ needs.update_database.outputs.truth_version }}`'
+          git push
+        env:
+          user_name: 'Spugn'
+          user_email: 'spugn@users.noreply.github.com'
+          github_token: ${{ secrets.DEPLOY_ACCESS_TOKEN }}
+          repository: ${{ github.repository }}
+
+      - name: Build gh-pages
+        run: npm run build
+
+      - name: Deploy gh-pages to Git
+        run: |
+          git config --global user.name $user_name
+          git config --global user.email $user_email
+          git remote set-url origin https://${github_token}@github.com/${repository}
+          npm run deploy
+        env:
+          user_name: 'Spugn'
+          user_email: 'spugn@users.noreply.github.com'
+          github_token: ${{ secrets.DEPLOY_ACCESS_TOKEN }}
+          repository: ${{ github.repository }}

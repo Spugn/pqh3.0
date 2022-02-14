@@ -4,7 +4,6 @@
 
 URL: <https://spugn.github.io/priconne-quest-helper/><br/>
 Changelog: [/priconne-quest-helper/CHANGELOG.md](CHANGELOG.md)
-
 <br/>
 
 ## Information
@@ -27,7 +26,7 @@ The following list is a task list that will (hopefully) eventually be completed 
 - [x] Quest Search
 - [x] Quest Settings (Sort, Drop Buff, Quest Range, Item Filter, ETC.)
 - [x] Saved User Information
-- [ ] Automatic Updater
+- [x] Automatic Updater
 - [ ] Data Import and Export
 - [ ] Recipe Data Page
 - [ ] Character Data Page
@@ -76,8 +75,15 @@ The following can be submitted via `GitHub's Issue Tracker` (**PREFERRED**) or `
 3. Feature Suggestions on how to make using this tool more easier.
 4. Comments, Constructive Criticism, etc.
 
-Note that for `Discord`, ***I do not accept random friend requests.*** <br>
+Note that for `Discord`, ***I do not accept random friend requests.*** <br/>
 Please join the Discord-partnered server (<https://discord.com/invite/priconne>) to send me (`S'pugn#2612`) a direct message or mention.
+
+## For Developers
+### Updating priconne-quest-helper 3.0
+If you are interested in how `priconne-quest-helper` is updated for any reason:<br/>
+The GitHub Actions workflow and the required code to run it can be found in this repository: <https://github.com/Spugn/priconne-quest-helper/tree/master/.github/workflows>
+
+This is not useful for most users.
 
 ## Other Informative Sites and Tools
 - `AssetStudio`: [GitHub](https://github.com/Perfare/AssetStudio)
