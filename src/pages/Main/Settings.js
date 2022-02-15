@@ -12,12 +12,12 @@ export default function Settings({ userState, userDispatch, hidden }) {
     const defaultLegacy = useRef(userState.settings.use_legacy); // need for defaultChecked else error
     return (
         <Grid container direction="column" alignItems="center" justifyContent="center" gap={2} hidden={hidden}>
-            <Alert severity="info" className="max-w-[75vw]">
+            <Alert severity="info" className="w-[75vw]">
                 Quest related settings (quest range, sort options, item filter) are located in the <strong>
                 Quest Drawer</strong>.<br /> Enable some projects to be able to open the quest drawer and
                 edit quest related settings.
             </Alert>
-            <Card sx={{ maxWidth: "75vw", padding: 2 }}>
+            <Card sx={{ width: "75vw", padding: 2 }}>
                 <CardHeader
                     title={<Typography variant="h6">Use Legacy Version</Typography>}
                     subheader={"Reduce cost of some silver, gold, and purple rarity items."}
@@ -43,7 +43,7 @@ export default function Settings({ userState, userDispatch, hidden }) {
                     </Typography>
                 </CardContent>
             </Card>
-            <Card sx={{ maxWidth: "75vw", padding: 2 }}>
+            <Card sx={{ width: "75vw", padding: 2 }}>
                 <CardHeader
                     title={<Typography variant="h6">Reset Tip Alerts</Typography>}
                     subheader={"Allow temporary tip alerts to be shown again."}
@@ -65,7 +65,7 @@ export default function Settings({ userState, userDispatch, hidden }) {
                     </Typography>
                 </CardContent>
             </Card>
-            <Card sx={{ maxWidth: "75vw", padding: 2 }}>
+            <Card sx={{ width: "75vw", padding: 2 }}>
                 <CardHeader
                     title={<Typography variant="h6">Data Export and Import</Typography>}
                     subheader={"Transfer your priconne-quest-helper data between devices."}

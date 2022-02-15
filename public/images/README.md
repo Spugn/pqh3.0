@@ -10,6 +10,7 @@ These images may or may not exist in the game's files.
 - `995999.png` : Placeholder "purple" rarity item image
 - `996999.png` : Placeholder "red" rarity item image
 - `997999.png` : Placeholder "green" rarity item image
+- `998999.png` : Placeholder "orange" rarity item image
 - `999999.png` : Placeholder item image
 
 ### Unit Icon
