@@ -105,7 +105,7 @@ function ChooseType({ setStep, project }) {
                         project.current = JSON.parse(JSON.stringify(PROJECT_TEMPLATE.character));
                         setStep(1);
                     }}
-                    startIcon={<img className="h-8" src={`${process.env.PUBLIC_URL}/images/webpage/characters.png`} alt={'character'} />}
+                    startIcon={<img className="h-16" src={`${process.env.PUBLIC_URL}/images/webpage/CharacterProject.png`} alt={'character'} />}
                 >Character</Button>
                 <Button className={css}
                     variant="contained"
@@ -115,7 +115,7 @@ function ChooseType({ setStep, project }) {
                         project.current = JSON.parse(JSON.stringify(PROJECT_TEMPLATE.item));
                         setStep(1);
                     }}
-                    startIcon={<img className="h-8" src={`${process.env.PUBLIC_URL}/images/webpage/inventory.png`} alt={'item'} />}
+                    startIcon={<img className="h-10" src={`${process.env.PUBLIC_URL}/images/webpage/ItemProject.png`} alt={'item'} />}
                 >Item</Button>
             </Grid>
         </>
@@ -760,8 +760,8 @@ function IgnoredRarities({ project }) {
                         <button
                             key={`ignored-rarities-${rarity}`}
                             className={`${css} ${(project.current.details?.ignored_rarity?.[rarity])
-                                ? "opacity-[50%] hover:opacity-[75%] hover:grayscale-[50%]"
-                                : "grayscale-0"}`}
+                                ? "grayscale-0"
+                                : "opacity-[50%] hover:opacity-[75%] hover:grayscale-[50%]"}`}
                             onClick={() => {
                                 let obj = project.current.details.ignored_rarity || {};
                                 if (obj[rarity]) {

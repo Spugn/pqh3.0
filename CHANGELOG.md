@@ -3,6 +3,13 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.2] - 2022-02-16
+### Added
+- Made some changes based off of `MightyZanark#0138`'s suggestions
+  - Swapped transparency of `IGNORED RARITIES (FOR PROJECT COMPLETION)`
+    - Rarities that are ignored are now colored in
+  - Changed images used in Project Type selection to be ones that aren't cut strangely
+
 ## [3.0.1] - 2022-02-14
 ### Added
 - Auto Updater

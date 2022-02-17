@@ -164,8 +164,8 @@ export default function EditCharacterProject({ data, project, userState, userDis
                             <button
                                 key={`ignored-rarities-${rarity}`}
                                 className={`${css} ${(project.current.details?.ignored_rarity?.[rarity])
-                                    ? "opacity-[50%] hover:opacity-[75%] hover:grayscale-[50%]"
-                                    : "grayscale-0"}`}
+                                    ? "grayscale-0"
+                                    : "opacity-[50%] hover:opacity-[75%] hover:grayscale-[50%]"}`}
                                 onClick={() => {
                                     let obj = project.current.details.ignored_rarity || {};
                                     if (obj[rarity]) {
