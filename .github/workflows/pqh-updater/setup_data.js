@@ -54,9 +54,11 @@ function setup() {
         write_character().then((character_data) => {
             data.character = character_data;
             write_quest().then((quest_data) => {
-                data.quest = quest_data;
-                get_new_images(data).then(() => {
-                    complete();
+                write_event_quest(quest_data).then((quest_data) => {
+                    data.quest = quest_data;
+                    get_new_images(data).then(() => {
+                        complete();
+                    });
                 });
             });
         });
@@ -88,12 +90,10 @@ function write_equipment() {
      */
     return new Promise(async function(resolve) {
         let result, data = {};
-        console.log("hi from write_equipment", __dirname);
         let db = await open({
             filename: path.join(DIRECTORY.DATABASE, 'master.db'),
             driver: sqlite3.Database
         });
-        console.log("did db open?");
 
         // GET ALL EQUIPMENT DATA
         result = await db.all('SELECT * FROM equipment_data');
@@ -141,6 +141,14 @@ function write_equipment() {
                 if (row.reward_image_1 !== 0) {
                     memory_pieces[`${row.reward_image_1}`] = true;
                 }
+            }
+        });
+
+        // GET CHARACTER MEMORY PIECES AVAILABLE FROM EVENT QUESTS
+        result = await db.all('SELECT * FROM shiori_quest');
+        result.forEach((row) => {
+            if (row.drop_reward_id !== 0) {
+                memory_pieces[`${row.drop_reward_id}`] = true;
             }
         });
 
@@ -638,6 +646,79 @@ function write_quest() {
                 subdrops: quest_drops.subdrops,
             };
         }
+    });
+}
+
+function write_event_quest(quest_data) {
+    /**
+     * DATABASE NOTES
+     *
+     * shiori_quest:
+     *  COLUMNS: quest_ids, event_id, names, stamina, drop_reward_id, drop_reward_odds
+     */
+    return new Promise(async function(resolve) {
+        let result;
+        let db = await open({
+            filename: path.join(DIRECTORY.DATABASE, 'master.db'),
+            driver: sqlite3.Database
+        });
+        const drops = [
+            {
+                "item": "999999",
+                "drop_rate": 0
+            },
+            {
+                "item": "999999",
+                "drop_rate": 0
+            },
+            {
+                "item": "999999",
+                "drop_rate": 0
+            },
+        ];
+        const subdrops = [
+            {
+                "item": "999999",
+                "drop_rate": 0
+            },
+            {
+                "item": "999999",
+                "drop_rate": 0
+            },
+            {
+                "item": "999999",
+                "drop_rate": 0
+            },
+            {
+                "item": "999999",
+                "drop_rate": 0
+            },
+            {
+                "item": "999999",
+                "drop_rate": 0
+            },
+        ];
+        result = await db.all('SELECT * FROM shiori_quest');
+        result.forEach((row) => {
+            if (row.drop_reward_id === 0) {
+                return;
+            }
+            const name = row.quest_name,
+                number = name.substring(name.indexOf('-') + 1);
+            quest_data[`${row.event_id - 20000}-${number}E`] = {
+                name,
+                stamina: row.stamina,
+                memory_piece: {
+                    item: row.drop_reward_id,
+                    drop_rate: row.drop_reward_odds,
+                },
+                drops,
+                subdrops,
+            }
+        });
+        db.close().finally(() => {
+            resolve(quest_data);
+        });
     });
 }
 

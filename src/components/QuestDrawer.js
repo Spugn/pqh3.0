@@ -423,6 +423,9 @@ export default function QuestDrawer({ open, setOpen, data, projectMap, userState
                                     </Typography>
                                     <Grid container direction="row" gap={1}>
                                         {_CONSTANTS.DIFFICULTY.map((diff) => {
+                                            if (diff === "Event") {
+                                                return (<></>);
+                                            }
                                             const id = `quest-settings-drop-buff-${diff}`;
                                             return (
                                                 <FormControl className="w-[100px]"
@@ -616,9 +619,10 @@ function buildQuests({ data, required, quest_scores, priority_items, DIFFICULTY,
     let quest_list = [];
     for (const [quest_id, quest_score] of quest_scores) {
         const quest_info = data.quest.data[quest_id];
-        const is_normal = !quest_id.includes(DIFFICULTY.HARD);
+        const is_normal = !quest_id.includes(DIFFICULTY.HARD) && !quest_id.includes(DIFFICULTY.EVENT);
         const is_hard = quest_id.includes(DIFFICULTY.HARD) && !quest_id.includes(DIFFICULTY.VERY_HARD);
         const is_very_hard = quest_id.includes(DIFFICULTY.VERY_HARD);
+        const is_event = quest_id.includes(DIFFICULTY.EVENT);
 
         quest_list.push(
             <QuestCard key={`quest--${quest_id}-${quest_score}`} />
@@ -651,6 +655,10 @@ function buildQuests({ data, required, quest_scores, priority_items, DIFFICULTY,
                             {is_very_hard && <>
                                 {quest_id.replace(DIFFICULTY.VERY_HARD, "")} <span className="text-purple-300">
                                     {DIFFICULTY.VERY_HARD}</span>
+                            </>}
+                            {is_event && <>
+                                {quest_id.replace(DIFFICULTY.EVENT, "")} <span className="text-yellow-300">
+                                    {DIFFICULTY.EVENT}</span>
                             </>}
                         </div>
                         {quest_info.memory_piece.item !== "999999" &&

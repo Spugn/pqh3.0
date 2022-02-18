@@ -36338,6 +36338,38 @@
                 }
             ]
         },
+        "31004": {
+            "id": "31004",
+            "name": "ミソギのメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
+        "31005": {
+            "id": "31005",
+            "name": "マツリのメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
         "31008": {
             "id": "31008",
             "name": "ユキのメモリーピース",
@@ -36354,9 +36386,105 @@
                 }
             ]
         },
+        "31009": {
+            "id": "31009",
+            "name": "アンナのメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
+        "31010": {
+            "id": "31010",
+            "name": "マホのメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
+        "31011": {
+            "id": "31011",
+            "name": "リノのメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
+        "31012": {
+            "id": "31012",
+            "name": "ハツネのメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
         "31014": {
             "id": "31014",
             "name": "カスミのメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
+        "31017": {
+            "id": "31017",
+            "name": "カオリのメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
+        "31018": {
+            "id": "31018",
+            "name": "イオのメモリーピース",
             "rarity": "99",
             "fragment": {
                 "id": "999999",
@@ -36402,6 +36530,22 @@
                 }
             ]
         },
+        "31022": {
+            "id": "31022",
+            "name": "ヨリのメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
         "31027": {
             "id": "31027",
             "name": "エリコのメモリーピース",
@@ -36421,6 +36565,22 @@
         "31028": {
             "id": "31028",
             "name": "サレンのメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
+        "31029": {
+            "id": "31029",
+            "name": "ノゾミのメモリーピース",
             "rarity": "99",
             "fragment": {
                 "id": "999999",
@@ -36498,6 +36658,22 @@
                 }
             ]
         },
+        "31034": {
+            "id": "31034",
+            "name": "ユカリのメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
         "31036": {
             "id": "31036",
             "name": "キョウカのメモリーピース",
@@ -36562,9 +36738,57 @@
                 }
             ]
         },
+        "31043": {
+            "id": "31043",
+            "name": "マコトのメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
         "31044": {
             "id": "31044",
             "name": "イリヤのメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
+        "31045": {
+            "id": "31045",
+            "name": "クウカのメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
+        "31046": {
+            "id": "31046",
+            "name": "タマキのメモリーピース",
             "rarity": "99",
             "fragment": {
                 "id": "999999",
@@ -36642,9 +36866,41 @@
                 }
             ]
         },
+        "31051": {
+            "id": "31051",
+            "name": "ミツキのメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
         "31052": {
             "id": "31052",
             "name": "リマのメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
+        "31053": {
+            "id": "31053",
+            "name": "モニカのメモリーピース",
             "rarity": "99",
             "fragment": {
                 "id": "999999",
@@ -36770,9 +37026,121 @@
                 }
             ]
         },
+        "31076": {
+            "id": "31076",
+            "name": "コッコロ（サマー）のメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
+        "31080": {
+            "id": "31080",
+            "name": "ミフユ（サマー）のメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
+        "31082": {
+            "id": "31082",
+            "name": "ミヤコ（ハロウィン）のメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
+        "31085": {
+            "id": "31085",
+            "name": "クルミ（クリスマス）のメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
+        "31089": {
+            "id": "31089",
+            "name": "レイ（ニューイヤー）のメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
+        "31090": {
+            "id": "31090",
+            "name": "エリコ（バレンタイン）のメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
         "31092": {
             "id": "31092",
             "name": "アンのメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
+        "31093": {
+            "id": "31093",
+            "name": "ルゥのメモリーピース",
             "rarity": "99",
             "fragment": {
                 "id": "999999",
@@ -36821,6 +37189,38 @@
         "31096": {
             "id": "31096",
             "name": "ニノン（オーエド）のメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
+        "31101": {
+            "id": "31101",
+            "name": "イオ（サマー）のメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
+        "31105": {
+            "id": "31105",
+            "name": "カオリ（サマー）のメモリーピース",
             "rarity": "99",
             "fragment": {
                 "id": "999999",
@@ -36898,6 +37298,22 @@
                 }
             ]
         },
+        "31112": {
+            "id": "31112",
+            "name": "ミソギ（ハロウィン）のメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
         "31113": {
             "id": "31113",
             "name": "ミミ（ハロウィン）のメモリーピース",
@@ -36930,6 +37346,22 @@
                 }
             ]
         },
+        "31116": {
+            "id": "31116",
+            "name": "ノゾミ（クリスマス）のメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
         "31117": {
             "id": "31117",
             "name": "イリヤ（クリスマス）のメモリーピース",
@@ -36946,9 +37378,41 @@
                 }
             ]
         },
+        "31121": {
+            "id": "31121",
+            "name": "スズメ（ニューイヤー）のメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
         "31122": {
             "id": "31122",
             "name": "カスミ（マジカル）のメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
+        "31123": {
+            "id": "31123",
+            "name": "シオリ（マジカル）のメモリーピース",
             "rarity": "99",
             "fragment": {
                 "id": "999999",
@@ -88490,6 +88954,5286 @@
                 {
                     "item": "127282",
                     "drop_rate": 15
+                }
+            ]
+        },
+        "1-1E": {
+            "name": "タルグム地方 1-1",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31012,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "1-2E": {
+            "name": "タルグム地方 1-2",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31038,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "1-3E": {
+            "name": "タルグム地方 1-3",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31012,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "1-4E": {
+            "name": "タルグム地方 1-4",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31038,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "1-5E": {
+            "name": "タルグム地方 1-5",
+            "stamina": 20,
+            "memory_piece": {
+                "item": 31012,
+                "drop_rate": 30
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "2-1E": {
+            "name": "マシーナ地方 1-1",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31020,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "2-2E": {
+            "name": "マシーナ地方 1-2",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31004,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "2-3E": {
+            "name": "マシーナ地方 1-3",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31020,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "2-4E": {
+            "name": "マシーナ地方 1-4",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31004,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "2-5E": {
+            "name": "マシーナ地方 1-5",
+            "stamina": 20,
+            "memory_piece": {
+                "item": 31020,
+                "drop_rate": 30
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "3-1E": {
+            "name": "ランドソル郊外 1-1",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31010,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "3-2E": {
+            "name": "ランドソル郊外 1-2",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31017,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "3-3E": {
+            "name": "ランドソル郊外 1-3",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31010,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "3-4E": {
+            "name": "ランドソル郊外 1-4",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31017,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "3-5E": {
+            "name": "ランドソル郊外 1-5",
+            "stamina": 20,
+            "memory_piece": {
+                "item": 31010,
+                "drop_rate": 30
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "4-1E": {
+            "name": "タパスビーチ周辺 1-1",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31076,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "4-2E": {
+            "name": "タパスビーチ周辺 1-2",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31028,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "4-3E": {
+            "name": "タパスビーチ周辺 1-3",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31076,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "4-4E": {
+            "name": "タパスビーチ周辺 1-4",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31028,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "4-5E": {
+            "name": "タパスビーチ周辺 1-5",
+            "stamina": 20,
+            "memory_piece": {
+                "item": 31076,
+                "drop_rate": 30
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "5-1E": {
+            "name": "イルシオンの孤島 1-1",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31080,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "5-2E": {
+            "name": "イルシオンの孤島 1-2",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31032,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "5-3E": {
+            "name": "イルシオンの孤島 1-3",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31080,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "5-4E": {
+            "name": "イルシオンの孤島 1-4",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31032,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "5-5E": {
+            "name": "イルシオンの孤島 1-5",
+            "stamina": 20,
+            "memory_piece": {
+                "item": 31080,
+                "drop_rate": 30
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "6-1E": {
+            "name": "王都ランドソル 1-1",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31047,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "6-2E": {
+            "name": "王都ランドソル 1-2",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31034,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "6-3E": {
+            "name": "王都ランドソル 1-3",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31047,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "6-4E": {
+            "name": "王都ランドソル 1-4",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31034,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "6-5E": {
+            "name": "王都ランドソル 1-5",
+            "stamina": 20,
+            "memory_piece": {
+                "item": 31047,
+                "drop_rate": 30
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "7-1E": {
+            "name": "ランドソル郊外 1-1",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31082,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "7-2E": {
+            "name": "ランドソル郊外 1-2",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31022,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "7-3E": {
+            "name": "ランドソル郊外 1-3",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31082,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "7-4E": {
+            "name": "ランドソル郊外 1-4",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31022,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "7-5E": {
+            "name": "ランドソル郊外 1-5",
+            "stamina": 20,
+            "memory_piece": {
+                "item": 31082,
+                "drop_rate": 30
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "8-1E": {
+            "name": "ランドソル近郊 1-1",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31009,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "8-2E": {
+            "name": "ランドソル近郊 1-2",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31051,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "8-3E": {
+            "name": "ランドソル近郊 1-3",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31009,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "8-4E": {
+            "name": "ランドソル近郊 1-4",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31051,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "8-5E": {
+            "name": "ランドソル近郊 1-5",
+            "stamina": 20,
+            "memory_piece": {
+                "item": 31009,
+                "drop_rate": 30
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "9-1E": {
+            "name": "王都ランドソル 1-1",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31085,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "9-2E": {
+            "name": "王都ランドソル 1-2",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31029,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "9-3E": {
+            "name": "王都ランドソル 1-3",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31085,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "9-4E": {
+            "name": "王都ランドソル 1-4",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31029,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "9-5E": {
+            "name": "王都ランドソル 1-5",
+            "stamina": 20,
+            "memory_piece": {
+                "item": 31085,
+                "drop_rate": 30
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "10-1E": {
+            "name": "神殿への参道 1-1",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31089,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "10-2E": {
+            "name": "神殿への参道 1-2",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31002,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "10-3E": {
+            "name": "神殿への参道 1-3",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31089,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "10-4E": {
+            "name": "神殿への参道 1-4",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31002,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "10-5E": {
+            "name": "神殿への参道 1-5",
+            "stamina": 20,
+            "memory_piece": {
+                "item": 31089,
+                "drop_rate": 30
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "11-1E": {
+            "name": "キッチンスタジアム 1-1",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31090,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "11-2E": {
+            "name": "キッチンスタジアム 1-2",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31011,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "11-3E": {
+            "name": "キッチンスタジアム 1-3",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31090,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "11-4E": {
+            "name": "キッチンスタジアム 1-4",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31011,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "11-5E": {
+            "name": "キッチンスタジアム 1-5",
+            "stamina": 20,
+            "memory_piece": {
+                "item": 31090,
+                "drop_rate": 30
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "12-1E": {
+            "name": "王都ランドソル 1-1",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31043,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "12-2E": {
+            "name": "王都ランドソル 1-2",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31008,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "12-3E": {
+            "name": "王都ランドソル 1-3",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31043,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "12-4E": {
+            "name": "王都ランドソル 1-4",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31008,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "12-5E": {
+            "name": "王都ランドソル 1-5",
+            "stamina": 20,
+            "memory_piece": {
+                "item": 31043,
+                "drop_rate": 30
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "13-1E": {
+            "name": "光の裂け目 1-1",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31093,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "13-2E": {
+            "name": "光の裂け目 1-2",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31018,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "13-3E": {
+            "name": "光の裂け目 1-3",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31093,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "13-4E": {
+            "name": "光の裂け目 1-4",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31018,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "13-5E": {
+            "name": "光の裂け目 1-5",
+            "stamina": 20,
+            "memory_piece": {
+                "item": 31093,
+                "drop_rate": 30
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "14-1E": {
+            "name": "オーエド町 1-1",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31053,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "14-2E": {
+            "name": "オーエド町 1-2",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31045,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "14-3E": {
+            "name": "オーエド町 1-3",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31053,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "14-4E": {
+            "name": "オーエド町 1-4",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31045,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "14-5E": {
+            "name": "オーエド町 1-5",
+            "stamina": 20,
+            "memory_piece": {
+                "item": 31053,
+                "drop_rate": 30
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "15-1E": {
+            "name": "サンレインビーチ 1-1",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31101,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "15-2E": {
+            "name": "サンレインビーチ 1-2",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31050,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "15-3E": {
+            "name": "サンレインビーチ 1-3",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31101,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "15-4E": {
+            "name": "サンレインビーチ 1-4",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31050,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "15-5E": {
+            "name": "サンレインビーチ 1-5",
+            "stamina": 20,
+            "memory_piece": {
+                "item": 31101,
+                "drop_rate": 30
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "16-1E": {
+            "name": "マホマホ王国避暑地？ 1-1",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31105,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "16-2E": {
+            "name": "マホマホ王国避暑地？ 1-2",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31014,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "16-3E": {
+            "name": "マホマホ王国避暑地？ 1-3",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31105,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "16-4E": {
+            "name": "マホマホ王国避暑地？ 1-4",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31014,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "16-5E": {
+            "name": "マホマホ王国避暑地？ 1-5",
+            "stamina": 20,
+            "memory_piece": {
+                "item": 31105,
+                "drop_rate": 30
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "17-1E": {
+            "name": "聖テレサ女学院 1-1",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31056,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "17-2E": {
+            "name": "聖テレサ女学院 1-2",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31040,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "17-3E": {
+            "name": "聖テレサ女学院 1-3",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31056,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "17-4E": {
+            "name": "聖テレサ女学院 1-4",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31040,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "17-5E": {
+            "name": "聖テレサ女学院 1-5",
+            "stamina": 20,
+            "memory_piece": {
+                "item": 31056,
+                "drop_rate": 30
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "18-1E": {
+            "name": "ゴーストグレイヴ 1-1",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31112,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "18-2E": {
+            "name": "ゴーストグレイヴ 1-2",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31036,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "18-3E": {
+            "name": "ゴーストグレイヴ 1-3",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31112,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "18-4E": {
+            "name": "ゴーストグレイヴ 1-4",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31036,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "18-5E": {
+            "name": "ゴーストグレイヴ 1-5",
+            "stamina": 20,
+            "memory_piece": {
+                "item": 31112,
+                "drop_rate": 30
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "19-1E": {
+            "name": "エルピス島 開拓キャンプ一帯 1-1",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31037,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "19-2E": {
+            "name": "エルピス島 開拓キャンプ一帯 1-2",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31005,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "19-3E": {
+            "name": "エルピス島 開拓キャンプ一帯 1-3",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31037,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "19-4E": {
+            "name": "エルピス島 開拓キャンプ一帯 1-4",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31005,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "19-5E": {
+            "name": "エルピス島 開拓キャンプ一帯 1-5",
+            "stamina": 20,
+            "memory_piece": {
+                "item": 31037,
+                "drop_rate": 30
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "20-1E": {
+            "name": "王都ランドソル 中央広場 1-1",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31116,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "20-2E": {
+            "name": "王都ランドソル 中央広場 1-2",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31044,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "20-3E": {
+            "name": "王都ランドソル 中央広場 1-3",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31116,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "20-4E": {
+            "name": "王都ランドソル 中央広場 1-4",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31044,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "20-5E": {
+            "name": "王都ランドソル 中央広場 1-5",
+            "stamina": 20,
+            "memory_piece": {
+                "item": 31116,
+                "drop_rate": 30
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "21-1E": {
+            "name": "ギルドレース　３区→４区 1-1",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31121,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "21-2E": {
+            "name": "ギルドレース　３区→４区 1-2",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31021,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "21-3E": {
+            "name": "ギルドレース　３区→４区 1-3",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31121,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "21-4E": {
+            "name": "ギルドレース　３区→４区 1-4",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31021,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "21-5E": {
+            "name": "ギルドレース　３区→４区 1-5",
+            "stamina": 20,
+            "memory_piece": {
+                "item": 31121,
+                "drop_rate": 30
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "22-1E": {
+            "name": "王都ランドソル 1-1",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31123,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "22-2E": {
+            "name": "王都ランドソル 1-2",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31049,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "22-3E": {
+            "name": "王都ランドソル 1-3",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31123,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "22-4E": {
+            "name": "王都ランドソル 1-4",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31049,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "22-5E": {
+            "name": "王都ランドソル 1-5",
+            "stamina": 20,
+            "memory_piece": {
+                "item": 31123,
+                "drop_rate": 30
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "23-1E": {
+            "name": "聖テレサ女学院 1-1",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31107,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "23-2E": {
+            "name": "聖テレサ女学院 1-2",
+            "stamina": 16,
+            "memory_piece": {
+                "item": 31046,
+                "drop_rate": 28
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "23-3E": {
+            "name": "聖テレサ女学院 1-3",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31107,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "23-4E": {
+            "name": "聖テレサ女学院 1-4",
+            "stamina": 18,
+            "memory_piece": {
+                "item": 31046,
+                "drop_rate": 29
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "23-5E": {
+            "name": "聖テレサ女学院 1-5",
+            "stamina": 20,
+            "memory_piece": {
+                "item": 31107,
+                "drop_rate": 30
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "24-1E": {
+            "name": "エリザベスパーク 1-1",
+            "stamina": 10,
+            "memory_piece": {
+                "item": 31028,
+                "drop_rate": 54
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "24-2E": {
+            "name": "エリザベスパーク 1-2",
+            "stamina": 10,
+            "memory_piece": {
+                "item": 31033,
+                "drop_rate": 54
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "24-3E": {
+            "name": "エリザベスパーク 1-3",
+            "stamina": 10,
+            "memory_piece": {
+                "item": 31028,
+                "drop_rate": 54
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "24-4E": {
+            "name": "エリザベスパーク 1-4",
+            "stamina": 10,
+            "memory_piece": {
+                "item": 31033,
+                "drop_rate": 54
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "24-5E": {
+            "name": "エリザベスパーク 1-5",
+            "stamina": 10,
+            "memory_piece": {
+                "item": 31028,
+                "drop_rate": 54
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
                 }
             ]
         }

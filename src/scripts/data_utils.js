@@ -342,6 +342,7 @@ export default function data_utils(state) {
         const DIFFICULTY = Object.freeze({
             HARD: "H",
             VERY_HARD: "VH",
+            EVENT: "E",
         });
         const _MULTIPLIER = Object.freeze({
             priority: 2.0,
@@ -411,7 +412,7 @@ export default function data_utils(state) {
             // convert to set to remove dupes, then back to array, then to object with a { item_id: 1 } format
             // priority_items = { id: amt, id2: amt, ... }
             let priority_items = Array.from(priority_set).reduce((a, c) => {a[c] = priority_amount[c]; return a;}, {});
-            console.log(priority_items, "priority items");
+            // console.log(priority_items, "priority items");
             // get all items in their decompiled form
             priority_items = project.build({required: priority_items}, {}, recipe_version);
             // from {item_id: amount} to [item_id, item_id_2, ...]
@@ -442,9 +443,10 @@ export default function data_utils(state) {
             for (const quest_id in state.quest.data) {
                 const quest_info = state.quest.data[quest_id];
                 const quest_chapter = get_chapter(quest_id);
-                const is_normal = !quest_id.includes(DIFFICULTY.HARD);
+                const is_normal = !quest_id.includes(DIFFICULTY.HARD) && !quest_id.includes(DIFFICULTY.EVENT);
                 const is_hard = quest_id.includes(DIFFICULTY.HARD) && !quest_id.includes(DIFFICULTY.VERY_HARD);
                 const is_very_hard = quest_id.includes(DIFFICULTY.VERY_HARD);
+                const is_event = quest_id.includes(DIFFICULTY.EVENT);
 
                 // CHECK IF QUEST IS WITHIN RANGE OF MIN/MAX
                 if (settings.chapter && (quest_chapter < settings.chapter.min || quest_chapter > settings.chapter.max)) {
@@ -455,7 +457,8 @@ export default function data_utils(state) {
                 if (settings.disabled_difficulty) {
                     if ((settings.disabled_difficulty["Normal"] && is_normal)
                         || (settings.disabled_difficulty["Hard"] && is_hard)
-                        || (settings.disabled_difficulty["Very Hard"] && is_very_hard)) {
+                        || (settings.disabled_difficulty["Very Hard"] && is_very_hard)
+                        || (settings.disabled_difficulty["Event"] && is_event)) {
                         continue;
                     }
                 }
@@ -543,6 +546,11 @@ export default function data_utils(state) {
                     // HARD QUESTS GET A BASE VALUE OF +1000
                     if (quest.number.includes(DIFFICULTY.HARD)) {
                         quest.number.replace(DIFFICULTY.HARD, "");
+                        quest.value += 1000;
+                    }
+                    // EVENT QUESTS GET A BASE VALUE OF +1000
+                    if (quest.number.includes(DIFFICULTY.EVENT)) {
+                        quest.number.replace(DIFFICULTY.EVENT, "");
                         quest.value += 1000;
                     }
                     quest.value += (quest.chapter * 10000) + (parseInt(quest.number) * 10);

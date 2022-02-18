@@ -3,6 +3,16 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.3] - 2022-02-18
+### Added
+- Event Quests
+  - Event quests are the ***PERMANENT*** version of the event (no point having data for limited quests...)
+  - As a result, some quests for event characters (i.e. Ram from Re:Zero Collab Event) won't be available
+  - For some reason, there are some drop rate changes compared to limited and permanent events
+    - Most limited and permanent events have memory piece drop rates as `[28, 28, 29, 29, 30]`
+    - The Elizabeth Park event (permanent version) (event_id 20024) has their memory piece drop rates as `[54, 54, 54, 54, 54]`
+  - Because of the note above, limited versions of event quests won't be served because the permanent version can differ.
+
 ## [3.0.2] - 2022-02-16
 ### Added
 - Made some changes based off of `MightyZanark#0138`'s suggestions

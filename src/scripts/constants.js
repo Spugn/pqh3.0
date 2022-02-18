@@ -1,6 +1,6 @@
 const _CONSTANTS = Object.freeze({
     DATA_LOCATION: `${process.env.PUBLIC_URL}/data.min.json`, // used in Main.js, points to which data file to read
-    DIFFICULTY: Object.freeze(["Normal", "Hard", "Very Hard"]), // used in quest settings
+    DIFFICULTY: Object.freeze(["Normal", "Hard", "Very Hard", "Event"]), // used in quest settings
     RARITY: Object.freeze(["1", "2", "3", "4", "5", "6", "7", "8"]), // used in quest settings
     INVENTORY: Object.freeze({ // used in anywhere that changes inventory
         FULL_MAX: 99,
