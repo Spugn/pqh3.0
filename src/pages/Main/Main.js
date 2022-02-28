@@ -196,7 +196,9 @@ function userReducer(state, action) {
             }
             let result = action.payload.settings.consume
                 ? data_utils(action.payload.data).project.consume(action.payload.project, state.inventory,
-                    state.settings.use_legacy ? 0 : undefined,
+                    state.settings.use_legacy ? _CONSTANTS.RECIPE_NOTE.LEGACY
+                        : state.settings.use_legacy_2 ? _CONSTANTS.RECIPE_NOTE.LEGACY_2
+                        : undefined,
                     action.payload.project.details.ignored_rarity || {})
                 : state.inventory;
             if (action.payload.settings.save && action.payload.project.type === "character") {

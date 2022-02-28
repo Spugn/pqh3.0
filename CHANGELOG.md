@@ -13,6 +13,9 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
   - Updated README.md to have more information about Legacy Equipment Data 2
 ### Changed
 - Changed how recipe version was handled, bugs may or may not have appeared as a result
+### Fixed
+- Fixed a bug reported by `Aquastic#1522`
+  - Completing a project in legacy mode would use current recipe values
 
 ## [3.0.3] - 2022-02-18
 ### Added
