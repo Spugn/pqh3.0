@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/priconne-quest-helper/static/css/main.08c28c1c.css",
-    "main.js": "/priconne-quest-helper/static/js/main.d7bd77a0.js",
+    "main.js": "/priconne-quest-helper/static/js/main.77249723.js",
     "static/js/787.759ec0b8.chunk.js": "/priconne-quest-helper/static/js/787.759ec0b8.chunk.js",
     "static/media/miyako.png": "/priconne-quest-helper/static/media/miyako.6127db870dc47b9b1721.png",
     "static/media/miyako_death.png": "/priconne-quest-helper/static/media/miyako_death.e8da796b266af598921f.png",
     "static/media/miyako-menu.png": "/priconne-quest-helper/static/media/miyako-menu.bde99228bc2b95493b65.png",
     "index.html": "/priconne-quest-helper/index.html",
     "main.08c28c1c.css.map": "/priconne-quest-helper/static/css/main.08c28c1c.css.map",
-    "main.d7bd77a0.js.map": "/priconne-quest-helper/static/js/main.d7bd77a0.js.map",
+    "main.77249723.js.map": "/priconne-quest-helper/static/js/main.77249723.js.map",
     "787.759ec0b8.chunk.js.map": "/priconne-quest-helper/static/js/787.759ec0b8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.08c28c1c.css",
-    "static/js/main.d7bd77a0.js"
+    "static/js/main.77249723.js"
   ]
 }
