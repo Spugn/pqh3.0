@@ -38886,6 +38886,20 @@
                     "required_items": [
                         "102281"
                     ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "102281"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "102281"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -38899,6 +38913,20 @@
                 "name": "スケイルメイルの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "101281"
+                    ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "101281"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 1,
                     "required_items": [
@@ -38922,6 +38950,20 @@
                     "required_items": [
                         "102311"
                     ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "102311"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "102311"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -38935,6 +38977,20 @@
                 "name": "フォークロアクロースの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "101581"
+                    ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "101581"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 1,
                     "required_items": [
@@ -38958,6 +39014,20 @@
                     "required_items": [
                         "102341"
                     ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "102341"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "102341"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -38971,6 +39041,20 @@
                 "name": "春色ローブの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "101371"
+                    ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "101371"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 1,
                     "required_items": [
@@ -38994,6 +39078,20 @@
                     "required_items": [
                         "102371"
                     ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "102371"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "102371"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -39007,6 +39105,20 @@
                 "name": "タワーシールドの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "101401"
+                    ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "101401"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 1,
                     "required_items": [
@@ -39030,6 +39142,20 @@
                     "required_items": [
                         "101431"
                     ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "101431"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "101431"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -39043,6 +39169,20 @@
                 "name": "ハンティングブーツの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "102431"
+                    ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "102431"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 1,
                     "required_items": [
@@ -39082,6 +39222,20 @@
                     "required_items": [
                         "101521"
                     ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "101521"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "101521"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -39100,6 +39254,20 @@
                     "required_items": [
                         "102311"
                     ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "102311"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "102311"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -39113,6 +39281,20 @@
                 "name": "修道女のフードの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "102251"
+                    ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "102251"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 1,
                     "required_items": [
@@ -39232,6 +39414,20 @@
                     "required_items": [
                         "101611"
                     ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "101611"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "101611"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -39250,6 +39446,20 @@
                     "required_items": [
                         "102612"
                     ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "102612"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 1,
+                    "required_items": [
+                        "102612"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -39263,6 +39473,16 @@
                 "name": "煌めきの剣（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 3,
+                    "required_items": [],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 3,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 3,
                     "required_items": [],
@@ -39287,6 +39507,11 @@
                 {
                     "required_pieces": 3,
                     "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 3,
+                    "required_items": [],
                     "recipe_note": "current"
                 }
             ]
@@ -39306,6 +39531,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 5,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 3,
                     "required_items": [],
                     "recipe_note": "current"
@@ -39321,6 +39551,20 @@
                 "name": "月光刀の設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "103071"
+                    ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "103071"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 5,
                     "required_items": [
@@ -39344,6 +39588,20 @@
                     "required_items": [
                         "103012"
                     ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "103012"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "103012"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -39360,6 +39618,16 @@
                 {
                     "required_pieces": 3,
                     "required_items": [],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 3,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 3,
+                    "required_items": [],
                     "recipe_note": "current"
                 }
             ]
@@ -39373,6 +39641,20 @@
                 "name": "ヴァンパイアダガーの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "103552"
+                    ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "103552"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 5,
                     "required_items": [
@@ -39397,6 +39679,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 5,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 3,
                     "required_items": [],
                     "recipe_note": "current"
@@ -39416,6 +39703,11 @@
                     "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 3,
@@ -39438,6 +39730,20 @@
                     "required_items": [
                         "103131"
                     ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "103131"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "103131"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -39451,6 +39757,20 @@
                 "name": "騎士の誇りの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 3,
+                    "required_items": [
+                        "102162"
+                    ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 3,
+                    "required_items": [
+                        "102162"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 3,
                     "required_items": [
@@ -39475,6 +39795,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 5,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 3,
                     "required_items": [],
                     "recipe_note": "current"
@@ -39493,6 +39818,16 @@
                 {
                     "required_pieces": 3,
                     "required_items": [],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 3,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 3,
+                    "required_items": [],
                     "recipe_note": "current"
                 }
             ]
@@ -39506,6 +39841,22 @@
                 "name": "麗花の戦斧の設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "103191",
+                        "102013"
+                    ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "103191",
+                        "102013"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 5,
                     "required_items": [
@@ -39530,6 +39881,20 @@
                     "required_items": [
                         "103192"
                     ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "103192"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "103192"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -39543,6 +39908,16 @@
                 "name": "ソーンブラッドロッド（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 3,
+                    "required_items": [],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 3,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 3,
                     "required_items": [],
@@ -39565,6 +39940,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 5,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 3,
                     "required_items": [],
                     "recipe_note": "current"
@@ -39580,6 +39960,20 @@
                 "name": "天球の見守りの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 3,
+                    "required_items": [
+                        "102251"
+                    ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 3,
+                    "required_items": [
+                        "102251"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 3,
                     "required_items": [
@@ -39606,6 +40000,11 @@
                 {
                     "required_pieces": 3,
                     "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 3,
+                    "required_items": [],
                     "recipe_note": "current"
                 }
             ]
@@ -39624,6 +40023,20 @@
                     "required_items": [
                         "102282"
                     ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "102282"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "102282"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -39637,6 +40050,22 @@
                 "name": "バトリングドレスの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "102282",
+                        "102312"
+                    ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "102282",
+                        "102312"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 5,
                     "required_items": [
@@ -39662,6 +40091,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 5,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 3,
                     "required_items": [],
                     "recipe_note": "current"
@@ -39682,6 +40116,20 @@
                     "required_items": [
                         "102312"
                     ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "102312"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "102312"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -39695,6 +40143,20 @@
                 "name": "ミルフィーユクロースの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "102342"
+                    ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "102342"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 5,
                     "required_items": [
@@ -39719,6 +40181,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 5,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 3,
                     "required_items": [],
                     "recipe_note": "current"
@@ -39734,6 +40201,22 @@
                 "name": "コスモスクロースの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "103341",
+                        "103611"
+                    ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "103341",
+                        "103611"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 5,
                     "required_items": [
@@ -39758,6 +40241,20 @@
                     "required_items": [
                         "102372"
                     ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "102372"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "102372"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -39775,6 +40272,11 @@
                     "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 3,
@@ -39796,6 +40298,11 @@
                     "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 3,
@@ -39821,6 +40328,11 @@
                 {
                     "required_pieces": 3,
                     "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 3,
+                    "required_items": [],
                     "recipe_note": "current"
                 }
             ]
@@ -39834,6 +40346,20 @@
                 "name": "フェンサーブーツの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "103431"
+                    ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "103431"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 5,
                     "required_items": [
@@ -39858,6 +40384,22 @@
                         "102614",
                         "102432"
                     ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "102614",
+                        "102432"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "102614",
+                        "102432"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -39871,6 +40413,22 @@
                 "name": "ドラゴンヘッドの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "102312",
+                        "102493"
+                    ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "102312",
+                        "102493"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 5,
                     "required_items": [
@@ -39898,6 +40456,11 @@
                 {
                     "required_pieces": 3,
                     "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 3,
+                    "required_items": [],
                     "recipe_note": "current"
                 }
             ]
@@ -39915,6 +40478,11 @@
                     "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 3,
@@ -39940,6 +40508,11 @@
                 {
                     "required_pieces": 3,
                     "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 3,
+                    "required_items": [],
                     "recipe_note": "current"
                 }
             ]
@@ -39961,6 +40534,11 @@
                 {
                     "required_pieces": 3,
                     "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 3,
+                    "required_items": [],
                     "recipe_note": "current"
                 }
             ]
@@ -39978,6 +40556,11 @@
                     "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 3,
@@ -40003,6 +40586,11 @@
                 {
                     "required_pieces": 3,
                     "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 3,
+                    "required_items": [],
                     "recipe_note": "current"
                 }
             ]
@@ -40016,6 +40604,20 @@
                 "name": "オクタグラムペンダントの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "102582"
+                    ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "102582"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 5,
                     "required_items": [
@@ -40046,6 +40648,13 @@
                     "required_items": [
                         "103581"
                     ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 3,
+                    "required_items": [
+                        "103581"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -40063,6 +40672,11 @@
                     "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 3,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 3,
@@ -40085,6 +40699,20 @@
                     "required_items": [
                         "102614"
                     ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "102614"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 5,
+                    "required_items": [
+                        "102614"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -40098,6 +40726,22 @@
                 "name": ""
             },
             "recipes": [
+                {
+                    "required_pieces": 0,
+                    "required_items": [
+                        "103611",
+                        "102614"
+                    ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 0,
+                    "required_items": [
+                        "103611",
+                        "102614"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 0,
                     "required_items": [
@@ -40123,6 +40767,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 5,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 3,
                     "required_items": [],
                     "recipe_note": "current"
@@ -40142,6 +40791,11 @@
                     "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 10,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 5,
@@ -40165,6 +40819,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 15,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "current"
@@ -40184,6 +40843,11 @@
                     "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 20,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 10,
@@ -40207,6 +40871,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
@@ -40226,6 +40895,11 @@
                     "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 10,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 5,
@@ -40251,6 +40925,13 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "103013"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [
                         "103013"
@@ -40274,6 +40955,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [],
                     "recipe_note": "current"
@@ -40295,6 +40981,13 @@
                         "104041"
                     ],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "104041"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 5,
@@ -40322,6 +41015,13 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 10,
+                    "required_items": [
+                        "103013"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [
                         "103013"
@@ -40345,6 +41045,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 15,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "current"
@@ -40364,6 +41069,11 @@
                     "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 20,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 10,
@@ -40387,6 +41097,13 @@
                         "104072"
                     ],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "104072"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 5,
@@ -40415,6 +41132,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 10,
+                    "required_items": [
+                        "103101",
+                        "103552"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [
                         "103101",
@@ -40437,6 +41162,11 @@
                     "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 15,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 5,
@@ -40463,6 +41193,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "104101",
+                        "103611"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [
                         "104101",
@@ -40485,6 +41223,11 @@
                     "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 15,
@@ -40511,6 +41254,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 10,
+                    "required_items": [
+                        "103611",
+                        "103132"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [
                         "103611",
@@ -40535,6 +41286,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 15,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "current"
@@ -40556,6 +41312,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [],
                     "recipe_note": "current"
@@ -40575,6 +41336,11 @@
                     "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 15,
@@ -40601,6 +41367,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 10,
+                    "required_items": [
+                        "103162",
+                        "103551"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [
                         "103162",
@@ -40623,6 +41397,11 @@
                     "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 15,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 5,
@@ -40648,6 +41427,13 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "104161"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [
                         "104161"
@@ -40671,6 +41457,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
@@ -40690,6 +41481,11 @@
                     "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 10,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 5,
@@ -40715,6 +41511,13 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "103553"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [
                         "103553"
@@ -40738,6 +41541,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [],
                     "recipe_note": "current"
@@ -40757,6 +41565,11 @@
                     "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 15,
@@ -40780,6 +41593,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 10,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "current"
@@ -40801,6 +41619,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 15,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "current"
@@ -40820,6 +41643,11 @@
                     "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 20,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 10,
@@ -40844,6 +41672,14 @@
                         "104611"
                     ],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "104221",
+                        "104611"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 5,
@@ -40872,6 +41708,13 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 10,
+                    "required_items": [
+                        "103222"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [
                         "103222"
@@ -40893,6 +41736,11 @@
                     "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 15,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 5,
@@ -40920,6 +41768,15 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "104251",
+                        "103614",
+                        "103553"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [
                         "104251",
@@ -40945,6 +41802,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
@@ -40964,6 +41826,11 @@
                     "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 10,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 5,
@@ -40989,6 +41856,15 @@
                         "103552"
                     ],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "103282",
+                        "103401",
+                        "103552"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 5,
@@ -41018,6 +41894,13 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "104281"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [
                         "104281"
@@ -41042,6 +41925,14 @@
                         "104551"
                     ],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "104281",
+                        "104551"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 5,
@@ -41071,6 +41962,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 10,
+                    "required_items": [
+                        "103583",
+                        "103311"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [
                         "103583",
@@ -41096,6 +41995,14 @@
                         "103162"
                     ],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "103283",
+                        "103162"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 5,
@@ -41124,6 +42031,13 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "104282"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [
                         "104282"
@@ -41150,6 +42064,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "104312",
+                        "104161"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [
                         "104312",
@@ -41174,6 +42096,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 10,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "current"
@@ -41196,6 +42123,14 @@
                         "103551"
                     ],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "103072",
+                        "103551"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 5,
@@ -41224,6 +42159,13 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "104341"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [
                         "104341"
@@ -41250,6 +42192,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "104342",
+                        "104191"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [
                         "104342",
@@ -41274,6 +42224,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 10,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "current"
@@ -41296,6 +42251,14 @@
                         "103612"
                     ],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "103614",
+                        "103612"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 5,
@@ -41325,6 +42288,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "104372",
+                        "104251"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [
                         "104372",
@@ -41350,6 +42321,14 @@
                         "103613"
                     ],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 10,
+                    "required_items": [
+                        "103583",
+                        "103613"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 5,
@@ -41378,6 +42357,13 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "104401"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [
                         "104401"
@@ -41403,6 +42389,15 @@
                         "103581"
                     ],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 10,
+                    "required_items": [
+                        "103431",
+                        "103551",
+                        "103581"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 5,
@@ -41433,6 +42428,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "103582",
+                        "103013"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [
                         "103582",
@@ -41461,6 +42464,15 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "104432",
+                        "103614",
+                        "103583"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [
                         "104432",
@@ -41486,6 +42498,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 10,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "current"
@@ -41508,6 +42525,14 @@
                         "103222"
                     ],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "104461",
+                        "103222"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 5,
@@ -41537,6 +42562,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "104461",
+                        "104581"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [
                         "104461",
@@ -41562,6 +42595,14 @@
                         "102493"
                     ],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 10,
+                    "required_items": [
+                        "103583",
+                        "102493"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 5,
@@ -41590,6 +42631,13 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 10,
+                    "required_items": [
+                        "103614"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [
                         "103614"
@@ -41615,6 +42663,15 @@
                         "103371"
                     ],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "103583",
+                        "103522",
+                        "103371"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 5,
@@ -41646,6 +42703,15 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "104521",
+                        "103614",
+                        "103612"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [
                         "104521",
@@ -41671,6 +42737,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 15,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "current"
@@ -41690,6 +42761,11 @@
                     "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 20,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 10,
@@ -41713,6 +42789,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
@@ -41732,6 +42813,11 @@
                     "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 15,
@@ -41755,6 +42841,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 15,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "current"
@@ -41774,6 +42865,11 @@
                     "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 20,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 10,
@@ -41797,6 +42893,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
@@ -41816,6 +42917,11 @@
                     "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 15,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 5,
@@ -41839,6 +42945,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [],
                     "recipe_note": "current"
@@ -41860,6 +42971,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
@@ -41879,6 +42995,11 @@
                     "required_pieces": 35,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 15,
@@ -41903,6 +43024,14 @@
                         "104011"
                     ],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104012",
+                        "104011"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 10,
@@ -41932,6 +43061,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104431",
+                        "103013"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104431",
@@ -41959,6 +43096,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104194",
+                        "104013"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104194",
@@ -41977,6 +43122,14 @@
                 "name": "覇王光龍剣の設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104164",
+                        "104312"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -41997,6 +43150,14 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104312",
+                        "103012"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104312",
@@ -42015,6 +43176,14 @@
                 "name": "神兎乃大剣の設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104071",
+                        "103011"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -42040,6 +43209,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
@@ -42059,6 +43233,11 @@
                     "required_pieces": 35,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 15,
@@ -42083,6 +43262,14 @@
                         "104042"
                     ],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104191",
+                        "104042"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 10,
@@ -42112,6 +43299,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104553",
+                        "104043"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104553",
@@ -42130,6 +43325,14 @@
                 "name": "翠風神ノ太刀の設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104373",
+                        "104041"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -42150,6 +43353,14 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104042",
+                        "103041"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104042",
@@ -42168,6 +43379,13 @@
                 "name": "旺鯉乃神刀（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104072"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [
@@ -42190,6 +43408,11 @@
                     "required_pieces": 35,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 15,
@@ -42217,6 +43440,15 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104071",
+                        "104551",
+                        "103553"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104071",
@@ -42240,6 +43472,11 @@
                     "required_pieces": 35,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 15,
@@ -42266,6 +43503,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104104",
+                        "104073"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104104",
@@ -42284,6 +43529,14 @@
                 "name": "天黒剣オブシウスの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104014",
+                        "104551"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -42304,6 +43557,14 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104012",
+                        "103491"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104012",
@@ -42322,6 +43583,13 @@
                 "name": "冥刃・鴉天狗（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104551"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [
@@ -42349,6 +43617,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104102",
+                        "104582"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104102",
@@ -42373,6 +43649,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
@@ -42395,6 +43676,14 @@
                         "104013"
                     ],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "103101",
+                        "104013"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 10,
@@ -42423,6 +43712,13 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104101"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [
                         "104101"
@@ -42440,6 +43736,13 @@
                 "name": "極闇爪ブラッディハウル（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104104"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [
@@ -42459,6 +43762,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104101"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [
                         "104101"
@@ -42476,6 +43786,14 @@
                 "name": "通天手甲・犀打ちの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104102",
+                        "103551"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -42505,6 +43823,15 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104133",
+                        "103131",
+                        "103552"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104133",
@@ -42530,6 +43857,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
@@ -42549,6 +43881,11 @@
                     "required_pieces": 35,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 15,
@@ -42575,6 +43912,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104134",
+                        "104133"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104134",
@@ -42594,6 +43939,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104013"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [
                         "104013"
@@ -42612,6 +43964,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104133"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [
                         "104133"
@@ -42629,6 +43988,13 @@
                 "name": "天穿乃隼弓（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104342"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [
@@ -42651,6 +44017,11 @@
                     "required_pieces": 35,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 15,
@@ -42677,6 +44048,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104162",
+                        "103552"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104162",
@@ -42699,6 +44078,11 @@
                     "required_pieces": 35,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 15,
@@ -42725,6 +44109,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104164",
+                        "104313"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104164",
@@ -42744,6 +44136,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104553"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [
                         "104553"
@@ -42762,6 +44161,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104162"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [
                         "104162"
@@ -42779,6 +44185,14 @@
                 "name": "聖鹿槍アルマベナードの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104222",
+                        "103161"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -42807,6 +44221,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104191",
+                        "104462"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104191",
@@ -42831,6 +44253,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
@@ -42853,6 +44280,14 @@
                         "103614"
                     ],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104192",
+                        "103614"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 10,
@@ -42881,6 +44316,13 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104192"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [
                         "104192"
@@ -42898,6 +44340,14 @@
                 "name": "機操斧コアブレイカーの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104193",
+                        "103191"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -42918,6 +44368,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104191"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [
                         "104191"
@@ -42935,6 +44392,13 @@
                 "name": "炎羆帝の爪戦斧（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104192"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [
@@ -42959,6 +44423,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
@@ -42978,6 +44447,11 @@
                     "required_pieces": 35,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 15,
@@ -43002,6 +44476,14 @@
                         "104131"
                     ],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104222",
+                        "104131"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 10,
@@ -43031,6 +44513,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104314",
+                        "104223"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104314",
@@ -43050,6 +44540,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104224"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [
                         "104224"
@@ -43067,6 +44564,14 @@
                 "name": "清雅なる翠蝶杖の設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104041",
+                        "103222"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -43086,6 +44591,14 @@
                 "name": "黒蛇の魔炎杖の設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104131",
+                        "103221"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -43111,6 +44624,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
@@ -43133,6 +44651,14 @@
                         "103252"
                     ],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104252",
+                        "103252"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 10,
@@ -43162,6 +44688,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104252",
+                        "104611"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104252",
@@ -43188,6 +44722,13 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104251"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [
                         "104251"
@@ -43205,6 +44746,14 @@
                 "name": "世界樹の枝杖の設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104433",
+                        "104253"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -43225,6 +44774,14 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104252",
+                        "103553"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104252",
@@ -43243,6 +44800,14 @@
                 "name": "白蛇の水聖杖の設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104522",
+                        "103251"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -43269,6 +44834,14 @@
                         "103072"
                     ],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104283",
+                        "103072"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 10,
@@ -43298,6 +44871,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104282",
+                        "103013"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104282",
@@ -43325,6 +44906,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104134",
+                        "103282"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104134",
@@ -43344,6 +44933,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104072"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [
                         "104072"
@@ -43361,6 +44957,14 @@
                 "name": "麗装ソウルローゼスの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104343",
+                        "103583"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -43381,6 +44985,14 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104011",
+                        "103281"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104011",
@@ -43399,6 +45011,14 @@
                 "name": "聖光のリリープレートの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104311",
+                        "103612"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -43425,6 +45045,14 @@
                         "104431"
                     ],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104313",
+                        "104431"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 10,
@@ -43454,6 +45082,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104311",
+                        "103192"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104311",
@@ -43481,6 +45117,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104313",
+                        "104491"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104313",
@@ -43499,6 +45143,14 @@
                 "name": "烈風の俊鎧の設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104193",
+                        "104312"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -43519,6 +45171,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104282"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [
                         "104282"
@@ -43537,6 +45196,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104161"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [
                         "104161"
@@ -43554,6 +45220,13 @@
                 "name": "覇王樹の棘針鎧（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104191"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [
@@ -43579,6 +45252,14 @@
                         "104491"
                     ],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104343",
+                        "104491"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 10,
@@ -43608,6 +45289,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104611",
+                        "103343"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104611",
@@ -43635,6 +45324,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104044",
+                        "103342"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104044",
@@ -43654,6 +45351,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104043"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [
                         "104043"
@@ -43671,6 +45375,14 @@
                 "name": "流蒼装アズールロンドの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104463",
+                        "104342"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -43691,6 +45403,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "103252"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [
                         "103252"
@@ -43708,6 +45427,14 @@
                 "name": "白霞の純花装の設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104521",
+                        "103192"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -43734,6 +45461,14 @@
                         "104372"
                     ],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104552",
+                        "104372"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 10,
@@ -43763,6 +45498,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104342",
+                        "103222"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104342",
@@ -43790,6 +45533,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104613",
+                        "104371"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104613",
@@ -43808,6 +45559,14 @@
                 "name": "爽氷の天衣の設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104373",
+                        "104372"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -43828,6 +45587,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104222"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [
                         "104222"
@@ -43845,6 +45611,14 @@
                 "name": "極西天の聖導衣の設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104372",
+                        "103461"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -43864,6 +45638,14 @@
                 "name": "緋天のチューリップドレスの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104252",
+                        "103341"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -43893,6 +45675,15 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104402",
+                        "103401",
+                        "103343"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104402",
@@ -43913,6 +45704,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104402"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [
                         "104402"
@@ -43930,6 +45728,13 @@
                 "name": "聖円環ヘブンリーロータス（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104162"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [
@@ -43957,6 +45762,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104432",
+                        "103132"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104432",
@@ -43976,6 +45789,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104132"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [
                         "104132"
@@ -43993,6 +45813,13 @@
                 "name": "極翼天の聖靴（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104432"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [
@@ -44020,6 +45847,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104463",
+                        "103371"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104463",
@@ -44039,6 +45874,14 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104523",
+                        "104431"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104523",
@@ -44057,6 +45900,13 @@
                 "name": "プライドオブローゼス（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104041"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [
@@ -44082,6 +45932,14 @@
                         "103522"
                     ],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104072",
+                        "103522"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 10,
@@ -44111,6 +45969,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104523",
+                        "103222"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104523",
@@ -44138,6 +46004,14 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104522",
+                        "103583"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104522",
@@ -44157,6 +46031,14 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104344",
+                        "104522"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "104344",
@@ -44175,6 +46057,14 @@
                 "name": "極翼天の賢聖帽の設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104132",
+                        "103522"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -44200,6 +46090,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
@@ -44219,6 +46114,11 @@
                     "required_pieces": 35,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 15,
@@ -44242,6 +46142,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
@@ -44263,6 +46168,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
@@ -44278,6 +46188,11 @@
                 "name": "緋竜の爪火輪（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [],
@@ -44295,6 +46210,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
@@ -44310,6 +46230,11 @@
                 "name": "紅鳥のクラリオンブローチ（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [],
@@ -44330,6 +46255,11 @@
                     "required_pieces": 35,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 15,
@@ -44353,6 +46283,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
@@ -44372,6 +46307,11 @@
                     "required_pieces": 35,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 15,
@@ -44395,6 +46335,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
@@ -44410,6 +46355,11 @@
                 "name": "神盾輪ウォールブレス（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [],
@@ -44427,6 +46377,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
@@ -44442,6 +46397,11 @@
                 "name": "翆奏のハープブローチ（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [],
@@ -44462,6 +46422,11 @@
                     "required_pieces": 35,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 15,
@@ -44485,6 +46450,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
@@ -44504,6 +46474,11 @@
                     "required_pieces": 35,
                     "required_items": [],
                     "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
                 },
                 {
                     "required_pieces": 15,
@@ -44527,6 +46502,11 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
@@ -44542,6 +46522,11 @@
                 "name": "深結晶ゼノクリスタル（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [],
@@ -44559,6 +46544,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
@@ -44575,6 +46565,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
@@ -44590,6 +46585,13 @@
                 "name": "輝光剣アダマスの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105102"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -44609,6 +46611,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105163"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "105163"
@@ -44626,6 +46635,13 @@
                 "name": "炎天赤日の剣の設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105135"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -44645,6 +46661,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "105042"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 20,
                     "required_items": [
                         "105042"
@@ -44662,6 +46685,13 @@
                 "name": "ソフタイスシュベールト（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "105222"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 20,
                     "required_items": [
@@ -44681,6 +46711,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "105105"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 20,
                     "required_items": [
                         "105105"
@@ -44698,6 +46735,13 @@
                 "name": "翠風刃エメラルドエッジ（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "105071"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 20,
                     "required_items": [
@@ -44717,6 +46761,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "105132"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 20,
                     "required_items": [
                         "105132"
@@ -44734,6 +46785,13 @@
                 "name": "紫霧の短剣（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "105375"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 20,
                     "required_items": [
@@ -44753,6 +46811,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105222"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "105222"
@@ -44770,6 +46835,13 @@
                 "name": "シューナックルの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105042"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -44789,6 +46861,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105612"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "105612"
@@ -44806,6 +46885,13 @@
                 "name": "蒼神弓マーシーサピロス（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "105582"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 20,
                     "required_items": [
@@ -44825,6 +46911,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "105102"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 20,
                     "required_items": [
                         "105102"
@@ -44842,6 +46935,13 @@
                 "name": "白雨の流転弓（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "105615"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 20,
                     "required_items": [
@@ -44861,6 +46961,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105161"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "105161"
@@ -44878,6 +46985,13 @@
                 "name": "ショコラートランスの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105192"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -44897,6 +47011,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105165"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "105165"
@@ -44914,6 +47035,13 @@
                 "name": "黄銅の裂戦斧（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "105041"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 20,
                     "required_items": [
@@ -44933,6 +47061,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "105582"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 20,
                     "required_items": [
                         "105582"
@@ -44950,6 +47085,13 @@
                 "name": "極天の光帯斧（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "105073"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 20,
                     "required_items": [
@@ -44969,6 +47111,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105132"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "105132"
@@ -44986,6 +47135,13 @@
                 "name": "ロリポップステッキの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105133"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -45005,6 +47161,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105225"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "105225"
@@ -45022,6 +47185,13 @@
                 "name": "白真珠の光天杖の設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105192"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -45041,6 +47211,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105073"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "105073"
@@ -45058,6 +47235,13 @@
                 "name": "氷雪華晶の杖の設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105402"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -45077,6 +47261,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105221"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "105221"
@@ -45094,6 +47285,13 @@
                 "name": "チョコレートメイルの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105284"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -45113,6 +47311,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105614"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "105614"
@@ -45130,6 +47335,13 @@
                 "name": "金無垢の聖彫重甲（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "105611"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 20,
                     "required_items": [
@@ -45149,6 +47361,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "105104"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 20,
                     "required_items": [
                         "105104"
@@ -45166,6 +47385,13 @@
                 "name": "桜花の八重鎧（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "105584"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 20,
                     "required_items": [
@@ -45185,6 +47411,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105552"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "105552"
@@ -45202,6 +47435,13 @@
                 "name": "ファンシーマカロンドレスの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105254"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -45221,6 +47461,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105615"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 10,
                     "required_items": [
                         "105615"
@@ -45238,6 +47485,13 @@
                 "name": "黒瑪瑙の祈装衣の設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105011"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -45257,6 +47511,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "105554"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 20,
                     "required_items": [
                         "105554"
@@ -45274,6 +47535,13 @@
                 "name": "白雪桜の魔装の設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105583"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -45293,6 +47561,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "105251"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 20,
                     "required_items": [
                         "105251"
@@ -45310,6 +47585,13 @@
                 "name": "チョコミントアイスヒール（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "105344"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 20,
                     "required_items": [
@@ -45329,6 +47611,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "105612"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 20,
                     "required_items": [
                         "105612"
@@ -45346,6 +47635,13 @@
                 "name": "桜吹雪の編上靴（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "105432"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 20,
                     "required_items": [
@@ -45365,6 +47661,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "105585"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 20,
                     "required_items": [
                         "105585"
@@ -45382,6 +47685,13 @@
                 "name": "シーツタルトベレーの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105194"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 10,
                     "required_items": [
@@ -45401,6 +47711,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "current"
@@ -45416,6 +47731,11 @@
                 "name": "ポップコーンネックレス（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 20,
                     "required_items": [],
@@ -45433,6 +47753,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "current"
@@ -45448,6 +47773,11 @@
                 "name": "常盤の緑環（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 20,
                     "required_items": [],
@@ -45465,6 +47795,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "current"
@@ -45480,6 +47815,11 @@
                 "name": "旋風の耳飾り（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 20,
                     "required_items": [],
@@ -45497,6 +47837,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "current"
@@ -45512,6 +47857,11 @@
                 "name": "ドーナツチョーカー（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 20,
                     "required_items": [],
@@ -45529,6 +47879,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "current"
@@ -45544,6 +47899,13 @@
                 "name": "チェリーブロッサムの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105616"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [
@@ -45563,6 +47925,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105136"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [
                         "105136"
@@ -45581,6 +47950,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
@@ -45596,6 +47970,13 @@
                 "name": "宵刀影桜（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "105196"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 25,
                     "required_items": [
@@ -45615,6 +47996,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
@@ -45630,6 +48016,13 @@
                 "name": "チェインフューリーソードの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "106191"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [
@@ -45649,6 +48042,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "105166"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 25,
                     "required_items": [
                         "105166"
@@ -45667,6 +48067,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
@@ -45683,6 +48088,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
@@ -45698,6 +48108,13 @@
                 "name": "桜花の貫き手の設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105585"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [
@@ -45717,6 +48134,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105557"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [
                         "105557"
@@ -45735,6 +48159,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
@@ -45750,6 +48179,13 @@
                 "name": "枝垂れの桜花弓（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "105165"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 25,
                     "required_items": [
@@ -45769,6 +48205,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
@@ -45784,6 +48225,13 @@
                 "name": "クライムハントボウの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105464"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [
@@ -45803,6 +48251,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105555"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [
                         "105555"
@@ -45820,6 +48275,13 @@
                 "name": "クラブシザースピアーの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105587"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [
@@ -45839,6 +48301,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
@@ -45854,6 +48321,13 @@
                 "name": "桜伐り（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "105346"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 25,
                     "required_items": [
@@ -45873,6 +48347,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
@@ -45888,6 +48367,13 @@
                 "name": "ロッキングルーブアックスの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105317"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [
@@ -45907,6 +48393,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105586"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [
                         "105586"
@@ -45924,6 +48417,13 @@
                 "name": "ジュエルシェルロッドの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105375"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [
@@ -45943,6 +48443,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
@@ -45958,6 +48463,13 @@
                 "name": "桜華の舞杖の設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105556"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [
@@ -45977,6 +48489,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105197"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [
                         "105197"
@@ -45995,6 +48514,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
@@ -46010,6 +48534,13 @@
                 "name": "サマーライトビキニアーマーの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105077"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [
@@ -46029,6 +48560,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "106071"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [
                         "106071"
@@ -46046,6 +48584,13 @@
                 "name": "ピュアスノウメイルの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "106401"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [
@@ -46065,6 +48610,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
@@ -46081,6 +48631,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
@@ -46096,6 +48651,13 @@
                 "name": "クリスタルアイスメイルの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "106281"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [
@@ -46115,6 +48677,13 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105047"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 15,
                     "required_items": [
                         "105047"
@@ -46132,6 +48701,13 @@
                 "name": "パンキッシュガールの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105617"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [
@@ -46151,6 +48727,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
@@ -46166,6 +48747,13 @@
                 "name": "パラソルワンピースの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "105403"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [
@@ -46185,6 +48773,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
@@ -46200,6 +48793,13 @@
                 "name": "ダイヤモンドダストローブの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "106371"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [
@@ -46219,6 +48819,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
@@ -46234,6 +48839,13 @@
                 "name": "スタッズドブラックの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "106131"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [
@@ -46253,6 +48865,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
@@ -46268,6 +48885,11 @@
                 "name": "サンフラワーストローハット（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 25,
                     "required_items": [],
@@ -46285,6 +48907,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
@@ -46300,6 +48927,11 @@
                 "name": "スノウフレークベレー（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 25,
                     "required_items": [],
@@ -46317,6 +48949,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
@@ -46332,6 +48969,11 @@
                 "name": "ルビーハイビスカスの髪飾り（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 25,
                     "required_items": [],
@@ -46349,6 +48991,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
@@ -46364,6 +49011,11 @@
                 "name": "桜花の月夜簪（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 25,
                     "required_items": [],
@@ -46381,6 +49033,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
@@ -46396,6 +49053,11 @@
                 "name": "エメラルドゴシックバングル（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 25,
                     "required_items": [],
@@ -46413,6 +49075,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
@@ -46428,6 +49095,11 @@
                 "name": "オパールシェルの髪飾り（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 25,
                     "required_items": [],
@@ -46445,6 +49117,11 @@
             },
             "recipes": [
                 {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
@@ -46460,6 +49137,11 @@
                 "name": "氷輝剣グラースブレード（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 25,
                     "required_items": [],
@@ -46481,6 +49163,13 @@
                     "required_items": [
                         "106581"
                     ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "106581"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -46494,6 +49183,11 @@
                 "name": "氷牙スティーリアダガー（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 25,
                     "required_items": [],
@@ -46513,6 +49207,11 @@
                 {
                     "required_pieces": 25,
                     "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 25,
+                    "required_items": [],
                     "recipe_note": "current"
                 }
             ]
@@ -46526,6 +49225,13 @@
                 "name": "氷聖弓コンヘラシオンの設計図"
             },
             "recipes": [
+                {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "106612"
+                    ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 15,
                     "required_items": [
@@ -46549,6 +49255,13 @@
                     "required_items": [
                         "106611"
                     ],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "106611"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -46562,6 +49275,11 @@
                 "name": "氷壊斧リオートアックス（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 25,
                     "required_items": [],
@@ -46581,6 +49299,11 @@
                 {
                     "required_pieces": 25,
                     "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
+                {
+                    "required_pieces": 25,
+                    "required_items": [],
                     "recipe_note": "current"
                 }
             ]
@@ -46594,6 +49317,11 @@
                 "name": "氷樹杖フロストスタッフ（欠片）"
             },
             "recipes": [
+                {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "legacy_02.27.2022"
+                },
                 {
                     "required_pieces": 25,
                     "required_items": [],
