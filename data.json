@@ -32076,6 +32076,204 @@
                 ]
             }
         },
+        "118101": {
+            "id": "118101",
+            "name": "ランファ",
+            "equipment": {
+                "rank_1": [
+                    "101251",
+                    "101251",
+                    "101371",
+                    "101521",
+                    "101611",
+                    "101611"
+                ],
+                "rank_2": [
+                    "102222",
+                    "102221",
+                    "102371",
+                    "102461",
+                    "101611",
+                    "101611"
+                ],
+                "rank_3": [
+                    "103221",
+                    "102222",
+                    "102372",
+                    "102521",
+                    "102611",
+                    "102611"
+                ],
+                "rank_4": [
+                    "103252",
+                    "103221",
+                    "103521",
+                    "103521",
+                    "102613",
+                    "102613"
+                ],
+                "rank_5": [
+                    "103222",
+                    "103252",
+                    "103371",
+                    "103522",
+                    "103611",
+                    "103611"
+                ],
+                "rank_6": [
+                    "104221",
+                    "103222",
+                    "103372",
+                    "103522",
+                    "103371",
+                    "103613"
+                ],
+                "rank_7": [
+                    "104222",
+                    "104221",
+                    "104371",
+                    "103614",
+                    "103614",
+                    "103613"
+                ],
+                "rank_8": [
+                    "104223",
+                    "104222",
+                    "104522",
+                    "104461",
+                    "104611",
+                    "103583"
+                ],
+                "rank_9": [
+                    "104224",
+                    "104223",
+                    "104462",
+                    "104522",
+                    "104612",
+                    "104581"
+                ],
+                "rank_10": [
+                    "105221",
+                    "104224",
+                    "104463",
+                    "104523",
+                    "104613",
+                    "104612"
+                ],
+                "rank_11": [
+                    "105222",
+                    "105221",
+                    "105521",
+                    "104463",
+                    "105611",
+                    "104613"
+                ],
+                "rank_12": [
+                    "105223",
+                    "105222",
+                    "105372",
+                    "105521",
+                    "105612",
+                    "105611"
+                ],
+                "rank_13": [
+                    "105224",
+                    "105223",
+                    "105373",
+                    "105522",
+                    "105613",
+                    "105612"
+                ],
+                "rank_14": [
+                    "105225",
+                    "105224",
+                    "105523",
+                    "105462",
+                    "105614",
+                    "105613"
+                ],
+                "rank_15": [
+                    "105226",
+                    "105225",
+                    "105375",
+                    "105523",
+                    "105615",
+                    "105614"
+                ],
+                "rank_16": [
+                    "105227",
+                    "105226",
+                    "105376",
+                    "105375",
+                    "105616",
+                    "105615"
+                ],
+                "rank_17": [
+                    "106221",
+                    "105227",
+                    "105377",
+                    "105376",
+                    "105617",
+                    "105616"
+                ],
+                "rank_18": [
+                    "106222",
+                    "106221",
+                    "106371",
+                    "105377",
+                    "106611",
+                    "105617"
+                ],
+                "rank_19": [
+                    "106223",
+                    "106222",
+                    "106372",
+                    "106371",
+                    "106612",
+                    "106611"
+                ],
+                "rank_20": [
+                    "107221",
+                    "106223",
+                    "106373",
+                    "106521",
+                    "106613",
+                    "106612"
+                ],
+                "rank_21": [
+                    "107222",
+                    "107221",
+                    "107371",
+                    "106373",
+                    "107611",
+                    "106613"
+                ],
+                "rank_22": [
+                    "107223",
+                    "107222",
+                    "107372",
+                    "107371",
+                    "107612",
+                    "107611"
+                ],
+                "rank_23": [
+                    "108221",
+                    "107223",
+                    "107373",
+                    "107372",
+                    "107613",
+                    "107612"
+                ],
+                "rank_24": [
+                    "999999",
+                    "108221",
+                    "999999",
+                    "107373",
+                    "999999",
+                    "107613"
+                ]
+            }
+        },
         "118501": {
             "id": "118501",
             "name": "カリン",
@@ -39105,6 +39303,11 @@
                 {
                     "required_pieces": 5,
                     "required_items": [],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 3,
+                    "required_items": [],
                     "recipe_note": "current"
                 }
             ]
@@ -39191,6 +39394,11 @@
                 {
                     "required_pieces": 5,
                     "required_items": [],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 3,
+                    "required_items": [],
                     "recipe_note": "current"
                 }
             ]
@@ -39206,6 +39414,11 @@
             "recipes": [
                 {
                     "required_pieces": 5,
+                    "required_items": [],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 3,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -39258,6 +39471,11 @@
             "recipes": [
                 {
                     "required_pieces": 5,
+                    "required_items": [],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 3,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -39343,6 +39561,11 @@
             "recipes": [
                 {
                     "required_pieces": 5,
+                    "required_items": [],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 3,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -39436,6 +39659,11 @@
                 {
                     "required_pieces": 5,
                     "required_items": [],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 3,
+                    "required_items": [],
                     "recipe_note": "current"
                 }
             ]
@@ -39487,6 +39715,11 @@
             "recipes": [
                 {
                     "required_pieces": 5,
+                    "required_items": [],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 3,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -39541,6 +39774,11 @@
                 {
                     "required_pieces": 5,
                     "required_items": [],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 3,
+                    "required_items": [],
                     "recipe_note": "current"
                 }
             ]
@@ -39556,6 +39794,11 @@
             "recipes": [
                 {
                     "required_pieces": 5,
+                    "required_items": [],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 3,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -39671,6 +39914,11 @@
                 {
                     "required_pieces": 5,
                     "required_items": [],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 3,
+                    "required_items": [],
                     "recipe_note": "current"
                 }
             ]
@@ -39728,6 +39976,11 @@
             "recipes": [
                 {
                     "required_pieces": 5,
+                    "required_items": [],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 3,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -39867,6 +40120,11 @@
                 {
                     "required_pieces": 5,
                     "required_items": [],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 3,
+                    "required_items": [],
                     "recipe_note": "current"
                 }
             ]
@@ -39886,7 +40144,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 10,
+                    "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -39907,7 +40165,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -39928,7 +40186,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -39949,7 +40207,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 25,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -39970,7 +40228,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 10,
+                    "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -39993,7 +40251,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [
                         "103013"
                     ],
@@ -40016,7 +40274,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -40039,7 +40297,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [
                         "104041"
                     ],
@@ -40064,7 +40322,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 10,
+                    "required_pieces": 5,
                     "required_items": [
                         "103013"
                     ],
@@ -40087,7 +40345,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -40108,7 +40366,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -40131,7 +40389,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [
                         "104072"
                     ],
@@ -40157,7 +40415,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 10,
+                    "required_pieces": 5,
                     "required_items": [
                         "103101",
                         "103552"
@@ -40181,7 +40439,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -40205,7 +40463,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [
                         "104101",
                         "103611"
@@ -40229,7 +40487,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 25,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -40253,7 +40511,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 10,
+                    "required_pieces": 5,
                     "required_items": [
                         "103611",
                         "103132"
@@ -40277,7 +40535,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -40298,7 +40556,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -40319,7 +40577,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 25,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -40343,7 +40601,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 10,
+                    "required_pieces": 5,
                     "required_items": [
                         "103162",
                         "103551"
@@ -40367,7 +40625,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -40390,7 +40648,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [
                         "104161"
                     ],
@@ -40413,7 +40671,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 25,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -40434,7 +40692,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 10,
+                    "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -40457,7 +40715,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [
                         "103553"
                     ],
@@ -40480,7 +40738,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -40501,7 +40759,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 25,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -40522,7 +40780,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 10,
+                    "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -40543,7 +40801,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -40564,7 +40822,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -40588,7 +40846,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [
                         "104221",
                         "104611"
@@ -40614,7 +40872,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 10,
+                    "required_pieces": 5,
                     "required_items": [
                         "103222"
                     ],
@@ -40637,7 +40895,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -40662,7 +40920,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [
                         "104251",
                         "103614",
@@ -40687,7 +40945,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 25,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -40708,7 +40966,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 10,
+                    "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -40733,7 +40991,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [
                         "103282",
                         "103401",
@@ -40760,7 +41018,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [
                         "104281"
                     ],
@@ -40786,7 +41044,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [
                         "104281",
                         "104551"
@@ -40813,7 +41071,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 10,
+                    "required_pieces": 5,
                     "required_items": [
                         "103583",
                         "103311"
@@ -40840,7 +41098,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [
                         "103283",
                         "103162"
@@ -40866,7 +41124,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [
                         "104282"
                     ],
@@ -40892,7 +41150,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [
                         "104312",
                         "104161"
@@ -40916,7 +41174,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 10,
+                    "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -40940,7 +41198,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [
                         "103072",
                         "103551"
@@ -40966,7 +41224,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [
                         "104341"
                     ],
@@ -40992,7 +41250,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [
                         "104342",
                         "104191"
@@ -41016,7 +41274,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 10,
+                    "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -41040,7 +41298,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [
                         "103614",
                         "103612"
@@ -41067,7 +41325,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [
                         "104372",
                         "104251"
@@ -41094,7 +41352,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 10,
+                    "required_pieces": 5,
                     "required_items": [
                         "103583",
                         "103613"
@@ -41120,7 +41378,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [
                         "104401"
                     ],
@@ -41147,7 +41405,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 10,
+                    "required_pieces": 5,
                     "required_items": [
                         "103431",
                         "103551",
@@ -41175,7 +41433,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [
                         "103582",
                         "103013"
@@ -41203,7 +41461,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [
                         "104432",
                         "103614",
@@ -41228,7 +41486,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 10,
+                    "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -41252,7 +41510,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [
                         "104461",
                         "103222"
@@ -41279,7 +41537,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [
                         "104461",
                         "104581"
@@ -41306,7 +41564,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 10,
+                    "required_pieces": 5,
                     "required_items": [
                         "103583",
                         "102493"
@@ -41332,7 +41590,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 10,
+                    "required_pieces": 5,
                     "required_items": [
                         "103614"
                     ],
@@ -41359,7 +41617,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [
                         "103583",
                         "103522",
@@ -41388,7 +41646,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [
                         "104521",
                         "103614",
@@ -41413,7 +41671,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -41434,7 +41692,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -41455,7 +41713,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 25,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -41476,7 +41734,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 25,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -41497,7 +41755,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -41518,7 +41776,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -41539,7 +41797,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 25,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -41560,7 +41818,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 15,
+                    "required_pieces": 5,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -41581,7 +41839,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -41602,7 +41860,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 25,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -41623,7 +41881,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -41647,7 +41905,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104012",
                         "104011"
@@ -41674,7 +41932,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104431",
                         "103013"
@@ -41698,6 +41956,14 @@
                         "104194",
                         "104013"
                     ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 10,
+                    "required_items": [
+                        "104194",
+                        "104013"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -41712,7 +41978,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104164",
                         "104312"
@@ -41731,7 +41997,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104312",
                         "103012"
@@ -41750,7 +42016,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104071",
                         "103011"
@@ -41774,7 +42040,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -41795,7 +42061,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -41819,7 +42085,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104191",
                         "104042"
@@ -41843,6 +42109,14 @@
                         "104553",
                         "104043"
                     ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 10,
+                    "required_items": [
+                        "104553",
+                        "104043"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -41857,7 +42131,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104373",
                         "104041"
@@ -41876,7 +42150,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104042",
                         "103041"
@@ -41895,7 +42169,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [
                         "104072"
                     ],
@@ -41918,7 +42192,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -41943,7 +42217,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104071",
                         "104551",
@@ -41968,7 +42242,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -41989,6 +42263,14 @@
                         "104104",
                         "104073"
                     ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 10,
+                    "required_items": [
+                        "104104",
+                        "104073"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -42003,7 +42285,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104014",
                         "104551"
@@ -42022,7 +42304,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104012",
                         "103491"
@@ -42041,7 +42323,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [
                         "104551"
                     ],
@@ -42067,7 +42349,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104102",
                         "104582"
@@ -42091,7 +42373,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -42115,7 +42397,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "103101",
                         "104013"
@@ -42138,6 +42420,13 @@
                     "required_items": [
                         "104101"
                     ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "104101"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -42152,7 +42441,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [
                         "104104"
                     ],
@@ -42170,7 +42459,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [
                         "104101"
                     ],
@@ -42188,7 +42477,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104102",
                         "103551"
@@ -42216,7 +42505,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104133",
                         "103131",
@@ -42241,7 +42530,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -42262,7 +42551,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -42283,6 +42572,14 @@
                         "104134",
                         "104133"
                     ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 10,
+                    "required_items": [
+                        "104134",
+                        "104133"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -42297,7 +42594,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [
                         "104013"
                     ],
@@ -42315,7 +42612,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [
                         "104133"
                     ],
@@ -42333,7 +42630,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [
                         "104342"
                     ],
@@ -42356,7 +42653,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -42380,7 +42677,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104162",
                         "103552"
@@ -42404,7 +42701,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -42425,6 +42722,14 @@
                         "104164",
                         "104313"
                     ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 10,
+                    "required_items": [
+                        "104164",
+                        "104313"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -42439,7 +42744,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [
                         "104553"
                     ],
@@ -42457,7 +42762,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [
                         "104162"
                     ],
@@ -42475,7 +42780,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104222",
                         "103161"
@@ -42502,7 +42807,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104191",
                         "104462"
@@ -42526,7 +42831,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -42550,7 +42855,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104192",
                         "103614"
@@ -42573,6 +42878,13 @@
                     "required_items": [
                         "104192"
                     ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "104192"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -42587,7 +42899,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104193",
                         "103191"
@@ -42606,7 +42918,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [
                         "104191"
                     ],
@@ -42624,7 +42936,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [
                         "104192"
                     ],
@@ -42647,7 +42959,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -42668,7 +42980,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -42692,7 +43004,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104222",
                         "104131"
@@ -42716,6 +43028,14 @@
                         "104314",
                         "104223"
                     ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 10,
+                    "required_items": [
+                        "104314",
+                        "104223"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -42730,7 +43050,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [
                         "104224"
                     ],
@@ -42748,7 +43068,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104041",
                         "103222"
@@ -42767,7 +43087,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104131",
                         "103221"
@@ -42791,7 +43111,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -42815,7 +43135,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104252",
                         "103252"
@@ -42842,7 +43162,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104252",
                         "104611"
@@ -42865,6 +43185,13 @@
                     "required_items": [
                         "104251"
                     ],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "104251"
+                    ],
                     "recipe_note": "current"
                 }
             ]
@@ -42879,7 +43206,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104433",
                         "104253"
@@ -42898,7 +43225,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104252",
                         "103553"
@@ -42917,7 +43244,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104522",
                         "103251"
@@ -42944,7 +43271,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104283",
                         "103072"
@@ -42971,7 +43298,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104282",
                         "103013"
@@ -42998,7 +43325,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104134",
                         "103282"
@@ -43017,7 +43344,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [
                         "104072"
                     ],
@@ -43035,7 +43362,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104343",
                         "103583"
@@ -43054,7 +43381,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104011",
                         "103281"
@@ -43073,7 +43400,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104311",
                         "103612"
@@ -43100,7 +43427,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104313",
                         "104431"
@@ -43127,7 +43454,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104311",
                         "103192"
@@ -43154,7 +43481,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104313",
                         "104491"
@@ -43173,7 +43500,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104193",
                         "104312"
@@ -43192,7 +43519,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [
                         "104282"
                     ],
@@ -43210,7 +43537,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [
                         "104161"
                     ],
@@ -43228,7 +43555,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [
                         "104191"
                     ],
@@ -43254,7 +43581,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104343",
                         "104491"
@@ -43281,7 +43608,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104611",
                         "103343"
@@ -43308,7 +43635,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104044",
                         "103342"
@@ -43327,7 +43654,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [
                         "104043"
                     ],
@@ -43345,7 +43672,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104463",
                         "104342"
@@ -43364,7 +43691,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [
                         "103252"
                     ],
@@ -43382,7 +43709,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104521",
                         "103192"
@@ -43409,7 +43736,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104552",
                         "104372"
@@ -43436,7 +43763,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104342",
                         "103222"
@@ -43463,7 +43790,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104613",
                         "104371"
@@ -43482,7 +43809,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104373",
                         "104372"
@@ -43501,7 +43828,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [
                         "104222"
                     ],
@@ -43519,7 +43846,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104372",
                         "103461"
@@ -43538,7 +43865,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104252",
                         "103341"
@@ -43566,7 +43893,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104402",
                         "103401",
@@ -43586,7 +43913,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [
                         "104402"
                     ],
@@ -43604,7 +43931,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [
                         "104162"
                     ],
@@ -43630,7 +43957,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104432",
                         "103132"
@@ -43649,7 +43976,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [
                         "104132"
                     ],
@@ -43667,7 +43994,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [
                         "104432"
                     ],
@@ -43693,7 +44020,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104463",
                         "103371"
@@ -43712,7 +44039,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104523",
                         "104431"
@@ -43731,7 +44058,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [
                         "104041"
                     ],
@@ -43757,7 +44084,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104072",
                         "103522"
@@ -43784,7 +44111,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104523",
                         "103222"
@@ -43811,7 +44138,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104522",
                         "103583"
@@ -43830,7 +44157,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104344",
                         "104522"
@@ -43849,7 +44176,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "104132",
                         "103522"
@@ -43873,7 +44200,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -43894,7 +44221,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -43915,7 +44242,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -43933,6 +44260,11 @@
                 {
                     "required_pieces": 30,
                     "required_items": [],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 15,
+                    "required_items": [],
                     "recipe_note": "current"
                 }
             ]
@@ -43947,7 +44279,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -43963,7 +44295,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -43979,7 +44311,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -44000,7 +44332,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -44021,7 +44353,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -44042,7 +44374,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -44060,6 +44392,11 @@
                 {
                     "required_pieces": 30,
                     "required_items": [],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 15,
+                    "required_items": [],
                     "recipe_note": "current"
                 }
             ]
@@ -44074,7 +44411,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -44090,7 +44427,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -44106,7 +44443,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -44127,7 +44464,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -44148,7 +44485,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -44169,7 +44506,7 @@
                     "recipe_note": "legacy_08.30.2019"
                 },
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -44187,6 +44524,11 @@
                 {
                     "required_pieces": 30,
                     "required_items": [],
+                    "recipe_note": "legacy_08.30.2019"
+                },
+                {
+                    "required_pieces": 15,
+                    "required_items": [],
                     "recipe_note": "current"
                 }
             ]
@@ -44201,7 +44543,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -44217,7 +44559,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -44233,7 +44575,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -44249,7 +44591,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "105102"
                     ],
@@ -44267,7 +44609,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "105163"
                     ],
@@ -44285,7 +44627,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "105135"
                     ],
@@ -44303,7 +44645,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [
                         "105042"
                     ],
@@ -44321,7 +44663,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [
                         "105222"
                     ],
@@ -44339,7 +44681,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [
                         "105105"
                     ],
@@ -44357,7 +44699,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [
                         "105071"
                     ],
@@ -44375,7 +44717,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [
                         "105132"
                     ],
@@ -44393,7 +44735,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [
                         "105375"
                     ],
@@ -44411,7 +44753,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "105222"
                     ],
@@ -44429,7 +44771,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "105042"
                     ],
@@ -44447,7 +44789,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "105612"
                     ],
@@ -44465,7 +44807,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [
                         "105582"
                     ],
@@ -44483,7 +44825,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [
                         "105102"
                     ],
@@ -44501,7 +44843,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [
                         "105615"
                     ],
@@ -44519,7 +44861,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "105161"
                     ],
@@ -44537,7 +44879,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "105192"
                     ],
@@ -44555,7 +44897,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "105165"
                     ],
@@ -44573,7 +44915,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [
                         "105041"
                     ],
@@ -44591,7 +44933,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [
                         "105582"
                     ],
@@ -44609,7 +44951,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [
                         "105073"
                     ],
@@ -44627,7 +44969,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "105132"
                     ],
@@ -44645,7 +44987,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "105133"
                     ],
@@ -44663,7 +45005,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "105225"
                     ],
@@ -44681,7 +45023,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "105192"
                     ],
@@ -44699,7 +45041,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "105073"
                     ],
@@ -44717,7 +45059,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "105402"
                     ],
@@ -44735,7 +45077,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "105221"
                     ],
@@ -44753,7 +45095,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "105284"
                     ],
@@ -44771,7 +45113,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "105614"
                     ],
@@ -44789,7 +45131,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [
                         "105611"
                     ],
@@ -44807,7 +45149,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [
                         "105104"
                     ],
@@ -44825,7 +45167,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [
                         "105584"
                     ],
@@ -44843,7 +45185,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "105552"
                     ],
@@ -44861,7 +45203,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "105254"
                     ],
@@ -44879,7 +45221,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "105615"
                     ],
@@ -44897,7 +45239,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "105011"
                     ],
@@ -44915,7 +45257,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [
                         "105554"
                     ],
@@ -44933,7 +45275,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "105583"
                     ],
@@ -44951,7 +45293,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [
                         "105251"
                     ],
@@ -44969,7 +45311,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [
                         "105344"
                     ],
@@ -44987,7 +45329,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [
                         "105612"
                     ],
@@ -45005,7 +45347,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [
                         "105432"
                     ],
@@ -45023,7 +45365,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [
                         "105585"
                     ],
@@ -45041,7 +45383,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "105194"
                     ],
@@ -45059,7 +45401,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45075,7 +45417,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45091,7 +45433,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45107,7 +45449,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45123,7 +45465,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45139,7 +45481,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45155,7 +45497,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45171,7 +45513,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45187,7 +45529,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45203,7 +45545,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "105616"
                     ],
@@ -45221,7 +45563,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "105136"
                     ],
@@ -45239,7 +45581,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45255,7 +45597,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [
                         "105196"
                     ],
@@ -45273,7 +45615,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45289,7 +45631,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "106191"
                     ],
@@ -45307,7 +45649,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [
                         "105166"
                     ],
@@ -45325,7 +45667,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45341,7 +45683,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45357,7 +45699,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "105585"
                     ],
@@ -45375,7 +45717,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "105557"
                     ],
@@ -45393,7 +45735,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45409,7 +45751,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [
                         "105165"
                     ],
@@ -45427,7 +45769,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45443,7 +45785,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "105464"
                     ],
@@ -45461,7 +45803,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "105555"
                     ],
@@ -45479,7 +45821,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "105587"
                     ],
@@ -45497,7 +45839,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45513,7 +45855,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [
                         "105346"
                     ],
@@ -45531,7 +45873,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45547,7 +45889,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "105317"
                     ],
@@ -45565,7 +45907,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "105586"
                     ],
@@ -45583,7 +45925,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "105375"
                     ],
@@ -45601,7 +45943,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45617,7 +45959,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "105556"
                     ],
@@ -45635,7 +45977,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "105197"
                     ],
@@ -45653,7 +45995,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45669,7 +46011,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "105077"
                     ],
@@ -45687,7 +46029,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "106071"
                     ],
@@ -45705,7 +46047,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "106401"
                     ],
@@ -45723,7 +46065,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45739,7 +46081,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45755,7 +46097,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "106281"
                     ],
@@ -45773,7 +46115,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "105047"
                     ],
@@ -45791,7 +46133,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "105617"
                     ],
@@ -45809,7 +46151,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45825,7 +46167,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "105403"
                     ],
@@ -45843,7 +46185,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45859,7 +46201,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "106371"
                     ],
@@ -45877,7 +46219,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45893,7 +46235,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "106131"
                     ],
@@ -45911,7 +46253,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45927,7 +46269,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45943,7 +46285,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45959,7 +46301,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45975,7 +46317,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -45991,7 +46333,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -46007,7 +46349,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -46023,7 +46365,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -46039,7 +46381,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -46055,7 +46397,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -46071,7 +46413,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -46087,7 +46429,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
                 }
@@ -46103,7 +46445,7 @@
             },
             "recipes": [
                 {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "current"
                 }
