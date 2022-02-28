@@ -15,6 +15,11 @@ const _CONSTANTS = Object.freeze({
         INVENTORY: 'inventory',
         SETTINGS: 'settings',
     }),
+    RECIPE_NOTE: Object.freeze({
+        LEGACY: "legacy_08.30.2019",
+        LEGACY_2: "legacy_02.27.2022",
+        CURRENT: "current",
+    }),
 });
 const MODAL_STYLE = Object.freeze({
     position: 'absolute',

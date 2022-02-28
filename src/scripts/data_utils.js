@@ -94,7 +94,13 @@ export default function data_utils(state) {
                     // RECIPE VERSION DOES NOT EXIST, USE THE MOST RECENT
                     return recipes[recipes.length - 1];
                 }
-                return recipes[version];
+                const result = recipes.find((r) => {
+                    if (r.recipe_note === version) {
+                        return true;
+                    }
+                });
+                // return result if found, else use current recipe as fallback
+                return result !== undefined ? result : recipes[recipes.length - 1];
             }
             // USE THE LATEST RECIPE
             return recipes[recipes.length - 1];

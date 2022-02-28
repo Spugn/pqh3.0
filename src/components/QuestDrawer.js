@@ -128,7 +128,8 @@ export default function QuestDrawer({ open, setOpen, data, projectMap, userState
                 inventory: userState.inventory,
                 settings,
                 use_inventory: true,
-                recipe_version: userState.settings.use_legacy ? 0 : undefined,
+                recipe_version: userState.settings.use_legacy ? _CONSTANTS.RECIPE_NOTE.LEGACY
+                    : userState.settings.use_legacy_2 ? _CONSTANTS.RECIPE_NOTE.LEGACY_2 : undefined,
             });
             builtQuestInfo.current = {
                 required: q.required,
@@ -229,7 +230,8 @@ export default function QuestDrawer({ open, setOpen, data, projectMap, userState
             inventory: userState.inventory,
             settings,
             use_inventory: true,
-            recipe_version: userState.settings.use_legacy ? 0 : undefined,
+            recipe_version: userState.settings.use_legacy ? _CONSTANTS.RECIPE_NOTE.LEGACY
+                : userState.settings.use_legacy_2 ? _CONSTANTS.RECIPE_NOTE.LEGACY_2 : undefined,
         });
         builtQuestInfo.current = {
             required: q.required,
@@ -424,7 +426,7 @@ export default function QuestDrawer({ open, setOpen, data, projectMap, userState
                                     <Grid container direction="row" gap={1}>
                                         {_CONSTANTS.DIFFICULTY.map((diff) => {
                                             if (diff === "Event") {
-                                                return (<></>);
+                                                return (<span key={`quest-settings-drop-buff-form-control-${diff}`}></span>);
                                             }
                                             const id = `quest-settings-drop-buff-${diff}`;
                                             return (

@@ -3,6 +3,17 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.4] - 2022-02-28
+### Added
+- Legacy Equipment Data 2 Support
+  - Added setting
+  - Added `settings.use_legacy_2` handling to ProjectCard
+  - Added `settings.use_legacy_2` handling to QuestDrawer
+  - Modified `pqh-updater` to work with new legacy version
+  - Updated README.md to have more information about Legacy Equipment Data 2
+### Changed
+- Changed how recipe version was handled, bugs may or may not have appeared as a result
+
 ## [3.0.3] - 2022-02-18
 ### Added
 - Event Quests

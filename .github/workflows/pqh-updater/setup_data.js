@@ -28,11 +28,17 @@ const DICTIONARY = Object.freeze({
 const LEGACY_DATA = [
     // PUT NEWER LEGACY REVISIONS BEFORE OLDER ONES IN THIS ARRAY
     {
+        // HUGE EQUIPMENT COST CHANGE UPDATE 2
+        // 10036100 (last version before update) -> 10036200 (first version after update)
+        truth_version: 10036100,
+        date: "02.27.2022",
+    },
+    {
         // HUGE EQUIPMENT COST CHANGE UPDATE
         // 10011550 (last version before update) -> 10011600 (first version after update)
         truth_version: 10011550,
         date: "08.30.2019",
-    }
+    },
 ];
 
 setup();
@@ -254,12 +260,8 @@ function write_equipment() {
                     recipe.required_items.push(`${row[`condition_equipment_id_${i}`]}`);
                 }
 
-                // COMPARE RECIPES
-                const current_recipe = data[`${equip_id}`].recipes[data[`${equip_id}`].recipes.length - 1];
-                if (current_recipe.required_pieces !== recipe.required_pieces) {
-                    // DIFFERENCE FOUND, ADD RECIPE TO EQUIPMENT DATA
-                    data[`${equip_id}`].recipes.unshift(recipe);
-                }
+                // ADD LEGACY RECIPE TO EQUIPMENT DATA
+                data[`${equip_id}`].recipes.unshift(recipe);
             });
         }
 
