@@ -38574,6 +38574,54 @@
                 }
             ]
         },
+        "32075": {
+            "id": "32075",
+            "name": "ペコリーヌ（サマー）のピュアメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
+        "32076": {
+            "id": "32076",
+            "name": "コッコロ（サマー）のピュアメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
+        "32078": {
+            "id": "32078",
+            "name": "キャル（サマー）のピュアメモリーピース",
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": ""
+            },
+            "recipes": [
+                {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "current"
+                }
+            ]
+        },
         "101011": {
             "id": "101011",
             "name": "アイアンブレード",
@@ -73921,6 +73969,102 @@
                 }
             ]
         },
+        "30-2VH": {
+            "name": "フテラ断崖・北部 30-2",
+            "stamina": 20,
+            "memory_piece": {
+                "item": "32075",
+                "drop_rate": 54
+            },
+            "drops": [
+                {
+                    "item": "118011",
+                    "drop_rate": 72
+                },
+                {
+                    "item": "117553",
+                    "drop_rate": 72
+                },
+                {
+                    "item": "118251",
+                    "drop_rate": 72
+                },
+                {
+                    "item": "127283",
+                    "drop_rate": 72
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "117551",
+                    "drop_rate": 24
+                },
+                {
+                    "item": "127251",
+                    "drop_rate": 24
+                },
+                {
+                    "item": "127281",
+                    "drop_rate": 20
+                },
+                {
+                    "item": "127161",
+                    "drop_rate": 17
+                },
+                {
+                    "item": "117491",
+                    "drop_rate": 15
+                }
+            ]
+        },
+        "30-3VH": {
+            "name": "フテラ断崖・北部 30-3",
+            "stamina": 20,
+            "memory_piece": {
+                "item": "32076",
+                "drop_rate": 54
+            },
+            "drops": [
+                {
+                    "item": "128161",
+                    "drop_rate": 72
+                },
+                {
+                    "item": "117583",
+                    "drop_rate": 72
+                },
+                {
+                    "item": "118221",
+                    "drop_rate": 72
+                },
+                {
+                    "item": "117343",
+                    "drop_rate": 72
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "117581",
+                    "drop_rate": 24
+                },
+                {
+                    "item": "117311",
+                    "drop_rate": 24
+                },
+                {
+                    "item": "117191",
+                    "drop_rate": 20
+                },
+                {
+                    "item": "117041",
+                    "drop_rate": 17
+                },
+                {
+                    "item": "127101",
+                    "drop_rate": 15
+                }
+            ]
+        },
         "31-1": {
             "name": "フテラ断崖・南部 31-1",
             "stamina": 10,
@@ -74665,6 +74809,54 @@
                 },
                 {
                     "item": "115554",
+                    "drop_rate": 15
+                }
+            ]
+        },
+        "31-1VH": {
+            "name": "フテラ断崖・南部 31-1",
+            "stamina": 20,
+            "memory_piece": {
+                "item": "32078",
+                "drop_rate": 54
+            },
+            "drops": [
+                {
+                    "item": "118221",
+                    "drop_rate": 72
+                },
+                {
+                    "item": "117613",
+                    "drop_rate": 72
+                },
+                {
+                    "item": "118251",
+                    "drop_rate": 72
+                },
+                {
+                    "item": "127373",
+                    "drop_rate": 72
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "117611",
+                    "drop_rate": 24
+                },
+                {
+                    "item": "117131",
+                    "drop_rate": 24
+                },
+                {
+                    "item": "127011",
+                    "drop_rate": 20
+                },
+                {
+                    "item": "127371",
+                    "drop_rate": 17
+                },
+                {
+                    "item": "117551",
                     "drop_rate": 15
                 }
             ]
