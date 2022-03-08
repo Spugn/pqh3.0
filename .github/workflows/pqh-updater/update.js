@@ -131,7 +131,7 @@ function download(latest) {
 
     function dl(region = "jp") {
         return new Promise(async (resolve) => {
-            const file = fs.createWriteStream(path.join(DIRECTORY.DATABASE, `master_${region}.db`));
+            const file = fs.createWriteStream(`master_${region}.db`);
             const url = `https://raw.githubusercontent.com/Expugn/priconne-database/master/master_${region}.db`;
 
             https.get(url, (res) => {
@@ -221,7 +221,7 @@ function write_equipment() {
     return new Promise(async function(resolve) {
         let result, data = {};
         let db = await open({
-            filename: path.join(DIRECTORY.DATABASE, 'master_jp.db'),
+            filename: 'master_jp.db',
             driver: sqlite3.Database
         });
 
@@ -351,7 +351,7 @@ function write_equipment() {
         for (const region of OTHER_REGIONS) {
             db.close();
             db = await open({
-                filename: path.join(DIRECTORY.DATABASE, `master_${region}.db`),
+                filename: `master_${region}.db`,
                 driver: sqlite3.Database
             });
 
@@ -455,7 +455,7 @@ function write_character() {
     return new Promise(async function(resolve) {
         let result, data = {};
         let db = await open({
-            filename: path.join(DIRECTORY.DATABASE, 'master_jp.db'),
+            filename: 'master_jp.db',
             driver: sqlite3.Database
         });
 
@@ -496,7 +496,7 @@ function write_character() {
         for (const region of OTHER_REGIONS) {
             db.close();
             db = await open({
-                filename: path.join(DIRECTORY.DATABASE, `master_${region}.db`),
+                filename: `master_${region}.db`,
                 driver: sqlite3.Database
             });
 
@@ -572,7 +572,7 @@ function write_quest() {
         let result, data = {};
         let quest_data = {}, wave_group_data = {}, enemy_reward_data = {};
         let db = await open({
-            filename: path.join(DIRECTORY.DATABASE, 'master_jp.db'),
+            filename: 'master_jp.db',
             driver: sqlite3.Database
         });
 
@@ -828,7 +828,7 @@ function write_event_quest(quest_data) {
     return new Promise(async function(resolve) {
         let result;
         let db = await open({
-            filename: path.join(DIRECTORY.DATABASE, 'master_jp.db'),
+            filename: 'master_jp.db',
             driver: sqlite3.Database
         });
         const drops = [

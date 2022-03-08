@@ -46,6 +46,9 @@ jobs:
       - name: Run setup.js
         run: node ./.github/workflows/pqh-updater/setup.js
 
+      - name: test
+        run: ls
+
       - name: Run update.js
         id: update
         run: node ./.github/workflows/pqh-updater/update.js
