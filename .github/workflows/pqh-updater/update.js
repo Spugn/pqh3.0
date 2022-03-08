@@ -491,7 +491,6 @@ function write_character() {
         // PURGE UNITS WITH NO EQUIPMENT
         // UNITS LIKE ONES NOT IMPLEMENTED (split units from duo/trio) CAN EXIST
         purge_no_equips();
-        db.close();
 
         // REGION LIMITED CHARACTERS?
         console.log("SEARCHING FOR REGION LIMITED CHARACTERS...");
