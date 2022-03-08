@@ -94,14 +94,11 @@ export default function ProjectCard({ data, project, defaultEnabled, projectMapD
     useEffect(() => {
         // this will be updated via key change if inventory changed
         const invCheck = data_utils(data).project.check(project, userState.inventory,
-            userState.settings.use_legacy
-                ? _CONSTANTS.RECIPE_NOTE.LEGACY
-                : userState.settings.use_legacy_2
-                    ? _CONSTANTS.RECIPE_NOTE.LEGACY_2 : undefined,
+            userState.settings.region,
             project.details.ignored_rarity || {});
         setCompleted(invCheck[0]);
         updateRequiredAndMissing({ project, invCheck });
-    }, [project, userState.settings.use_legacy, userState.settings.use_legacy_2, userState.inventory, data]);
+    }, [project, userState.settings.region, userState.inventory, data]);
 
     // hide/show project details
     function handleExpand() {

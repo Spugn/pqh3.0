@@ -1,13 +1,18 @@
+/**
+ * pqh3.0-updater v2
+ * for use with priconne-quest-helper 3.0
+ */
+
 const http = require('http');
+const https = require('https');
 const fs = require('fs');
 const path = require('path');
 const sqlite3 = require('sqlite3').verbose();
 const { open } = require('sqlite');
 const { PythonShell } = require('python-shell');
+const core = require('@actions/core');
 
-// CONSTANTS
 const DIRECTORY = Object.freeze({
-    // assumed we are in .github/workflows/pqh-updater
     SETUP: `${__dirname}/setup`,
     DATA_OUTPUT: `${__dirname}/../../../public`,
     IMAGE_OUTPUT: `${__dirname}/../../../public/images`,
@@ -25,55 +30,175 @@ const DICTIONARY = Object.freeze({
         VERY_HARD: "13",
     }
 });
-const LEGACY_DATA = [
-    // PUT NEWER LEGACY REVISIONS BEFORE OLDER ONES IN THIS ARRAY
-    {
-        // HUGE EQUIPMENT COST CHANGE UPDATE 2
-        // 10036100 (last version before update) -> 10036200 (first version after update)
-        truth_version: 10036100,
-        date: "02.27.2022",
-    },
-    {
-        // HUGE EQUIPMENT COST CHANGE UPDATE
-        // 10011550 (last version before update) -> 10011600 (first version after update)
-        truth_version: 10011550,
-        date: "08.30.2019",
-    },
-];
+const OTHER_REGIONS = Object.freeze(["CN", "EN", "KR", "TW"]);
 
-setup();
-function setup() {
-    check_directory(`${DIRECTORY.DATA_OUTPUT}`);
-    check_directory(`${DIRECTORY.IMAGE_OUTPUT}`);
-    check_directory(`${DIRECTORY.IMAGE_OUTPUT}/items`);
-    check_directory(`${DIRECTORY.IMAGE_OUTPUT}/unit_icon`);
+run();
+async function run() {
+    core.setOutput("success", false);
+
+    // get latest version
+    const latest = await get_latest_version();
+
+    // check updates
+    const has_updates = await check_for_updates(latest);
+    if (!has_updates) {
+        return;
+    }
+
+    // download all dbs
+    const downloaded = await download(latest);
+    if (!downloaded) {
+        core.error("missing database files, for some reason");
+        return;
+    }
+
+    // setup
     check_directory(DIRECTORY.SETUP, true);
-
-    // CREATE DATA JSON FILE
     let data = {
         character: {},
         equipment: {},
         quest: {},
-    }
-    write_equipment().then((equipment_data) => {
-        data.equipment = equipment_data;
-        write_character().then((character_data) => {
-            data.character = character_data;
-            write_quest().then((quest_data) => {
-                write_event_quest(quest_data).then((quest_data) => {
-                    data.quest = quest_data;
-                    get_new_images(data).then(() => {
-                        complete();
-                    });
-                });
+    };
+    const equipment_data = await write_equipment();
+    data.equipment = equipment_data;
+    const character_data = await write_character();
+    data.character = character_data;
+    let quest_data = await write_quest();
+    quest_data = await write_event_quest(quest_data);
+    data.quest = quest_data;
+    await get_new_images(data);
+
+    console.log("UPDATE COMPLETE!");
+    write_file(path.join(DIRECTORY.DATA_OUTPUT, 'data.json'), data, true);
+    write_file(path.join(DIRECTORY.DATA_OUTPUT, 'data.min.json'), data);
+    write_file(path.join(DIRECTORY.DATA_OUTPUT, 'version'), latest);
+    core.setOutput("success", true);
+}
+
+function get_latest_version() {
+    return new Promise(async (resolve) => {
+        let latest = "";
+        https.get('https://raw.githubusercontent.com/Expugn/priconne-database/master/version.json', (res) => {
+            res.on('data', (chunk) => {
+                latest += Buffer.from(chunk).toString();
+            });
+            res.on('end', () => {
+                resolve(JSON.parse(latest));
             });
         });
     });
+}
 
-    function complete() {
-        console.log("UPDATE COMPLETE!");
-        write_file(path.join(DIRECTORY.DATA_OUTPUT, 'data.json'), data, true);
-        write_file(path.join(DIRECTORY.DATA_OUTPUT, 'data.min.json'), data);
+function check_for_updates(latest) {
+    return new Promise(async (resolve) => {
+        const version_file = path.join(DIRECTORY.DATA_OUTPUT, "version");
+        if (fs.existsSync(version_file)) {
+            const current = fs.readFileSync(version_file, 'utf8');
+            console.log('[check_for_updates] EXISTING VERSION FILE FOUND!', current);
+            if (current !== JSON.stringify(latest)) {
+                console.log('[check_for_updates] UPDATES AVAILABLE!');
+                resolve(true);
+            } else {
+                console.log('[check_for_updates] NO UPDATES AVAILABLE!');
+                resolve(false);
+            }
+            return;
+        }
+        resolve(true);
+    });
+}
+
+function download(latest) {
+    return new Promise(async (resolve) => {
+        await Promise.all([
+            dl("cn"),
+            dl("en"),
+            dl("jp"),
+            dl("kr"),
+            dl("tw"),
+            dl_manifest(),
+        ]);
+        resolve(
+            fs.existsSync(path.join(DIRECTORY.DATABASE, `master_cn.db`)) &&
+            fs.existsSync(path.join(DIRECTORY.DATABASE, `master_en.db`)) &&
+            fs.existsSync(path.join(DIRECTORY.DATABASE, `master_jp.db`)) &&
+            fs.existsSync(path.join(DIRECTORY.DATABASE, `master_kr.db`)) &&
+            fs.existsSync(path.join(DIRECTORY.DATABASE, `master_tw.db`)) &&
+            fs.existsSync(path.join(DIRECTORY.DATABASE, `manifest`))
+        );
+    });
+
+    function dl(region = "jp") {
+        return new Promise(async (resolve) => {
+            const file = fs.createWriteStream(path.join(DIRECTORY.DATABASE, `master_${region}.db`));
+            const url = `https://raw.githubusercontent.com/Expugn/priconne-database/master/master_${region}.db`;
+
+            https.get(url, (res) => {
+                const stream = res.pipe(file);
+                stream.on('finish', () => {
+                    console.log(`downloaded master_${region}.db from ${url}`);
+                    resolve();
+                });
+            });
+        });
+    }
+
+    function dl_manifest() {
+        return new Promise(async (resolve) => {
+            const manifest_path = await get_path(latest);
+            let bundle = "";
+            http.request({
+                host: 'prd-priconne-redive.akamaized.net',
+                path: `/dl/Resources/${latest.JP.version}/Jpn/AssetBundles/Windows/${manifest_path[0]}`,
+                method: 'GET',
+            }, (res) => {
+                res.on('data', function(chunk) {
+                    bundle += Buffer.from(chunk).toString();
+                });
+                res.on('end', () => {
+                    bundle += '\n';
+                    http.request({
+                        host: 'prd-priconne-redive.akamaized.net',
+                        path: `/dl/Resources/${latest.JP.version}/Jpn/AssetBundles/Windows/${manifest_path[1]}`,
+                        method: 'GET',
+                    }, (res) => {
+                        res.on('data', function(chunk) {
+                            bundle += Buffer.from(chunk).toString();
+                        });
+                        res.on('end', () => {
+                            const file_path = path.join(DIRECTORY.DATABASE, 'manifest');
+                            console.log("write to", DIRECTORY.DATABASE);
+                            fs.writeFile(file_path, bundle, function (err) {
+                                if (err) throw err;
+                                console.log('DOWNLOADED ICON/UNIT MANIFEST ; SAVED AS', file_path);
+                                resolve();
+                            });
+                        });
+                    }).end();
+                });
+            }).end();
+            resolve();
+        });
+
+        function get_path(latest) {
+            return new Promise(async (resolve) => {
+                let manifest_assetmanifest = "";
+                http.get(`http://prd-priconne-redive.akamaized.net/dl/Resources/${latest.JP.version}/Jpn/AssetBundles/iOS/manifest/manifest_assetmanifest`, (res) => {
+                    res.on('data', (chunk) => {
+                        manifest_assetmanifest += Buffer.from(chunk).toString();
+                    });
+                    res.on('end', () => {
+                        let res = [];
+                        const b = manifest_assetmanifest.split('\n');
+                        let results = b.filter((v) => /icon/.test(v)); // icon assetmanifest
+                        res.push(results[0].split(',')[0]);
+                        results = b.filter((v) => /unit/.test(v)); // unit assetmanifest
+                        res.push(results[0].split(',')[0]);
+                        resolve(res);
+                    });
+                });
+            });
+        }
     }
 }
 
@@ -97,7 +222,7 @@ function write_equipment() {
     return new Promise(async function(resolve) {
         let result, data = {};
         let db = await open({
-            filename: path.join(DIRECTORY.DATABASE, 'master.db'),
+            filename: path.join(DIRECTORY.DATABASE, 'master_jp.db'),
             driver: sqlite3.Database
         });
 
@@ -110,19 +235,21 @@ function write_equipment() {
             if (item_type === DICTIONARY.EQUIPMENT.FULL) {
                 data[full_id] = {
                     id: full_id,
-                    name: row.equipment_name,
+                    name: {
+                        JP: row.equipment_name
+                    },
                     rarity: get_rarity_id(full_id),
                     fragment: {
                         id: "999999",
-                        name: "",
+                        name: {},
                     },
-                    recipes: [
-                        {
+                    recipes: {
+                        JP: {
                             required_pieces: 1,
                             required_items: [],
-                            recipe_note: "current"
+                            recipe_note: "JP"
                         }
-                    ],
+                    },
                 };
             }
             else {
@@ -130,7 +257,7 @@ function write_equipment() {
                 const is_blueprint = item_type === DICTIONARY.EQUIPMENT.BLUEPRINT;
                 if (is_fragment || is_blueprint) {
                     data[`${DICTIONARY.EQUIPMENT.FULL}${item_id}`].fragment.id = full_id;
-                    data[`${DICTIONARY.EQUIPMENT.FULL}${item_id}`].fragment.name = row.equipment_name;
+                    data[`${DICTIONARY.EQUIPMENT.FULL}${item_id}`].fragment.name["JP"] = row.equipment_name;
                 }
             }
         });
@@ -168,25 +295,27 @@ function write_equipment() {
                 if (memory_pieces[item_id]) {
                     data[`${item_id}`] = {
                         id: item_id,
-                        name: row.item_name,
+                        name: {
+                            JP: row.item_name
+                        },
                         rarity: "99",
                         fragment: {
                             id: "999999",
-                            name: "",
+                            name: {},
                         },
-                        recipes: [
-                            {
+                        recipes: {
+                            JP: {
                                 required_pieces: 1,
                                 required_items: [],
-                                recipe_note: "current"
+                                recipe_note: "JP"
                             }
-                        ],
+                        },
                     };
                 }
             }
         });
 
-        // ADD CURRENT RECIPE
+        // ADD JAPANESE RECIPE
         result = await db.all('SELECT * FROM equipment_craft');
         result.forEach((row) => {
             const equip_id = row.equipment_id;
@@ -195,7 +324,7 @@ function write_equipment() {
                 return;
             }
 
-            let recipe = data[`${equip_id}`].recipes[0];
+            let recipe = data[`${equip_id}`].recipes.JP;
 
             // CHECK IF condition_equipment_id_1 IS THE SAME AS EQUIPMENT ID
             if (get_item_id(equip_id) === get_item_id(row.condition_equipment_id_1)) {
@@ -219,21 +348,50 @@ function write_equipment() {
         });
 
         // CLEAN UP current DATABASE
-        // ADD LEGACY RECIPES
-        for (const legacy of LEGACY_DATA) {
+        // ADD REGIONAL DATA
+        for (const region of OTHER_REGIONS) {
             db.close();
             db = await open({
-                filename: path.join(DIRECTORY.DATABASE, `master_${legacy.truth_version}.db`),
+                filename: path.join(DIRECTORY.DATABASE, `master_${region}.db`),
                 driver: sqlite3.Database
             });
 
+            // ADD REGIONAL NAME
+            result = await db.all('SELECT * FROM equipment_data');
+            result.forEach((row) => {
+                const full_id = (row.equipment_id).toString(),  // 101011
+                    item_type = get_item_type(full_id),         // 10        (first 2 digits)
+                    item_id = get_item_id(full_id);             // 1011      (last 4 digits)
+                if (item_type === DICTIONARY.EQUIPMENT.FULL) {
+                    data[full_id].name[region] = row.equipment_name;
+                }
+                else {
+                    const is_fragment = item_type === DICTIONARY.EQUIPMENT.FRAGMENT;
+                    const is_blueprint = item_type === DICTIONARY.EQUIPMENT.BLUEPRINT;
+                    if (is_fragment || is_blueprint) {
+                        data[`${DICTIONARY.EQUIPMENT.FULL}${item_id}`].fragment.name[region] = row.equipment_name;
+                    }
+                }
+            });
+
+            // GET MEMORY PIECE NAMES
+            result = await db.all('SELECT * FROM item_data');
+            result.forEach((row) => {
+                const memory_piece = data[`${row.item_id}`];
+                if (!memory_piece) {
+                    return;
+                }
+                memory_piece.name[region] = row.item_name;
+            });
+
+            // GET REGIONAL RECIPE
             result = await db.all('SELECT * FROM equipment_craft');
             result.forEach((row) => {
                 const equip_id = row.equipment_id;
                 let recipe = {
                     required_pieces: 1,
                     required_items: [],
-                    recipe_note: `legacy_${legacy.date}`
+                    recipe_note: `${region}`
                 };
                 if (get_item_type(equip_id) !== DICTIONARY.EQUIPMENT.FULL) {
                     // EQUIPMENT CRAFT DATA IS NOT FOR A FULL ITEM
@@ -261,7 +419,7 @@ function write_equipment() {
                 }
 
                 // ADD LEGACY RECIPE TO EQUIPMENT DATA
-                data[`${equip_id}`].recipes.unshift(recipe);
+                data[`${equip_id}`].recipes[region] = recipe;
             });
         }
 
@@ -298,7 +456,7 @@ function write_character() {
     return new Promise(async function(resolve) {
         let result, data = {};
         let db = await open({
-            filename: path.join(DIRECTORY.DATABASE, 'master.db'),
+            filename: path.join(DIRECTORY.DATABASE, 'master_jp.db'),
             driver: sqlite3.Database
         });
 
@@ -307,7 +465,9 @@ function write_character() {
         result.forEach((row) => {
             data[`${row.unit_id}`] = {
                 id: `${row.unit_id}`,
-                name: row.unit_name,
+                name: {
+                    JP: row.unit_name
+                },
                 equipment: {},
             };
         });
@@ -335,41 +495,50 @@ function write_character() {
 
         // REGION LIMITED CHARACTERS?
         console.log("SEARCHING FOR REGION LIMITED CHARACTERS...");
-        db = await open({
-            filename: path.join(DIRECTORY.DATABASE, 'redive_cn.db'),
-            driver: sqlite3.Database
-        });
+        for (const region of OTHER_REGIONS) {
+            db.close();
+            db = await open({
+                filename: path.join(DIRECTORY.DATABASE, `master_${region}.db`),
+                driver: sqlite3.Database
+            });
 
-        result = await db.all('SELECT * FROM unit_data WHERE unit_id < 190000');
-        result.forEach((row) => {
-            if (data[`${row.unit_id}`]) {
-                return;
-            }
-            console.log(`REGION LIMITED CHARACTER FOUND? ${row.unit_id}`);
-            data[`${row.unit_id}`] = {
-                id: `${row.unit_id}`,
-                name: row.unit_name,
-                equipment: {},
-            };
-        });
+            result = await db.all('SELECT * FROM unit_data WHERE unit_id < 190000');
+            result.forEach((row) => {
+                if (data[`${row.unit_id}`]) {
+                    // add regional name to name
+                    data[`${row.unit_id}`].name[region] = row.unit_name;
+                    return;
+                }
+                console.log(`REGION LIMITED CHARACTER FOUND? (${region}) ${row.unit_id} - ${row.unit_name}`);
+                data[`${row.unit_id}`] = {
+                    id: `${row.unit_id}`,
+                    name: {
+                        JP: row.unit_name,
+                        [region]: row.unit_name
+                    },
+                    equipment: {},
+                };
+            });
 
-        result = await db.all('SELECT * FROM unit_promotion WHERE unit_id < 190000');
-        result.forEach((row) => {
-            if (!data[`${row.unit_id}`]) {
-                return;
-            }
-            if (data[`${row.unit_id}`].equipment[`rank_${row.promotion_level}`]) {
-                return;
-            }
-            data[`${row.unit_id}`].equipment[`rank_${row.promotion_level}`] = [
-                `${row.equip_slot_1}`,
-                `${row.equip_slot_2}`,
-                `${row.equip_slot_3}`,
-                `${row.equip_slot_4}`,
-                `${row.equip_slot_5}`,
-                `${row.equip_slot_6}`
-            ];
-        });
+            result = await db.all('SELECT * FROM unit_promotion WHERE unit_id < 190000');
+            result.forEach((row) => {
+                if (!data[`${row.unit_id}`]) {
+                    return;
+                }
+                if (data[`${row.unit_id}`].equipment[`rank_${row.promotion_level}`]) {
+                    return;
+                }
+                // console.log(`ADDING REGION LIMITED CHARACTER EQUIPS FOR ${row.unit_id} RANK ${row.promotion_level}`);
+                data[`${row.unit_id}`].equipment[`rank_${row.promotion_level}`] = [
+                    `${row.equip_slot_1}`,
+                    `${row.equip_slot_2}`,
+                    `${row.equip_slot_3}`,
+                    `${row.equip_slot_4}`,
+                    `${row.equip_slot_5}`,
+                    `${row.equip_slot_6}`
+                ];
+            });
+        }
 
         purge_no_equips();
 
@@ -405,7 +574,7 @@ function write_quest() {
         let result, data = {};
         let quest_data = {}, wave_group_data = {}, enemy_reward_data = {};
         let db = await open({
-            filename: path.join(DIRECTORY.DATABASE, 'master.db'),
+            filename: path.join(DIRECTORY.DATABASE, 'master_jp.db'),
             driver: sqlite3.Database
         });
 
@@ -661,7 +830,7 @@ function write_event_quest(quest_data) {
     return new Promise(async function(resolve) {
         let result;
         let db = await open({
-            filename: path.join(DIRECTORY.DATABASE, 'master.db'),
+            filename: path.join(DIRECTORY.DATABASE, 'master_jp.db'),
             driver: sqlite3.Database
         });
         const drops = [
@@ -770,6 +939,7 @@ function get_new_images(data) {
         }
 
         console.log(`FOUND ${queue.length} MISSING IMAGES. DOWNLOADING AND DECRYPTING THEM NOW...`);
+        console.log(queue);
         const files = await extract_images(queue);
         resolve();
 
@@ -822,7 +992,7 @@ function get_new_images(data) {
             function deserialize(import_path, export_path, silent = false) {
                 return new Promise(async function(resolve) {
                     PythonShell.run(`${__dirname}/deserialize.py`,
-                        { args: [import_path, export_path] },
+                        { args: [import_path, export_path], pythonPath: 'py' /* MAKE SURE TO RUN IN PYTHON 3, PYTHON 2 DOES NOT WORK */ },
                         function (err, results) {
                             if (err) throw err;
                             if (!silent) {

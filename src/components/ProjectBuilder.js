@@ -72,7 +72,7 @@ export default function ProjectBuilder({ data, userState, userDispatch }) {
                             </Stepper>
                         }
                         {step === 0 && <ChooseType {...{setStep, project}} />}
-                        <ChooseCharacter {...{data, setStep, project, hidden: (step !== 1 || project.current.type !== "character") }} />
+                        <ChooseCharacter {...{data, setStep, project, userState, hidden: (step !== 1 || project.current.type !== "character") }} />
                         <ChooseItem {...{data, setStep, project, hidden: (step !== 1 || project.current.type !== "item") }} />
                         {(step === 2 && project.current.type === "character") && <EditCharacterProjectDetails {...{data, userState, userDispatch, closeModal, setStep, project}} />}
                         {(step === 2 && project.current.type === "item") && <EditItemProjectDetails {...{data, userState, userDispatch, closeModal, setStep, project}} />}
@@ -123,7 +123,7 @@ function ChooseType({ setStep, project }) {
 }
 
 // STEP 1 (CHARACTER)
-function ChooseCharacter({ data, setStep, project, hidden }) {
+function ChooseCharacter({ data, setStep, project, userState, hidden }) {
     const renderRef = useRef(false);
 
     // IF ELEMENT HAS NOT BEEN RENDERED YET, MAKE IT STAY HIDDEN
@@ -157,7 +157,7 @@ function ChooseCharacter({ data, setStep, project, hidden }) {
             details: {
                 ...project.current.details,
                 avatar_id: id,
-                formal_name: `${data.character.data[id].name} (${id})`,
+                formal_name: `${data.character.data[id].name[userState.settings.region] || data.character.data[id].name.JP } (${id})`,
             }
         };
         setStep(2);
@@ -377,7 +377,7 @@ function EditCharacterProjectDetails({ data, userState, userDispatch, closeModal
                 className="font-extrabold text-md sm:text-2xl">
                 <Avatar src={`${process.env.PUBLIC_URL}/images/unit_icon/${avatar_id}.png`} alt={`character ${avatar_id}`}
                     sx={{ width: 48, height: 48 }} />
-                <div>{data.character.data[avatar_id].name}</div>
+                <div>{data.character.data[avatar_id].name[userState.settings.region] || data.character.data[avatar_id].name.JP}</div>
             </Grid>
             <Collapse in={alert !== ""}>
                 <Alert severity="error" className="text-left">

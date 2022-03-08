@@ -89,21 +89,11 @@ export default function data_utils(state) {
         function get(item_id, version = undefined) {
             const recipes = state.equipment.data[item_id].recipes;
             if (version !== undefined) {
-                // USE THE SPECIFIC RECIPE VERSION IF IT EXISTS
-                if (version >= recipes.length || version <= -1) {
-                    // RECIPE VERSION DOES NOT EXIST, USE THE MOST RECENT
-                    return recipes[recipes.length - 1];
-                }
-                const result = recipes.find((r) => {
-                    if (r.recipe_note === version) {
-                        return true;
-                    }
-                });
-                // return result if found, else use current recipe as fallback
-                return result !== undefined ? result : recipes[recipes.length - 1];
+                // USE THE SPECIFIC RECIPE VERSION IF IT EXISTS, ELSE FALLBACK TO JAPANESE
+                return recipes[version] || recipes.JP;
             }
             // USE THE LATEST RECIPE
-            return recipes[recipes.length - 1];
+            return recipes.JP;
         }
 
         return {
@@ -222,7 +212,7 @@ export default function data_utils(state) {
          * @returns TRUE IF THE USER HAS ENOUGH ITEMS TO BUILD THE PROJECT, FALSE OTHERWISE.
          */
         function check(project, inventory, recipe_version = undefined, ignored_rarity = {}) {
-            const timeKey = `data-utils_project.check_${project.date}`;
+            const timeKey = `data-utils_project.check_${recipe_version}_${project.date}`;
             console.time(timeKey);
             const t_inventory = JSON.parse(JSON.stringify(inventory));
             const result = build(project, inventory, recipe_version, ignored_rarity);
@@ -250,7 +240,7 @@ export default function data_utils(state) {
          * @returns MODIFIED INVENTORY OBJECT, WITH THE REQUIRED ITEMS CONSUMED.
          */
         function consume(project, inventory, recipe_version = undefined, ignored_rarity = {}) {
-            const timeKey = `data-utils_project.consume_${project.date}`;
+            const timeKey = `data-utils_project.consume_${recipe_version}_${project.date}`;
             console.time(timeKey);
             const t_inventory = JSON.parse(JSON.stringify(inventory));
             const result = build(project, inventory, recipe_version, ignored_rarity);

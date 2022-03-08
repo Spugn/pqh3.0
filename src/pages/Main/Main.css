@@ -7,6 +7,11 @@
     animation: run 750ms steps(19) infinite, start_move 1s forwards;
 }
 
+#miyako.no-fade {
+    animation: run 750ms steps(19) infinite;
+    opacity: 1;
+}
+
 #page-cover {
     background-image: url("../../../public/images/webpage/adv_mask_C.png");
     position: fixed;
@@ -48,6 +53,11 @@
     animation: death 1000ms steps(18) forwards;
 }
 
+#page-loading.pause #miyako {
+    background: url("../../../public/images/webpage/miyako_pudding.png");
+    animation: pause 1800ms steps(33) forwards;
+}
+
 /* MIYAKO INFINITE RUN ANIMATION */
 @keyframes run {
     from {background-position-y: 0;}
@@ -58,6 +68,14 @@
 @keyframes death {
     from {background-position-y: 0;}
     to {background-position-y: -7200px;}
+    100% {opacity: 1;}
+}
+
+/* MIYAKO PAUSE (and pudding eat) ANIMATION */
+@keyframes pause {
+    from {background-position-y: 0;}
+    to {background-position-y: -13200px;}
+    0% {opacity: 1;}
     100% {opacity: 1;}
 }
 

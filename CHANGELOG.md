@@ -3,6 +3,29 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.5] - 2022-03-07
+### Added
+- Multi-Region Support
+  - Players must now choose their game region (if not chosen, they will be prompted to at start).
+  - Depending on game version, equipment names, character names, and equipment recipes will be adjusted.
+- New `pqh-updater`
+- New `data.json` format
+  - `character.name` now includes multiple region names
+  - `equipment.name` now includes multiple region names
+  - `equipment.fragment.name` now includes multiple region names
+  - `equipment.recipes` now includes multiple region recipes
+- New loading screen region prompt
+  - Loading screen will now ask user to choose their game region if `userState.settings.region` doesn't exist
+- Project Builder will now use regional name, or JP as a fallback
+- Characters page will now use regional name, or JP as a fallback
+- Inventory page will now use regional name, or JP as a fallback
+### Removed
+- Old `pqh-updater`
+  - `get_cn_database.js`
+  - `get_legacy_database.js`
+  - `setup_data.js`
+  - `vendor/Coneshell`
+
 ## [3.0.4] - 2022-02-28
 ### Added
 - Legacy Equipment Data 2 Support

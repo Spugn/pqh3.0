@@ -128,8 +128,7 @@ export default function QuestDrawer({ open, setOpen, data, projectMap, userState
                 inventory: userState.inventory,
                 settings,
                 use_inventory: true,
-                recipe_version: userState.settings.use_legacy ? _CONSTANTS.RECIPE_NOTE.LEGACY
-                    : userState.settings.use_legacy_2 ? _CONSTANTS.RECIPE_NOTE.LEGACY_2 : undefined,
+                recipe_version: userState.settings.region,
             });
             builtQuestInfo.current = {
                 required: q.required,
@@ -230,8 +229,7 @@ export default function QuestDrawer({ open, setOpen, data, projectMap, userState
             inventory: userState.inventory,
             settings,
             use_inventory: true,
-            recipe_version: userState.settings.use_legacy ? _CONSTANTS.RECIPE_NOTE.LEGACY
-                : userState.settings.use_legacy_2 ? _CONSTANTS.RECIPE_NOTE.LEGACY_2 : undefined,
+            recipe_version: userState.settings.region,
         });
         builtQuestInfo.current = {
             required: q.required,

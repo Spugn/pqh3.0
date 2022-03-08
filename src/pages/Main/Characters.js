@@ -22,7 +22,7 @@ export default function Characters({ data, userState, userDispatch, hidden }) {
         setModalOpen(true);
         setModalData({
             id: id,
-            name: data.character.data[id].name,
+            name: data.character.data[id].name[userState.settings.region] || data.character.data[id].name.JP,
             data: userState.character[id]
                 ? JSON.parse(JSON.stringify(userState.character[id])) // copy so we don't modify the original
                 : {
@@ -31,7 +31,7 @@ export default function Characters({ data, userState, userDispatch, hidden }) {
                     id,
                 },
         });
-    }, [data.character.data, userState.character]);
+    }, [data.character.data, userState.character, userState.settings.region]);
 
     function closeModal(save) {
         setModalOpen(false);

@@ -45,12 +45,12 @@ export default function Inventory({ data, dataUtils, userState, userDispatch, hi
         if (data.equipment.data[id]) {
             // ITEM IS A FULL ITEM OR MEMORY PIECE
             base_id = id;
-            name = data.equipment.data[id].name;
+            name = data.equipment.data[id].name[userState.settings.region] || data.equipment.data[id].name.JP;
         }
         else {
             // ITEM IS A FRAGMENT
             base_id = dataUtils.equipment.fragment.to_base(id);
-            name = data.equipment.data[base_id].fragment.name;
+            name = data.equipment.data[base_id].fragment.name[userState.settings.region] || data.equipment.data[base_id].fragment.name.JP || "";
         }
         setEditModalData({
             id: base_id,
@@ -98,7 +98,9 @@ export default function Inventory({ data, dataUtils, userState, userDispatch, hi
         setAddItemTab(tabValue);
         setAddModalData({
             id,
-            name: tabValue === 0 ? data.equipment.data[id].fragment.name : data.equipment.data[id].name,
+            name: tabValue === 0
+                ? data.equipment.data[id].fragment.name[userState.settings.region] || data.equipment.data[id].fragment.name.JP || ""
+                : data.equipment.data[id].name[userState.settings.region] || data.equipment.data[id].name.JP,
             equip_data: data.equipment.data[id],
             data: {
                 id: tabID,
@@ -153,8 +155,9 @@ export default function Inventory({ data, dataUtils, userState, userDispatch, hi
             const tabID = newValue === 0 ? addModalData.equip_data.fragment.id : addModalData.id;
             setAddModalData({
                 ...addModalData,
-                name: newValue === 0 ? data.equipment.data[addModalData.id].fragment.name
-                    : data.equipment.data[addModalData.id].name,
+                name: newValue === 0
+                    ? data.equipment.data[addModalData.id].fragment.name[userState.settings.region] || data.equipment.data[addModalData.id].fragment.name.JP || ""
+                    : data.equipment.data[addModalData.id].name[userState.settings.region] || data.equipment.data[addModalData.id].name.JP,
                 data: {
                     ...addModalData.data,
                     id: tabID,
