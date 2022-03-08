@@ -8,7 +8,11 @@ const data = {
         data: _data.character,
     },
 };
-const userState = {};
+const userState = {
+    settings: {
+        region: "JP",
+    },
+};
 const userDispatch = () => {};
 const hidden = false;
 
