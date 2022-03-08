@@ -35,6 +35,7 @@ const OTHER_REGIONS = Object.freeze(["CN", "EN", "KR", "TW"]);
 run();
 async function run() {
     core.setOutput("success", false);
+    check_directory(DIRECTORY.DATABASE, true);
 
     // get latest version
     const latest = await get_latest_version();
