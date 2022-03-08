@@ -45,12 +45,13 @@ async function run() {
         return;
     }
 
-    // download all dbs
+    // download all dbs (disabled cus error here for some reason?)
+    /*
     const downloaded = await download(latest);
     if (!downloaded) {
         core.error("missing database files, for some reason");
         return;
-    }
+    }*/
 
     // setup
     check_directory(DIRECTORY.SETUP, true);
@@ -167,7 +168,6 @@ function download(latest) {
                         });
                         res.on('end', () => {
                             const file_path = path.join(DIRECTORY.DATABASE, 'manifest');
-                            console.log("write to", DIRECTORY.DATABASE);
                             fs.writeFile(file_path, bundle, function (err) {
                                 if (err) throw err;
                                 console.log('DOWNLOADED ICON/UNIT MANIFEST ; SAVED AS', file_path);

@@ -43,6 +43,9 @@ jobs:
       - name: Install Python dependencies
         run: pip install lz4 Pillow decrunch
 
+      - name: Run setup.js
+        run: node ./.github/workflows/pqh-updater/setup.js
+
       - name: Run update.js
         id: update
         run: node ./.github/workflows/pqh-updater/update.js
