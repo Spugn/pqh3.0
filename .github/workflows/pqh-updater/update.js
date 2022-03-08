@@ -16,7 +16,7 @@ const DIRECTORY = Object.freeze({
     SETUP: `${__dirname}/setup`,
     DATA_OUTPUT: `${__dirname}/../../../public`,
     IMAGE_OUTPUT: `${__dirname}/../../../public/images`,
-    DATABASE: "",
+    DATABASE: `${__dirname}/database`,
 });
 const DICTIONARY = Object.freeze({
     EQUIPMENT: {
@@ -35,6 +35,7 @@ const OTHER_REGIONS = Object.freeze(["CN", "EN", "KR", "TW"]);
 run();
 async function run() {
     core.setOutput("success", false);
+    check_directory(DIRECTORY.DATABASE, true);
 
     // get latest version
     const latest = await get_latest_version();
@@ -45,13 +46,12 @@ async function run() {
         return;
     }
 
-    // download all dbs (disabled cus error here for some reason?)
-    /*
+    // download all dbs
     const downloaded = await download(latest);
     if (!downloaded) {
         core.error("missing database files, for some reason");
         return;
-    }*/
+    }
 
     // setup
     check_directory(DIRECTORY.SETUP, true);
@@ -131,12 +131,13 @@ function download(latest) {
 
     function dl(region = "jp") {
         return new Promise(async (resolve) => {
-            const file = fs.createWriteStream(`master_${region}.db`);
+            const file = fs.createWriteStream(path.join(DIRECTORY.DATABASE, `master_${region}.db`));
             const url = `https://raw.githubusercontent.com/Expugn/priconne-database/master/master_${region}.db`;
 
             https.get(url, (res) => {
                 const stream = res.pipe(file);
                 stream.on('finish', () => {
+
                     console.log(`downloaded master_${region}.db from ${url}`);
                     resolve();
                 });
@@ -221,7 +222,7 @@ function write_equipment() {
     return new Promise(async function(resolve) {
         let result, data = {};
         let db = await open({
-            filename: 'master_jp.db',
+            filename: path.join(DIRECTORY.DATABASE, 'master_jp.db'),
             driver: sqlite3.Database
         });
 
@@ -351,7 +352,7 @@ function write_equipment() {
         for (const region of OTHER_REGIONS) {
             db.close();
             db = await open({
-                filename: `master_${region}.db`,
+                filename: path.join(DIRECTORY.DATABASE, `master_${region.toLowerCase()}.db`),
                 driver: sqlite3.Database
             });
 
@@ -455,7 +456,7 @@ function write_character() {
     return new Promise(async function(resolve) {
         let result, data = {};
         let db = await open({
-            filename: 'master_jp.db',
+            filename: path.join(DIRECTORY.DATABASE, 'master_jp.db'),
             driver: sqlite3.Database
         });
 
@@ -496,7 +497,7 @@ function write_character() {
         for (const region of OTHER_REGIONS) {
             db.close();
             db = await open({
-                filename: `master_${region}.db`,
+                filename: path.join(DIRECTORY.DATABASE, `master_${region.toLowerCase()}.db`),
                 driver: sqlite3.Database
             });
 
@@ -572,7 +573,7 @@ function write_quest() {
         let result, data = {};
         let quest_data = {}, wave_group_data = {}, enemy_reward_data = {};
         let db = await open({
-            filename: 'master_jp.db',
+            filename: path.join(DIRECTORY.DATABASE, 'master_jp.db'),
             driver: sqlite3.Database
         });
 
@@ -828,7 +829,7 @@ function write_event_quest(quest_data) {
     return new Promise(async function(resolve) {
         let result;
         let db = await open({
-            filename: 'master_jp.db',
+            filename: path.join(DIRECTORY.DATABASE, 'master_jp.db'),
             driver: sqlite3.Database
         });
         const drops = [
