@@ -178,7 +178,6 @@ function download(latest) {
                     }).end();
                 });
             }).end();
-            resolve();
         });
 
         function get_path(latest) {
