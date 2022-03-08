@@ -16,7 +16,7 @@ const DIRECTORY = Object.freeze({
     SETUP: `${__dirname}/setup`,
     DATA_OUTPUT: `${__dirname}/../../../public`,
     IMAGE_OUTPUT: `${__dirname}/../../../public/images`,
-    DATABASE: `${__dirname}/database`,
+    DATABASE: "",
 });
 const DICTIONARY = Object.freeze({
     EQUIPMENT: {
@@ -35,7 +35,6 @@ const OTHER_REGIONS = Object.freeze(["CN", "EN", "KR", "TW"]);
 run();
 async function run() {
     core.setOutput("success", false);
-    check_directory(DIRECTORY.DATABASE, true);
 
     // get latest version
     const latest = await get_latest_version();
