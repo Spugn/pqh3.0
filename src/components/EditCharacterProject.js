@@ -34,7 +34,7 @@ export default function EditCharacterProject({ data, project, userState, userDis
                 className="font-extrabold text-md sm:text-2xl">
                 <Avatar src={`${process.env.PUBLIC_URL}/images/unit_icon/${avatar_id}.png`} alt={`character ${avatar_id}`}
                     sx={{ width: 48, height: 48 }} />
-                <div>{data.character.data[avatar_id].name}</div>
+                <div>{data.character.data[avatar_id].name[userState.settings.region] || data.character.data[avatar_id].name.JP}</div>
             </Grid>
             <Collapse in={alert !== ""}>
                 <Alert severity="error" className="text-left">

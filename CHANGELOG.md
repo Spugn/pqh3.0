@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.6] - 2022-03-11
+### Fixed
+- Fixed a bug reported by `Aquastic#1522`
+  - Trying to edit a character project will crash the webpage
+  - Crash happens because the way character names are retrieved from data was changed
+
 ## [3.0.5] - 2022-03-07
 ### Added
 - Multi-Region Support
