@@ -991,7 +991,7 @@ function get_new_images(data) {
             function deserialize(import_path, export_path, silent = false) {
                 return new Promise(async function(resolve) {
                     PythonShell.run(`${__dirname}/deserialize.py`,
-                        { args: [import_path, export_path], pythonPath: 'py' /* MAKE SURE TO RUN IN PYTHON 3, PYTHON 2 DOES NOT WORK */ },
+                        { args: [import_path, export_path] },
                         function (err, results) {
                             if (err) throw err;
                             if (!silent) {
