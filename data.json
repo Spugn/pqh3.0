@@ -16929,6 +16929,7 @@
             "name": {
                 "JP": "グレア",
                 "CN": "古蕾雅",
+                "EN": "Grea",
                 "KR": "글레어",
                 "TW": "古蕾婭"
             },
@@ -38981,6 +38982,7 @@
             "name": {
                 "JP": "グレアのメモリーピース",
                 "CN": "古蕾雅的记忆碎片",
+                "EN": "Grea's Memory Shard",
                 "KR": "글레어의 메모리 피스",
                 "TW": "古蕾婭的記憶碎片"
             },
@@ -54212,6 +54214,7 @@
             "name": {
                 "JP": "闘神の荒腕",
                 "CN": "斗神勇腕",
+                "EN": "War God's Vigor",
                 "KR": "투신의 팔찌",
                 "TW": "鬥神的荒腕"
             },
@@ -54221,6 +54224,7 @@
                 "name": {
                     "JP": "闘神の荒腕（欠片）",
                     "CN": "斗神勇腕（碎片）",
+                    "EN": "War God's Vigor (Fragment)",
                     "KR": "투신의 팔찌(조각)",
                     "TW": "鬥神的荒腕（碎片）"
                 }
@@ -54235,6 +54239,11 @@
                     "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 30,
@@ -54513,6 +54522,7 @@
             "name": {
                 "JP": "英盾王の腕輪",
                 "CN": "英盾王的手镯",
+                "EN": "Warden King's Armlet",
                 "KR": "영순왕의 팔찌",
                 "TW": "英盾王的手環"
             },
@@ -54522,6 +54532,7 @@
                 "name": {
                     "JP": "英盾王の腕輪（欠片）",
                     "CN": "英盾王的手镯（碎片）",
+                    "EN": "Warden King's Armlet (Fragment)",
                     "KR": "영순왕의 팔찌(조각)",
                     "TW": "英盾王的手環（碎片）"
                 }
@@ -54536,6 +54547,11 @@
                     "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 30,
@@ -54814,6 +54830,7 @@
             "name": {
                 "JP": "ソフォスブレスレット",
                 "CN": "睿智手镯",
+                "EN": "Sophos Bracelet",
                 "KR": "소포스 브레이슬릿",
                 "TW": "睿智手鐲"
             },
@@ -54823,6 +54840,7 @@
                 "name": {
                     "JP": "ソフォスブレスレット（欠片）",
                     "CN": "睿智手镯（碎片）",
+                    "EN": "Sophos Bracelet (Fragment)",
                     "KR": "소포스 브레이슬릿(조각)",
                     "TW": "睿智手鐲（碎片）"
                 }
@@ -54837,6 +54855,11 @@
                     "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 30,
