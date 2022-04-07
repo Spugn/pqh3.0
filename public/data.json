@@ -58681,13 +58681,15 @@
         "107283": {
             "id": "107283",
             "name": {
-                "JP": "ピュアスノウメイル"
+                "JP": "ピュアスノウメイル",
+                "TW": "純真雪鎧甲"
             },
             "rarity": "7",
             "fragment": {
                 "id": "127283",
                 "name": {
-                    "JP": "ピュアスノウメイルの設計図"
+                    "JP": "ピュアスノウメイルの設計図",
+                    "TW": "純真雪鎧甲的設計圖"
                 }
             },
             "recipes": {
@@ -58697,6 +58699,13 @@
                         "106401"
                     ],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "106401"
+                    ],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -58757,13 +58766,15 @@
         "107313": {
             "id": "107313",
             "name": {
-                "JP": "クリスタルアイスメイル"
+                "JP": "クリスタルアイスメイル",
+                "TW": "水晶冰鎧甲"
             },
             "rarity": "7",
             "fragment": {
                 "id": "127313",
                 "name": {
-                    "JP": "クリスタルアイスメイルの設計図"
+                    "JP": "クリスタルアイスメイルの設計図",
+                    "TW": "水晶冰鎧甲的設計圖"
                 }
             },
             "recipes": {
@@ -58773,6 +58784,13 @@
                         "106281"
                     ],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "106281"
+                    ],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -58841,13 +58859,15 @@
         "107343": {
             "id": "107343",
             "name": {
-                "JP": "ホワイトオーロラドレス"
+                "JP": "ホワイトオーロラドレス",
+                "TW": "白極光禮服"
             },
             "rarity": "7",
             "fragment": {
                 "id": "117343",
                 "name": {
-                    "JP": "ホワイトオーロラドレス（欠片）"
+                    "JP": "ホワイトオーロラドレス（欠片）",
+                    "TW": "白極光禮服（碎片）"
                 }
             },
             "recipes": {
@@ -58855,6 +58875,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -58919,13 +58944,15 @@
         "107373": {
             "id": "107373",
             "name": {
-                "JP": "ダイヤモンドダストローブ"
+                "JP": "ダイヤモンドダストローブ",
+                "TW": "鑽石之塵長袍"
             },
             "rarity": "7",
             "fragment": {
                 "id": "127373",
                 "name": {
-                    "JP": "ダイヤモンドダストローブの設計図"
+                    "JP": "ダイヤモンドダストローブの設計図",
+                    "TW": "鑽石之塵長袍的設計圖"
                 }
             },
             "recipes": {
@@ -58935,6 +58962,13 @@
                         "106371"
                     ],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "106371"
+                    ],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -58999,13 +59033,15 @@
         "107463": {
             "id": "107463",
             "name": {
-                "JP": "フロストコラムヒール"
+                "JP": "フロストコラムヒール",
+                "TW": "冰霜圓柱高跟鞋"
             },
             "rarity": "7",
             "fragment": {
                 "id": "117463",
                 "name": {
-                    "JP": "フロストコラムヒール（欠片）"
+                    "JP": "フロストコラムヒール（欠片）",
+                    "TW": "冰霜圓柱高跟鞋（碎片）"
                 }
             },
             "recipes": {
@@ -59013,6 +59049,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -59073,13 +59114,15 @@
         "107493": {
             "id": "107493",
             "name": {
-                "JP": "スノウフレークベレー"
+                "JP": "スノウフレークベレー",
+                "TW": "雪花貝雷帽"
             },
             "rarity": "7",
             "fragment": {
                 "id": "117493",
                 "name": {
-                    "JP": "スノウフレークベレー（欠片）"
+                    "JP": "スノウフレークベレー（欠片）",
+                    "TW": "雪花貝雷帽（碎片）"
                 }
             },
             "recipes": {
@@ -59087,6 +59130,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -59147,13 +59195,15 @@
         "107553": {
             "id": "107553",
             "name": {
-                "JP": "パンクニードルバングル"
+                "JP": "パンクニードルバングル",
+                "TW": "龐克棘刺手環"
             },
             "rarity": "7",
             "fragment": {
                 "id": "117553",
                 "name": {
-                    "JP": "パンクニードルバングル（欠片）"
+                    "JP": "パンクニードルバングル（欠片）",
+                    "TW": "龐克棘刺手環（碎片）"
                 }
             },
             "recipes": {
@@ -59161,6 +59211,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -59221,13 +59276,15 @@
         "107583": {
             "id": "107583",
             "name": {
-                "JP": "エメラルドゴシックバングル"
+                "JP": "エメラルドゴシックバングル",
+                "TW": "綠寶石哥德風手環"
             },
             "rarity": "7",
             "fragment": {
                 "id": "117583",
                 "name": {
-                    "JP": "エメラルドゴシックバングル（欠片）"
+                    "JP": "エメラルドゴシックバングル（欠片）",
+                    "TW": "綠寶石哥德風手環（碎片）"
                 }
             },
             "recipes": {
@@ -59235,6 +59292,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -59295,13 +59357,15 @@
         "107613": {
             "id": "107613",
             "name": {
-                "JP": "ロッキンチェインバングル"
+                "JP": "ロッキンチェインバングル",
+                "TW": "搖滾鎖鍊手環"
             },
             "rarity": "7",
             "fragment": {
                 "id": "117613",
                 "name": {
-                    "JP": "ロッキンチェインバングル（欠片）"
+                    "JP": "ロッキンチェインバングル（欠片）",
+                    "TW": "搖滾鎖鍊手環（碎片）"
                 }
             },
             "recipes": {
@@ -59309,6 +59373,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
