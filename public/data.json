@@ -40751,6 +40751,24 @@
                 }
             }
         },
+        "32026": {
+            "id": "32026",
+            "name": {
+                "JP": "リンのピュアメモリーピース"
+            },
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": {}
+            },
+            "recipes": {
+                "JP": {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "JP"
+                }
+            }
+        },
         "32028": {
             "id": "32028",
             "name": {
@@ -85810,6 +85828,54 @@
                 },
                 {
                     "item": "117491",
+                    "drop_rate": 15
+                }
+            ]
+        },
+        "31-3VH": {
+            "name": "フテラ断崖・南部 31-3",
+            "stamina": 20,
+            "memory_piece": {
+                "item": "32026",
+                "drop_rate": 54
+            },
+            "drops": [
+                {
+                    "item": "128281",
+                    "drop_rate": 72
+                },
+                {
+                    "item": "128161",
+                    "drop_rate": 72
+                },
+                {
+                    "item": "118431",
+                    "drop_rate": 72
+                },
+                {
+                    "item": "118581",
+                    "drop_rate": 72
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "117581",
+                    "drop_rate": 24
+                },
+                {
+                    "item": "117311",
+                    "drop_rate": 24
+                },
+                {
+                    "item": "117191",
+                    "drop_rate": 20
+                },
+                {
+                    "item": "117041",
+                    "drop_rate": 17
+                },
+                {
+                    "item": "127101",
                     "drop_rate": 15
                 }
             ]
