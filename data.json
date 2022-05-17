@@ -51318,6 +51318,7 @@
             "name": {
                 "JP": "神湊剣アクアルーラー",
                 "CN": "水之支配者神凑剑",
+                "EN": "Wharfblade Aqua Ruler",
                 "KR": "신주검 아쿠아룰러",
                 "TW": "神湊劍水之統治者"
             },
@@ -51327,6 +51328,7 @@
                 "name": {
                     "JP": "神湊剣アクアルーラーの設計図",
                     "CN": "水之支配者神凑剑的设计图",
+                    "EN": "Wharfblade Aqua Ruler Blueprint",
                     "KR": "신주검 아쿠아룰러 설계도",
                     "TW": "神湊劍水之統治者的設計圖"
                 }
@@ -51347,6 +51349,14 @@
                         "104013"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104194",
+                        "104013"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 20,
@@ -51689,6 +51699,7 @@
             "name": {
                 "JP": "焔神刀イグニース",
                 "CN": "烈火焰神刀",
+                "EN": "Firebrand Ignis",
                 "KR": "염신도 이그니스",
                 "TW": "焰神刀伊格尼斯"
             },
@@ -51698,6 +51709,7 @@
                 "name": {
                     "JP": "焔神刀イグニースの設計図",
                     "CN": "烈火焰神刀的设计图",
+                    "EN": "Firebrand Ignis Blueprint",
                     "KR": "염신도 이그니스 설계도",
                     "TW": "焰神刀伊格尼斯的設計圖"
                 }
@@ -51718,6 +51730,14 @@
                         "104043"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104553",
+                        "104043"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 20,
@@ -52061,6 +52081,7 @@
             "name": {
                 "JP": "天雷の双神剣",
                 "CN": "天雷的双神剑",
+                "EN": "Gemini Blitzprongs",
                 "KR": "천뇌의 쌍신검",
                 "TW": "天雷之雙神劍"
             },
@@ -52070,6 +52091,7 @@
                 "name": {
                     "JP": "天雷の双神剣の設計図",
                     "CN": "天雷的双神剑的设计图",
+                    "EN": "Gemini Blitzprongs Blueprint",
                     "KR": "천뇌의 쌍신검 설계도",
                     "TW": "天雷之雙神劍的設計圖"
                 }
@@ -52090,6 +52112,14 @@
                         "104073"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104104",
+                        "104073"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 20,
@@ -52443,6 +52473,7 @@
             "name": {
                 "JP": "嵐神テンペストギア",
                 "CN": "岚神风暴护手",
+                "EN": "Stormlord Tempest Gear",
                 "KR": "남신 템페스트 기어",
                 "TW": "嵐神風暴護手"
             },
@@ -52452,6 +52483,7 @@
                 "name": {
                     "JP": "嵐神テンペストギア（欠片）",
                     "CN": "岚神风暴护手（碎片）",
+                    "EN": "Stormlord Tempest Gear (Fragment)",
                     "KR": "남신 템페스트 기어(조각)",
                     "TW": "嵐神風暴護手（碎片）"
                 }
@@ -52470,6 +52502,13 @@
                         "104101"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104101"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 30,
@@ -52807,6 +52846,7 @@
             "name": {
                 "JP": "装號弓デウスフォール",
                 "CN": "宙斯坠落装号弓",
+                "EN": "Greatbow Deusfall",
                 "KR": "장호궁 데우스 폴",
                 "TW": "裝號弓天帝殞落"
             },
@@ -52816,6 +52856,7 @@
                 "name": {
                     "JP": "装號弓デウスフォールの設計図",
                     "CN": "宙斯坠落装号弓的设计图",
+                    "EN": "Greatbow Deusfall Blueprint",
                     "KR": "장호궁 제우스 폴 설계도",
                     "TW": "裝號弓天帝殞落的設計圖"
                 }
@@ -52836,6 +52877,14 @@
                         "104133"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104134",
+                        "104133"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 20,
@@ -53166,6 +53215,7 @@
             "name": {
                 "JP": "冥神槍ドゥームペイン",
                 "CN": "毁灭之伤冥神枪",
+                "EN": "Hades Lance Doompain",
                 "KR": "명신창 둠페인",
                 "TW": "冥神槍毀滅苦痛"
             },
@@ -53175,6 +53225,7 @@
                 "name": {
                     "JP": "冥神槍ドゥームペインの設計図",
                     "CN": "毁灭之伤冥神枪的设计图",
+                    "EN": "Hades Lance Doompain Blueprint",
                     "KR": "명신창 둠페인 설계도",
                     "TW": "冥神槍毀滅苦痛的設計圖"
                 }
@@ -53195,6 +53246,14 @@
                         "104313"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104164",
+                        "104313"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 20,
@@ -53544,6 +53603,7 @@
             "name": {
                 "JP": "神轟斧テラブレイク",
                 "CN": "撼地神轰斧",
+                "EN": "Earth-Quaker Terrabreak",
                 "KR": "신굉부 테라 브레이크",
                 "TW": "神轟斧大地粉碎"
             },
@@ -53553,6 +53613,7 @@
                 "name": {
                     "JP": "神轟斧テラブレイク（欠片）",
                     "CN": "撼地神轰斧（碎片）",
+                    "EN": "Earth-Quaker Terrabreak (Fragment)",
                     "KR": "신굉부 테라 브레이크(조각)",
                     "TW": "神轟斧大地粉碎（碎片）"
                 }
@@ -53571,6 +53632,13 @@
                         "104192"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104192"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 30,
@@ -53903,6 +53971,7 @@
             "name": {
                 "JP": "黒蛇龍の杖",
                 "CN": "黑蛇龙之杖",
+                "EN": "Nidhogg's Darklight",
                 "KR": "흑사룡의 지팡이",
                 "TW": "黑蛇龍之杖"
             },
@@ -53912,6 +53981,7 @@
                 "name": {
                     "JP": "黒蛇龍の杖の設計図",
                     "CN": "黑蛇龙之杖的设计图",
+                    "EN": "Nidhogg's Darklight Blueprint",
                     "KR": "흑사룡의 지팡이 설계도",
                     "TW": "黑蛇龍之杖的設計圖"
                 }
@@ -53932,6 +54002,14 @@
                         "104223"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104314",
+                        "104223"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 20,
@@ -54285,6 +54363,7 @@
             "name": {
                 "JP": "天杖ステラスフィア",
                 "CN": "星域天球杖",
+                "EN": "Sky Scepter Stellasphere",
                 "KR": "천장 스텔라 스피어",
                 "TW": "天杖星光天球"
             },
@@ -54294,6 +54373,7 @@
                 "name": {
                     "JP": "天杖ステラスフィア（欠片）",
                     "CN": "星域天球杖（碎片）",
+                    "EN": "Sky Scepter Stellasphere (Fragment)",
                     "KR": "천장 스텔라 스피어(조각)",
                     "TW": "天杖星光天球（碎片）"
                 }
@@ -54312,6 +54392,13 @@
                         "104251"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104251"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 30,
