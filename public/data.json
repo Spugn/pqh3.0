@@ -62839,13 +62839,15 @@
         "108011": {
             "id": "108011",
             "name": {
-                "JP": "氷輝剣グラースブレード"
+                "JP": "氷輝剣グラースブレード",
+                "TW": "冰輝劍格拉斯之劍"
             },
             "rarity": "8",
             "fragment": {
                 "id": "118011",
                 "name": {
-                    "JP": "氷輝剣グラースブレード（欠片）"
+                    "JP": "氷輝剣グラースブレード（欠片）",
+                    "TW": "冰輝劍格拉斯之劍（碎片）"
                 }
             },
             "recipes": {
@@ -62853,6 +62855,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -62879,13 +62886,15 @@
         "108041": {
             "id": "108041",
             "name": {
-                "JP": "氷雪刀グラキエッジ"
+                "JP": "氷雪刀グラキエッジ",
+                "TW": "冰雪刀古拉奇短劍"
             },
             "rarity": "8",
             "fragment": {
                 "id": "128041",
                 "name": {
-                    "JP": "氷雪刀グラキエッジの設計図"
+                    "JP": "氷雪刀グラキエッジの設計図",
+                    "TW": "冰雪刀古拉奇短劍的設計圖"
                 }
             },
             "recipes": {
@@ -62895,6 +62904,13 @@
                         "106581"
                     ],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "106581"
+                    ],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -62923,13 +62939,15 @@
         "108071": {
             "id": "108071",
             "name": {
-                "JP": "氷牙スティーリアダガー"
+                "JP": "氷牙スティーリアダガー",
+                "TW": "冰牙斯蒂利亞匕首"
             },
             "rarity": "8",
             "fragment": {
                 "id": "118071",
                 "name": {
-                    "JP": "氷牙スティーリアダガー（欠片）"
+                    "JP": "氷牙スティーリアダガー（欠片）",
+                    "TW": "冰牙斯蒂利亞匕首（碎片）"
                 }
             },
             "recipes": {
@@ -62937,6 +62955,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -62963,13 +62986,15 @@
         "108101": {
             "id": "108101",
             "name": {
-                "JP": "氷塊拳グラセナックル"
+                "JP": "氷塊拳グラセナックル",
+                "TW": "冰塊拳格拉塞指虎"
             },
             "rarity": "8",
             "fragment": {
                 "id": "118101",
                 "name": {
-                    "JP": "氷塊拳グラセナックル（欠片）"
+                    "JP": "氷塊拳グラセナックル（欠片）",
+                    "TW": "冰塊拳格拉塞指虎（碎片）"
                 }
             },
             "recipes": {
@@ -62977,6 +63002,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -63003,13 +63033,15 @@
         "108131": {
             "id": "108131",
             "name": {
-                "JP": "氷聖弓コンヘラシオン"
+                "JP": "氷聖弓コンヘラシオン",
+                "TW": "氷聖弓孔格拉席翁"
             },
             "rarity": "8",
             "fragment": {
                 "id": "128131",
                 "name": {
-                    "JP": "氷聖弓コンヘラシオンの設計図"
+                    "JP": "氷聖弓コンヘラシオンの設計図",
+                    "TW": "冰聖弓孔格拉席翁的設計圖"
                 }
             },
             "recipes": {
@@ -63019,6 +63051,13 @@
                         "106612"
                     ],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "106612"
+                    ],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -63047,13 +63086,15 @@
         "108161": {
             "id": "108161",
             "name": {
-                "JP": "氷穿槍スノーストーム"
+                "JP": "氷穿槍スノーストーム",
+                "TW": "氷穿槍暴風雪"
             },
             "rarity": "8",
             "fragment": {
                 "id": "128161",
                 "name": {
-                    "JP": "氷穿槍スノーストームの設計図"
+                    "JP": "氷穿槍スノーストームの設計図",
+                    "TW": "冰穿槍暴風雪的設計圖"
                 }
             },
             "recipes": {
@@ -63063,6 +63104,13 @@
                         "106611"
                     ],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "106611"
+                    ],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -63091,13 +63139,15 @@
         "108191": {
             "id": "108191",
             "name": {
-                "JP": "氷壊斧リオートアックス"
+                "JP": "氷壊斧リオートアックス",
+                "TW": "冰壞斧里奧特戰斧"
             },
             "rarity": "8",
             "fragment": {
                 "id": "118191",
                 "name": {
-                    "JP": "氷壊斧リオートアックス（欠片）"
+                    "JP": "氷壊斧リオートアックス（欠片）",
+                    "TW": "冰壞斧里奧特戰斧（碎片）"
                 }
             },
             "recipes": {
@@ -63105,6 +63155,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -63131,13 +63186,15 @@
         "108221": {
             "id": "108221",
             "name": {
-                "JP": "氷雪杖パーゴスワンド"
+                "JP": "氷雪杖パーゴスワンド",
+                "TW": "冰雪杖帕戈斯之杖"
             },
             "rarity": "8",
             "fragment": {
                 "id": "118221",
                 "name": {
-                    "JP": "氷雪杖パーゴスワンド（欠片）"
+                    "JP": "氷雪杖パーゴスワンド（欠片）",
+                    "TW": "冰雪杖帕戈斯之杖（碎片）"
                 }
             },
             "recipes": {
@@ -63145,6 +63202,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -63171,13 +63233,15 @@
         "108251": {
             "id": "108251",
             "name": {
-                "JP": "氷樹杖フロストスタッフ"
+                "JP": "氷樹杖フロストスタッフ",
+                "TW": "冰樹杖冰霜權杖"
             },
             "rarity": "8",
             "fragment": {
                 "id": "118251",
                 "name": {
-                    "JP": "氷樹杖フロストスタッフ（欠片）"
+                    "JP": "氷樹杖フロストスタッフ（欠片）",
+                    "TW": "冰樹杖冰霜權杖（碎片）"
                 }
             },
             "recipes": {
@@ -63185,6 +63249,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
