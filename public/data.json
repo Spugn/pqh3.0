@@ -57817,6 +57817,7 @@
             "name": {
                 "JP": "花簪焔火牡丹",
                 "CN": "焰火牡丹花簪",
+                "EN": "Peony Flamepin",
                 "KR": "붉은 모란꽃 비녀",
                 "TW": "花簪焰火牡丹"
             },
@@ -57826,6 +57827,7 @@
                 "name": {
                     "JP": "花簪焔火牡丹（欠片）",
                     "CN": "焰火牡丹花簪（碎片）",
+                    "EN": "Peony Flamepin (Fragment)",
                     "KR": "붉은 모란꽃 비녀(조각)",
                     "TW": "花簪焰火牡丹（碎片）"
                 }
@@ -57840,6 +57842,11 @@
                     "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 30,
@@ -58125,6 +58132,7 @@
             "name": {
                 "JP": "海龍神の髪飾り",
                 "CN": "海龙神的发饰",
+                "EN": "Leviathan Clasp",
                 "KR": "해룡신의 머리장식",
                 "TW": "海龍神的髮飾"
             },
@@ -58134,6 +58142,7 @@
                 "name": {
                     "JP": "海龍神の髪飾り（欠片）",
                     "CN": "海龙神的发饰（碎片）",
+                    "EN": "Leviathan Clasp (Fragment)",
                     "KR": "해룡신의 머리장식(조각)",
                     "TW": "海龍神的髮飾（碎片）"
                 }
@@ -58148,6 +58157,11 @@
                     "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 30,
@@ -58433,6 +58447,7 @@
             "name": {
                 "JP": "細氷姫の結び紐",
                 "CN": "细冰姬的蝴蝶结",
+                "EN": "Icetear Ribbon",
                 "KR": "얼음공주의 리본",
                 "TW": "細冰姬的蝴蝶結"
             },
@@ -58442,6 +58457,7 @@
                 "name": {
                     "JP": "細氷姫の結び紐（欠片）",
                     "CN": "细冰姬的蝴蝶结（碎片）",
+                    "EN": "Icetear Ribbon (Fragment)",
                     "KR": "얼음공주의 리본(조각)",
                     "TW": "細冰姬的蝴蝶結（碎片）"
                 }
@@ -58456,6 +58472,11 @@
                     "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 30,
