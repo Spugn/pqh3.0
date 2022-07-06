@@ -43526,6 +43526,24 @@
                 }
             }
         },
+        "32015": {
+            "id": "32015",
+            "name": {
+                "JP": "ミサトのピュアメモリーピース"
+            },
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": {}
+            },
+            "recipes": {
+                "JP": {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "JP"
+                }
+            }
+        },
         "32016": {
             "id": "32016",
             "name": {
@@ -90400,6 +90418,54 @@
                 },
                 {
                     "item": "127133",
+                    "drop_rate": 15
+                }
+            ]
+        },
+        "32-2VH": {
+            "name": "ファスキア森林・南部 32-2",
+            "stamina": 20,
+            "memory_piece": {
+                "item": "32015",
+                "drop_rate": 54
+            },
+            "drops": [
+                {
+                    "item": "118582",
+                    "drop_rate": 72
+                },
+                {
+                    "item": "118371",
+                    "drop_rate": 72
+                },
+                {
+                    "item": "118552",
+                    "drop_rate": 72
+                },
+                {
+                    "item": "118252",
+                    "drop_rate": 72
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "117613",
+                    "drop_rate": 24
+                },
+                {
+                    "item": "117013",
+                    "drop_rate": 24
+                },
+                {
+                    "item": "117493",
+                    "drop_rate": 20
+                },
+                {
+                    "item": "127283",
+                    "drop_rate": 17
+                },
+                {
+                    "item": "127043",
                     "drop_rate": 15
                 }
             ]
