@@ -64132,13 +64132,15 @@
         "108551": {
             "id": "108551",
             "name": {
-                "JP": "アイスピラーリング"
+                "JP": "アイスピラーリング",
+                "TW": "冰柱戒指"
             },
             "rarity": "8",
             "fragment": {
                 "id": "118551",
                 "name": {
-                    "JP": "アイスピラーリング（欠片）"
+                    "JP": "アイスピラーリング（欠片）",
+                    "TW": "冰柱戒指（碎片）"
                 }
             },
             "recipes": {
@@ -64146,6 +64148,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -64172,13 +64179,15 @@
         "108581": {
             "id": "108581",
             "name": {
-                "JP": "グリーンオーロラリング"
+                "JP": "グリーンオーロラリング",
+                "TW": "綠色極光戒指"
             },
             "rarity": "8",
             "fragment": {
                 "id": "118581",
                 "name": {
-                    "JP": "グリーンオーロラリング（欠片）"
+                    "JP": "グリーンオーロラリング（欠片）",
+                    "TW": "綠色極光戒指（碎片）"
                 }
             },
             "recipes": {
@@ -64186,6 +64195,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -64212,13 +64226,15 @@
         "108611": {
             "id": "108611",
             "name": {
-                "JP": "雪華晶の指輪"
+                "JP": "雪華晶の指輪",
+                "TW": "雪華晶的戒指"
             },
             "rarity": "8",
             "fragment": {
                 "id": "118611",
                 "name": {
-                    "JP": "雪華晶の指輪（欠片）"
+                    "JP": "雪華晶の指輪（欠片）",
+                    "TW": "雪華晶的戒指（碎片）"
                 }
             },
             "recipes": {
@@ -64226,6 +64242,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
