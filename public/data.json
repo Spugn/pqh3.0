@@ -42536,6 +42536,28 @@
                 }
             }
         },
+        "31054": {
+            "id": "31054",
+            "name": {
+                "JP": "ツムギのメモリーピース",
+                "CN": "纺希的记忆碎片",
+                "EN": "Tsumugi's Memory Shard",
+                "KR": "츠무기의 메모리 피스",
+                "TW": "紡希的記憶碎片"
+            },
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": {}
+            },
+            "recipes": {
+                "JP": {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "JP"
+                }
+            }
+        },
         "31056": {
             "id": "31056",
             "name": {
@@ -43458,6 +43480,26 @@
                 "JP": "レイ（ハロウィン）のメモリーピース",
                 "KR": "레이(할로윈)의 메모리 피스",
                 "TW": "怜（萬聖節）的記憶碎片"
+            },
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": {}
+            },
+            "recipes": {
+                "JP": {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "JP"
+                }
+            }
+        },
+        "31141": {
+            "id": "31141",
+            "name": {
+                "JP": "マツリ（ハロウィン）のメモリーピース",
+                "KR": "마츠리(할로윈)의 메모리 피스",
+                "TW": "茉莉（萬聖節）的記憶碎片"
             },
             "rarity": "99",
             "fragment": {
@@ -116199,6 +116241,226 @@
             "stamina": 10,
             "memory_piece": {
                 "item": 31016,
+                "drop_rate": 54
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "29-1E": {
+            "name": "ハロウィンパーク 1-1",
+            "stamina": 10,
+            "memory_piece": {
+                "item": 31141,
+                "drop_rate": 54
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "29-2E": {
+            "name": "ハロウィンパーク 1-2",
+            "stamina": 10,
+            "memory_piece": {
+                "item": 31054,
+                "drop_rate": 54
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "29-3E": {
+            "name": "ハロウィンパーク 1-3",
+            "stamina": 10,
+            "memory_piece": {
+                "item": 31141,
+                "drop_rate": 54
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "29-4E": {
+            "name": "ハロウィンパーク 1-4",
+            "stamina": 10,
+            "memory_piece": {
+                "item": 31054,
+                "drop_rate": 54
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "29-5E": {
+            "name": "ハロウィンパーク 1-5",
+            "stamina": 10,
+            "memory_piece": {
+                "item": 31141,
                 "drop_rate": 54
             },
             "drops": [
