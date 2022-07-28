@@ -13143,6 +13143,7 @@
             "name": {
                 "JP": "ネネカ",
                 "CN": "似似花",
+                "EN": "Neneka",
                 "KR": "네네카",
                 "TW": "似似花"
             },
@@ -20138,6 +20139,7 @@
             "name": {
                 "JP": "アオイ（編入生）",
                 "CN": "碧（插班生）",
+                "EN": "Aoi (Student)",
                 "KR": "아오이(편입생)",
                 "TW": "碧（插班生）"
             },
@@ -20349,6 +20351,7 @@
             "name": {
                 "JP": "クロエ",
                 "CN": "克罗依",
+                "EN": "Chloe",
                 "KR": "클로에",
                 "TW": "克蘿依"
             },
@@ -20560,6 +20563,7 @@
             "name": {
                 "JP": "チエル",
                 "CN": "千爱瑠",
+                "EN": "Chieru",
                 "KR": "치에루",
                 "TW": "琪愛兒"
             },
@@ -20771,6 +20775,7 @@
             "name": {
                 "JP": "ユニ",
                 "CN": "优妮",
+                "EN": "Yuni",
                 "KR": "유니",
                 "TW": "優妮"
             },
@@ -44342,6 +44347,7 @@
             "name": {
                 "JP": "ペコリーヌのピュアメモリーピース",
                 "CN": "佩可莉姆的纯净记忆碎片",
+                "EN": "Pecorine's Pure Memory Shard",
                 "KR": "페코린느의 퓨어 메모리 피스",
                 "TW": "貪吃佩可的純淨記憶碎片"
             },
@@ -44363,6 +44369,7 @@
             "name": {
                 "JP": "コッコロのピュアメモリーピース",
                 "CN": "可可萝的纯净记忆碎片",
+                "EN": "Kokkoro's Pure Memory Shard",
                 "KR": "콧코로의 퓨어 메모리 피스",
                 "TW": "可可蘿的純淨記憶碎片"
             },
@@ -44384,6 +44391,7 @@
             "name": {
                 "JP": "キャルのピュアメモリーピース",
                 "CN": "凯露的纯净记忆碎片",
+                "EN": "Karyl's Pure Memory Shard",
                 "KR": "캬루의 퓨어 메모리 피스",
                 "TW": "凱留的純淨記憶碎片"
             },
@@ -46263,7 +46271,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 5,
+                    "required_pieces": 3,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -47164,7 +47172,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 5,
+                    "required_pieces": 3,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -47762,7 +47770,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 5,
+                    "required_pieces": 3,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -47994,7 +48002,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 5,
+                    "required_pieces": 3,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -48090,7 +48098,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 5,
+                    "required_pieces": 3,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -48138,7 +48146,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 5,
+                    "required_pieces": 3,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -48234,7 +48242,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 5,
+                    "required_pieces": 3,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -48344,7 +48352,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 5,
+                    "required_pieces": 3,
                     "required_items": [
                         "103581"
                     ],
@@ -48398,7 +48406,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 5,
+                    "required_pieces": 3,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -48609,7 +48617,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -48657,7 +48665,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -48705,7 +48713,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -48753,7 +48761,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -48801,7 +48809,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -48853,7 +48861,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "103013"
                     ],
@@ -48907,7 +48915,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -48959,7 +48967,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "104041"
                     ],
@@ -49017,7 +49025,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "103013"
                     ],
@@ -49071,7 +49079,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -49119,7 +49127,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -49171,7 +49179,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "104072"
                     ],
@@ -49231,7 +49239,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "103101",
                         "103552"
@@ -49288,7 +49296,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -49342,7 +49350,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "104101",
                         "103611"
@@ -49399,7 +49407,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -49453,7 +49461,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "103611",
                         "103132"
@@ -49510,7 +49518,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -49558,7 +49566,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -49606,7 +49614,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -49660,7 +49668,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "103162",
                         "103551"
@@ -49717,7 +49725,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -49769,7 +49777,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "104161"
                     ],
@@ -49823,7 +49831,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -49871,7 +49879,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -49923,7 +49931,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "103553"
                     ],
@@ -49977,7 +49985,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -50025,7 +50033,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -50073,7 +50081,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -50121,7 +50129,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -50169,7 +50177,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -50223,7 +50231,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "104221",
                         "104611"
@@ -50284,7 +50292,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "103222"
                     ],
@@ -50338,7 +50346,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -50394,7 +50402,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "104251",
                         "103614",
@@ -50454,7 +50462,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -50502,7 +50510,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -50558,7 +50566,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "103282",
                         "103401",
@@ -50622,7 +50630,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "104281"
                     ],
@@ -50682,7 +50690,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "104281",
                         "104551"
@@ -50745,7 +50753,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "103583",
                         "103311"
@@ -50808,7 +50816,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "103283",
                         "103162"
@@ -50869,7 +50877,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "104282"
                     ],
@@ -50929,7 +50937,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "104312",
                         "104161"
@@ -50986,7 +50994,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -51040,7 +51048,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "103072",
                         "103551"
@@ -51101,7 +51109,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "104341"
                     ],
@@ -51161,7 +51169,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "104342",
                         "104191"
@@ -51218,7 +51226,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -51272,7 +51280,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "103614",
                         "103612"
@@ -51335,7 +51343,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "104372",
                         "104251"
@@ -51398,7 +51406,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "103583",
                         "103613"
@@ -51459,7 +51467,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "104401"
                     ],
@@ -51521,7 +51529,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "103431",
                         "103551",
@@ -51587,7 +51595,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "103582",
                         "103013"
@@ -51652,7 +51660,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "104432",
                         "103614",
@@ -51712,7 +51720,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -51766,7 +51774,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "104461",
                         "103222"
@@ -51829,7 +51837,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "104461",
                         "104581"
@@ -51892,7 +51900,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "103583",
                         "102493"
@@ -51953,7 +51961,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 10,
                     "required_items": [
                         "103614"
                     ],
@@ -52015,7 +52023,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "103583",
                         "103522",
@@ -52083,7 +52091,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [
                         "104521",
                         "103614",
@@ -52143,7 +52151,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -52191,7 +52199,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -52239,7 +52247,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -52287,7 +52295,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -52335,7 +52343,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -52383,7 +52391,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -52431,7 +52439,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -52479,7 +52487,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 20,
+                    "required_pieces": 15,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -52527,7 +52535,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 30,
+                    "required_pieces": 20,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -52575,7 +52583,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 30,
+                    "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -52623,7 +52631,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 35,
+                    "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -52677,7 +52685,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 25,
+                    "required_pieces": 20,
                     "required_items": [
                         "104012",
                         "104011"
@@ -53019,7 +53027,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 35,
+                    "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -53067,7 +53075,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 35,
+                    "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -53396,7 +53404,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 35,
+                    "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -53452,7 +53460,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 25,
+                    "required_pieces": 20,
                     "required_items": [
                         "104071",
                         "104551",
@@ -53784,7 +53792,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 25,
+                    "required_pieces": 20,
                     "required_items": [
                         "104102",
                         "104582"
@@ -53841,7 +53849,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 35,
+                    "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -54169,7 +54177,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 25,
+                    "required_pieces": 20,
                     "required_items": [
                         "104133",
                         "103131",
@@ -54229,7 +54237,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 35,
+                    "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -54535,7 +54543,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 35,
+                    "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -54589,7 +54597,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 25,
+                    "required_pieces": 20,
                     "required_items": [
                         "104162",
                         "103552"
@@ -54914,7 +54922,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 25,
+                    "required_pieces": 20,
                     "required_items": [
                         "104191",
                         "104462"
@@ -54971,7 +54979,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 35,
+                    "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -55291,7 +55299,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 35,
+                    "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -55339,7 +55347,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 35,
+                    "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -55668,7 +55676,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 35,
+                    "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -55722,7 +55730,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 25,
+                    "required_pieces": 20,
                     "required_items": [
                         "104252",
                         "103252"
@@ -56065,7 +56073,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 25,
+                    "required_pieces": 20,
                     "required_items": [
                         "104283",
                         "103072"
@@ -56128,7 +56136,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 25,
+                    "required_pieces": 20,
                     "required_items": [
                         "104282",
                         "103013"
@@ -56221,6 +56229,7 @@
             "name": {
                 "JP": "閃華の舞鎧",
                 "CN": "闪华舞铠",
+                "EN": "Dancer's Majesty",
                 "KR": "섬화의 갑주",
                 "TW": "閃華舞鎧"
             },
@@ -56230,6 +56239,7 @@
                 "name": {
                     "JP": "閃華の舞鎧（欠片）",
                     "CN": "闪华舞铠（碎片）",
+                    "EN": "Dancer's Majesty (Fragment)",
                     "KR": "섬화의 갑주(조각)",
                     "TW": "閃華舞鎧（碎片）"
                 }
@@ -56248,6 +56258,13 @@
                         "104072"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104072"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 30,
@@ -56462,7 +56479,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 25,
+                    "required_pieces": 20,
                     "required_items": [
                         "104313",
                         "104431"
@@ -56525,7 +56542,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 25,
+                    "required_pieces": 20,
                     "required_items": [
                         "104311",
                         "103192"
@@ -56618,6 +56635,7 @@
             "name": {
                 "JP": "烈風の俊鎧",
                 "CN": "烈风俊铠",
+                "EN": "Whirlwind Sagemail",
                 "KR": "열풍의 갑주",
                 "TW": "烈風俊鎧"
             },
@@ -56627,6 +56645,7 @@
                 "name": {
                     "JP": "烈風の俊鎧の設計図",
                     "CN": "烈风俊铠的设计图",
+                    "EN": "Whirlwind Sagemail Blueprint",
                     "KR": "열풍의 갑주 설계도",
                     "TW": "烈風俊鎧的設計圖"
                 }
@@ -56647,6 +56666,14 @@
                         "104312"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104193",
+                        "104312"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 20,
@@ -56851,7 +56878,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 25,
+                    "required_pieces": 20,
                     "required_items": [
                         "104343",
                         "104491"
@@ -56914,7 +56941,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 25,
+                    "required_pieces": 20,
                     "required_items": [
                         "104611",
                         "103343"
@@ -57007,6 +57034,7 @@
             "name": {
                 "JP": "極黒の冥衣",
                 "CN": "极黑冥衣",
+                "EN": "Stygian Shadowgarb",
                 "KR": "칠흑의 명의",
                 "TW": "極黑冥衣"
             },
@@ -57016,6 +57044,7 @@
                 "name": {
                     "JP": "極黒の冥衣（欠片）",
                     "CN": "极黑冥衣（碎片）",
+                    "EN": "Stygian Shadowgarb (Fragment)",
                     "KR": "칠흑의 명의(조각)",
                     "TW": "極黑冥衣（碎片）"
                 }
@@ -57034,6 +57063,13 @@
                         "104043"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104043"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 30,
@@ -57244,7 +57280,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 25,
+                    "required_pieces": 20,
                     "required_items": [
                         "104552",
                         "104372"
@@ -57307,7 +57343,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 25,
+                    "required_pieces": 20,
                     "required_items": [
                         "104342",
                         "103222"
@@ -57400,6 +57436,7 @@
             "name": {
                 "JP": "爽氷の天衣",
                 "CN": "爽冰天衣",
+                "EN": "Glacier Mantle",
                 "KR": "상빙의 천의",
                 "TW": "爽冰天衣"
             },
@@ -57409,6 +57446,7 @@
                 "name": {
                     "JP": "爽氷の天衣の設計図",
                     "CN": "爽冰天衣的设计图",
+                    "EN": "Glacier Mantle Blueprint",
                     "KR": "상빙의 천의 설계도",
                     "TW": "爽冰天衣的設計圖"
                 }
@@ -57429,6 +57467,14 @@
                         "104372"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104373",
+                        "104372"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 20,
@@ -57643,7 +57689,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 25,
+                    "required_pieces": 20,
                     "required_items": [
                         "104402",
                         "103401",
@@ -57807,7 +57853,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 25,
+                    "required_pieces": 20,
                     "required_items": [
                         "104432",
                         "103132"
@@ -57837,6 +57883,7 @@
             "name": {
                 "JP": "天翔の金靴",
                 "CN": "翔天金靴",
+                "EN": "Hermes Goldfeet",
                 "KR": "천상의 금화",
                 "TW": "天翔金靴"
             },
@@ -57846,6 +57893,7 @@
                 "name": {
                     "JP": "天翔の金靴（欠片）",
                     "CN": "翔天金靴（碎片）",
+                    "EN": "Hermes Goldfeet (Fragment)",
                     "KR": "천상의 금화(조각)",
                     "TW": "天翔金靴（碎片）"
                 }
@@ -57864,6 +57912,13 @@
                         "104132"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104132"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 30,
@@ -58196,7 +58251,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 25,
+                    "required_pieces": 20,
                     "required_items": [
                         "104523",
                         "103222"
@@ -58259,7 +58314,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 25,
+                    "required_pieces": 20,
                     "required_items": [
                         "104522",
                         "103583"
@@ -58289,6 +58344,7 @@
             "name": {
                 "JP": "プロスペリティベール",
                 "CN": "繁荣头纱",
+                "EN": "Prosperity Veil",
                 "KR": "번영의 베일",
                 "TW": "幸運面紗"
             },
@@ -58298,6 +58354,7 @@
                 "name": {
                     "JP": "プロスペリティベールの設計図",
                     "CN": "繁荣头纱的设计图",
+                    "EN": "Prosperity Veil Blueprint",
                     "KR": "번영의 베일 설계도",
                     "TW": "幸運面紗的設計圖"
                 }
@@ -58318,6 +58375,14 @@
                         "104522"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104344",
+                        "104522"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 20,
@@ -58422,7 +58487,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 35,
+                    "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -58470,7 +58535,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 35,
+                    "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -58737,7 +58802,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 35,
+                    "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -58785,7 +58850,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 35,
+                    "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -59052,7 +59117,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 35,
+                    "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
@@ -59100,7 +59165,7 @@
                     "recipe_note": "CN"
                 },
                 "EN": {
-                    "required_pieces": 35,
+                    "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "EN"
                 },
