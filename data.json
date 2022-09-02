@@ -55331,6 +55331,7 @@
             "name": {
                 "JP": "覇王光龍剣",
                 "CN": "霸王光龙剑",
+                "EN": "Supreme Lightwyrm's Sword",
                 "KR": "패왕광용검",
                 "TW": "霸王光龍劍"
             },
@@ -55340,6 +55341,7 @@
                 "name": {
                     "JP": "覇王光龍剣の設計図",
                     "CN": "霸王光龙剑的设计图",
+                    "EN": "Supreme Lightwyrm's Sword Blueprint",
                     "KR": "패왕광용검 설계도",
                     "TW": "霸王光龍劍的設計圖"
                 }
@@ -55360,6 +55362,14 @@
                         "104312"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104164",
+                        "104312"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 20,
@@ -55712,6 +55722,7 @@
             "name": {
                 "JP": "翠風神ノ太刀",
                 "CN": "翠风神的太刀",
+                "EN": "Fujin's Emerald Longsword",
                 "KR": "취풍신의 태도",
                 "TW": "翠風神之太刀"
             },
@@ -55721,6 +55732,7 @@
                 "name": {
                     "JP": "翠風神ノ太刀の設計図",
                     "CN": "翠风神的太刀的设计图",
+                    "EN": "Fujin's Emerald Longsword Blueprint",
                     "KR": "취풍신의 태도 설계도",
                     "TW": "翠風神之太刀的設計圖"
                 }
@@ -55741,6 +55753,14 @@
                         "104041"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104373",
+                        "104041"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 20,
@@ -56094,6 +56114,7 @@
             "name": {
                 "JP": "天黒剣オブシウス",
                 "CN": "黑曜石天黑剑",
+                "EN": "Twilight Obsius",
                 "KR": "흑천검 옵시우스",
                 "TW": "天黑劍奧比修斯"
             },
@@ -56103,6 +56124,7 @@
                 "name": {
                     "JP": "天黒剣オブシウスの設計図",
                     "CN": "黑曜石天黑剑的设计图",
+                    "EN": "Twilight Obsius Blueprint",
                     "KR": "흑천검 옵시우스 설계도",
                     "TW": "天黑劍奧比修斯的設計圖"
                 }
@@ -56123,6 +56145,14 @@
                         "104551"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104014",
+                        "104551"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 20,
@@ -56481,6 +56511,7 @@
             "name": {
                 "JP": "極闇爪ブラッディハウル",
                 "CN": "极暗爪血色护手",
+                "EN": "Tenebrous Blood Howl",
                 "KR": "극암조 블러디 하울",
                 "TW": "極闇爪血腥嚎叫"
             },
@@ -56490,6 +56521,7 @@
                 "name": {
                     "JP": "極闇爪ブラッディハウル（欠片）",
                     "CN": "极暗爪血色护手（碎片）",
+                    "EN": "Tenebrous Blood Howl (Fragment)",
                     "KR": "극암조 블러디 하울(조각)",
                     "TW": "極闇爪血腥嚎叫（碎片）"
                 }
@@ -56508,6 +56540,13 @@
                         "104104"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104104"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 30,
@@ -56859,6 +56898,7 @@
             "name": {
                 "JP": "氷涙弓フリージングティア",
                 "CN": "冰冻泪弓",
+                "EN": "Frost Tear",
                 "KR": "빙루궁 프리징 티어",
                 "TW": "冰淚弓寒霜之淚"
             },
@@ -56868,6 +56908,7 @@
                 "name": {
                     "JP": "氷涙弓フリージングティア（欠片）",
                     "CN": "冰冻泪弓（碎片）",
+                    "EN": "Frost Tear (Fragment)",
                     "KR": "빙루궁 프리징 티어(조각)",
                     "TW": "冰淚弓寒霜之淚（碎片）"
                 }
@@ -56886,6 +56927,13 @@
                         "104013"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104013"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 30,
@@ -57228,6 +57276,7 @@
             "name": {
                 "JP": "豪炎槍プロミネンス",
                 "CN": "日珥豪炎枪",
+                "EN": "Prominence Spear",
                 "KR": "호염창 프로미넌스",
                 "TW": "豪炎槍日珥"
             },
@@ -57237,6 +57286,7 @@
                 "name": {
                     "JP": "豪炎槍プロミネンス（欠片）",
                     "CN": "日珥豪炎枪（碎片）",
+                    "EN": "Prominence Spear (Fragment)",
                     "KR": "호염창 프로미넌스(조각)",
                     "TW": "豪炎槍日珥（碎片）"
                 }
@@ -57255,6 +57305,13 @@
                         "104553"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104553"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 30,
@@ -57611,6 +57668,7 @@
             "name": {
                 "JP": "機操斧コアブレイカー",
                 "CN": "碎核机操斧",
+                "EN": "Mechanical Core Breaker",
                 "KR": "기조부 코어 브레이커",
                 "TW": "機操斧核心破壞者"
             },
@@ -57620,6 +57678,7 @@
                 "name": {
                     "JP": "機操斧コアブレイカーの設計図",
                     "CN": "碎核机操斧的设计图",
+                    "EN": "Mechanical Core Breaker Blueprint",
                     "KR": "기조부 코어 브레이커 설계도",
                     "TW": "機操斧核心破壞者的設計圖"
                 }
@@ -57640,6 +57699,14 @@
                         "103191"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104193",
+                        "103191"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 20,
@@ -57984,6 +58051,7 @@
             "name": {
                 "JP": "月淵杖サクリファイス",
                 "CN": "牺牲月渊杖",
+                "EN": "Lunar Abyss",
                 "KR": "월연장 새크리파이스",
                 "TW": "月淵杖犧牲"
             },
@@ -57993,6 +58061,7 @@
                 "name": {
                     "JP": "月淵杖サクリファイス（欠片）",
                     "CN": "牺牲月渊杖（碎片）",
+                    "EN": "Lunar Abyss (Fragment)",
                     "KR": "월연장 새크리파이스(조각)",
                     "TW": "月淵杖犧牲（碎片）"
                 }
@@ -58011,6 +58080,13 @@
                         "104224"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104224"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 30,
@@ -58371,6 +58447,7 @@
             "name": {
                 "JP": "世界樹の枝杖",
                 "CN": "世界树枝之杖",
+                "EN": "Yggdrasil's Bough",
                 "KR": "세계수의 지팡이",
                 "TW": "世界樹枝之杖"
             },
@@ -58380,6 +58457,7 @@
                 "name": {
                     "JP": "世界樹の枝杖の設計図",
                     "CN": "世界树枝之杖的设计图",
+                    "EN": "Yggdrasil's Bough Blueprint",
                     "KR": "세계수의 지팡이 설계도",
                     "TW": "世界樹枝之杖的設計圖"
                 }
@@ -58400,6 +58478,14 @@
                         "104253"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104433",
+                        "104253"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 20,
