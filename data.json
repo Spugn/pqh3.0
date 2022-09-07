@@ -46765,6 +46765,24 @@
                 }
             }
         },
+        "32031": {
+            "id": "32031",
+            "name": {
+                "JP": "シノブのピュアメモリーピース"
+            },
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": {}
+            },
+            "recipes": {
+                "JP": {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "JP"
+                }
+            }
+        },
         "32032": {
             "id": "32032",
             "name": {
@@ -46872,6 +46890,24 @@
             "name": {
                 "JP": "チカのピュアメモリーピース",
                 "TW": "千歌的純淨記憶碎片"
+            },
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": {}
+            },
+            "recipes": {
+                "JP": {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "JP"
+                }
+            }
+        },
+        "32044": {
+            "id": "32044",
+            "name": {
+                "JP": "イリヤのピュアメモリーピース"
             },
             "rarity": "99",
             "fragment": {
@@ -94776,6 +94812,102 @@
                 },
                 {
                     "item": "115554",
+                    "drop_rate": 15
+                }
+            ]
+        },
+        "33-1VH": {
+            "name": "ファスキア森林・東部 33-1",
+            "stamina": 20,
+            "memory_piece": {
+                "item": "32031",
+                "drop_rate": 54
+            },
+            "drops": [
+                {
+                    "item": "128043",
+                    "drop_rate": 72
+                },
+                {
+                    "item": "118552",
+                    "drop_rate": 72
+                },
+                {
+                    "item": "118013",
+                    "drop_rate": 72
+                },
+                {
+                    "item": "118492",
+                    "drop_rate": 72
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "118551",
+                    "drop_rate": 24
+                },
+                {
+                    "item": "118251",
+                    "drop_rate": 24
+                },
+                {
+                    "item": "118101",
+                    "drop_rate": 20
+                },
+                {
+                    "item": "128401",
+                    "drop_rate": 17
+                },
+                {
+                    "item": "128161",
+                    "drop_rate": 15
+                }
+            ]
+        },
+        "33-2VH": {
+            "name": "ファスキア森林・東部 33-2",
+            "stamina": 20,
+            "memory_piece": {
+                "item": "32044",
+                "drop_rate": 54
+            },
+            "drops": [
+                {
+                    "item": "118223",
+                    "drop_rate": 72
+                },
+                {
+                    "item": "118612",
+                    "drop_rate": 72
+                },
+                {
+                    "item": "118253",
+                    "drop_rate": 72
+                },
+                {
+                    "item": "118462",
+                    "drop_rate": 72
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "118611",
+                    "drop_rate": 24
+                },
+                {
+                    "item": "118371",
+                    "drop_rate": 24
+                },
+                {
+                    "item": "118191",
+                    "drop_rate": 20
+                },
+                {
+                    "item": "128041",
+                    "drop_rate": 17
+                },
+                {
+                    "item": "128311",
                     "drop_rate": 15
                 }
             ]
