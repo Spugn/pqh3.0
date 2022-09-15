@@ -66758,13 +66758,15 @@
         "108012": {
             "id": "108012",
             "name": {
-                "JP": "音界剣グランデピアニオス"
+                "JP": "音界剣グランデピアニオス",
+                "TW": "音界劍大鋼琴劍"
             },
             "rarity": "8",
             "fragment": {
                 "id": "118012",
                 "name": {
-                    "JP": "音界剣グランデピアニオス（欠片）"
+                    "JP": "音界剣グランデピアニオス（欠片）",
+                    "TW": "音界劍大鋼琴劍（碎片）"
                 }
             },
             "recipes": {
@@ -66772,6 +66774,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -66829,13 +66836,15 @@
         "108042": {
             "id": "108042",
             "name": {
-                "JP": "創音刀ゲルトナ"
+                "JP": "創音刀ゲルトナ",
+                "TW": "創音刀喀魯託納"
             },
             "rarity": "8",
             "fragment": {
                 "id": "128042",
                 "name": {
-                    "JP": "創音刀ゲルトナの設計図"
+                    "JP": "創音刀ゲルトナの設計図",
+                    "TW": "創音刀喀魯託納的設計圖"
                 }
             },
             "recipes": {
@@ -66845,6 +66854,13 @@
                         "106553"
                     ],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "106553"
+                    ],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -66900,13 +66916,15 @@
         "108072": {
             "id": "108072",
             "name": {
-                "JP": "刻音刃クレフトオン"
+                "JP": "刻音刃クレフトオン",
+                "TW": "刻音刃劈斬劍"
             },
             "rarity": "8",
             "fragment": {
                 "id": "118072",
                 "name": {
-                    "JP": "刻音刃クレフトオン（欠片）"
+                    "JP": "刻音刃クレフトオン（欠片）",
+                    "TW": "刻音刃劈斬劍（碎片）"
                 }
             },
             "recipes": {
@@ -66914,6 +66932,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -66969,13 +66992,15 @@
         "108102": {
             "id": "108102",
             "name": {
-                "JP": "叫鳴拳バイオラフィスト"
+                "JP": "叫鳴拳バイオラフィスト",
+                "TW": "叫鳴拳中提琴拳套"
             },
             "rarity": "8",
             "fragment": {
                 "id": "118102",
                 "name": {
-                    "JP": "叫鳴拳バイオラフィスト（欠片）"
+                    "JP": "叫鳴拳バイオラフィスト（欠片）",
+                    "TW": "叫鳴拳中提琴拳套（碎片）"
                 }
             },
             "recipes": {
@@ -66983,6 +67008,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -67040,13 +67070,15 @@
         "108132": {
             "id": "108132",
             "name": {
-                "JP": "巧音弓スネアアーク"
+                "JP": "巧音弓スネアアーク",
+                "TW": "巧音弓小鼓弓"
             },
             "rarity": "8",
             "fragment": {
                 "id": "128132",
                 "name": {
-                    "JP": "巧音弓スネアアークの設計図"
+                    "JP": "巧音弓スネアアークの設計図",
+                    "TW": "巧音弓小鼓弓的設計圖"
                 }
             },
             "recipes": {
@@ -67056,6 +67088,13 @@
                         "106613"
                     ],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "106613"
+                    ],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -67115,13 +67154,15 @@
         "108162": {
             "id": "108162",
             "name": {
-                "JP": "仁重槍トロムスピア"
+                "JP": "仁重槍トロムスピア",
+                "TW": "仁重槍長號矛"
             },
             "rarity": "8",
             "fragment": {
                 "id": "128162",
                 "name": {
-                    "JP": "仁重槍トロムスピアの設計図"
+                    "JP": "仁重槍トロムスピアの設計図",
+                    "TW": "仁重槍長號矛的設計圖"
                 }
             },
             "recipes": {
@@ -67131,6 +67172,13 @@
                         "107311"
                     ],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "107311"
+                    ],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -67184,13 +67232,15 @@
         "108192": {
             "id": "108192",
             "name": {
-                "JP": "普天音斧バスターホルン"
+                "JP": "普天音斧バスターホルン",
+                "TW": "普天音斧破壞圓號"
             },
             "rarity": "8",
             "fragment": {
                 "id": "118192",
                 "name": {
-                    "JP": "普天音斧バスターホルン（欠片）"
+                    "JP": "普天音斧バスターホルン（欠片）",
+                    "TW": "普天音斧破壞圓號（碎片）"
                 }
             },
             "recipes": {
@@ -67198,6 +67248,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -67251,13 +67306,15 @@
         "108222": {
             "id": "108222",
             "name": {
-                "JP": "絶対音杖アコーディア"
+                "JP": "絶対音杖アコーディア",
+                "TW": "絕對音杖手風琴"
             },
             "rarity": "8",
             "fragment": {
                 "id": "118222",
                 "name": {
-                    "JP": "絶対音杖アコーディア（欠片）"
+                    "JP": "絶対音杖アコーディア（欠片）",
+                    "TW": "絕對音杖手風琴（碎片）"
                 }
             },
             "recipes": {
@@ -67265,6 +67322,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -67318,13 +67380,15 @@
         "108252": {
             "id": "108252",
             "name": {
-                "JP": "慈宣杖アルテマクラリオン"
+                "JP": "慈宣杖アルテマクラリオン",
+                "TW": "慈宣杖阿爾特瑪號角"
             },
             "rarity": "8",
             "fragment": {
                 "id": "118252",
                 "name": {
-                    "JP": "慈宣杖アルテマクラリオン（欠片）"
+                    "JP": "慈宣杖アルテマクラリオン（欠片）",
+                    "TW": "慈宣杖阿爾特瑪號角（碎片）"
                 }
             },
             "recipes": {
@@ -67332,6 +67396,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
