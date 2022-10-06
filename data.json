@@ -62414,6 +62414,7 @@
             "name": {
                 "JP": "緋竜の爪火輪",
                 "CN": "绯龙之爪火戒",
+                "EN": "Scarletwyrm's Flame Ring",
                 "KR": "화룡의 반지",
                 "TW": "緋龍之爪火戒"
             },
@@ -62423,6 +62424,7 @@
                 "name": {
                     "JP": "緋竜の爪火輪（欠片）",
                     "CN": "绯龙之爪火戒（碎片）",
+                    "EN": "Scarletwyrm's Flame Ring (Fragment)",
                     "KR": "화룡의 반지(조각)",
                     "TW": "緋龍之爪火戒（碎片）"
                 }
@@ -62437,6 +62439,11 @@
                     "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 30,
@@ -62729,6 +62736,7 @@
             "name": {
                 "JP": "神盾輪ウォールブレス",
                 "CN": "铁壁之佑神盾戒",
+                "EN": "Ancile Ring",
                 "KR": "방패의 월 브레스",
                 "TW": "神盾戒牆之氣息"
             },
@@ -62738,6 +62746,7 @@
                 "name": {
                     "JP": "神盾輪ウォールブレス（欠片）",
                     "CN": "铁壁之佑神盾戒（碎片）",
+                    "EN": "Ancile Ring (Fragment)",
                     "KR": "방패의 월 브레스(조각)",
                     "TW": "神盾戒牆之氣息（碎片）"
                 }
@@ -62752,6 +62761,11 @@
                     "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 30,
@@ -63044,6 +63058,7 @@
             "name": {
                 "JP": "深結晶ゼノクリスタル",
                 "CN": "深结晶变异水晶",
+                "EN": "Xenocrystal",
                 "KR": "심결정 제노 크리스탈",
                 "TW": "深結晶變異水晶"
             },
@@ -63053,6 +63068,7 @@
                 "name": {
                     "JP": "深結晶ゼノクリスタル（欠片）",
                     "CN": "深结晶变异水晶（碎片）",
+                    "EN": "Xenocrystal (Fragment)",
                     "KR": "심결정 제노 크리스탈(조각)",
                     "TW": "深結晶變異水晶（碎片）"
                 }
@@ -63067,6 +63083,11 @@
                     "required_pieces": 30,
                     "required_items": [],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 30,
+                    "required_items": [],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 30,
