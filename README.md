@@ -6,6 +6,23 @@ URL: <https://spugn.github.io/priconne-quest-helper/><br/>
 Changelog: [/priconne-quest-helper/CHANGELOG.md](CHANGELOG.md)
 <br/>
 
+<hr>
+
+## DEVELOPMENT UPDATE: October 8, 2022
+Hi. It's been a while since a last proper update to this version of `priconne-quest-helper` (last update was 7 months ago, lol).
+
+Reason being that I'm not happy with the current version of the BETA, so I'm scrapping it and starting from scratch and trying to move away from using React. Unfortunately, life got busy (got involved with a number of different projects and different games) and I haven't been able to commit as much time for the new version of BETA. I'll get around to it eventually though, maybe.
+
+Anyways, main reason for this "development update" though is to inform people about the Japanese server's quest data changes to NORMAL quests. The reason this is significant to this project is because as of right now, all regions have been following the Japanese server's quest data. Due to the awkward position of BETA, I will not be adding "Multi-Region Quest Data" support to this version of BETA as that would require maybe a good amount of changes to a version I'm no longer interested in continuing support for.
+
+I am aware that a good amount of English server people use the BETA and I apologize for the inconvience. When developing the never version of BETA I will be sure to include Multi-Region Quest Data support.
+
+There is currently no estimated time available for when the new BETA will be released.
+
+For more information regarding the Japanese server's normal drop rate changes: <https://priconne-redive.jp/news/update/19627/>
+
+<hr>
+
 ## Information
 This is a tool to help you decide which is the best quest to farm to get
 whatever assortment of items you need to rank up your characters.
