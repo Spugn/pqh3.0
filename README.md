@@ -17,7 +17,11 @@ Anyways, main reason for this "development update" though is to inform people ab
 
 I am aware that a good amount of English server people use the BETA and I apologize for the inconvience. When developing the never version of BETA I will be sure to include Multi-Region Quest Data support.
 
-There is currently no estimated time available for when the new BETA will be released.
+*There is currently no estimated time available for when the new BETA will be released.*
+
+***Please use the "stable" version of `priconne quest helper` <https://expugn.github.io/priconne-quest-helper/> if you need "Multi-Region Quest Data" support.***
+
+To preview overall drop rate changes and to compare it with other servers, please visit <https://expugn.github.io/priconne-quest-helper/pages/quest-data/>
 
 For more information regarding the Japanese server's normal drop rate changes: <https://priconne-redive.jp/news/update/19627/>
 
