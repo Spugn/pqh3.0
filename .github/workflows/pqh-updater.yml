@@ -41,7 +41,7 @@ jobs:
         run: npm install sqlite sqlite3 python-shell @actions/core@1.8.0
 
       - name: Install Python dependencies
-        run: pip install setuptools==58.2.0 lz4 Pillow decrunch
+        run: pip install lz4 Pillow decrunch --use-pep517
 
       - name: Run update.js
         id: update
