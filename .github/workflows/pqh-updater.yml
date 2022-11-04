@@ -40,8 +40,11 @@ jobs:
       - name: Install Node.js Dependencies
         run: npm install sqlite sqlite3 python-shell @actions/core@1.8.0
 
+      - name: Install pip
+        run: pip install pip==22.2.2
+
       - name: Install Python dependencies
-        run: pip install lz4 Pillow decrunch --use-pep517
+        run: pip install lz4 Pillow decrunch
 
       - name: Run update.js
         id: update
