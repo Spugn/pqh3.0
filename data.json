@@ -60563,6 +60563,7 @@
             "name": {
                 "JP": "麗装ソウルローゼス",
                 "CN": "灵魂玫瑰丽装",
+                "EN": "Noble Soul Rose",
                 "KR": "소울 로즈의 갑주",
                 "TW": "麗裝靈魂玫瑰"
             },
@@ -60572,6 +60573,7 @@
                 "name": {
                     "JP": "麗装ソウルローゼスの設計図",
                     "CN": "灵魂玫瑰丽装的设计图",
+                    "EN": "Noble Soul Rose Blueprint",
                     "KR": "소울 로즈의 갑주 설계도",
                     "TW": "麗裝靈魂玫瑰的設計圖"
                 }
@@ -60592,6 +60594,14 @@
                         "103583"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104343",
+                        "103583"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 20,
@@ -60974,6 +60984,7 @@
             "name": {
                 "JP": "熾白銀の鏡鎧",
                 "CN": "炽白银的镜铠",
+                "EN": "Argent Mirror Armor",
                 "KR": "치백은의 갑주",
                 "TW": "熾白銀之鏡鎧"
             },
@@ -60983,6 +60994,7 @@
                 "name": {
                     "JP": "熾白銀の鏡鎧（欠片）",
                     "CN": "炽白银的镜铠（碎片）",
+                    "EN": "Argent Mirror Armor (Fragment)",
                     "KR": "치백은의 갑주(조각)",
                     "TW": "熾白銀之鏡鎧（碎片）"
                 }
@@ -61001,6 +61013,13 @@
                         "104282"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104282"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 30,
@@ -61368,6 +61387,7 @@
             "name": {
                 "JP": "流蒼装アズールロンド",
                 "CN": "天蓝回旋曲流苍装",
+                "EN": "Azul Rondó",
                 "KR": "물의 의복 에쥬어 론도",
                 "TW": "流蒼裝碧藍迴旋曲"
             },
@@ -61377,6 +61397,7 @@
                 "name": {
                     "JP": "流蒼装アズールロンドの設計図",
                     "CN": "天蓝回旋曲流苍装的设计图",
+                    "EN": "Azul Rondó Blueprint",
                     "KR": "물의 의복 에쥬어 론도 설계도",
                     "TW": "流蒼裝碧藍迴旋曲的設計圖"
                 }
@@ -61397,6 +61418,14 @@
                         "104342"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104463",
+                        "104342"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 20,
@@ -61775,6 +61804,7 @@
             "name": {
                 "JP": "星詠みの聖霊衣",
                 "CN": "咏星圣灵衣",
+                "EN": "Celestial Hallowed Robe",
                 "KR": "별을 노래하는 성령의",
                 "TW": "星詠的聖靈衣"
             },
@@ -61784,6 +61814,7 @@
                 "name": {
                     "JP": "星詠みの聖霊衣（欠片）",
                     "CN": "咏星圣灵衣（碎片）",
+                    "EN": "Celestial Hallowed Robe (Fragment)",
                     "KR": "별을 노래하는 성령의(조각)",
                     "TW": "星詠的聖靈衣（碎片）"
                 }
@@ -61802,6 +61833,13 @@
                         "104222"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104222"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 30,
@@ -61998,6 +62036,7 @@
             "name": {
                 "JP": "熾白銀の鏡盾",
                 "CN": "炽白银的镜盾",
+                "EN": "Argent Mirror Shield",
                 "KR": "치백은의 방패",
                 "TW": "熾白銀之鏡盾"
             },
@@ -62007,6 +62046,7 @@
                 "name": {
                     "JP": "熾白銀の鏡盾（欠片）",
                     "CN": "炽白银的镜盾（碎片）",
+                    "EN": "Argent Mirror Shield (Fragment)",
                     "KR": "치백은의 방패(조각)",
                     "TW": "熾白銀之鏡盾（碎片）"
                 }
@@ -62025,6 +62065,13 @@
                         "104402"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104402"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 30,
@@ -62329,6 +62376,7 @@
             "name": {
                 "JP": "熾白銀の鏡脚",
                 "CN": "炽白银的镜靴",
+                "EN": "Argent Mirror Greaves",
                 "KR": "치백은의 그리브",
                 "TW": "熾白銀之鏡靴"
             },
@@ -62338,6 +62386,7 @@
                 "name": {
                     "JP": "熾白銀の鏡脚の設計図",
                     "CN": "炽白银的镜靴的设计图",
+                    "EN": "Argent Mirror Greaves Blueprint",
                     "KR": "치백은의 그리브 설계도",
                     "TW": "熾白銀之鏡靴的設計圖"
                 }
@@ -62358,6 +62407,14 @@
                         "104431"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104523",
+                        "104431"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 20,
