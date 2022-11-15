@@ -68982,7 +68982,8 @@
         "108282": {
             "id": "108282",
             "name": {
-                "JP": "デザートクロスメイル"
+                "JP": "デザートクロスメイル",
+                "TW": "沙漠布甲"
             },
             "rarity": "8",
             "fragment": {
@@ -68999,6 +69000,13 @@
                         "107491"
                     ],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "107491"
+                    ],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -69058,7 +69066,8 @@
         "108312": {
             "id": "108312",
             "name": {
-                "JP": "オアシスブループレート"
+                "JP": "オアシスブループレート",
+                "TW": "綠洲藍鎧"
             },
             "rarity": "8",
             "fragment": {
@@ -69075,6 +69084,13 @@
                         "107581"
                     ],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "107581"
+                    ],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -69103,13 +69119,15 @@
         "108342": {
             "id": "108342",
             "name": {
-                "JP": "デザートシェイドクロース"
+                "JP": "デザートシェイドクロース",
+                "TW": "沙漠之影服飾"
             },
             "rarity": "8",
             "fragment": {
                 "id": "118342",
                 "name": {
-                    "JP": "デザートシェイドクロース（欠片）"
+                    "JP": "デザートシェイドクロース（欠片）",
+                    "TW": "沙漠之影服飾（碎片）"
                 }
             },
             "recipes": {
@@ -69117,6 +69135,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -69170,7 +69193,8 @@
         "108372": {
             "id": "108372",
             "name": {
-                "JP": "オリエントブリーズローブ"
+                "JP": "オリエントブリーズローブ",
+                "TW": "東方微風長袍"
             },
             "rarity": "8",
             "fragment": {
@@ -69187,6 +69211,13 @@
                         "107461"
                     ],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "107461"
+                    ],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -69293,13 +69324,15 @@
         "108462": {
             "id": "108462",
             "name": {
-                "JP": "オアシスアハルディア"
+                "JP": "オアシスアハルディア",
+                "TW": "綠洲之鞋"
             },
             "rarity": "8",
             "fragment": {
                 "id": "118462",
                 "name": {
-                    "JP": "オアシスアハルディア（欠片）"
+                    "JP": "オアシスアハルディア（欠片）",
+                    "TW": "綠洲之鞋（碎片）"
                 }
             },
             "recipes": {
@@ -69307,19 +69340,26 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
         "108492": {
             "id": "108492",
             "name": {
-                "JP": "デザートウィンドターバン"
+                "JP": "デザートウィンドターバン",
+                "TW": "沙漠之風頭巾"
             },
             "rarity": "8",
             "fragment": {
                 "id": "118492",
                 "name": {
-                    "JP": "デザートウィンドターバン（欠片）"
+                    "JP": "デザートウィンドターバン（欠片）",
+                    "TW": "沙漠之風頭巾（碎片）"
                 }
             },
             "recipes": {
@@ -69327,6 +69367,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
