@@ -51073,6 +51073,24 @@
                 }
             }
         },
+        "32051": {
+            "id": "32051",
+            "name": {
+                "JP": "ミツキのピュアメモリーピース"
+            },
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": {}
+            },
+            "recipes": {
+                "JP": {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "JP"
+                }
+            }
+        },
         "32052": {
             "id": "32052",
             "name": {
@@ -100408,6 +100426,54 @@
                 },
                 {
                     "item": "118551",
+                    "drop_rate": 15
+                }
+            ]
+        },
+        "34-2VH": {
+            "name": "デクスティア岩崖・西壁 34-2",
+            "stamina": 20,
+            "memory_piece": {
+                "item": "32051",
+                "drop_rate": 54
+            },
+            "drops": [
+                {
+                    "item": "118014",
+                    "drop_rate": 72
+                },
+                {
+                    "item": "118553",
+                    "drop_rate": 72
+                },
+                {
+                    "item": "118224",
+                    "drop_rate": 72
+                },
+                {
+                    "item": "118343",
+                    "drop_rate": 72
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "118582",
+                    "drop_rate": 24
+                },
+                {
+                    "item": "118102",
+                    "drop_rate": 24
+                },
+                {
+                    "item": "128282",
+                    "drop_rate": 20
+                },
+                {
+                    "item": "118012",
+                    "drop_rate": 17
+                },
+                {
+                    "item": "118552",
                     "drop_rate": 15
                 }
             ]
