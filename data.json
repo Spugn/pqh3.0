@@ -52130,7 +52130,7 @@
                 "name": {
                     "JP": "ハイメタルプレートの設計図",
                     "CN": "高级金属铠甲的设计图",
-                    "EN": "Supreme Metal Blade Blueprint",
+                    "EN": "Full Plate Armor Blueprint",
                     "KR": "하이메탈 플레이트 설계도",
                     "TW": "精鋼鎧甲的設計圖"
                 }
@@ -59736,6 +59736,7 @@
             "name": {
                 "JP": "星核剣エルツシュナイド",
                 "CN": "勇气星核剑",
+                "EN": "Core Erzschneid",
                 "KR": "성핵검 엘츠 슈나이드",
                 "TW": "星核劍艾爾茲修奈德"
             },
@@ -59745,6 +59746,7 @@
                 "name": {
                     "JP": "星核剣エルツシュナイドの設計図",
                     "CN": "勇气星核剑的设计图",
+                    "EN": "Core Erzschneid Blueprint",
                     "KR": "성핵검 엘츠 슈나이드 설계도",
                     "TW": "星核劍艾爾茲修奈德的設計圖"
                 }
@@ -59765,6 +59767,14 @@
                         "103012"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104312",
+                        "103012"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 20,
@@ -60127,6 +60137,7 @@
             "name": {
                 "JP": "神降りの枝刃刀",
                 "CN": "降神的枝刃刀",
+                "EN": "Branched Summoner",
                 "KR": "신들린 지인도",
                 "TW": "迎神的枝刃刀"
             },
@@ -60136,6 +60147,7 @@
                 "name": {
                     "JP": "神降りの枝刃刀の設計図",
                     "CN": "降神的枝刃刀的设计图",
+                    "EN": "Branched Summoner Blueprint",
                     "KR": "신들린 지인도 설계도",
                     "TW": "迎神的枝刃刀的設計圖"
                 }
@@ -60156,6 +60168,14 @@
                         "103041"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104042",
+                        "103041"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 20,
@@ -60519,6 +60539,7 @@
             "name": {
                 "JP": "ゲヘナドラグーン",
                 "CN": "地狱龙骑兵",
+                "EN": "Gehenna Dragoon",
                 "KR": "게헤나 드라군",
                 "TW": "獄炎龍爪刃"
             },
@@ -60528,6 +60549,7 @@
                 "name": {
                     "JP": "ゲヘナドラグーンの設計図",
                     "CN": "地狱龙骑兵的设计图",
+                    "EN": "Gehenna Dragoon Blueprint",
                     "KR": "게헤나 드라군 설계도",
                     "TW": "獄炎龍爪刃的設計圖"
                 }
@@ -60548,6 +60570,14 @@
                         "103491"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104012",
+                        "103491"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 20,
@@ -60911,6 +60941,7 @@
             "name": {
                 "JP": "星核拳エルツロア",
                 "CN": "勇气星核拳",
+                "EN": "Core Erzbrecher",
                 "KR": "성핵권 엘츠 루아",
                 "TW": "星核拳艾爾茲羅亞"
             },
@@ -60920,6 +60951,7 @@
                 "name": {
                     "JP": "星核拳エルツロア（欠片）",
                     "CN": "勇气星核拳（碎片）",
+                    "EN": "Core Erzbrecher (Fragment)",
                     "KR": "성핵권 엘츠 루아(조각)",
                     "TW": "星核拳艾爾茲羅亞（碎片）"
                 }
@@ -60938,6 +60970,13 @@
                         "104101"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104101"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 30,
@@ -61298,6 +61337,7 @@
             "name": {
                 "JP": "星核弓エルツボーゲン",
                 "CN": "勇气星核弓",
+                "EN": "Core Erzbogen",
                 "KR": "성핵궁 엘츠 보겐",
                 "TW": "星核弓艾爾茲波根"
             },
@@ -61307,6 +61347,7 @@
                 "name": {
                     "JP": "星核弓エルツボーゲン（欠片）",
                     "CN": "勇气星核弓（碎片）",
+                    "EN": "Core Erzbogen (Fragment)",
                     "KR": "성핵궁 엘츠 보겐(조각)",
                     "TW": "星核弓艾爾茲波根（碎片）"
                 }
@@ -61325,6 +61366,13 @@
                         "104133"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104133"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 30,
@@ -61676,6 +61724,7 @@
             "name": {
                 "JP": "星核槍エルツボルグ",
                 "CN": "勇气星核枪",
+                "EN": "Core Erzbolga",
                 "KR": "성핵창 엘츠 볼그",
                 "TW": "星核槍艾爾茲柏格"
             },
@@ -61685,6 +61734,7 @@
                 "name": {
                     "JP": "星核槍エルツボルグ（欠片）",
                     "CN": "勇气星核枪（碎片）",
+                    "EN": "Core Erzbolga (Fragment)",
                     "KR": "성핵창 엘츠 볼그(조각)",
                     "TW": "星核槍艾爾茲柏格（碎片）"
                 }
@@ -61703,6 +61753,13 @@
                         "104162"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104162"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 30,
@@ -62073,6 +62130,7 @@
             "name": {
                 "JP": "ターコイズ・ノア",
                 "CN": "绿松石·诺亚",
+                "EN": "Turquoise Tide",
                 "KR": "터키석 노아",
                 "TW": "蒼海之斧‧諾亞"
             },
@@ -62082,6 +62140,7 @@
                 "name": {
                     "JP": "ターコイズ・ノア（欠片）",
                     "CN": "绿松石·诺亚（碎片）",
+                    "EN": "Turquoise Tide (Fragment)",
                     "KR": "터키석 노아(조각)",
                     "TW": "蒼海之斧‧諾亞（碎片）"
                 }
@@ -62100,6 +62159,13 @@
                         "104191"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 30,
+                    "required_items": [
+                        "104191"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 30,
@@ -62451,6 +62517,7 @@
             "name": {
                 "JP": "清雅なる翠蝶杖",
                 "CN": "清雅翠蝶杖",
+                "EN": "Graceful Butterfly Staff",
                 "KR": "청아한 푸른 나비의 지팡이",
                 "TW": "優雅之翠蝶杖"
             },
@@ -62460,6 +62527,7 @@
                 "name": {
                     "JP": "清雅なる翠蝶杖の設計図",
                     "CN": "清雅翠蝶杖的设计图",
+                    "EN": "Graceful Butterfly Staff Blueprint",
                     "KR": "청아한 푸른 나비의 지팡이 설계도",
                     "TW": "優雅之翠蝶杖的設計圖"
                 }
@@ -62480,6 +62548,14 @@
                         "103222"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104041",
+                        "103222"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 20,
@@ -62852,6 +62928,7 @@
             "name": {
                 "JP": "炎鳥杖レイズフレア",
                 "CN": "耀光炎鸟杖",
+                "EN": "Rebirth Torch Phoenicis",
                 "KR": "염조장 레이즈 플레어",
                 "TW": "炎鳥杖火束閃焰"
             },
@@ -62861,6 +62938,7 @@
                 "name": {
                     "JP": "炎鳥杖レイズフレアの設計図",
                     "CN": "耀光炎鸟杖的设计图",
+                    "EN": "Rebirth Torch Phoenicis Blueprint",
                     "KR": "염조장 레이즈 플레어 설계도",
                     "TW": "炎鳥杖火束閃焰的設計圖"
                 }
@@ -62881,6 +62959,14 @@
                         "103553"
                     ],
                     "recipe_note": "CN"
+                },
+                "EN": {
+                    "required_pieces": 20,
+                    "required_items": [
+                        "104252",
+                        "103553"
+                    ],
+                    "recipe_note": "EN"
                 },
                 "KR": {
                     "required_pieces": 20,
