@@ -71036,13 +71036,15 @@
         "108013": {
             "id": "108013",
             "name": {
-                "JP": "オアシスガードブレード"
+                "JP": "オアシスガードブレード",
+                "TW": "綠洲守衛之劍"
             },
             "rarity": "8",
             "fragment": {
                 "id": "118013",
                 "name": {
-                    "JP": "オアシスガードブレード（欠片）"
+                    "JP": "オアシスガードブレード（欠片）",
+                    "TW": "綠洲守衛之劍（碎片）"
                 }
             },
             "recipes": {
@@ -71050,6 +71052,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -71138,13 +71145,15 @@
         "108043": {
             "id": "108043",
             "name": {
-                "JP": "クイックサンドシャムシール"
+                "JP": "クイックサンドシャムシール",
+                "TW": "流沙舍施爾彎刀"
             },
             "rarity": "8",
             "fragment": {
                 "id": "128043",
                 "name": {
-                    "JP": "クイックサンドシャムシールの設計図"
+                    "JP": "クイックサンドシャムシールの設計図",
+                    "TW": "流沙舍施爾彎刀的設計圖"
                 }
             },
             "recipes": {
@@ -71154,6 +71163,13 @@
                         "107042"
                     ],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "107042"
+                    ],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -71236,13 +71252,15 @@
         "108073": {
             "id": "108073",
             "name": {
-                "JP": "ダークデザートエッジ"
+                "JP": "ダークデザートエッジ",
+                "TW": "暗黑沙漠短劍"
             },
             "rarity": "8",
             "fragment": {
                 "id": "128073",
                 "name": {
-                    "JP": "ダークデザートエッジの設計図"
+                    "JP": "ダークデザートエッジの設計図",
+                    "TW": "暗黑沙漠短劍的設計圖"
                 }
             },
             "recipes": {
@@ -71252,6 +71270,13 @@
                         "107072"
                     ],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "107072"
+                    ],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -71332,13 +71357,15 @@
         "108103": {
             "id": "108103",
             "name": {
-                "JP": "ヘリテージジャマダハル"
+                "JP": "ヘリテージジャマダハル",
+                "TW": "傳承拳刃"
             },
             "rarity": "8",
             "fragment": {
                 "id": "118103",
                 "name": {
-                    "JP": "ヘリテージジャマダハル（欠片）"
+                    "JP": "ヘリテージジャマダハル（欠片）",
+                    "TW": "傳承拳刃（碎片）"
                 }
             },
             "recipes": {
@@ -71346,6 +71373,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -71434,13 +71466,15 @@
         "108133": {
             "id": "108133",
             "name": {
-                "JP": "オリエンタルハリケーンボウ"
+                "JP": "オリエンタルハリケーンボウ",
+                "TW": "東方颶風之弓"
             },
             "rarity": "8",
             "fragment": {
                 "id": "128133",
                 "name": {
-                    "JP": "オリエンタルハリケーンボウの設計図"
+                    "JP": "オリエンタルハリケーンボウの設計図",
+                    "TW": "東方颶風之弓的設計圖"
                 }
             },
             "recipes": {
@@ -71450,6 +71484,13 @@
                         "107132"
                     ],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 15,
+                    "required_items": [
+                        "107132"
+                    ],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -71540,13 +71581,15 @@
         "108163": {
             "id": "108163",
             "name": {
-                "JP": "ウィンドレガシースピア"
+                "JP": "ウィンドレガシースピア",
+                "TW": "風之遺產長矛"
             },
             "rarity": "8",
             "fragment": {
                 "id": "118163",
                 "name": {
-                    "JP": "ウィンドレガシースピア（欠片）"
+                    "JP": "ウィンドレガシースピア（欠片）",
+                    "TW": "風之遺產長矛（碎片）"
                 }
             },
             "recipes": {
@@ -71554,6 +71597,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -71634,13 +71682,15 @@
         "108193": {
             "id": "108193",
             "name": {
-                "JP": "オアシスファアス"
+                "JP": "オアシスファアス",
+                "TW": "綠洲之斧"
             },
             "rarity": "8",
             "fragment": {
                 "id": "118193",
                 "name": {
-                    "JP": "オアシスファアス（欠片）"
+                    "JP": "オアシスファアス（欠片）",
+                    "TW": "綠洲之斧（碎片）"
                 }
             },
             "recipes": {
@@ -71648,6 +71698,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -71730,13 +71785,15 @@
         "108223": {
             "id": "108223",
             "name": {
-                "JP": "エンシェントサンドワンド"
+                "JP": "エンシェントサンドワンド",
+                "TW": "古老沙之杖"
             },
             "rarity": "8",
             "fragment": {
                 "id": "118223",
                 "name": {
-                    "JP": "エンシェントサンドワンド（欠片）"
+                    "JP": "エンシェントサンドワンド（欠片）",
+                    "TW": "古老沙之杖（碎片）"
                 }
             },
             "recipes": {
@@ -71744,6 +71801,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
@@ -71824,13 +71886,15 @@
         "108253": {
             "id": "108253",
             "name": {
-                "JP": "デザートレインケーン"
+                "JP": "デザートレインケーン",
+                "TW": "沙漠雨之杖"
             },
             "rarity": "8",
             "fragment": {
                 "id": "118253",
                 "name": {
-                    "JP": "デザートレインケーン（欠片）"
+                    "JP": "デザートレインケーン（欠片）",
+                    "TW": "沙漠雨之杖（碎片）"
                 }
             },
             "recipes": {
@@ -71838,6 +71902,11 @@
                     "required_pieces": 25,
                     "required_items": [],
                     "recipe_note": "JP"
+                },
+                "TW": {
+                    "required_pieces": 25,
+                    "required_items": [],
+                    "recipe_note": "TW"
                 }
             }
         },
