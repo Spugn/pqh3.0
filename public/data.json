@@ -50248,6 +50248,26 @@
                 }
             }
         },
+        "31158": {
+            "id": "31158",
+            "name": {
+                "JP": "リマ（シンデレラ）のメモリーピース",
+                "KR": "리마(신데렐라)의 메모리 피스",
+                "TW": "莉瑪（灰姑娘）的記憶碎片"
+            },
+            "rarity": "99",
+            "fragment": {
+                "id": "999999",
+                "name": {}
+            },
+            "recipes": {
+                "JP": {
+                    "required_pieces": 1,
+                    "required_items": [],
+                    "recipe_note": "JP"
+                }
+            }
+        },
         "31160": {
             "id": "31160",
             "name": {
@@ -127761,6 +127781,226 @@
             "stamina": 10,
             "memory_piece": {
                 "item": 31156,
+                "drop_rate": 54
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "35-1E": {
+            "name": "辺境の地 1-1",
+            "stamina": 10,
+            "memory_piece": {
+                "item": 31158,
+                "drop_rate": 54
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "35-2E": {
+            "name": "辺境の地 1-2",
+            "stamina": 10,
+            "memory_piece": {
+                "item": 31010,
+                "drop_rate": 54
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "35-3E": {
+            "name": "辺境の地 1-3",
+            "stamina": 10,
+            "memory_piece": {
+                "item": 31158,
+                "drop_rate": 54
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "35-4E": {
+            "name": "辺境の地 1-4",
+            "stamina": 10,
+            "memory_piece": {
+                "item": 31010,
+                "drop_rate": 54
+            },
+            "drops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ],
+            "subdrops": [
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                },
+                {
+                    "item": "999999",
+                    "drop_rate": 0
+                }
+            ]
+        },
+        "35-5E": {
+            "name": "辺境の地 1-5",
+            "stamina": 10,
+            "memory_piece": {
+                "item": 31158,
                 "drop_rate": 54
             },
             "drops": [
