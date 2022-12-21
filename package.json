@@ -6,7 +6,7 @@
     "dev:host": "set NODE_ENV=development&& npm run dev:vite -- --host",
     "dev:vite": "vite dev",
     "build": "npm run clean && vite build",
-    "deploy": "node ./gh-pages.js",
+    "deploy": "gh-pages -d build",
     "package": "svelte-kit package",
     "preview": "vite preview --host",
     "prepare": "npm run smui-theme",
