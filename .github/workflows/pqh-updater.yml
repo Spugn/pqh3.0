@@ -27,7 +27,7 @@ jobs:
 
       # pyton 3.11+ seems to have issues when building decrunch
       - name: Setup Python [3.10.8]
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v3
         with:
           python-version: '3.10.8'
 
@@ -54,7 +54,7 @@ jobs:
         run: |
           git config user.name $user_name
           git config user.email $user_email
-          git add ./static/data/version
+          git add ./static/data/version.json
           git add ./static/data/data.json
           git add ./static/data/data.character.json
           git add ./static/data/data.equipment.json
