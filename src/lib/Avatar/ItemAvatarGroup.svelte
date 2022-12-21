@@ -3,9 +3,8 @@
     import "./avatar.css";
 </script>
 
-<script>
-    /** @type {string[]} */
-    export let avatars = [];
+<script lang="ts">
+    export let avatars : string[] = [];
 </script>
 
 <div class="avatar-group">
