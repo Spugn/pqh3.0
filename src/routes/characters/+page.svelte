@@ -1,4 +1,5 @@
 <script context="module">
+    import { base } from '$app/paths';
     import { character as characterAPI } from '$lib/api/api';
     import Image from "$lib/Image.svelte";
     import Textfield from '@smui/textfield';
@@ -54,7 +55,7 @@
     <!-- character grid -->
     <div class="flex flex-row gap-1 flex-wrap justify-center items-center pb-8 mx-2">
         {#each characters as id (id)}
-            <a href="characters/{id}">
+            <a href="{base}/characters/{id}">
                 <Image img={id} type="unit_icon" alt={`${id}`}
                     props={{
                         draggable: false,

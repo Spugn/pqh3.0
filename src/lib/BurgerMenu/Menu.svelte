@@ -1,4 +1,5 @@
 <script context="module">
+    import { base } from '$app/paths';
     import {
         focusOnFirstMenuItem,
         focusOnLastMenuItem,
@@ -386,35 +387,35 @@
                 <Title/>
                 <slot />
                 <div class="flex flex-col justify-start items-start gap-3">
-                    <a href="/characters" target="_blank" class="flex flex-row justify-center items-center"
+                    <a href="{base}/characters" target="_blank" class="flex flex-row justify-center items-center"
                         style="color: inherit; text-decoration: none;" rel="noreferrer"
                     >
                         <span class="material-icons">person</span>
                         <span>Character Data</span>
                         <span class="material-icons ml-auto">launch</span>
                     </a>
-                    <a href="/items" target="_blank" class="flex flex-row justify-center items-center"
+                    <a href="{base}/items" target="_blank" class="flex flex-row justify-center items-center"
                         style="color: inherit; text-decoration: none;" rel="noreferrer"
                     >
                         <span class="material-icons">inventory_2</span>
                         <span>Item Data</span>
                         <span class="material-icons ml-auto">launch</span>
                     </a>
-                    <a href="/quests" target="_blank" class="flex flex-row justify-center items-center"
+                    <a href="{base}/quests" target="_blank" class="flex flex-row justify-center items-center"
                         style="color: inherit; text-decoration: none;" rel="noreferrer"
                     >
                         <span class="material-icons">auto_stories</span>
                         <span>Quest Data</span>
                         <span class="material-icons">launch</span>
                     </a>
-                    <a href="/statistics" target="_blank" class="flex flex-row justify-center items-center"
+                    <a href="{base}/statistics" target="_blank" class="flex flex-row justify-center items-center"
                         style="color: inherit; text-decoration: none;" rel="noreferrer"
                     >
                         <span class="material-icons">insights</span>
                         <span>Statistics</span>
                         <span class="material-icons">launch</span>
                     </a>
-                    <a href="/data-export" class="flex flex-row justify-center items-center"
+                    <a href="{base}/data-export" class="flex flex-row justify-center items-center"
                         style="color: inherit; text-decoration: none;"
                     >
                         <span class="material-icons">ios_share</span>
