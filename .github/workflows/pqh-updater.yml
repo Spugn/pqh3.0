@@ -17,10 +17,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Setup Node.js [16.x]
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 16.x
           cache: 'npm'
@@ -32,14 +32,14 @@ jobs:
           python-version: '3.10.8'
 
       - name: Cache dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: |
             **/node_modules
           key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
 
       - name: Install Node.js Dependencies
-        run: npm install sqlite sqlite3 python-shell @actions/core@1.8.0
+        run: npm install sqlite sqlite3 python-shell @actions/core
 
       - name: Install Python dependencies
         run: pip install lz4 Pillow decrunch

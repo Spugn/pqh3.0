@@ -18,17 +18,8 @@ const config = {
 		}),
 
 		paths: {
-			/** remove this true when publishing to github!!! */
-			base: dev || true ? '' : '/priconne-quest-helper',
+			base: dev ? '' : '/priconne-quest-helper',
 		},
-
-		/*
-		prerender: {
-			crawl: true,
-			enabled: true,
-			onError: 'continue',
-			default: true
-		},*/
 	}
 };
 
