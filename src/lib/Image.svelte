@@ -3,33 +3,19 @@
     import { base } from '$app/paths';
 </script>
 
-<script>
-    /** @type {string} */
-    export let img; // file name without the extension
+<script lang="ts">
+    export let img : string; // file name without the extension
+    export let type : string; // items, characters, webpage, etc
+    export let alt : string | undefined = undefined; // string for alt text, defaults to file name if not provided
+    export let props : object = {}; // additional props to pass to the img tag
+    export let force_png : boolean = false; // force the image to be a png
+    export let picture_class : string = "inline-block"; // class string to add to the picture element
 
-    /** @type {string} */
-    export let type; // items, characters, webpage, etc
+    let webp_elem : HTMLSourceElement; // <source> binding, holds webp path usually
+    let png_elem : HTMLImageElement; // <img> binding, holds png path usually and styling
 
-    /** @type {string | undefined} */
-    export let alt = undefined; // string for alt text, defaults to file name if not provided
-
-    /** @type {object} */
-    export let props = {}; // additional props to pass to the img tag
-
-    /** @type {boolean} */
-    export let force_png = false; // force the image to be a png
-
-    /** @type {string} */
-    export let picture_class = "inline-block"; // class string to add to the picture element
-
-    /** @type {HTMLSourceElement} */
-    let webp_elem; // <source> binding, holds webp path usually
-
-    /** @type {HTMLImageElement} */
-    let png_elem; // <img> binding, holds png path usually and styling
-
-    let loaded = false; // either png or webp loaded
-    let failed = false; // png and webp both failed to load
+    let loaded : boolean = false; // either png or webp loaded
+    let failed : boolean = false; // png and webp both failed to load
 
     onMount(() => {
         const png = `${base}/images/${type}/${img}.png`;
