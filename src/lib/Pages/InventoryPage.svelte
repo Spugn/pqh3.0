@@ -7,8 +7,6 @@
     import Dialog, { Content as DialogContent, Actions } from '@smui/dialog';
     import Textfield from '@smui/textfield';
     import HelperText from '@smui/textfield/helper-text';
-    import TextfieldIcon from '@smui/textfield/icon';
-    import Image from "$lib/Image.svelte";
     import Checkbox from '@smui/checkbox';
     import FormField from '@smui/form-field';
     import ItemImage from "$lib/Item/Image.svelte";
@@ -19,6 +17,7 @@
     interface ItemButtonData {
         id : string; // item id
         amount : number; // amount of items in inventory
+        rarity : number; // item rarity, for sorting
     }
     interface DialogData {
         open : boolean; // if modal is shown or not
@@ -42,6 +41,9 @@
         confirm: false,
     };
 
+    let rarity_sort : "none" | "desc" | "asc" = "none";
+    let amount_sort : "desc" | "asc" = "desc";
+
     function updateItems() {
         items = [];
         Object.entries(user.inventory.get())
@@ -49,11 +51,25 @@
                 items.push({
                     id,
                     amount,
+                    rarity: parseInt(equipmentAPI.getRarityFromID(id)),
                 });
             });
+        // amount sort
         items.sort((a, b) => {
+            if (amount_sort === "asc") {
+                return a.amount - b.amount; // amount sort, ascending
+            }
             return b.amount - a.amount; // amount sort, descending
         });
+        // rarity sort
+        if (rarity_sort !== "none") {
+            items.sort((a, b) => {
+                if (rarity_sort === "asc") {
+                    return a.rarity - b.rarity; // rarity sort, ascending
+                }
+                return b.rarity - a.rarity; // rarity sort, descending
+            });
+        }
     }
     $: {
         updateItems();
@@ -123,9 +139,30 @@
         user.inventory.set({});
         updateItems();
     }
+
+    function changeAmountSort() {
+        if (amount_sort === "asc") {
+            amount_sort = "desc";
+        }
+        else {
+            amount_sort = "asc";
+        }
+        updateItems();
+    }
+    function changeRaritySort() {
+        if (rarity_sort === "none") {
+            rarity_sort = "desc";
+        }
+        else if (rarity_sort === "desc") {
+            rarity_sort = "asc";
+        }
+        else {
+            rarity_sort = "none";
+        }
+        updateItems();
+    }
 </script>
 
-<!-- HTML HERE -->
 <section class="pb-[5vh]">
     <div class="flex flex-col gap-4">
         <div class="my-1 flex flex-col items-center justify-center gap-2">
@@ -133,18 +170,39 @@
                 <Icon class="material-icons">add</Icon>
                 <Label>Add Item</Label>
             </Button>
-            <Button color="secondary" variant="raised" class="w-[90vw]"
-                disabled={items.length <= 0}
-                on:click={() => {
-                    delete_dialog_data = {
-                        open: true,
-                        confirm: false,
-                    };
-                }}
-            >
-                <Icon class="material-icons">delete</Icon>
-                <Label>Delete All Items</Label>
-            </Button>
+            <div class="flex flex-row gap-1 w-[90vw]">
+                <Button color="secondary" variant="raised" class="flex-1"
+                    on:click={changeAmountSort}
+                >
+                    <Label>Sort: Amount</Label>
+                    <Icon class="material-icons">
+                        {amount_sort === "asc" ? "arrow_drop_up" : "arrow_drop_down"}
+                    </Icon>
+                </Button>
+                <Button color="secondary" variant="raised" class="flex-1"
+                    on:click={changeRaritySort}
+                >
+                    <Label>Sort: Rarity</Label>
+                    <Icon class="material-icons">
+                        {rarity_sort === "none"
+                            ? "block"
+                            : (rarity_sort === "desc" ? "arrow_drop_down" : "arrow_drop_up")}
+                    </Icon>
+                </Button>
+                <Button color="secondary" variant="raised" class="flex-1"
+                    disabled={items.length <= 0}
+                    on:click={() => {
+                        delete_dialog_data = {
+                            open: true,
+                            confirm: false,
+                        };
+                    }}
+                >
+                    <Icon class="material-icons">delete_forever</Icon>
+                    <Label>Delete All Items</Label>
+                </Button>
+            </div>
+
         </div>
         <div class="flex flex-row flex-wrap items-center justify-center gap-1 lg:px-[4rem]">
             {#if items.length > 0}

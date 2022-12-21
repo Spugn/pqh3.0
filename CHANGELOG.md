@@ -27,9 +27,15 @@ Beta v2 start: React to SvelteKit Migration
 - Modified project creation
   - When selecting a character for a character project, you can now Search for a specific name or ID
   - Ignored Rarities for project creation will stay the same for the session (so you don't need to keep clicking the buttons)
+  - Moved "Create Project"/"Edit Project" back to the bottom actions
+    - This was the same behavior as the React version, but it was changed with SvelteKit's initial version
+    - Some projects required you to scroll down to confirm your changes, which made it annoying to create/edit projects
+    - Suggested by `Wazhai#0161`
 - Quest dialog changes
   - Items can be clicked in the quest dialog to open an "Edit Inventory" dialog
   - The quest id can be clicked to open a dialog that shows information for all items similar to how the React version worked
+  - Added `required/total_required` display, moved drop rate % to be above the quest item
+    - Suggested by `Wazhai#0161`
 - Quest score calculation changes
   - The amount of required items now influences the quest score a little
     - `quest_score += (required_amount / 9999) * 1000`
@@ -40,6 +46,8 @@ Beta v2 start: React to SvelteKit Migration
 - Inventory page changes
   - Changed how "Add Items" work, you can now select fragments directly
   - Added a "Delete All Items" button to delete all items in your inventory if desired
+  - Added rarity and amount sorting options
+    - Suggested by `Zerooo#3807`
 - Settings page changes
   - Add new setting: `Hide Unreleased Content`
     - This will hide unreleased characters or items that are not available in your Game Region

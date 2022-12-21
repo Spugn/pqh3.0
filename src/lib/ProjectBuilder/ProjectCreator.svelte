@@ -4,18 +4,20 @@
     import LinearProgress from '@smui/linear-progress';
     import { createEventDispatcher } from 'svelte';
     import ItemButton from "$lib/Item/Button.svelte";
-</script>
-
-<script lang="ts">
-    const dispatch = createEventDispatcher();
     import CharacterCatalog from "$lib/Catalog/CharacterCatalog.svelte";
     import { user } from '$lib/api/api';
     import EditCharacterProject from "./EditCharacterProject.svelte";
     import ItemCatalog from "$lib/Catalog/ItemCatalog.svelte";
-    import type { Recipe } from '$lib/api/api.d';
     import EditItemProject from "./EditItemProject.svelte";
+</script>
+
+<script lang="ts">
+    const dispatch = createEventDispatcher();
+    import type { Recipe } from '$lib/api/api.d';
 
     export let open : boolean = false;
+    let edit_character_project : EditCharacterProject;
+    let edit_item_project : EditItemProject;
     let step = 0;
 
     // project variables
@@ -148,105 +150,61 @@
     {#if step === 2 && type === "character"}
         <div class="title pl-2 pt-1">Edit Character Project Details</div>
         <DialogContent class="text-center">
-            <EditCharacterProject {id} on:generated_project={(event) => {
+            <EditCharacterProject bind:this={edit_character_project} {id} on:generated_project={(event) => {
                 user.projects.add(event.detail.data.project);
                 dispatch("success");
                 open = false;
             }} />
         </DialogContent>
-        <Actions>
-            <Button color="secondary" variant="outlined" class="w-full"
+        <Actions class="flex flex-row gap-1 w-full">
+            <Button color="secondary" variant="outlined" class="flex-1"
                 on:click={() => {
                     step = 1;
                 }}
             >
-                <Label>Back to Character Selection</Label>
+                <Label>Back</Label>
+            </Button>
+            <!-- blank action needed so button won't close dialog (closes by default) -->
+            <Button color="primary" variant="raised" class="flex-1" action=""
+                on:click={() => {
+                    edit_character_project.complete();
+                }}
+            >
+                <Label>Create Project</Label>
             </Button>
         </Actions>
     {/if}
     {#if step === 2 && type === "item"}
         <div class="title pl-2 pt-1">Edit Item Project Details</div>
         <DialogContent class="text-center">
-            <EditItemProject items={item_project_required} on:generated_project={(event) => {
-                user.projects.add(event.detail.data.project);
-                dispatch("success");
-                open = false;
-            }} />
+            <EditItemProject items={item_project_required}
+                bind:this={edit_item_project}
+                on:generated_project={(event) => {
+                    user.projects.add(event.detail.data.project);
+                    dispatch("success");
+                    open = false;
+                }}
+            />
         </DialogContent>
-        <Actions>
-            <Button color="secondary" variant="outlined" class="w-full"
+        <Actions class="flex flex-row gap-1 w-full">
+            <Button color="secondary" variant="outlined" class="flex-1"
                 on:click={() => {
                     step = 1;
                 }}
             >
-                <Label>Back to Item Selection</Label>
+                <Label>Back</Label>
+            </Button>
+            <!-- blank action needed so button won't close dialog (closes by default) -->
+            <Button color="primary" variant="raised" class="flex-1" action=""
+                on:click={() => {
+                    edit_item_project.complete();
+                }}
+            >
+                <Label>Create Project</Label>
             </Button>
         </Actions>
     {/if}
 </Dialog>
-
-{#if false}
-<Dialog bind:open={open} class="text-black z-[1001]">
-    <!-- z-index needs to be above miyako menu button (z-index 1000) -->
-    <LinearProgress progress={step / 3} closed={false} />
-    <div class="title pl-2 pt-1">Create Project</div>
-    <!-- step 0 : choose project type -->
-    {#if step === 0}
-        <DialogContent>
-            <Button variant="raised" class="w-full h-[15vh] mb-2" style="background-color:#ED6C02"
-                on:click={() => {
-                    step++;
-                    type = "character";
-                }}
-            >
-                <Label>Character</Label>
-            </Button>
-            <Button variant="raised" class="w-full h-[15vh]" style="background-color:#9C27B0"
-                on:click={() => {
-                    step++;
-                    type = "item";
-                }}
-            >
-                <Label>Item</Label>
-            </Button>
-        </DialogContent>
-        <Actions>
-            <Button color="secondary" variant="outlined" class="w-full">
-                <Label>Cancel</Label>
-            </Button>
-        </Actions>
-    {/if}
-    <!-- step 1 : choose character or choose items -->
-    {#if step === 1 && type === "character"}
-        <DialogContent style="min-width: calc(100vw - 64px); min-height: calc(100vh - 32px);">
-            <CharacterCatalog />
-        </DialogContent>
-        <Actions>
-            <Button color="secondary" variant="outlined" class="w-full"
-                on:click={() => {
-                    step = 0;
-                }}
-            >
-                <Label>Cancel</Label>
-            </Button>
-        </Actions>
-    {/if}
-    {#if step === 1 && type === "item"}
-        <DialogContent>
-            item catalog here
-        </DialogContent>
-        <Actions>
-            <Button color="secondary" variant="outlined" class="w-full"
-                on:click={() => {
-                    step = 0;
-                }}
-            >
-                <Label>Cancel</Label>
-            </Button>
-        </Actions>
-    {/if}
-</Dialog>
-{/if}
 
 <style>
     .title {

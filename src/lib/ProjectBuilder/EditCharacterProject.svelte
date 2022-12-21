@@ -4,11 +4,8 @@
     import Textfield from '@smui/textfield';
     import HelperText from '@smui/textfield/helper-text';
     import Button, { Label } from "@smui/button";
-    //import Paper, { Title, Content } from '@smui/paper';
-    import Card, { Content } from '@smui/card';
     import ItemButton from "$lib/Item/Button.svelte";
     import ItemImage from "$lib/Item/Image.svelte";
-    import { fade } from 'svelte/transition';
     import { createEventDispatcher } from 'svelte';
     import MenuSurface from '@smui/menu-surface';
 </script>
@@ -57,7 +54,6 @@
         shown: false,
         message: "",
     };
-    let parent_div : HTMLDivElement;
 
     $: {
         if (!isNaN(start_rank)) {
@@ -257,9 +253,13 @@
         start_equips = character.equipment(id, start_rank) as string[];
         start_equipped = [...saved_character.equipment]; // using this without cloning will result in changes to saved_character
     }
+
+    export function complete() {
+        validateProject();
+    }
 </script>
 
-<div bind:this={parent_div} class="flex flex-wrap flex-col items-center justify-center gap-4" {...$$restProps}>
+<div class="flex flex-wrap flex-col items-center justify-center gap-4" {...$$restProps}>
     <div class="flex flex-row items-center justify-center gap-2 font-extrabold text-md sm:text-2xl">
         <CharacterAvatar avatar={id} large />
         <div>{character_name}</div>
@@ -273,6 +273,15 @@
             <HelperText slot="helper">Optional</HelperText>
         </Textfield>
     </div>
+    {#if project && project.partially_completed}
+        <div class="flex flex-row select-none gap-2 justify-center items-center mb-3 text-[#5F2120]">
+            <span class="material-icons">warning</span>
+            <small>
+                <strong>This project has been partially completed before.</strong><br/>
+                Editing the project will revert these changes.
+            </small>
+        </div>
+    {/if}
     <div class="w-full mb-2">
         <hr />
         <div class="title text-left">Start Details</div>
@@ -328,8 +337,6 @@
                         if (!session_ignored[i + 1]) {
                             delete session_ignored[i + 1];
                         }
-                        console.log(session_ignored);
-                        console.log(user.getSessionIgnoredRarities());
                     }}
                     class={"transition-all h-12 w-12"
                         + (session_ignored[i + 1] ? " hover:grayscale-0 grayscale opacity-50 hover:opacity-80" : "")
@@ -368,21 +375,6 @@
                 </div>
             {/if}
         {/if}
-    </div>
-    <div class="w-full space-y-3 mb-2">
-        <hr />
-        {#if project && project.partially_completed}
-        <div class="flex flex-row select-none gap-2 justify-center items-center mb-3 text-[#5F2120]">
-            <span class="material-icons">warning</span>
-            <small>
-                <strong>This project has been partially completed before.</strong><br/>
-                Editing the project will revert these changes.
-            </small>
-        </div>
-        {/if}
-        <Button on:click={validateProject} variant="raised" class="w-full">
-            <Label>{project ? "Edit Project" : "Create Project"}</Label>
-        </Button>
     </div>
 </div>
 

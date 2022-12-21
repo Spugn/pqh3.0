@@ -165,9 +165,6 @@
 {/if}
 
 <style>
-    div.character {
-        z-index: 500;
-    }
     div.header {
         position: fixed;
         top: 10px;

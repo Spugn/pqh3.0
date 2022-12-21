@@ -94,6 +94,10 @@
                 ? items[event.detail.data.id] + 1 : 1,
         }
     }
+
+    export function complete() {
+        validateProject();
+    }
 </script>
 
 {#if !show_catalog}
@@ -143,12 +147,6 @@
                     />
                 {/each}
             </div>
-        </div>
-        <div class="w-full space-y-3 mb-2">
-            <hr />
-            <Button on:click={validateProject} variant="raised" class="w-full">
-                <Label>{project ? "Edit Project" : "Create Project"}</Label>
-            </Button>
         </div>
     </div>
 {:else}

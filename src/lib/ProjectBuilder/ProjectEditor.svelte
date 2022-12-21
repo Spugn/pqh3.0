@@ -1,20 +1,22 @@
 <script context="module">
     import Dialog, { Content as DialogContent, Actions } from '@smui/dialog';
     import Button, { Label } from "@smui/button";
+    import { user } from '$lib/api/api';
+    import EditCharacterProject from "./EditCharacterProject.svelte";
+    import EditItemProject from "./EditItemProject.svelte";
     import { createEventDispatcher } from 'svelte';
 </script>
 
 <script lang="ts">
     const dispatch = createEventDispatcher();
-    import { user } from '$lib/api/api';
-    import EditCharacterProject from "./EditCharacterProject.svelte";
     import type { CharacterProject, ItemProject } from '$lib/api/api.d';
-    import EditItemProject from "./EditItemProject.svelte";
 
     export let open : boolean = false;
     export let project_id : number;
 
     let show_item_catalog = false;
+    let edit_character_project : EditCharacterProject;
+    let edit_item_project : EditItemProject;
 
     let project : CharacterProject | ItemProject;
     let character_project : CharacterProject;
@@ -43,6 +45,7 @@
             <div class="title pl-2 pt-1">Edit Character Project Details</div>
             <DialogContent class="text-center">
                 <EditCharacterProject id={character_project.details.avatar_id} project={character_project}
+                    bind:this={edit_character_project}
                     on:generated_project={(event) => {
                         const proj = event.detail.data.project;
                         dispatch("success", {
@@ -55,13 +58,20 @@
                     }}
                 />
             </DialogContent>
-            <Actions>
-                <Button color="secondary" variant="outlined" class="w-full"
+            <Actions class="flex flex-row gap-1 w-full">
+                <Button color="secondary" variant="outlined" class="flex-1"
                     on:click={() => {
                         open = false;
                     }}
                 >
                     <Label>Cancel</Label>
+                </Button>
+                <Button color="primary" variant="raised" class="flex-1" action=""
+                    on:click={() => {
+                        edit_character_project.complete();
+                    }}
+                >
+                    <Label>Edit Project</Label>
                 </Button>
             </Actions>
         {/if}
@@ -70,6 +80,7 @@
             <DialogContent class="text-center">
                 <EditItemProject project={item_project}
                     bind:show_catalog={show_item_catalog}
+                    bind:this={edit_item_project}
                     on:generated_project={(event) => {
                         const proj = event.detail.data.project;
                         dispatch("success", {
@@ -82,14 +93,21 @@
                     }}
                 />
             </DialogContent>
-            <Actions>
+            <Actions class='flex flex-row gap-1 w-full'>
                 {#if !show_item_catalog}
-                    <Button color="secondary" variant="outlined" class="w-full"
+                    <Button color="secondary" variant="outlined" class="flex-1"
                         on:click={() => {
                             open = false;
                         }}
                     >
                         <Label>Cancel</Label>
+                    </Button>
+                    <Button color="primary" variant="raised" class="flex-1" action=""
+                        on:click={() => {
+                            edit_item_project.complete();
+                        }}
+                    >
+                        <Label>Edit Project</Label>
                     </Button>
                 {/if}
             </Actions>

@@ -73,6 +73,8 @@ export default (() => {
                         rank : number;
                         equipment : [boolean, boolean, boolean, boolean, boolean, boolean];
                     };
+                    memory_piece? : number;
+                    pure_memory_piece? : number;
                 };
                 priority : boolean;
                 required : Recipe;
@@ -130,6 +132,8 @@ export default (() => {
                 details: {
                     ...project.details,
                     ignored_rarities,
+                    ...(!project.details.memory_piece && { memory_piece: 0 }),
+                    ...(!project.details.pure_memory_piece && { pure_memory_piece: 0 }),
                 },
                 required: project.required,
             };
