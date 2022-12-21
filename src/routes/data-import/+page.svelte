@@ -319,9 +319,9 @@
             user.projects.set(import_data.projects);
         }
         // @ts-ignore
-        if (import_data.characters) {
+        if (import_data.character) {
             // @ts-ignore
-            user.character.set(import_data.characters);
+            user.character.set(import_data.character);
         }
         // @ts-ignore
         if (import_data.inventory) {
