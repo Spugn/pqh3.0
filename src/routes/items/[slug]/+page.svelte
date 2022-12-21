@@ -275,7 +275,7 @@
         <div class="item">
             <div class="header flex flex-col gap-1 items-start">
                 <div>
-                    <a href="/items" class="flex flex-row justify-center gap-1"
+                    <a href="{base}/items" class="flex flex-row justify-center gap-1"
                         style="color: inherit; text-decoration: none;"
                     >
                         <span class="material-icons">arrow_back</span>
@@ -365,7 +365,7 @@
                             <div class="section-title">Equipment Usage</div>
                             <div class="flex flex-row flex-wrap justify-center items-center gap-1">
                                 {#each equipment_usage as usage (usage)}
-                                    <a href="/items/{usage}" target="_blank" rel="noreferrer">
+                                    <a href="{base}/items/{usage}" target="_blank" rel="noreferrer">
                                         <Image img={usage} type="items" alt={usage}
                                             props={{
                                                 width: 64,
@@ -383,7 +383,7 @@
                             <div class="section-title">Character Usage</div>
                             <div class="flex flex-row flex-wrap justify-center items-center gap-1">
                                 {#each character_usage as usage (JSON.stringify(usage))}
-                                    <a href="/characters/{usage.id}">
+                                    <a href="{base}/characters/{usage.id}">
                                         <Image img={usage.id} type="unit_icon" alt={`${usage.id} - rank ${usage.rank}`}
                                             props={{
                                                 width: 64,
@@ -431,7 +431,7 @@
     <div>
         item id {data.page} does not exist.
     </div>
-    <a href="/items">back to item index</a>
+    <a href="{base}/items">back to item index</a>
 {/if}
 
 <style>

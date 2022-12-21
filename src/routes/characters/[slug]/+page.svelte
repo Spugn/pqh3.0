@@ -45,7 +45,7 @@
         <div class="character">
             <div class="header flex flex-col gap-1 items-start">
                 <div>
-                    <a href="/characters" class="flex flex-row justify-center gap-1"
+                    <a href="{base}/characters" class="flex flex-row justify-center gap-1"
                         style="color: inherit; text-decoration: none;"
                     >
                         <span class="material-icons">arrow_back</span>
@@ -103,7 +103,7 @@
                                             <div class="flex flex-row gap-1">
                                                 {#each equipment[rank] as id}
                                                     {#if id !== constants.placeholder_id}
-                                                        <a href="/items/{id}">
+                                                        <a href="{base}/items/{id}">
                                                             <Image img={id} type="items" alt={id}
                                                                 props={{
                                                                     draggable: false,
@@ -161,7 +161,7 @@
     <div>
         character id {data.page} does not exist.
     </div>
-    <a href="/characters">back to character index</a>
+    <a href="{base}/characters">back to character index</a>
 {/if}
 
 <style>

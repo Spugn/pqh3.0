@@ -1,4 +1,5 @@
 <script context="module">
+    import { base } from '$app/paths';
     import { character as characterAPI, constants, equipment as equipmentAPI } from '$lib/api/api';
     import Image from "$lib/Image.svelte";
     import Textfield from '@smui/textfield';
@@ -98,7 +99,7 @@
     <!-- equipment grid -->
     <div class="flex flex-row gap-1 flex-wrap justify-center items-center pb-8 mx-2">
         {#each items as id (id)}
-            <a href="/items/{id}">
+            <a href="{base}/items/{id}">
                 <Image img={id} type="items" alt={`${id}`}
                     props={{
                         draggable: false,
