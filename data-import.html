@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133296718-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-133296718-1');
+		</script>
+		<link rel="icon" href="./favicon.ico" />
+		<link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+		<link rel="manifest" href="./manifest.json" />
+
+		<!-- meta data -->
+		<meta charset="utf-8" />
+		<meta name="author" content="S'pugn">
+    	<meta name="keywords" content="Princess Connect! Re:Dive, プリンセスコネクト! Re:Dive, Quest Helper, S'pugn, 公主连结">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000"/>
+
+		<!-- open graph / facebook meta data -->
+		<meta property="og:type" content="website"/>
+		<meta property="og:image:width" content="64"/>
+    	<meta property="og:image:height" content="64"/>
+		<meta property="og:locale" content="en_US"/>
+
+		<!-- twitter meta data -->
+		<meta name="twitter:card" content="summary"/>
+    	<meta name="twitter:site" content="@eSpugn"/>
+    	<meta name="twitter:creator" content="@eSpugn"/>
+
+		<!-- stylesheets -->
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+			@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display=swap');
+			@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+			@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+		</style>
+
+		<!-- treant dependency (too lazy to figure out how to properly import, too many issues) -->
+		<!-- importing in script tag results in "window is not defined" errors -->
+		<!-- importing in svelte:head doesnt seem to load before treant is used without a page refresh -->
+		<!-- converting to a module-js file probably won't help either, so this can't helped. too bad. -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+
+		<!-- etc -->
+		<meta http-equiv="content-security-policy" content="">
+		<link href="./_app/immutable/assets/_layout-b6f3ef9c.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/_page-989e1c14.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/MiniProjectTitle-e4671b70.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/start-956e7685.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index-0cc2ee10.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-d1c2256b.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index-19ede012.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths-b4419565.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-dafa0123.js">
+		<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.js-9cbb603b.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/_layout-da46b06b.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/data-import/_page.svelte-991704b0.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/MiniProjectTitle-a701e95b.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/equipment.api-3a8e029a.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/tslib.es6-127e0f28.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/user.api-5dfc8955.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Image-db722626.js"><title>priconne-quest-helper | Data Import</title><!-- HEAD_svelte-1qc73oa_START --><meta name="title" content="priconne-quest-helper | Data Import"><meta name="description" content="priconne-quest-helper Data Importing - Transfer data between devices!"><meta property="og:title" content="priconne-quest-helper | Data Import"><meta property="og:description" content="priconne-quest-helper Data Importing - Transfer data between devices!"><meta property="og:image" content="https://raw.githubusercontent.com/Spugn/priconne-quest-helper/master/static/logo128.png"><meta property="og:url" content="https://spugn.github.io/priconne-quest-helper/data-import/"><meta property="twitter:title" content="priconne-quest-helper | Data Import"><meta property="twitter:description" content="priconne-quest-helper Data Importing - Transfer data between devices!"><!-- HEAD_svelte-1qc73oa_END -->
+	</head>
+	<body>
+		<div>
+
+
+<main>
+
+<div class="color-aliceblue text-center text-shadow-md font-bold py-3.5 mb-3 text-white"><h1 class="title text-[5vw] sm:text-3xl svelte-1ei8749">Princess Connect! Re:Dive - Quest Helper</h1>
+    <h2 class="title text-[4vw] sm:text-2xl tracking-widest svelte-1ei8749">Data Import</h2>
+    <h1 class="title simple svelte-1ei8749">priconne-quest-helper │ Data Import</h1></div>
+
+
+<section></section></main>
+
+<noscript><div id="loading"><i id="miyako-fail"></i></div>
+    <h4><span style="color: orangered;">Pudding doesn&#39;t taste good without JavaScript...</span><br>
+        <span style="color: #e3cfcb;">Princess Connect! Re:Dive Quest Helper</span> can not function without JavaScript.<br>
+        <span style="color: #ffdf73;">Please enable JavaScript in your browser to continue.</span></h4>
+    <style>main {
+            display: none;
+        }
+        h4 {
+            text-align: center;
+            text-shadow: 1px 1px 3px #000000, 1px 1px 4px #000000;
+            background: rgba(0, 0, 0, 0.30);
+            padding: 10px 30px;
+            border-radius: 6px;
+        }
+        #loading {
+            position: fixed;
+            top: 50%;
+            left: 51%;
+            transform: translate(-50%, -50%);
+            margin: auto;
+            text-align: center;
+            z-index: -1;
+        }
+        #miyako-fail {
+            background: url("/images/webpage/miyako_death.png");
+            animation: death 1000ms steps(18) forwards;
+            display: block;
+            width: 400px;
+            height: 400px;
+            margin-top: -30vh;
+        }
+        @keyframes death {
+            from {background-position-y: 0;}
+            to {background-position-y: -7200px;}
+        }</style></noscript>
+
+
+		<script type="module" data-sveltekit-hydrate="15c8pun">
+			import { start } from "./_app/immutable/start-956e7685.js";
+
+			start({
+				env: {},
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="15c8pun"]').parentNode,
+				version: "1671615082870",
+				hydrate: {
+					node_ids: [0, 6],
+					data: [null,null],
+					form: null
+				}
+			});
+		</script>
+	</div>
+	</body>
+</html>
