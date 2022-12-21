@@ -26,7 +26,7 @@ jobs:
           cache: 'npm'
 
       # pyton 3.11+ seems to have issues when building decrunch
-      - name: Setup Python [3.x]
+      - name: Setup Python [3.10.8]
         uses: actions/setup-python@v2
         with:
           python-version: '3.10.8'
@@ -46,7 +46,7 @@ jobs:
 
       - name: Run update.js
         id: update
-        run: node ./.github/workflows/pqh-updater/update.js
+        run: node ./.github/workflows/pqh-updater/update.cjs
 
       # assuming there are new changes
       - name: Update images on Git
@@ -54,10 +54,13 @@ jobs:
         run: |
           git config user.name $user_name
           git config user.email $user_email
-          git add ./public/version
-          git add ./public/data.json
-          git add ./public/data.min.json
-          git add ./public/images
+          git add ./static/data/version
+          git add ./static/data/data.json
+          git add ./static/data/data.character.json
+          git add ./static/data/data.equipment.json
+          git add ./static/data/data.quest.json
+          git add ./src/lib/api/data.min.json
+          git add ./static/images
           git diff-index --quiet HEAD || git commit -m "[Bot] Data Update" -m '
           ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           This is an automated process. Issues may or may not have occured.'

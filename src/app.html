@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133296718-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-133296718-1');
+		</script>
+		<link rel="icon" href="%sveltekit.assets%/favicon.ico" />
+		<link rel="apple-touch-icon" href="%sveltekit.assets%/apple-touch-icon.png" />
+		<link rel="manifest" href="%sveltekit.assets%/manifest.json" />
+
+		<!-- meta data -->
+		<meta charset="utf-8" />
+		<meta name="author" content="S'pugn">
+    	<meta name="keywords" content="Princess Connect! Re:Dive, プリンセスコネクト! Re:Dive, Quest Helper, S'pugn, 公主连结">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000"/>
+
+		<!-- open graph / facebook meta data -->
+		<meta property="og:type" content="website"/>
+		<meta property="og:image:width" content="64"/>
+    	<meta property="og:image:height" content="64"/>
+		<meta property="og:locale" content="en_US"/>
+
+		<!-- twitter meta data -->
+		<meta name="twitter:card" content="summary"/>
+    	<meta name="twitter:site" content="@eSpugn"/>
+    	<meta name="twitter:creator" content="@eSpugn"/>
+
+		<!-- stylesheets -->
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+			@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display=swap');
+			@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+			@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+		</style>
+
+		<!-- treant dependency (too lazy to figure out how to properly import, too many issues) -->
+		<!-- importing in script tag results in "window is not defined" errors -->
+		<!-- importing in svelte:head doesnt seem to load before treant is used without a page refresh -->
+		<!-- converting to a module-js file probably won't help either, so this can't helped. too bad. -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+
+		<!-- etc -->
+		%sveltekit.head%
+	</head>
+	<body>
+		<div>%sveltekit.body%</div>
+	</body>
+</html>

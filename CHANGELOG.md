@@ -3,6 +3,72 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.1.0] - 2022-12-21
+Beta v2 start: React to SvelteKit Migration
+### Added
+- Migrated from `React` to `SvelteKit v1.0`
+- Data Pages
+  - Character Data
+  - Item Data
+  - Quest Data
+  - Statistics
+- Data Importing and Exporting
+  - Added support to import data from `expugn/priconne-quest-helper`
+- Changes to settings
+  - The React version of settings are auto-migrated to the newer version
+- New project card format
+  - Project cards can be expanded by clicking on the thumbnail (or clicking Expand in the project menu)
+  - When a project is expanded, you can "Partially Complete" your project by clicking on an item in the
+    "Required Items" section
+  - When a project is expanded, you can "Edit Inventory" by clicking on an item in the "Required Fragments" or
+    "Missing Fragments" section
+  - Project cards will now display their completion %
+  - Item Project names are now optional (previously required)
+- Modified project creation
+  - When selecting a character for a character project, you can now Search for a specific name or ID
+  - Ignored Rarities for project creation will stay the same for the session (so you don't need to keep clicking the buttons)
+- Quest dialog changes
+  - Items can be clicked in the quest dialog to open an "Edit Inventory" dialog
+  - The quest id can be clicked to open a dialog that shows information for all items similar to how the React version worked
+- Quest score calculation changes
+  - The amount of required items now influences the quest score a little
+    - `quest_score += (required_amount / 9999) * 1000`
+- Character page changes
+  - You can now search for a specific character name or ID in the character page
+  - You can now enable "Consume Inventory" when manually editing characters to remove newly added items from your inventory
+    - Suggested by `NoahVerum#7732`
+- Inventory page changes
+  - Changed how "Add Items" work, you can now select fragments directly
+  - Added a "Delete All Items" button to delete all items in your inventory if desired
+- Settings page changes
+  - Add new setting: `Hide Unreleased Content`
+    - This will hide unreleased characters or items that are not available in your Game Region
+  - Add new setting: `Auto Enable Projects`
+    - This will enable all projects at startup and project creation (by default, projects start disabled)
+  - Added quest settings in the setting page
+    - Added more detail to quest settings
+- Character Data Page (changes from `expugn/priconne-quest-helper` listed below)
+  - Added search option, search and filter for a specific character name and ID
+  - Added "Character Names" section to display all supported regional names
+  - Added "Image Assets" section to display the full/unmodified version of unit_icon and unit_still
+  - Specific character pages should have a different embed now when sharing links
+- Item Data Page (changes from `expugn/priconne-quest-helper` listed below)
+  - Added search option, search and filter for a specific equipment name and ID
+  - Moved "Rank Filter" to somewhere more visible
+  - Added "Equipment Names" section to display all supported regional names for the full and fragment version of an item
+  - Cleaned up recipe display, now there's only 1 display but you can select which region to use
+  - The "Character Usage" section automatically takes your `spugn/priconne-quest-helper` character status and grayscales
+    any character you don't own
+  - Added "Image Assets" section to display the full/unmodified version of item/fragment icons
+- Quest Data Page (changes from `expugn/priconne-quest-helper` listed below)
+  - Region select moved to bottom of window, so you don't need to scroll up to change regions anymore
+- Statistics Data Page (changes from `expugn/priconne-quest-heper` listed below)
+  - Removed regional support
+    - Theres a fatal flaw with how data is currently organized, where it's impossible to tell which rank that a region
+      currently has available. This makes the statistics page inaccurate if regional support was enabled
+### Removed
+- Removed "Reset Tip Alerts" setting
+
 ## [3.0.6] - 2022-03-11
 ### Fixed
 - Fixed a bug reported by `Aquastic#1522`

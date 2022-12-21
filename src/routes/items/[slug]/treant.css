@@ -1,0 +1,26 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/treant-js/1.0/Treant.css");
+
+.Treant > .node img {
+    width: 48px;
+    height: 48px;
+}
+p.node-desc {
+    font-family: "Calibri", Arial, serif;
+    text-shadow: 1px 1px 4px #000000,
+        1px 1px 4px #000000,
+        1px 1px 4px #000000,
+        1px 1px 4px #000000;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    bottom: -2px;
+    right: 4px;
+}
+p.node-desc:before {
+    content: '\00D7';
+}
+div.node {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
