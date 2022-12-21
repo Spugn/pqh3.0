@@ -48,8 +48,8 @@
         end_rank = end_rank_prev = project.details.end.rank;
         end_equips = character.equipment(id, end_rank) as string[];
         end_equipped = project.details.end.equipment;
-        regular_count = project.details.memory_piece;
-        pure_count = project.details.pure_memory_piece;
+        regular_count = project.details.memory_piece || 0;
+        pure_count = project.details.pure_memory_piece || 0;
         session_ignored = project.details.ignored_rarities;
     }
 
