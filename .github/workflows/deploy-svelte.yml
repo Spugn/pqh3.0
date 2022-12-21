@@ -30,11 +30,11 @@ jobs:
           do
             echo $file
             if [[ $file == static/* ]]; then
-              echo "::set-output name=run::true"
+              echo "run=true" >> $GITHUB_OUTPUT
               break
             fi
             if [[ $file == src/* ]]; then
-              echo "::set-output name=run::true"
+              echo "run=true" >> $GITHUB_OUTPUT
               break
             fi
           done < files.txt

@@ -5,7 +5,7 @@ publish(
     'build',
     {
         branch: 'gh-pages',
-        repo: 'https://github.com/Spugn/pqh-svelte.git',
+        repo: 'https://github.com/Spugn/priconne-quest-helper.git',
         user: {
             name: "S'pugn",
             email: 'Expugn@users.noreply.github.com'
