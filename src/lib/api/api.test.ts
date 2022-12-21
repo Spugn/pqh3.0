@@ -27,6 +27,7 @@ describe("character api", () => {
         expect(character.name("")).toBeFalsy(); // invalid name
         expect(character.name(results[0], "UNKNOWN")).toBe("ミヤコ"); // default to JP
     });
+    /*
     test("equipment (getEquipment)", () => {
         expect(character.equipment(results[0])).toBeTruthy(); // all equipment
         expect(character.equipment(results[0], 1)).toBeTruthy(); // rank_1
@@ -34,6 +35,7 @@ describe("character api", () => {
         expect(character.equipment(results[0], 0)).toBeFalsy(); // invalid rank (< 1)
         expect(character.equipment(results[0], Number.MAX_VALUE)).toBeFalsy(); // invalid rank (number max value)
     });
+    */
     test("getMaxRank", () => {
         expect(character.getMaxRank()).toBeGreaterThan(-1) // should at least be changed from default of -1
     });
@@ -384,6 +386,7 @@ describe("quest api", () => {
         // checking memory piece
         expect(quest.checkForItem("31059", "1-1H", "JP")).toBeTruthy();
     });
+    /*
     test("estimate", () => {
         // random item estimate
         expect(quest.estimate({ "101011": 1 })).toBeGreaterThan(0);
@@ -398,6 +401,7 @@ describe("quest api", () => {
             "116552": 1,
         })).toBeGreaterThanOrEqual(100);
     });
+    */
 });
 
 describe("recipe api", () => {
@@ -869,6 +873,7 @@ describe("user api", () => {
         user.projects.delete(2); // project id "2" doesn't exist
         user.projects.delete(1); // deleted project 1 successfully
     });
+    /*
     test("projects.complete", () => {
         const proj = {
             type: "character",
@@ -933,4 +938,5 @@ describe("user api", () => {
         });
         expect(user.inventory.getAmount("101011")).toEqual(0); // -5 from the 5 we had in inventory
     });
+    */
 });
