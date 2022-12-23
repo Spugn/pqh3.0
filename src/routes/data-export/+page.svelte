@@ -45,8 +45,8 @@
                 <div class="flex flex-row justify-start flex-wrap gap-1">
                     {#each projs as p}
                         <MiniProjectTitle thumbnail={p.thumbnail} project_type={p.type} priority={p.priority}
-                            project_name={p.project_name} subtitle={p.subtitle} start_rank={p.start_rank}
-                            end_rank={p.end_rank} progress={-1}
+                            priority_level={p.priority_level} project_name={p.project_name}
+                            subtitle={p.subtitle} start_rank={p.start_rank} end_rank={p.end_rank} progress={-1}
                         />
                     {/each}
                 </div>
@@ -127,6 +127,7 @@
         thumbnail: string;
         type: string;
         priority: boolean;
+        priority_level: number;
         project_name: string;
         subtitle: string;
         start_rank: number;
@@ -142,6 +143,7 @@
                 thumbnail: p.type === "character" ? (p as CharacterProject).details.avatar_id : Object.keys(p.required)[Object.keys(p.required).length * Math.random() << 0],
                 type: p.type || "item",
                 priority: p.priority || false,
+                priority_level: p.details?.priority_level || 2,
                 project_name: p.details?.name || "Untitled Project",
                 subtitle: p.type === "character" ? (p as CharacterProject).details.formal_name : "Item Project",
                 start_rank: p.type === "character" ? (p as CharacterProject).details.start.rank : -1,
@@ -191,7 +193,7 @@
     let settings_enabled : boolean = false;
     const settings = user.settings.get();
 
-    let url : string = "http://127.0.0.1:5173/data-export/import-data/?id=d9e797157f8558d5472c2e942b799133";
+    let url : string;
     let receiverWindow : Window;
     const hash = ["b4aj", "zMT2", "ST2S", "dD4f", "9GSV", "Hxjz", "wM2b", "2j1k", "ghp_", "LBF1", "8704351629"];
     let hash_string = "";

@@ -55,40 +55,38 @@
         message: "",
     };
 
-    $: {
-        if (!isNaN(start_rank)) {
-            if (start_rank <= 0) {
-                start_rank = 1;
-            }
-            if (start_rank > character.getMaxRank()) {
-                start_rank = character.getMaxRank();
-            }
-            if (start_rank > 0 && start_rank <= character.getMaxRank() && start_rank !== start_rank_prev) {
-                start_equips = character.equipment(id, start_rank) as string[];
-                start_equipped = [false, false, false, false, false, false];
-                start_rank_prev = start_rank;
-            }
+    $: if (!isNaN(start_rank)) {
+        start_rank = Math.floor(start_rank);
+        if (start_rank <= 0) {
+            start_rank = 1;
         }
-    };
+        if (start_rank > character.getMaxRank()) {
+            start_rank = character.getMaxRank();
+        }
+        if (start_rank > 0 && start_rank <= character.getMaxRank() && start_rank !== start_rank_prev) {
+            start_equips = character.equipment(id, start_rank) as string[];
+            start_equipped = [false, false, false, false, false, false];
+            start_rank_prev = start_rank;
+        }
+    }
 
-    $: {
-        if (!isNaN(end_rank)) {
-            if (end_rank <= 0) {
-                end_rank = 1;
-            }
-            if (end_rank > character.getMaxRank()) {
-                end_rank = character.getMaxRank();
-            }
-            if (end_rank < start_rank) {
-                end_rank = start_rank;
-            }
-            if (end_rank > 0 && end_rank <= character.getMaxRank() && end_rank !== end_rank_prev) {
-                end_equips = character.equipment(id, end_rank) as string[];
-                end_equipped = [false, false, false, false, false, false];
-                end_rank_prev = end_rank;
-            }
+    $: if (!isNaN(end_rank)) {
+        end_rank = Math.floor(end_rank);
+        if (end_rank <= 0) {
+            end_rank = 1;
         }
-    };
+        if (end_rank > character.getMaxRank()) {
+            end_rank = character.getMaxRank();
+        }
+        if (end_rank < start_rank) {
+            end_rank = start_rank;
+        }
+        if (end_rank > 0 && end_rank <= character.getMaxRank() && end_rank !== end_rank_prev) {
+            end_equips = character.equipment(id, end_rank) as string[];
+            end_equipped = [false, false, false, false, false, false];
+            end_rank_prev = end_rank;
+        }
+    }
 
     function validateProject() {
         if (isNaN(start_rank)) {
@@ -103,6 +101,10 @@
         if (isNaN(pure_count)) {
             pure_count = 0;
         }
+        start_rank = Math.floor(start_rank);
+        end_rank = Math.floor(end_rank);
+        regular_count = Math.floor(regular_count);
+        pure_count = Math.floor(pure_count);
         const start_count = start_equipped.filter(Boolean).length;
         const end_count = end_equipped.filter(Boolean).length;
 

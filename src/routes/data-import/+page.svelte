@@ -38,6 +38,7 @@
         thumbnail: string;
         type: string;
         priority: boolean;
+        priority_level: number;
         project_name: string;
         subtitle: string;
         start_rank: number;
@@ -92,6 +93,7 @@
                     thumbnail: p.type === "character" ? (p as CharacterProject).details.avatar_id : Object.keys(p.required)[Object.keys(p.required).length * Math.random() << 0],
                     type: p.type || "item",
                     priority: p.priority || false,
+                    priority_level: p.details?.priority_level || 2,
                     project_name: p.details?.name || "Untitled Project",
                     subtitle: p.type === "character" ? (p as CharacterProject).details.formal_name : "Item Project",
                     start_rank: p.type === "character" ? (p as CharacterProject).details.start.rank : -1,
@@ -184,6 +186,7 @@
                         details: {
                             name: project_name,
                             ignored_rarities: {},
+                            ...(priority_projects.includes(project_name) && { priority_level: 2 }),
                         },
                         required,
                     }
@@ -400,8 +403,8 @@
                 <div class="flex flex-row justify-start flex-wrap gap-1">
                     {#each projects as p}
                         <MiniProjectTitle thumbnail={p.thumbnail} project_type={p.type} priority={p.priority}
-                            project_name={p.project_name} subtitle={p.subtitle} start_rank={p.start_rank}
-                            end_rank={p.end_rank} progress={-1}
+                            priority_level={p.priority_level} project_name={p.project_name} subtitle={p.subtitle}
+                            start_rank={p.start_rank} end_rank={p.end_rank} progress={-1}
                         />
                     {/each}
                 </div>

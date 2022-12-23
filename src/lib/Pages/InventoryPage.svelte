@@ -11,6 +11,7 @@
     import FormField from '@smui/form-field';
     import ItemImage from "$lib/Item/Image.svelte";
     import ItemCatalog from "$lib/Catalog/ItemCatalog.svelte";
+    import AmountButtons from "$lib/QuestList/AmountButtons.svelte";
 </script>
 
 <script lang="ts">
@@ -71,9 +72,7 @@
             });
         }
     }
-    $: {
-        updateItems();
-    };
+    updateItems();
 
     function openAddItemDialog() {
         add_dialog_data.open = true;
@@ -88,6 +87,7 @@
     }
     function completeAddItem() {
         add_dialog_data.open = false;
+        add_dialog_data.amount = Math.floor(add_dialog_data.amount);
         if (isNaN(add_dialog_data.amount) || add_dialog_data.amount <= 0) {
             return;
         }
@@ -120,6 +120,7 @@
     }
     function completeInventoryEdit() {
         edit_dialog_data.open = false;
+        edit_dialog_data.amount = Math.floor(edit_dialog_data.amount);
         if (isNaN(edit_dialog_data.amount) || edit_dialog_data.amount <= 0) {
             user.inventory.remove(edit_dialog_data.id);
             updateItems();
@@ -237,6 +238,16 @@
                     type="number" input$min="0" input$max={constants.inventory.max.fragment}>
                     <HelperText slot="helper">Amount in inventory</HelperText>
                 </Textfield>
+                <AmountButtons
+                    on:add={(e) => {
+                        edit_dialog_data.amount += e.detail.value;
+                        onchangeInventoryEdit();
+                    }}
+                    on:subtract={(e) => {
+                        edit_dialog_data.amount -= e.detail.value;
+                        onchangeInventoryEdit();
+                    }}
+                />
             </DialogContent>
             <Actions class="flex flex-col gap-2 w-full">
                 <div class="w-full">

@@ -94,6 +94,7 @@ interface CharacterProject { // project for building a specific character
         memory_piece: number; // number of regular memory pieces requested
         pure_memory_piece: number; // number of pure memory pieces requested
         ignored_rarities: IgnoredRarities; // item rarities to ignore
+        priority_level?: number; // 2 by default if this doesn't exist and project is priority
     };
     required: Recipe; // only full items, fragments are calculated later (NOTHING FILTERED YET EITHER)
 }
@@ -106,6 +107,7 @@ interface ItemProject { // project containing a random assortment of items
     details: {
         name?: string; // required project name
         ignored_rarities: IgnoredRarities; // item rarities to ignore
+        priority_level?: number; // 2 by default if this doesn't exist and project is priority
     };
     required: Recipe; // only full items, fragments are calculated later (NOTHING FILTERED YET)
 }
@@ -117,6 +119,7 @@ interface BasicProject { // project format excluding the details, use if want to
     details?: {
         name?: string; // project name
         ignored_rarities?: IgnoredRarities; // item rarities to ignore
+        priority_level?: number; // 2 by default if this doesn't exist and project is priority
     };
     required: Recipe; // only full items, fragments are calculated later (NOTHING FILTERED YET)
 }
@@ -265,7 +268,7 @@ interface QuestBuild2Results {
 
 export {
     Data, CharacterData, Character, EquipmentData, Equipment, QuestData, Quest,
-    Fragment, EquipmentRecipeData, QuestItem, Recipe, Inventory, CharacterProject, ItemProject,
+    Fragment, EquipmentRecipeData, QuestItem, Recipe, Inventory, CharacterProject, ItemProject, BasicProject,
     Project, IgnoredRarities, Language, ProjectType, ProjectCheckStatus, QuestScore, Settings,
     QuestSettings, SavedCharacter, SavedCharacters, UserState, ProjectProgressResult, Projects, RankDetails,
     SessionProjects, EquipmentCatalogData, EquipmentCatalog, RegionOption, DropBuffOption,

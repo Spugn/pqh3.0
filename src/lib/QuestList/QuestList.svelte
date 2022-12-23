@@ -6,11 +6,7 @@
     import Textfield from '@smui/textfield';
     import HelperText from '@smui/textfield/helper-text';
     import DataTable, { Head, Body, Row, Cell } from '@smui/data-table';
-</script>
-
-<script lang="ts">
-    const dispatch = createEventDispatcher();
-    import type { Quest, QuestBuild2Results, QuestItem, QuestScore } from "$lib/api/api.d";
+    import AmountButtons from './AmountButtons.svelte';
     import QuestSettings from "$lib/QuestSettings.svelte";
     import InfiniteScroll from "./InfiniteScroll.svelte";
     import QuestEntry from "./QuestEntry.svelte";
@@ -19,6 +15,11 @@
     import QuestItemImage from "./QuestItemImage.svelte";
     import QuestHeader from "./QuestHeader.svelte";
     import QuestItemButton from "./QuestItemButton.svelte";
+</script>
+
+<script lang="ts">
+    const dispatch = createEventDispatcher();
+    import type { Quest, QuestBuild2Results, QuestItem, QuestScore } from "$lib/api/api.d";
 
     export let open : boolean = false;
     export let quest_build_results : QuestBuild2Results;
@@ -135,6 +136,7 @@
     }
 
     function validateInventory() {
+        edit_inventory_dialog.inventory = Math.floor(edit_inventory_dialog.inventory);
         if (isNaN(edit_inventory_dialog.inventory) || edit_inventory_dialog.inventory <= 0) {
             user.inventory.set(inventoryAPI.remove(user.inventory.get(), edit_inventory_dialog.id));
             dispatch('update_inventory');
@@ -399,56 +401,11 @@
                             Amount in inventory. (max: {constants.inventory.max.fragment})
                         </HelperText>
                     </Textfield>
-                    <div class="flex flex-row gap-1 w-full pt-3">
-                        <!-- using class doesn't change button style for some reason -->
-                        <Button color="secondary" variant="outlined" class="flex-1" style="border-color:#2E7D32; color:#2E7D32;"
-                            on:click={() => addInventory(10)}
-                        >
-                            <Label>+10</Label>
-                        </Button>
-                        <Button color="secondary" variant="outlined" class="flex-1" style="border-color:#2E7D32; color:#2E7D32;"
-                            on:click={() => addInventory(5)}
-                        >
-                            <Label>+5</Label>
-                        </Button>
-                        {#if edit_inventory_dialog.drop_buff > 1}
-                            <Button color="secondary" variant="outlined" class="flex-1" style="border-color:#2E7D32; color:#2E7D32;"
-                                on:click={() => addInventory(edit_inventory_dialog.drop_buff)}
-                            >
-                                <Label>+{edit_inventory_dialog.drop_buff}</Label>
-                            </Button>
-                        {/if}
-                        <Button color="secondary" variant="outlined" class="flex-1" style="border-color:#2E7D32; color:#2E7D32;"
-                            on:click={() => addInventory(1)}
-                        >
-                            <Label>+1</Label>
-                        </Button>
-                    </div>
-                    <div class="flex flex-row gap-1 w-full pt-1">
-                        <!-- using class doesn't change button style for some reason -->
-                        <Button color="secondary" variant="outlined" class="flex-1" style="border-color:#D32F2F; color:#D32F2F;"
-                            on:click={() => subInventory(10)}
-                        >
-                            <Label>-10</Label>
-                        </Button>
-                        <Button color="secondary" variant="outlined" class="flex-1" style="border-color:#D32F2F; color:#D32F2F;"
-                            on:click={() => subInventory(5)}
-                        >
-                            <Label>-5</Label>
-                        </Button>
-                        {#if edit_inventory_dialog.drop_buff > 1}
-                            <Button color="secondary" variant="outlined" class="flex-1" style="border-color:#D32F2F; color:#D32F2F;"
-                                on:click={() => subInventory(edit_inventory_dialog.drop_buff)}
-                            >
-                                <Label>-{edit_inventory_dialog.drop_buff}</Label>
-                            </Button>
-                        {/if}
-                        <Button color="secondary" variant="outlined" class="flex-1" style="border-color:#D32F2F; color:#D32F2F;"
-                            on:click={() => subInventory(1)}
-                        >
-                            <Label>-1</Label>
-                        </Button>
-                    </div>
+                    <AmountButtons
+                        {...(edit_inventory_dialog.drop_buff > 1) && { extra_options: [edit_inventory_dialog.drop_buff] }}
+                        on:add={(e) => addInventory(e.detail.value)}
+                        on:subtract={(e) => subInventory(e.detail.value)}
+                    />
                 </div>
             </DialogContent>
         {/if}

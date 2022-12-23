@@ -65,6 +65,7 @@
     };
 
     function updateRank() {
+        dialog_data.rank = Math.floor(dialog_data.rank);
         dialog_data.prev_rank = dialog_data.rank;
         dialog_data.equips = [...characterAPI.equipment(dialog_data.id as string, dialog_data.rank) as string[]];
         const char = user.character.getCharacter(dialog_data.id as string);
@@ -91,6 +92,7 @@
 
     function save() {
         open_dialog = false;
+        dialog_data.rank = Math.floor(dialog_data.rank);
         if (isNaN(dialog_data.rank) || dialog_data.rank < 1) {
             dialog_data.rank = 1;
         }

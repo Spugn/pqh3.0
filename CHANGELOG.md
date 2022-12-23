@@ -3,6 +3,24 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.1.1] - 2022-12-23
+### Added
+- Project Priority Levels
+  - Suggested by `Tomo#5563`
+  - Projects can now have different levels of priority (max 10)
+  - The higher the priority, the higher the project will appear on quest list
+  - The higher the priority, the higher value the project's items will have in quests
+    - e.g. if a project has a priority level of `5` then an item's score will be calculated as:
+      - `item_score = drop_rate * priority_level`
+- Added "Amount Buttons" to Inventory Editing Dialogs
+  - Suggested by `Tomo#5563`
+  - Added "Amount Buttons" (buttons with +10/+5/+1/-10/-5/-1) to inventory page and expanded project display inventory editor dialogs
+### Changed
+- Switched to a darker colored yellow for the priority project gradient in hopes of making it less blinding
+  - Suggested by `Tomo#5563`
+### Fixed
+- Fixed an issue where all number inputs could have decimals when whole numbers are expected
+
 ## [3.1.0] - 2022-12-21
 Beta v2 start: React to SvelteKit Migration
 ### Added

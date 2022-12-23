@@ -16,6 +16,8 @@
     import { createEventDispatcher } from 'svelte';
     import MiniProjectTitle from './MiniProjectTitle.svelte';
     import ProjectMenu from './ProjectMenu.svelte';
+    import PriorityStar from "./PriorityStar.svelte";
+    import AmountButtons from "$lib/QuestList/AmountButtons.svelte";
 </script>
 
 <script lang="ts">
@@ -36,6 +38,10 @@
         item_id : string; // item id to modify in inventory
         amount : number; // amount in inventory
     };
+    interface PrioritizeProjectDialogData {
+        open : boolean; // dialog visible or not
+        level : number; // 1 - 10, higher = more priority
+    }
     interface CompleteProjectDialogData {
         open : boolean; // dialog visible or not
         save : boolean; // (character projects only) save character end result to user characters?
@@ -82,6 +88,10 @@
         item_id: "999999",
         amount: 0,
     };
+    let priority_edit_dialog : PrioritizeProjectDialogData = {
+        open: false,
+        level: 1,
+    }
     let complete_project_dialog : CompleteProjectDialogData = {
         open: false,
         save: true,
@@ -150,6 +160,7 @@
     function completePartialCompletion() {
         // when user clicks OK button...
         partial_complete_dialog.open = false;
+        partial_complete_dialog.amount = Math.floor(partial_complete_dialog.amount);
         if (isNaN(partial_complete_dialog.amount) || partial_complete_dialog.amount <= 0) {
             return;
         }
@@ -236,6 +247,7 @@
     }
     function completeInventoryEdit() {
         inventory_edit_dialog.open = false;
+        inventory_edit_dialog.amount = Math.floor(inventory_edit_dialog.amount);
         if (isNaN(inventory_edit_dialog.amount) || inventory_edit_dialog.amount <= 0) {
             user.inventory.set(inventoryAPI.remove(user.inventory.get(), inventory_edit_dialog.item_id));
             dispatch('update_inventory');
@@ -243,6 +255,64 @@
         }
         user.inventory.set(inventoryAPI.set(user.inventory.get(), inventory_edit_dialog.item_id, inventory_edit_dialog.amount));
         dispatch('update_inventory');
+    }
+
+    function openPriorityEditDialog() {
+        priority_edit_dialog = {
+            open: true,
+            level: project.details.priority_level || (project.priority ? 2 : 1),
+        };
+    }
+    function onchangePriorityEdit() {
+        if (priority_edit_dialog.level <= 0) {
+            priority_edit_dialog.level = 1;
+            return;
+        }
+        if (priority_edit_dialog.level > constants.max_priority_level) {
+            priority_edit_dialog.level = constants.max_priority_level;
+        }
+    }
+    // @ts-ignore - ignoring because event is a CustomEvent and it doesn't have charCode
+    function keypressPriorityEdit(event) {
+        if (event.charCode === 13) { // on ENTER key press
+            completePriorityEdit();
+        }
+    }
+    function completePriorityEdit() {
+        inventory_edit_dialog.open = false;
+        priority_edit_dialog.level = Math.floor(priority_edit_dialog.level);
+        if (isNaN(priority_edit_dialog.level) || priority_edit_dialog.level <= 1) {
+            // deprioritize project if its prioritized
+            if (project.priority || (project.details.priority_level && project.details.priority_level >= 2)) {
+                project.priority = false;
+                delete project.details.priority_level;
+                // need setTimeout so the scroll lock doesnt lock page
+                setTimeout(() => {
+                    dispatch("update_project", {
+                        data: {
+                            project_id: project.date,
+                            project,
+                        },
+                    });
+                });
+            }
+            return;
+        }
+        if (priority_edit_dialog.level > constants.max_priority_level) {
+            priority_edit_dialog.level = constants.max_priority_level;
+        }
+        project.priority = true;
+        project.details.priority_level = priority_edit_dialog.level;
+        // need setTimeout so the scroll lock doesnt lock page
+        setTimeout(() => {
+            dispatch("update_project", {
+                data: {
+                    project_id: project.date,
+                    project,
+                },
+            });
+        });
+
     }
 
     function openCompleteProjectDialog() {
@@ -285,13 +355,13 @@
         <div class="project-details">
             {#if !expanded}
                 <div class={"short-detail"
-                    + (project.priority ? " bg-gradient-to-r from-white to-yellow-200" : " bg-white")}>
+                    + (project.priority ? " bg-gradient-to-r from-white to-yellow-500" : " bg-white")}>
                     <div class="detail-content">
                         <div class="date">{date}</div>
                         <div class="project-text">
                             <div class="project-name">
                                 {#if project.priority}
-                                    <span style="color: rgb(237, 108, 2);" class="material-icons relative top-[6px]">star</span>
+                                    <PriorityStar amount={project.details.priority_level || 2} />
                                 {/if}
                                 <span class="name">{project_name}</span>
                             </div>
@@ -346,7 +416,7 @@
                         <div class="project-text" on:click={() => expand(false)} on:keyup on:keydown on:keypress>
                             <div class="project-name">
                                 {#if project.priority}
-                                    <span style="color: rgb(237, 108, 2);" class="material-icons relative top-[6px]">star</span>
+                                    <PriorityStar amount={project.details.priority_level || 2} />
                                 {/if}
                                 <span class="name">{project_name}</span>
                             </div>
@@ -461,6 +531,16 @@
                     type="number" input$min="0" input$max={constants.inventory.max.fragment}>
                     <HelperText slot="helper">Amount in inventory</HelperText>
                 </Textfield>
+                <AmountButtons
+                    on:add={(e) => {
+                        inventory_edit_dialog.amount += e.detail.value;
+                        onchangeInventoryEdit();
+                    }}
+                    on:subtract={(e) => {
+                        inventory_edit_dialog.amount -= e.detail.value;
+                        onchangeInventoryEdit();
+                    }}
+                />
             </DialogContent>
             <Actions>
                 <Button color="secondary" variant="outlined">
@@ -472,13 +552,62 @@
             </Actions>
         {/if}
     </Dialog>
+    <!-- edit priority level modal -->
+    <Dialog bind:open={priority_edit_dialog.open} class="text-black z-[1001]">
+        <!-- z-index needs to be above miyako menu button (z-index 1000) -->
+        <div class="dialog-title pl-2 pt-1">Project Priority</div>
+        <DialogContent>
+            <MiniProjectTitle {thumbnail} project_type={project.type} priority={project.priority}
+                priority_level={project.details.priority_level || 2} {project_name} {subtitle} {start_rank} {end_rank}
+                progress={project_progress.progress}
+            />
+            <Textfield bind:value={priority_edit_dialog.level} label="Priority Level" class="w-full"
+                on:keypress={keypressPriorityEdit}
+                on:change={onchangePriorityEdit}
+                type="number" input$min="0" input$max={constants.max_priority_level}
+            >
+                <HelperText slot="helper">Project priority level (1 - {constants.max_priority_level})</HelperText>
+            </Textfield>
+        </DialogContent>
+        <Actions class="flex flex-col gap-2 w-full">
+            {#if project.priority}
+                <div class="w-full">
+                    <Button variant="raised" class="w-full" style="background-color:#D32F2F;"
+                        on:click={() => {
+                            priority_edit_dialog.level = 1;
+                            completePriorityEdit();
+                        }}
+                    >
+                        <Icon class="material-icons">star_outline</Icon>
+                        <Label>Deprioritize</Label>
+                    </Button>
+                </div>
+            {/if}
+            <div class="flex flex-row gap-1 w-full">
+                <div class="flex-1">
+                    <Button color="secondary" variant="outlined" class="w-full">
+                        <Label>Cancel</Label>
+                    </Button>
+                </div>
+                <div class="flex-1">
+                    <Button variant="raised" class="w-full"
+                        on:click={completePriorityEdit}
+                    >
+                        <Label>OK</Label>
+                    </Button>
+                </div>
+            </div>
+        </Actions>
+    </Dialog>
     <!-- complete project modal -->
     <Dialog bind:open={complete_project_dialog.open} class="text-black z-[1001]">
         <!-- z-index needs to be above miyako menu button (z-index 1000) -->
         <div class="dialog-title pl-2 pt-1">Complete Project</div>
         <DialogContent>
-            <MiniProjectTitle {thumbnail} project_type={project.type} priority={project.priority} {project_name}
-            {subtitle} {start_rank} {end_rank} progress={project_progress.progress} />
+            <MiniProjectTitle {thumbnail} project_type={project.type} priority={project.priority}
+                priority_level={project.details.priority_level || 2} {project_name} {subtitle} {start_rank} {end_rank}
+                progress={project_progress.progress}
+            />
             <div class="pb-4 font-bold">Are you sure you want to complete this project?</div>
             {#if project.type === "character"}
                 <FormField class="pb-4">
@@ -532,8 +661,10 @@
         <!-- z-index needs to be above miyako menu button (z-index 1000) -->
         <div class="dialog-title pl-2 pt-1">Delete Project</div>
         <DialogContent>
-            <MiniProjectTitle {thumbnail} project_type={project.type} priority={project.priority} {project_name}
-            {subtitle} {start_rank} {end_rank} progress={project_progress.progress} />
+            <MiniProjectTitle {thumbnail} project_type={project.type} priority={project.priority}
+                priority_level={project.details.priority_level || 2} {project_name} {subtitle} {start_rank} {end_rank}
+                progress={project_progress.progress}
+            />
             <div class="pb-4 font-bold">Are you sure you want to <span class="text-red-700 font-bold">delete</span> this project?</div>
             <FormField class="pb-4">
                 <Checkbox bind:checked={delete_project_dialog.confirm} />
@@ -579,18 +710,7 @@
                 });
             });
         }}
-        on:prioritize={() => {
-            // need to delay a bit to not lock the ability to scroll from dialog closing
-            setTimeout(() => {
-                project.priority = !project.priority;
-                dispatch("update_project", {
-                    data: {
-                        project_id: project.date,
-                        project,
-                    },
-                });
-            });
-        }}
+        on:prioritize={openPriorityEditDialog}
         on:complete={openCompleteProjectDialog}
         on:delete={openDeleteProjectDialog}
     />

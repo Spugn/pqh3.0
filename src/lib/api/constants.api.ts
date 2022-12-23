@@ -80,6 +80,7 @@ export default (() => {
     });
     const legacy_localstorage_key = "userState"
     const localstorage_key = "userState_v2";
+    const max_priority_level = 10;
     return {
         menu_items,
         inventory,
@@ -92,5 +93,6 @@ export default (() => {
         region_options,
         drop_buff_options,
         quest_card_color,
+        max_priority_level,
     };
 })();

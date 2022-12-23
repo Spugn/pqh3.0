@@ -1,18 +1,17 @@
 <script context="module">
     import Button, { Label, Icon } from "@smui/button";
-    import { user, equipment as equipmentAPI, project as projectAPI, inventory as inventoryAPI,
-        quest as questAPI,
-    } from "$lib/api/api";
+    import { user, quest as questAPI } from "$lib/api/api";
     import Image from "$lib/Image.svelte";
     import Project from "$lib/Project/Project.svelte";
-</script>
-
-<script lang="ts">
-    import type { CharacterProject, ItemProject, QuestBuild2Results, Recipe, SessionProjects } from '$lib/api/api.d';
     import ProjectCreator from '$lib/ProjectBuilder/ProjectCreator.svelte';
     import { onMount } from "svelte";
     import ProjectEditor from "$lib/ProjectBuilder/ProjectEditor.svelte";
     import QuestList from '$lib/QuestList/QuestList.svelte';
+</script>
+
+<script lang="ts">
+    import type { CharacterProject, ItemProject, BasicProject, QuestBuild2Results,
+        SessionProjects } from '$lib/api/api.d';
 
     export let show_menu : boolean;
     let project_displayed : boolean = false; // flag for if a project is expanded. if so, hide non-expanded projects
@@ -59,7 +58,13 @@
         // and also having to sort every time may be time consuming, idk
         let result = Object.keys(session_projects);
         result.sort((a, b) => {
-            return (session_projects[b].project.priority ? 1000 : 0) - (session_projects[a].project.priority ? 1000 : 0);
+            function getSortValue(project : CharacterProject | ItemProject | BasicProject) : number {
+                if (!project.priority) {
+                    return 0;
+                }
+                return 1000 + (project.details?.priority_level || 2);
+            }
+            return getSortValue(session_projects[b].project) - getSortValue(session_projects[a].project);
         });
         return result;
     }

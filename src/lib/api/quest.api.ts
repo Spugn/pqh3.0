@@ -1,7 +1,8 @@
 import _data from './data.min.json';
 import constants from './constants.api';
 import type {
-    QuestData, Quest, QuestItem, Language, Project, Recipe, Inventory, QuestScore, QuestSettings, SessionProjects, Settings, QuestBuild2Results
+    QuestData, Quest, QuestItem, Language, Project, Recipe, Inventory, QuestScore, QuestSettings, SessionProjects,
+    EquipmentRecipeData, QuestBuild2Results
 } from './api.d';
 import { equipment, project, user } from './api';
 
@@ -276,7 +277,7 @@ export default (() => {
             {}, language, {}
         );
         const priority_items = Object.keys(priority_amount);
-        const quest_scores : QuestScore[] = search({ required, priority_items, settings, language });
+        const quest_scores : QuestScore[] = search({ required, priority_items, priority_levels: {}, settings, language });
         console.timeEnd(time_key);
 
         return {
@@ -357,6 +358,7 @@ export default (() => {
 
         // get priority items (used to mark specific items as important, amount needed is not useful)
         // priority items include even disabled projects marked as priority
+        let priority_levels : { [id : string] : number } = {};
         let priority_set = new Set();
         let priority_amount : Recipe = {};
         for (const proj_key in session_projects) {
@@ -370,6 +372,14 @@ export default (() => {
                     // invalid equipment id in project required
                     continue;
                 }
+                const priority_level : number = proj.details?.priority_level || 2;
+                priority_levels[id] = (priority_levels[id]) // if id exists...
+                    ? (
+                        (priority_levels[id] > priority_level) // if existing level greater than this
+                            ? priority_levels[id] // use existing
+                            : priority_level // this is greater, replace existing
+                    )
+                    : priority_level; // else use this priority_level as default
                 priority_set.add(id);
                 priority_amount[id] = (priority_amount[id] || 0) + proj.required[id];
             }
@@ -383,12 +393,11 @@ export default (() => {
         }, {});
 
         // get all items in their decompiled form
-        priority_amount = project.build(
-            {date: "quest-build-priority-amount", required: reduced},
-            {}, language, {}
-        );
-        const priority_items = Object.keys(priority_amount);
-        const quest_scores : QuestScore[] = search({ required, priority_items, settings, language });
+        const results = buildPriorityItems(reduced, priority_levels, language);
+        const priority_items = Object.keys(results.priority_amount);
+        const quest_scores : QuestScore[] = search({
+            required, priority_items, priority_levels: results.priority_levels, settings, language
+        });
         console.timeEnd(time_key);
 
         return {
@@ -400,10 +409,49 @@ export default (() => {
             projects: enabled_projects,
         };
     }
+    function buildPriorityItems(
+        priority_recipe : Recipe,
+        priority_levels : Recipe, // not exactly a recipe, but same format. { [id]: <priority_level> }
+        language : Language = "UNKNOWN"
+    ) {
+        const result : Recipe = {}; // recipe result
+        const level_result : Recipe = {};
+        for (const id in priority_recipe) {
+            recursive(id, priority_recipe[id], priority_levels[id]);
+        }
+        return {
+            priority_amount: result,
+            priority_levels: level_result
+        };
+
+        function recursive(id : string, amount : number, priority_level : number) {
+            const item_recipe : EquipmentRecipeData = equipment.recipe(id, language);
+            const fragment_id : string = equipment.fragmentID(id);
+
+            // don't add this item's fragments if its rarity is ignored or if it doesn't need fragments
+            // (items like Sorcerer Glasses (103613) has no fragments)
+            if (item_recipe.required_pieces > 0) {
+                result[fragment_id] = (item_recipe.required_pieces * amount) + (result[fragment_id] || 0);
+                level_result[fragment_id] = (level_result[fragment_id]) // if id exists...
+                    ? (
+                        (level_result[fragment_id] > priority_level) // if existing level greater than this
+                            ? level_result[fragment_id] // use existing
+                            : priority_level // this is greater, replace existing
+                    )
+                    : priority_level; // else use this priority_level as default
+            }
+
+            // go through required items
+            for (const required_id of item_recipe.required_items) {
+                recursive(required_id, amount, priority_level);
+            }
+        }
+    }
 
     interface QuestSearchArguments {
         required : Recipe;
         priority_items : string[];
+        priority_levels : { [id: string]: number },
         settings : QuestSettings;
         language : Language;
     };
@@ -420,7 +468,7 @@ export default (() => {
      * @returns {QuestScore[]} - array of sorted quest score objects. sort order depends on settings given
      */
     function search({
-        required, priority_items,
+        required, priority_items, priority_levels,
         settings = {},
         language = "UNKNOWN"
     } : QuestSearchArguments) : QuestScore[] {
@@ -472,7 +520,7 @@ export default (() => {
                 }
                 // item exists in recipe
                 let result = quest_item.drop_rate; // base drop rate
-                result *= priority_items.includes(quest_item.item) ? constants.multiplier.priority : 1; // priority item
+                result *= priority_items.includes(quest_item.item) ? priority_levels[quest_item.item] : 1; // priority item
                 // add a bit more score depending on amount needed
                 result += (required[quest_item.item] / constants.inventory.max.fragment) * 1000;
                 return result;

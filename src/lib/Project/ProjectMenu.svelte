@@ -14,6 +14,7 @@
     export let thumbnail : string = "999999";
     export let project_type : "character" | string = "item";
     export let priority : boolean = false;
+    export let priority_level : number = 2;
     export let project_name : string = "unknown project";
     export let subtitle : string = "unknown";
     export let start_rank : number = 0;
@@ -30,7 +31,7 @@
     <!-- z-index needs to be above miyako menu button (z-index 1000) -->
     <div class="title pl-2 pt-1">Project Options</div>
     <DialogContent>
-        <MiniProjectTitle {thumbnail} {project_type} {priority} {project_name}
+        <MiniProjectTitle {thumbnail} {project_type} {priority} {priority_level} {project_name}
             {subtitle} {start_rank} {end_rank} {progress} />
         <List twoLine>
             <Item on:SMUI:action={() => startDispatch("expand")}>
@@ -48,11 +49,11 @@
                 </Text>
             </Item>
             <Item on:SMUI:action={() => startDispatch("prioritize")}>
-                <Graphic class="material-icons">{priority ? "star_outline" : "star"}</Graphic>
+                <Graphic class="material-icons">star</Graphic>
                 <Text>
-                    <PrimaryText>{priority ? "Deprioritize" : "Prioritize"}</PrimaryText>
+                    <PrimaryText>Edit Priority</PrimaryText>
                     <SecondaryText>
-                        {priority ? "Remove project priority status." : "Enable project priority status."}
+                        Edit project priority status.
                     </SecondaryText>
                 </Text>
             </Item>

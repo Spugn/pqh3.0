@@ -1,11 +1,13 @@
 <script context="module">
     import Image from "$lib/Image.svelte";
+    import PriorityStar from "./PriorityStar.svelte";
 </script>
 
 <script lang="ts">
     export let thumbnail : string;
     export let project_type : "character" | string;
     export let priority : boolean;
+    export let priority_level : number = 2;
     export let project_name : string;
     export let subtitle : string;
     export let start_rank : number;
@@ -23,7 +25,7 @@
         <div class="inline-block">
             <div class="project-name">
                 {#if priority}
-                    <span style="color: rgb(237, 108, 2);" class="material-icons relative top-[6px]">star</span>
+                    <PriorityStar amount={priority_level || 2} />
                 {/if}
                 <span class="name">{project_name}</span>
             </div>
