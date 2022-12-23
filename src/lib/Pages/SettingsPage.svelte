@@ -31,6 +31,12 @@
         user.settings.setAutoEnableProjects(auto_enable_projects);
     }
 
+    // inventory page - alternative mode
+    let inventory_alternative_mode : boolean = user.settings.isInventoryAlternativeMode();
+    $: if (inventory_alternative_mode !== user.settings.isInventoryAlternativeMode()) {
+        user.settings.setInventoryAlternativeMode(inventory_alternative_mode);
+    }
+
     // specific item filter
     let open_item_filter_dialog : boolean = false;
     let filtered_items : string[] = user.settings.quest.getItemFilter();
@@ -110,6 +116,28 @@
             <p style="padding: 1rem;" class="text-black/70 mb-4">
                 Enable this if you prefer having projects be automatically "Enabled" instead of "Disabled" by default.
                 Refresh the webpage after enabling this setting to set all projects as enabled.
+            </p>
+        </Card>
+    </div>
+    <!-- Inventory Page - Alternative Mode -->
+    <div class="text-black mx-4 w-[90vw] max-w-[1000px]">
+        <Card>
+            <div style="padding: 1rem;" class="flex flex-row mb-2 items-center">
+                <div>
+                    <h1 class="font-bold text-xl">
+                        Inventory Page - Alternative Mode
+                    </h1>
+                    <h3 class="text-black/60">
+                        Change inventory display to have an alternative look.
+                    </h3>
+                </div>
+                <div class="ml-auto">
+                    <Switch bind:checked={inventory_alternative_mode} />
+                </div>
+            </div>
+            <p style="padding: 1rem;" class="text-black/70 mb-4">
+                Enable this to have items be displayed with an input below them for quick bulk inventory editing.
+                Loading the inventory page with this enabled may take longer than usual.
             </p>
         </Card>
     </div>

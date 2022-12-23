@@ -15,6 +15,15 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Added "Amount Buttons" to Inventory Editing Dialogs
   - Suggested by `Tomo#5563`
   - Added "Amount Buttons" (buttons with +10/+5/+1/-10/-5/-1) to inventory page and expanded project display inventory editor dialogs
+- Add "Expand In Full" icon to the side of the quest ID button in quest list to make it more clear that it can be clicked
+  - Suggested by `Wazhai#0161`
+- Added "menu" below the Miyako Open Menu button to make it more clear that it's for opening the menu
+  - Suggested by `Wazhai#0161`
+- Inventory Page - Alternative Mode
+  - Suggested by `Zerooo#3807`
+  - Enable this mode in Settings
+  - Basically, displays all items + fragments in inventory with inputs below them for quick bulk inventory editing
+  - Inventory Page will load slower with this mode enabled due to loading every item + fragment
 ### Changed
 - Switched to a darker colored yellow for the priority project gradient in hopes of making it less blinding
   - Suggested by `Tomo#5563`

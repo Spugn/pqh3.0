@@ -697,8 +697,9 @@
     </Dialog>
     <!-- project menu (opened when clicking the 3 dots to right of un-expanded project) -->
     <ProjectMenu bind:open={project_menu_open}
-        {thumbnail} project_type={project.type} priority={project.priority} {project_name}
-        {subtitle} {start_rank} {end_rank} progress={project_progress.progress}
+        {thumbnail} project_type={project.type} priority={project.priority}
+        priority_level={project.details.priority_level || 2} {project_name} {subtitle} {start_rank} {end_rank}
+        progress={project_progress.progress}
         on:expand={() => expand(true)}
         on:edit={() => {
             // temp fix, edit wont have this functionality when completed. this prevents scroll from being locked

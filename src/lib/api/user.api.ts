@@ -452,6 +452,14 @@ export default (() => {
             set("auto_enable_projects", value);
         }
 
+        function isInventoryAlternativeMode() : boolean {
+            return Session.user_state.settings.inventory_alternative_mode || false;
+        }
+
+        function setInventoryAlternativeMode(value : boolean) {
+            set("inventory_alternative_mode", value);
+        }
+
         const quest = (() => {
             function initQuestSettings() {
                 if (!Session.user_state.settings.quest) {
@@ -617,6 +625,8 @@ export default (() => {
             setHideContent,
             isAutoEnableProjects,
             setAutoEnableProjects,
+            isInventoryAlternativeMode,
+            setInventoryAlternativeMode,
             quest,
         };
     })();

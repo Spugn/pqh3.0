@@ -159,6 +159,7 @@ interface Settings {
     region? : Language;
     hide_content? : boolean; // hide unreleased content from character/item catalogs
     auto_enable_projects? : boolean; // enable projects at startup/creation?
+    inventory_alternative_mode? : boolean; // display inventory page in an alternative way
     [key : string] : unknown;
 };
 

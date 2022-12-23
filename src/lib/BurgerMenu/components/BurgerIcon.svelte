@@ -69,6 +69,10 @@
     >
         <!-- Open Menu -->
     </button>
+    <span class="menu-text select-none">
+        menu
+    </span>
+
     <!-- we're hiding the burger bars anyways in favor of the miyako image
     <span>
         {#each [0, 1, 2] as bar}
@@ -103,6 +107,23 @@
     opacity: 1.0;
 }
 
+.menu-text {
+    position: absolute;
+    bottom: -0.2rem;
+    right: 0;
+    font-family: "Calibri", Arial, serif;
+    color: white;
+    text-shadow: 1px 1px 4px #000000,
+        1px 1px 4px #000000,
+        1px 1px 2px #000000,
+        1px 1px 2px #000000;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.bm-burger-button:hover .menu-text {
+    opacity: 0;
+}
+
 @keyframes miyako-ghost-hover {
     50% {
         transform: rotate(2.5deg) translateY(3px);
@@ -118,13 +139,13 @@
 }
 
 @keyframes miyako-ghost-bounce {
-  0%, 100% {
-    transform: translateY(-7%);
-    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-  }
-  50% {
-    transform: translateY(0);
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-  }
+    0%, 100% {
+        transform: translateY(-7%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
 }
 </style>

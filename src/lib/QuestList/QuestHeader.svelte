@@ -26,7 +26,9 @@
             }
         }}
     >
-        <div class="avatar-text select-none">
+        <div class="avatar-text select-none"
+            class:relative={clickable}
+        >
             {#if questAPI.isNormal(id)}
                 {id}
             {/if}
@@ -41,6 +43,9 @@
             {#if questAPI.isEvent(id)}
                 {id.replace(constants.difficulty.event, "")}
                 <span class="text-yellow-300">{constants.difficulty.event}</span>
+            {/if}
+            {#if clickable}
+                <span class="material-icons absolute bottom-0 right-0" style="color: gold;">open_in_full</span>
             {/if}
         </div>
         {#if memory_piece}
@@ -70,5 +75,6 @@
 
     .clickable:active {
         transform: scale(0.95);
+        position: relative;
     }
 </style>
