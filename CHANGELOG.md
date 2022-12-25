@@ -3,6 +3,15 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.1.2] - 2022-12-24
+### Added
+- Compact Project Cards
+  - Suggested by `Tomo#5563`
+  - Reduce the size of project cards so that more can be displayed at once on wide screens with this setting enabled.
+- Keep Enabled Projects
+  - Suggested by `Tomo#5563`
+  - Enabled projects will persist between sessions with this setting enabled.
+
 ## [3.1.1] - 2022-12-23
 ### Added
 - Project Priority Levels

@@ -152,6 +152,14 @@
         <DialogContent class="text-center">
             <EditCharacterProject bind:this={edit_character_project} {id} on:generated_project={(event) => {
                 user.projects.add(event.detail.data.project);
+                if (user.settings.isAutoEnableProjects() && user.settings.isKeepEnabledProjects()) {
+                    // if auto enable projects is on (new project should be true) and keep enabled projects
+                    // is too (which overrides new project enabled states in session_projects) then just set
+                    // this new project to be true in keep enabled projects
+                    const keep_enabled_projects = user.settings.getKeepEnabledProjectsEnabledProjects();
+                    keep_enabled_projects[event.detail.data.project_id] = true;
+                    user.settings.setKeepEnabledProjectsEnabledProjects(keep_enabled_projects);
+                }
                 dispatch("success");
                 open = false;
             }} />
@@ -181,6 +189,14 @@
                 bind:this={edit_item_project}
                 on:generated_project={(event) => {
                     user.projects.add(event.detail.data.project);
+                    if (user.settings.isAutoEnableProjects() && user.settings.isKeepEnabledProjects()) {
+                        // if auto enable projects is on (new project should be true) and keep enabled projects
+                        // is too (which overrides new project enabled states in session_projects) then just set
+                        // this new project to be true in keep enabled projects
+                        const keep_enabled_projects = user.settings.getKeepEnabledProjectsEnabledProjects();
+                        keep_enabled_projects[event.detail.data.project_id] = true;
+                        user.settings.setKeepEnabledProjectsEnabledProjects(keep_enabled_projects);
+                    }
                     dispatch("success");
                     open = false;
                 }}

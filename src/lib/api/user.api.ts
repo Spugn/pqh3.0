@@ -444,18 +444,115 @@ export default (() => {
             set("hide_content", value);
         }
 
+        /**
+         * setting for if project cards should be smaller to display more
+         *
+         * @returns {boolean} - true if using compact project cards, false otherwise
+         */
+        function isCompactProjectCards() : boolean {
+            return Session.user_state.settings.compact_project_cards || false;
+        }
+
+        /**
+         * set the `compact_project_cards` setting
+         *
+         * @param {boolean} value - true if using compact project cards, false otherwise
+         */
+        function setCompactProjectCards(value : boolean) {
+            set("compact_project_cards", value);
+        }
+
+        /**
+         * setting for if projects should auto be enabled or disabled on page startup or project creation
+         *
+         * @returns {boolean} - true if projects should be enabled, false if projects should be disabled
+         */
         function isAutoEnableProjects() : boolean {
             return Session.user_state.settings.auto_enable_projects || false;
         }
 
+        /**
+         * set the `auto_enable_projects` setting
+         *
+         * @param {boolean} value - true if projects should be enabled, false otherwise
+         */
         function setAutoEnableProjects(value : boolean) {
             set("auto_enable_projects", value);
         }
 
+        /**
+         * setting for if project state should persist between sessions
+         *
+         * @returns {boolean} - true if project state should persist, false otherwise
+         */
+        function isKeepEnabledProjects() : boolean {
+            return (Session.user_state.settings.keep_enabled_projects !== undefined)
+                && Session.user_state.settings.keep_enabled_projects.enabled;
+        }
+
+        /**
+         * set the keep_projects_enabled setting to be true or false
+         *
+         * @param {boolean} value - true if projects should be enabled, false otherwise
+         */
+        function setKeepEnabledProjectsEnabledState(value : boolean) {
+            if (!Session.user_state.settings.keep_enabled_projects || value) {
+                let projs : { [date: string]: boolean } = {};
+                for (const key in Session.projects) {
+                    if (Session.projects[key].enabled) {
+                        projs[`${Session.projects[key].project.date}`] = true;
+                    }
+                }
+                set("keep_enabled_projects", {
+                    enabled: true,
+                    projects: projs,
+                });
+                return;
+            }
+            delete Session.user_state.settings.keep_enabled_projects;
+            save();
+        }
+
+        /**
+         * set the enabled projects used in keep_enabled_projects setting
+         *
+         * @param {{ [string]: boolean }} projects - projects to auto-enable
+         */
+        function setKeepEnabledProjectsEnabledProjects(projects : { [date: string]: boolean }) {
+            if (!Session.user_state.settings.keep_enabled_projects) {
+                return;
+            }
+            Session.user_state.settings.keep_enabled_projects.projects = projects;
+            save();
+        }
+
+        /**
+         * get the collection of enabled projects for keep_enabled_projects
+         *
+         * @returns {{ [string]: boolean }} - projects to toggle enabled
+         */
+        function getKeepEnabledProjectsEnabledProjects() : { [date: string]: boolean } {
+            if (!Session.user_state.settings.keep_enabled_projects) {
+                return {};
+            }
+            return Session.user_state.settings.keep_enabled_projects.projects;
+        }
+
+        /**
+         * change the inventory page display to be all items + fragments with inputs on bottom for
+         * quick bulk editing
+         *
+         * @returns {boolean} - true if using inventory alternative mode, false otherwise
+         */
         function isInventoryAlternativeMode() : boolean {
             return Session.user_state.settings.inventory_alternative_mode || false;
         }
 
+        /**
+         * set the value of `inventory_alternative_mode`
+         *
+         * @param {boolean} value - true if inventory alternative mode should be used, false otherwise
+         */
         function setInventoryAlternativeMode(value : boolean) {
             set("inventory_alternative_mode", value);
         }
@@ -623,10 +720,16 @@ export default (() => {
             get,
             hideContent,
             setHideContent,
+            isCompactProjectCards,
+            setCompactProjectCards,
             isAutoEnableProjects,
             setAutoEnableProjects,
             isInventoryAlternativeMode,
             setInventoryAlternativeMode,
+            isKeepEnabledProjects,
+            setKeepEnabledProjectsEnabledState,
+            setKeepEnabledProjectsEnabledProjects,
+            getKeepEnabledProjectsEnabledProjects,
             quest,
         };
     })();
@@ -655,7 +758,6 @@ export default (() => {
          * @param {Project} proj - project object to add
          */
          function add(proj : Project) {
-            console.log("Add project");
             Session.user_state.projects[(proj as CharacterProject | ItemProject).date || Date.now()] = proj;
             save();
         }

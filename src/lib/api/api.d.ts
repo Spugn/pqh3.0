@@ -158,7 +158,12 @@ interface Settings {
     quest? : QuestSettings;
     region? : Language;
     hide_content? : boolean; // hide unreleased content from character/item catalogs
+    compact_project_cards? : boolean; // have smaller project cards so project list can display more
     auto_enable_projects? : boolean; // enable projects at startup/creation?
+    keep_enabled_projects? : {
+        enabled: boolean;
+        projects: { [date : string] : boolean }; // array of enabled project id/dates
+    }; // keep the enabled/disabled state of projects
     inventory_alternative_mode? : boolean; // display inventory page in an alternative way
     [key : string] : unknown;
 };

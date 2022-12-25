@@ -25,10 +25,23 @@
         user.settings.setHideContent(hide_unreleased_content);
     };
 
+    // compact project cards
+    let compact_project_cards : boolean = user.settings.isCompactProjectCards();
+    $: if (compact_project_cards !== user.settings.isCompactProjectCards()) {
+        user.settings.setCompactProjectCards(compact_project_cards);
+    }
+
     // auto enable projects
     let auto_enable_projects : boolean = user.settings.isAutoEnableProjects();
     $: if (auto_enable_projects !== user.settings.isAutoEnableProjects()) {
         user.settings.setAutoEnableProjects(auto_enable_projects);
+    }
+
+    // keep enabled projects
+    let keep_enabled_projects : boolean = user.settings.isKeepEnabledProjects();
+    $: if (keep_enabled_projects !== user.settings.isKeepEnabledProjects()) {
+        user.settings.setKeepEnabledProjectsEnabledState(keep_enabled_projects);
+        console.log(user.settings.getKeepEnabledProjectsEnabledProjects());
     }
 
     // inventory page - alternative mode
@@ -97,6 +110,28 @@
             </p>
         </Card>
     </div>
+    <!-- Compact Project Cards -->
+    <div class="text-black mx-4 w-[90vw] max-w-[1000px]">
+        <Card>
+            <div style="padding: 1rem;" class="flex flex-row mb-2 items-center">
+                <div>
+                    <h1 class="font-bold text-xl">
+                        Compact Project Cards
+                    </h1>
+                    <h3 class="text-black/60">
+                        Reduce the size of project cards to see more in the list.
+                    </h3>
+                </div>
+                <div class="ml-auto">
+                    <Switch bind:checked={compact_project_cards} />
+                </div>
+            </div>
+            <p style="padding: 1rem;" class="text-black/70 mb-4">
+                Enable this if you prefer not having each individual project be in their own row and would like to see
+                more projects on your screen at once.
+            </p>
+        </Card>
+    </div>
     <!-- Auto Enable Projects -->
     <div class="text-black mx-4 w-[90vw] max-w-[1000px]">
         <Card>
@@ -116,6 +151,30 @@
             <p style="padding: 1rem;" class="text-black/70 mb-4">
                 Enable this if you prefer having projects be automatically "Enabled" instead of "Disabled" by default.
                 Refresh the webpage after enabling this setting to set all projects as enabled.
+            </p>
+        </Card>
+    </div>
+    <!-- Keep Enabled Projects -->
+    <div class="text-black mx-4 w-[90vw] max-w-[1000px]">
+        <Card>
+            <div style="padding: 1rem;" class="flex flex-row mb-2 items-center">
+                <div>
+                    <h1 class="font-bold text-xl">
+                        Keep Enabled Projects
+                    </h1>
+                    <h3 class="text-black/60">
+                        Remember the state of enabled projects between sessions.
+                    </h3>
+                </div>
+                <div class="ml-auto">
+                    <Switch bind:checked={keep_enabled_projects} />
+                </div>
+            </div>
+            <p style="padding: 1rem;" class="text-black/70 mb-4">
+                Enable this to remember which projects are enabled and disabled between sessions. If
+                "<strong>Auto Enable Projects</strong>" is enabled, then existing projects will no longer automatically
+                all be set to enabled or disabled, but newly created projects will continue to be auto set to enabled
+                or disabled.
             </p>
         </Card>
     </div>

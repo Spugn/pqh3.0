@@ -57,6 +57,7 @@
     export let project_id : string; // project id to get project data to display
     export let _inventory_string : string; // used to know when inventory updates (sending object here causes unintended frequent updates)
     export let enabled : boolean; // flag for if the project is enabled or disabled
+    export let compact : boolean = false; // compact version of non-expanded projects
 
     // component variables
     const dispatch = createEventDispatcher();
@@ -342,7 +343,7 @@
 
 <!-- if a different project is expanded then hide this one (because components outside of page would overflow) -->
 {#if project && ((project_displayed && expanded) || !project_displayed)}
-    <div class="project-item" class:expanded={expanded}>
+    <div class="project-item" class:expanded={expanded} class:compact={compact}>
         <div class="project-thumbnail" on:click={() => expand(!expanded)} on:keyup on:keydown on:keypress>
             {#if project.type === "character"}
                 <Image img={thumbnail} type="unit_icon" props={{draggable: false}} />
@@ -385,7 +386,7 @@
                         </div>
                     </div>
                     <div class="enable-button">
-                        <Button variant="unelevated" color={enabled ? "primary" : "secondary"}
+                        <Button variant="raised" color={enabled ? "primary" : "secondary"}
                             on:click={() => {
                                 dispatch("toggle_enabled", {
                                     data: {
@@ -736,6 +737,12 @@
         max-width: none;
         z-index: 501; /** above overlay */
     }
+    div.project-item.compact:not(.expanded) {
+        max-width: none;
+        margin-bottom: none;
+        margin: none;
+        position: relative;
+    }
 
     /** avatar/thumbnail image on left of project usually */
     div.project-thumbnail {
@@ -759,6 +766,16 @@
         border-radius: 10px;
         transform: scale(1) translateX(0px);
     }
+    div.project-item.compact:not(.expanded) div.project-thumbnail {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 48px;
+        height: 48px;
+        transform: none;
+        transition: none;
+        box-shadow: 5px 7px 7px -5px rgba(0,0,0,0.4);
+    }
 
     /** short-detail only, project creation date */
     div.date {
@@ -777,6 +794,11 @@
         align-items: center;
         column-gap: 2rem;
     }
+    div.project-item.compact:not(.expanded) div.short-detail div.detail-content {
+        display: block;
+        column-gap: normal;
+        align-items: unset;
+    }
 
     /** component that contains project details (name, progress, etc). aka the white-space in short-details */
     div.project-details {
@@ -791,6 +813,11 @@
     div.project-item.expanded div.project-details {
         transform: translateY(0px);
         color: white;
+    }
+    div.project-item.compact:not(.expanded) div.project-details {
+        position: static;
+        height: auto;
+        transform: none;
     }
     div.project-details div.short-detail {
         position: absolute;
@@ -811,6 +838,15 @@
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
         box-shadow: -25px 0px 5px 3px rgba(0,0,0,0.3);
+    }
+    div.project-item.compact:not(.expanded) div.project-details div.short-detail {
+        position: static;
+        width: max-content;
+        padding: 1rem;
+        padding-top: 3rem;
+        padding-bottom: 1.5rem;
+        min-width: 235px;
+        min-height: 275px;
     }
 
     /** includes project name, subtitle and start-end (full detail only, has adjustments for expanded page) */
@@ -946,6 +982,11 @@
         text-align: center;
         border-radius: 10px;
     }
+    div.project-item.compact:not(.expanded) div.project-details div.short-detail div.enable-button {
+        position: static;
+        text-align: right;
+        margin-top: 0.25rem;
+    }
 
     /** black screen that appears when project is expanded */
     div.overlay {
@@ -1004,21 +1045,21 @@
     }
     @media only screen and (max-width: 800px) {
         /** hide item-count (screen is starting to make it overflow) */
-        div.project-details div.short-detail .item-count {
+        div.project-item:not(.compact) div.project-details div.short-detail .item-count {
             display: none;
         }
     }
     @media only screen and (max-width: 600px) {
         /** hide progress (screen is starting to make it overflow) */
-        div.project-details div.short-detail .progress {
+        div.project-item:not(.compact) div.project-details div.short-detail .progress {
             display: none;
         }
         /** increase padding-bottom so disabled button doesnt overlap with start-end details */
-        div.project-details div.short-detail {
+        div.project-item:not(.compact) div.project-details div.short-detail {
             padding-bottom: 25px;
         }
         /** increase margin bottom so disabled button doesnt cover a project's thumbnail below it */
-        div.project-item {
+        div.project-item:not(.compact) {
             margin-bottom: 45px;
         }
     }

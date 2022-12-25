@@ -23,6 +23,7 @@
     let open_quest_list : boolean = false;
     let project_editor_project : number = -1;
     let built_quests : QuestBuild2Results;
+    let compact_projects : boolean = user.settings.isCompactProjectCards();
 
     onMount(async () => {
         session_projects = user.getSessionProjects();
@@ -40,6 +41,10 @@
                     edited: user_projects[project_id].date as number,
                     project: user_projects[project_id],
                 };
+                if (user.settings.isKeepEnabledProjects()) {
+                    const keep_enabled_projects = user.settings.getKeepEnabledProjectsEnabledProjects();
+                    session_projects[project_id].enabled = keep_enabled_projects[project_id];
+                }
             }
             else {
                 // update project data and keep enabled/disabled status
@@ -129,6 +134,16 @@
     };
     function enableProject(event : EnableProjectEvent) {
         session_projects[event.detail.data.project_id].enabled = event.detail.data.enabled;
+        if (user.settings.isKeepEnabledProjects()) {
+            const projs = user.settings.getKeepEnabledProjectsEnabledProjects();
+            if (event.detail.data.enabled && !projs[event.detail.data.project_id]) {
+                projs[event.detail.data.project_id] = true;
+            }
+            else {
+                delete projs[event.detail.data.project_id];
+            }
+            user.settings.setKeepEnabledProjectsEnabledProjects(projs);
+        }
         buildQuests();
     }
 
@@ -158,7 +173,7 @@
             <Label>Quests</Label>
         </Button>
     </div>
-    <div class="project-list">
+    <div class="project-list" class:compact-project-list={compact_projects}>
         <!-- list -->
         {#if user.isInit()}
             {#if _project_keys.length > 0}
@@ -171,6 +186,7 @@
                     edited: session_projects[project_id].edited, // timestamp of last edited so proj can update if edited changed
                 }))}
                     <Project {project_id} bind:show_menu bind:project_displayed bind:_inventory_string
+                        compact={compact_projects}
                         enabled={session_projects[project_id].enabled}
                         on:update_inventory={updateInventory}
                         on:update_project={updateProject}
@@ -210,5 +226,15 @@
 <style>
     .project-list {
         padding-bottom: 5vh;
+    }
+    .compact-project-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 0.25rem;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 </style>
