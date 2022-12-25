@@ -11,6 +11,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Keep Enabled Projects
   - Suggested by `Tomo#5563`
   - Enabled projects will persist between sessions with this setting enabled.
+### Changed
+- Changed `open_in_full` icon in Quest List's Quest ID button to be light gray color instead of gold
 
 ## [3.1.1] - 2022-12-23
 ### Added
