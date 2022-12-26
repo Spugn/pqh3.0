@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.1.3] - 2022-12-25
+### Added
+- Search option for "Inventory Page - Alternative Mode"
+### Changed
+- Minor styling changes for the "Back to character list" and "Back to item list" links
+
 ## [3.1.2] - 2022-12-24
 ### Added
 - Compact Project Cards

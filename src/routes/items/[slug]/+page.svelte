@@ -24,12 +24,12 @@
     import Accordion, { Panel, Header, Content } from '@smui-extra/accordion';
     import SegmentedButton, { Segment, Label } from '@smui/segmented-button';
     import Image from "$lib/Image.svelte";
+    import { equipment } from '$lib/api/api';
     import Treant from "$lib/api/vendor/Treant.mjs";
     import "./treant.css"; // treant dependency
 </script>
 
 <script lang="ts">
-    import { equipment } from '$lib/api/api';
     import type { PageData } from './$types';
     import type { Fragment, Language, Recipe } from '$lib/api/api.d';
     export let data : PageData;
@@ -275,7 +275,7 @@
         <div class="item">
             <div class="header flex flex-col gap-1 items-start">
                 <div>
-                    <a href="{base}/items" class="flex flex-row justify-center gap-1"
+                    <a href="{base}/items" class="flex flex-row justify-center gap-1 back-to-index"
                         style="color: inherit; text-decoration: none;"
                     >
                         <span class="material-icons">arrow_back</span>
@@ -538,6 +538,14 @@
         font-weight: 600;
         letter-spacing: 1px;
         font-size: 1rem;
+    }
+    .back-to-index {
+        font-family: "Calibri", Arial, serif;
+        color: white;
+        text-shadow: 1px 1px 4px #000000,
+            1px 1px 4px #000000,
+            1px 1px 2px #000000,
+            1px 1px 2px #000000;
     }
     @media only screen and (max-width: 1200px) {
         img.still {

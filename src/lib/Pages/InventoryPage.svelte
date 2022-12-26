@@ -1,13 +1,11 @@
 <script context="module">
-    import { user, equipment as equipmentAPI, character as characterAPI, inventory as inventoryAPI, constants,
-        recipe as recipeAPI,
-        equipment
-    } from "$lib/api/api";
+    import { user, equipment as equipmentAPI, constants } from "$lib/api/api";
     import ItemButton from "$lib/Item/Button.svelte";
     import Button, { Label, Icon } from "@smui/button";
     import Dialog, { Content as DialogContent, Actions } from '@smui/dialog';
     import Textfield from '@smui/textfield';
     import HelperText from '@smui/textfield/helper-text';
+    import TextfieldIcon from '@smui/textfield/icon';
     import Checkbox from '@smui/checkbox';
     import FormField from '@smui/form-field';
     import ItemImage from "$lib/Item/Image.svelte";
@@ -44,6 +42,8 @@
         confirm: false,
     };
     const alt_mode = user.settings.isInventoryAlternativeMode();
+    let search_query = "";
+    let filter : string[] = [];
 
     let rarity_sort : "none" | "desc" | "asc" = "none";
     let amount_sort : "desc" | "asc" = "desc";
@@ -52,7 +52,8 @@
         items = [];
         if (alt_mode) {
             Object.entries(equipmentAPI.data)
-                .forEach(([id, item_data]) => {
+                .filter(([id]) => (search_query === "") || (search_query !== "" && filter.includes(id)))
+                .forEach(([id]) => {
                     const fragment = equipmentAPI.fragment(id);
                     items.push({
                         id,
@@ -104,7 +105,12 @@
             });
         }
     }
-    updateItems();
+
+    $: {
+        filter = equipmentAPI.search(search_query);
+        console.log(filter);
+        updateItems();
+    };
 
     function openAddItemDialog() {
         add_dialog_data.open = true;
@@ -401,31 +407,39 @@
         </Dialog>
     </section>
 {:else}
-    <div class="flex flex-row flex-wrap items-center justify-center gap-4 pb-20 lg:px-[4rem] text-black">
-        {#each items as item}
-            <div class="flex flex-col gap-1 items-center justify-center w-16">
-                <ItemImage id={item.id} props={{
-                    height: 48,
-                    width: 48,
-                }} />
-                <input type="number" value="{item.amount}" class="p-1" style="width: inherit;"
-                    on:change={(e) => {
-                        // @ts-ignore
-                        let value = parseInt(e.target.value);
-                        value = Math.floor(value);
-                        if (isNaN(value) || value < 0) {
-                            value = 0;
-                        }
-                        if (value > constants.inventory.max.fragment) {
-                            value = constants.inventory.max.fragment;
-                        }
-                        user.inventory.setAmount(item.id, value);
-                        // @ts-ignore
-                        e.target.value = value;
-                    }}
-                >
-            </div>
-        {/each}
+    <div class="flex flex-col gap-4">
+        <div class="bg-white rounded-md mx-6 p-6">
+            <Textfield bind:value={search_query} label="Search" class="w-full">
+                <TextfieldIcon class="material-icons" slot="leadingIcon">search</TextfieldIcon>
+                <HelperText slot="helper">Search for an equipment name or ID.</HelperText>
+            </Textfield>
+        </div>
+        <div class="flex flex-row flex-wrap items-center justify-center gap-4 pb-20 lg:px-[4rem] text-black">
+            {#each items as item (JSON.stringify(item))}
+                <div class="flex flex-col gap-1 items-center justify-center w-16">
+                    <ItemImage id={item.id} props={{
+                        height: 48,
+                        width: 48,
+                    }} />
+                    <input type="number" value="{item.amount}" class="p-1" style="width: inherit;"
+                        on:change={(e) => {
+                            // @ts-ignore
+                            let value = parseInt(e.target.value);
+                            value = Math.floor(value);
+                            if (isNaN(value) || value < 0) {
+                                value = 0;
+                            }
+                            if (value > constants.inventory.max.fragment) {
+                                value = constants.inventory.max.fragment;
+                            }
+                            user.inventory.setAmount(item.id, value);
+                            // @ts-ignore
+                            e.target.value = value;
+                        }}
+                    >
+                </div>
+            {/each}
+        </div>
     </div>
 {/if}
 
