@@ -91,7 +91,7 @@
         {/if}
         {#if success}
             <div class="flex flex-col gap-1 py-5 justify-center items-center text-white text-shadow">
-                <strong class="block text-3xl text-cyan-300 text-center">{url}</strong>
+                <strong class="block text-3xl break-all text-cyan-300 text-center">{url}</strong>
                 <small>Visit this link on a different device to import your priconne-quest-helper data.</small>
                 <small>URLs older than a month will occasionally be purged.</small>
                 <Button variant="raised" class="w-full"

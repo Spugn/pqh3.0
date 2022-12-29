@@ -1,5 +1,6 @@
 import _data from './data.min.json';
 import { constants } from './api';
+import * as wanakana from 'wanakana';
 import type { CharacterData, Character, Language } from './api.d';
 
 class StaticVariables {
@@ -87,8 +88,14 @@ export default (() => {
             const name_obj = getName(id);
             // make sure character names are defined and query is found in any of them, return true
             return name_obj && (
+                // standard name check: "Miyako" => [Miyako, Miyako (Halloween), ...]
                 Object.values(name_obj).some(n => n.toLowerCase().indexOf(query.toLowerCase()) !== -1)
+                // id check: "100701" => [Miyako (100701)]
                 || `${id}`.indexOf(query) !== -1
+                // hiragana to katakana => "みやこ" => [Miyako, Miyako (Halloween), ...]
+                || Object.values(name_obj).some(n => n.indexOf(wanakana.toKatakana(query)) !== -1)
+                // romanji to kana => "kyaru" => [Karyl, Karyl (Summer), ...]
+                || Object.values(name_obj).some(n => n.indexOf(wanakana.toKana(query)) !== -1)
             );
         });
     }

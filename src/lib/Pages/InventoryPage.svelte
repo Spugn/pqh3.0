@@ -11,6 +11,7 @@
     import ItemImage from "$lib/Item/Image.svelte";
     import ItemCatalog from "$lib/Catalog/ItemCatalog.svelte";
     import AmountButtons from "$lib/QuestList/AmountButtons.svelte";
+    import InventoryPage from "./InventoryPage";
 </script>
 
 <script lang="ts">
@@ -45,8 +46,10 @@
     let search_query = "";
     let filter : string[] = [];
 
-    let rarity_sort : "none" | "desc" | "asc" = "none";
-    let amount_sort : "desc" | "asc" = "desc";
+    let rarity_sort = InventoryPage.getRaritySort();
+    let amount_sort = InventoryPage.getAmountSort();
+    let fragment_sort = InventoryPage.getFragmentSort();
+    let rarity_filter : number[] = [...InventoryPage.getRarityFilter()];
 
     function updateItems() {
         items = [];
@@ -55,27 +58,44 @@
                 .filter(([id]) => (search_query === "") || (search_query !== "" && filter.includes(id)))
                 .forEach(([id]) => {
                     const fragment = equipmentAPI.fragment(id);
-                    items.push({
-                        id,
-                        amount: user.inventory.getAmount(id),
-                        rarity: parseInt(equipmentAPI.getRarityFromID(id)),
-                        is_fragment: !fragment,
-                    });
-                    if (fragment) {
+                    const full_rarity = parseInt(equipmentAPI.getRarityFromID(id));
+                    if (rarity_filter.includes(full_rarity)) {
                         items.push({
-                            id: fragment.id,
-                            amount: user.inventory.getAmount(fragment.id),
-                            rarity: parseInt(equipmentAPI.getRarityFromID(fragment.id)),
-                            is_fragment: true,
-                        })
+                            id,
+                            amount: user.inventory.getAmount(id),
+                            rarity: full_rarity,
+                            is_fragment: !fragment,
+                        });
+                    }
+                    if (fragment) {
+                        const frag_rarity = parseInt(equipmentAPI.getRarityFromID(fragment.id));
+                        if (rarity_filter.includes(frag_rarity)) {
+                            items.push({
+                                id: fragment.id,
+                                amount: user.inventory.getAmount(fragment.id),
+                                rarity: frag_rarity,
+                                is_fragment: true,
+                            });
+                        }
                     }
                 });
             items.sort((a, b) => {
-                if (a.rarity === 99 || b.rarity === 99) {
+                if (rarity_sort === "none" && (a.rarity === 99 || b.rarity === 99)) {
                     return a.rarity - b.rarity;
+                }
+                if (fragment_sort === "full") {
+                    return (a.is_fragment ? 1 : 0) - (b.is_fragment ? 1 : 0);
                 }
                 return (b.is_fragment ? 1 : 0) - (a.is_fragment ? 1 : 0);
             });
+            if (rarity_sort !== "none") {
+                items.sort((a, b) => {
+                    if (rarity_sort === "asc") {
+                        return a.rarity - b.rarity; // rarity sort, ascending
+                    }
+                    return b.rarity - a.rarity; // rarity sort, descending
+                });
+            }
             return;
         }
 
@@ -108,7 +128,9 @@
 
     $: {
         filter = equipmentAPI.search(search_query);
-        console.log(filter);
+        if (alt_mode) {
+            InventoryPage.setRarityFilter(rarity_filter);
+        }
         updateItems();
     };
 
@@ -180,24 +202,15 @@
     }
 
     function changeAmountSort() {
-        if (amount_sort === "asc") {
-            amount_sort = "desc";
-        }
-        else {
-            amount_sort = "asc";
-        }
+        amount_sort = InventoryPage.changeAmountSort();
         updateItems();
     }
     function changeRaritySort() {
-        if (rarity_sort === "none") {
-            rarity_sort = "desc";
-        }
-        else if (rarity_sort === "desc") {
-            rarity_sort = "asc";
-        }
-        else {
-            rarity_sort = "none";
-        }
+        rarity_sort = InventoryPage.changeRaritySort();
+        updateItems();
+    }
+    function changeFragmentSort() {
+        fragment_sort = InventoryPage.changeFragmentSort();
         updateItems();
     }
 </script>
@@ -413,6 +426,43 @@
                 <TextfieldIcon class="material-icons" slot="leadingIcon">search</TextfieldIcon>
                 <HelperText slot="helper">Search for an equipment name or ID.</HelperText>
             </Textfield>
+            <div class="flex flex-row flex-wrap">
+                {#each [...Array(equipmentAPI.getMaxRarity()), 99] as rarity, i}
+                    <div class="basis-1/4">
+                        {#if rarity === 99}
+                            <FormField>
+                                <Checkbox bind:group={rarity_filter} value={rarity} />
+                                <span slot="label">Memory Pieces</span>
+                            </FormField>
+                        {:else}
+                            <FormField>
+                                <Checkbox bind:group={rarity_filter} value={(i + 1)} />
+                                <span slot="label">Rarity {(i + 1)}</span>
+                            </FormField>
+                        {/if}
+                    </div>
+                {/each}
+            </div>
+        </div>
+        <div class="flex flex-row gap-1 w-[90vw] self-center">
+            <Button color="secondary" variant="raised" class="flex-1"
+                on:click={changeFragmentSort}
+            >
+                <Label>Sort: Fragments</Label>
+                <Icon class="material-icons">
+                    {fragment_sort === "full" ? "arrow_drop_up" : "arrow_drop_down"}
+                </Icon>
+            </Button>
+            <Button color="secondary" variant="raised" class="flex-1"
+                on:click={changeRaritySort}
+            >
+                <Label>Sort: Rarity</Label>
+                <Icon class="material-icons">
+                    {rarity_sort === "none"
+                        ? "block"
+                        : (rarity_sort === "desc" ? "arrow_drop_down" : "arrow_drop_up")}
+                </Icon>
+            </Button>
         </div>
         <div class="flex flex-row flex-wrap items-center justify-center gap-4 pb-20 lg:px-[4rem] text-black">
             {#each items as item (JSON.stringify(item))}

@@ -1,4 +1,5 @@
 import _data from './data.min.json';
+import * as wanakana from 'wanakana';
 import constants from './constants.api';
 import type { EquipmentData, Equipment, Fragment, EquipmentRecipeData, Language, EquipmentCatalog, EquipmentCatalogData } from './api.d';
 
@@ -147,8 +148,15 @@ export default (() => {
         return equipment.filter(id => {
             const name_obj = getName(id);
             // make sure equipment names are defined and query is found in any of them, return true
-            return name_obj && Object.values(name_obj).some(n => n.toLowerCase().indexOf(query.toLowerCase()) !== -1
+            return name_obj && (
+                // standard name check: "Iron Blade" => [Iron Blade]
+                Object.values(name_obj).some(n => n.toLowerCase().indexOf(query.toLowerCase()) !== -1)
+                // id check: "101011" => [Iron Blade (101011)]
                 || `${id}`.indexOf(query) !== -1
+                // hiragana to katakana => "あいあん" => [Iron Blade]
+                || Object.values(name_obj).some(n => n.indexOf(wanakana.toKatakana(query)) !== -1)
+                // romanji to kana => "aian" => [Iron Blade]
+                || Object.values(name_obj).some(n => n.indexOf(wanakana.toKana(query)) !== -1)
             );
         });
     }

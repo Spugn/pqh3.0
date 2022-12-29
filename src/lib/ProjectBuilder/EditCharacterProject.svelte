@@ -55,13 +55,20 @@
         message: "",
     };
 
-    $: if (!isNaN(start_rank)) {
+    function onchangeStartRank() {
+        if (isNaN(start_rank)) {
+            start_rank = 1;
+        }
         start_rank = Math.floor(start_rank);
         if (start_rank <= 0) {
             start_rank = 1;
         }
         if (start_rank > character.getMaxRank()) {
             start_rank = character.getMaxRank();
+        }
+        if (start_rank > end_rank) {
+            end_rank = start_rank;
+            onchangeEndRank();
         }
         if (start_rank > 0 && start_rank <= character.getMaxRank() && start_rank !== start_rank_prev) {
             start_equips = character.equipment(id, start_rank) as string[];
@@ -70,7 +77,10 @@
         }
     }
 
-    $: if (!isNaN(end_rank)) {
+    function onchangeEndRank() {
+        if (isNaN(end_rank)) {
+            end_rank = start_rank;
+        }
         end_rank = Math.floor(end_rank);
         if (end_rank <= 0) {
             end_rank = 1;
@@ -79,7 +89,8 @@
             end_rank = character.getMaxRank();
         }
         if (end_rank < start_rank) {
-            end_rank = start_rank;
+            start_rank = end_rank;
+            onchangeStartRank();
         }
         if (end_rank > 0 && end_rank <= character.getMaxRank() && end_rank !== end_rank_prev) {
             end_equips = character.equipment(id, end_rank) as string[];
@@ -252,6 +263,7 @@
     function loadSavedCharacter() {
         const saved_character = user.character.getCharacter(id);
         start_rank = start_rank_prev = saved_character.rank;
+        onchangeStartRank();
         start_equips = character.equipment(id, start_rank) as string[];
         start_equipped = [...saved_character.equipment]; // using this without cloning will result in changes to saved_character
     }
@@ -288,6 +300,7 @@
         <hr />
         <div class="title text-left">Start Details</div>
         <Textfield bind:value={start_rank} label="Start Rank" type="number" input$min="1"
+            on:change={onchangeStartRank}
             input$max={character.getMaxRank()} class="w-full">
             <HelperText slot="helper">Starting rank for project.</HelperText>
         </Textfield>
@@ -310,6 +323,7 @@
         <hr />
         <div class="title text-left">End Details</div>
         <Textfield bind:value={end_rank} label="End Rank" type="number" input$min="1"
+            on:change={onchangeEndRank}
             input$max={character.getMaxRank()} class="w-full">
             <HelperText slot="helper">Ending rank for project.</HelperText>
         </Textfield>

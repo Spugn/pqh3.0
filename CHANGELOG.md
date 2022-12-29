@@ -3,6 +3,35 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.1.4] - 2022-12-29
+### Added
+- Improved Character and Equipment Search
+  - Suggested by `Wazhai#0161`
+    - <https://github.com/Spugn/priconne-quest-helper/issues/1>
+    - <https://github.com/Spugn/priconne-quest-helper/issues/2>
+  - Added support for "Hiragana to Katakana" search queries
+    - "`みやこ`" => `[Miyako, Miyako (Halloween), ...]`
+    - "`ゆ`" => `[Yui, Yuki, Yukari, ...]`
+    - "`あいあん`" => `[Iron Blade]`
+  - Added support for "Romaji to Kana" search queries
+    - "`kyaru`" => `[Karyl, Karyl (Summer), ...]`
+      - "`Karyl`" doesn't return the latest thematics of "`Kyaru`", guess `Kyaru` is better than `Karyl`
+    - "`kurisumasu`" (christmas) => `[Chika (Christmas), Nozomi (Christmas), Christina (Christmas), ...]`
+    - "`aian`" => "`[Iron Blade]`"
+- Inventory Page sort options now persist for the session
+  - Previously, sorting in Inventory Page and then switching to Character/Settings/etc would reset sort options
+  - Search options will now persist for the session (lost when the webpage is refreshed)
+- Added fragment and rarity sort options and rarity filter for "Inventory Page - Alternative Mode"
+  - Suggested by `Wazhai#0161`: <https://github.com/Spugn/priconne-quest-helper/issues/3>
+- Changed "Start Rank" and "End Rank" inputs to be `onchange` rather than "on value change"
+  - Suggested by `Wazhai#0161`: <https://github.com/Spugn/priconne-quest-helper/issues/4>
+  - This change will make it possible to backspace below minimum rank
+  - This change will also makes it so that equipment items no longer load as the user types
+    - Un-focus the input or press the `ENTER` key to get items to load
+### Fixed
+- Fixed an issue with the import URL causing issues on smaller width devices/displays
+  - Reported by `Wazhai#0161`: <https://github.com/Spugn/priconne-quest-helper/issues/5>
+
 ## [3.1.3] - 2022-12-25
 ### Added
 - Search option for "Inventory Page - Alternative Mode"
