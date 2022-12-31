@@ -3,6 +3,20 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.1.5] - 2022-12-31
+### Added
+- Added some countermeasures to autofocusing the project name input for some devices
+  - Suggested by `Wazhai#0161`: <https://github.com/Spugn/priconne-quest-helper/issues/6>
+  - As of this writing, it is unsure if this addition works as there is no way of validating
+- Quest Simulator
+  - Kinda suggested by `Wazhai#0161` (suggested a basic stamina estimation)
+  - The quest simulator will take all enabled projects and run through every generated quest and display the amount of
+    stamina used, amount of quests completed, and all drops obtained
+  - This is so the user can get an idea of how much stamina they'll need to complete whatever enabled project
+  - The amount of time needed to naturally regenerate the stamina will be calculated, but this is a bit inaccurate as
+    there are plenty of ways to get stamina (guild house furniture, 200/400 from daily missions, refills, gifts, etc)
+    that aren't accounted for. Consider this maybe as a "max amount of time"
+
 ## [3.1.4] - 2022-12-29
 ### Added
 - Improved Character and Equipment Search

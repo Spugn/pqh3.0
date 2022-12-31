@@ -283,6 +283,8 @@
         <small>{error.message}</small>
     </MenuSurface>
     <div>
+        <!-- svelte-ignore a11y-autofocus | input here to try to stop autofocus on the name input -->
+        <input type="hidden" style="display:none;" autofocus={true} />
         <Textfield bind:value={project_name} label="Project Name" class="w-full">
             <HelperText slot="helper">Optional</HelperText>
         </Textfield>

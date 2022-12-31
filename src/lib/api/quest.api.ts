@@ -295,6 +295,7 @@ export default (() => {
         settings? : QuestSettings;
         use_inventory : boolean;
         language? : Language;
+        silent? : boolean;
     };
 
     function build2({
@@ -303,6 +304,7 @@ export default (() => {
         settings,
         use_inventory = false,
         language,
+        silent = false,
     } : QuestBuild2Arguments) : QuestBuild2Results {
         if (!inventory) {
             inventory = user.inventory.get();
@@ -314,7 +316,9 @@ export default (() => {
             language = user.region.get();
         }
         const time_key = `api.quest#build2: (${language} | ${Date.now().toLocaleString()})`;
-        console.time(time_key);
+        if (!silent) {
+            console.time(time_key);
+        }
 
         const enabled_projects = Object.keys(session_projects)
             .filter((k) => session_projects[k].enabled)
@@ -329,7 +333,7 @@ export default (() => {
         if (use_inventory) {
             const result = project.check(
                 {date: "quest-build-with-inventory", required: compiled_items},
-                inventory, language, settings.ignored_rarities
+                inventory, language, settings.ignored_rarities, silent
             );
             required = result.remaining;
             required_clean = result.recipe;
@@ -344,8 +348,10 @@ export default (() => {
 
         if (Object.keys(required).length <= 0) {
             // can't make quest list with no required items
-            console.log("can't make quest list with no required items");
-            console.timeEnd(time_key);
+            if (!silent) {
+                console.log("can't make quest list with no required items");
+                console.timeEnd(time_key);
+            }
             return {
                 required,
                 required_clean,
@@ -398,7 +404,9 @@ export default (() => {
         const quest_scores : QuestScore[] = search({
             required, priority_items, priority_levels: results.priority_levels, settings, language
         });
-        console.timeEnd(time_key);
+        if (!silent) {
+            console.timeEnd(time_key);
+        }
 
         return {
             required,
@@ -719,6 +727,149 @@ export default (() => {
         return counter;
     }
 
+    interface QuestSimulatorSettings {
+        normal_drop : number;
+        hard_drop : number;
+        very_hard_drop : number;
+        use_inventory : boolean;
+    };
+    function questSimulator(session_projects : SessionProjects,
+        settings : QuestSimulatorSettings = {
+            normal_drop: 1,
+            hard_drop: 1,
+            very_hard_drop: 1,
+            use_inventory: true,
+        },
+        init_build_results : QuestBuild2Results | undefined = undefined
+    ) {
+        const time_key = `api.quest#questSimulator: (${Date.now().toLocaleString()})`;
+        console.time(time_key);
+
+        interface QuestResult {
+            id: string;
+            stamina: number; // quest's stamina cost
+            total_stamina: number; // current total stamina consumed at this point
+            drops: Recipe; // drop results from this quest
+        };
+        let inventory : Recipe;
+        if (settings.use_inventory) {
+            // load user
+            inventory = JSON.parse(JSON.stringify(user.inventory.get()));
+        }
+        else {
+            inventory = {};
+        }
+        let build_results : QuestBuild2Results;
+        if (init_build_results) {
+            build_results = JSON.parse(JSON.stringify(init_build_results));
+        }
+        else {
+            // need to use inventory to track progress, the setting is ONLY for if saved inventory should be used
+            build_results = build2({ session_projects, inventory, use_inventory: true, silent: true,
+                settings: {
+                    drop_buff: {
+                        "Normal": settings.normal_drop,
+                        "Hard": settings.hard_drop,
+                        "Very Hard": settings.very_hard_drop,
+                    },
+                    sort: {
+                        list: true, // descending
+                    },
+                }
+            });
+        }
+        let quests : QuestResult[] = []; // quests performed + what dropped
+        let stamina = 0; // total stamina used
+        let total_drops : Recipe = {};
+        const original_required = JSON.parse(JSON.stringify(build_results.required));
+
+        while (build_results.quest_scores.length > 0) {
+            simulateQuestDrops(build_results.quest_scores[0].id, user.region.get());
+            // need to use inventory to keep track of progress, the setting is ONLY for if saved inventory should be used
+            build_results = build2({ session_projects, inventory, use_inventory: true, silent: true,
+                settings: {
+                    drop_buff: {
+                        "Normal": settings.normal_drop,
+                        "Hard": settings.hard_drop,
+                        "Very Hard": settings.very_hard_drop,
+                    },
+                    sort: {
+                        list: true, // descending
+                    },
+                }
+            });
+        }
+        console.timeEnd(time_key);
+        return {
+            stamina,
+            quests,
+            total_drops,
+            required: original_required
+        };
+
+        function simulateQuestDrops(quest_id : string, language : Language) {
+            const drop_amount = isEvent(quest_id) ? 1
+                : isVeryHard(quest_id) ? settings.very_hard_drop || 1
+                : isHard(quest_id) ? settings.hard_drop || 1
+                : isNormal(quest_id) ? settings.normal_drop || 1
+                : 1;
+            const stamina_cost : number = getStamina(quest_id, language) as number;
+            const drops : Recipe = {};
+            stamina += stamina_cost;
+            const memory_piece = getMemoryPiece(quest_id, language);
+            if (memory_piece) {
+                const rng = Math.random() * 100;
+                if (rng <= memory_piece.drop_rate) {
+                    // item get
+                    inventory[memory_piece.item] = (inventory[memory_piece.item])
+                        ? inventory[memory_piece.item] + drop_amount
+                        : drop_amount;
+                    total_drops[memory_piece.item] = (total_drops[memory_piece.item])
+                        ? total_drops[memory_piece.item] + drop_amount : drop_amount;
+                    drops[memory_piece.item] = (drops[memory_piece.item])
+                        ? drops[memory_piece.item] + drop_amount : drop_amount;
+                }
+            }
+            // possible to draw more than 1 main drop
+            for (const drop of getDrops(quest_id, language)) {
+                if (drop.item === constants.placeholder_id) {
+                    continue;
+                }
+                const rng = Math.random() * 100;
+                if (rng <= drop.drop_rate) {
+                    // item get
+                    inventory[drop.item] = (inventory[drop.item]) ? inventory[drop.item] + drop_amount : drop_amount;
+                    total_drops[drop.item] = (total_drops[drop.item])
+                        ? total_drops[drop.item] + drop_amount : drop_amount;
+                    drops[drop.item] = (drops[drop.item]) ? drops[drop.item] + drop_amount : drop_amount;
+                }
+            }
+            // pull only 1 out of all subdrops
+            const rng = Math.random() * 100;
+            let rate_count = 0;
+            for (const drop of getSubdrops(quest_id, language)) {
+                if (drop.item === constants.placeholder_id) {
+                    continue;
+                }
+                rate_count += drop.drop_rate;
+                if (rng <= rate_count) {
+                    // item get
+                    inventory[drop.item] = (inventory[drop.item]) ? inventory[drop.item] + drop_amount : drop_amount;
+                    total_drops[drop.item] = (total_drops[drop.item])
+                        ? total_drops[drop.item] + drop_amount : drop_amount;
+                    drops[drop.item] = (drops[drop.item]) ? drops[drop.item] + drop_amount : drop_amount;
+                    break;
+                }
+            }
+            quests.push({
+                id: quest_id,
+                stamina: stamina_cost,
+                total_stamina: stamina,
+                drops,
+            });
+        }
+    }
+
     function existsInRegion(id : string, region : Language) : boolean {
         return exists(id) && get(id).name[region] !== undefined;
     }
@@ -745,5 +896,6 @@ export default (() => {
         checkForItem,
         estimate,
         existsInRegion,
+        questSimulator,
     };
 })();

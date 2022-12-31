@@ -12,6 +12,7 @@
 <script lang="ts">
     import type { CharacterProject, ItemProject, BasicProject, QuestBuild2Results,
         SessionProjects } from '$lib/api/api.d';
+    import QuestSimulator from '$lib/QuestList/QuestSimulator.svelte';
 
     export let show_menu : boolean;
     let project_displayed : boolean = false; // flag for if a project is expanded. if so, hide non-expanded projects
@@ -21,6 +22,7 @@
     let open_project_creator : boolean = false;
     let open_project_editor : boolean = false;
     let open_quest_list : boolean = false;
+    let open_quest_simulator : boolean = false;
     let project_editor_project : number = -1;
     let built_quests : QuestBuild2Results;
     let compact_projects : boolean = user.settings.isCompactProjectCards();
@@ -163,15 +165,24 @@
             <Icon class="material-icons">add</Icon>
             <Label>Create Project</Label>
         </Button>
-        <Button class="w-[90vw]" variant="raised" disabled={built_quests?.projects.length <= 0}
-            on:click={() => open_quest_list = true}
-        >
-            <Icon>
-                <Image img="album_2" type="webpage" alt={`open quests`} picture_class={built_quests?.projects.length <= 0 ? "grayscale opacity-50" : ""}
-                    force_png={true} />
-            </Icon>
-            <Label>Quests</Label>
-        </Button>
+        <div class="w-[90vw] flex flex-row gap-1">
+            <Button class="flex-1" variant="raised" disabled={built_quests?.projects.length <= 0}
+                on:click={() => open_quest_list = true}
+            >
+                <Icon>
+                    <Image img="album_2" type="webpage" alt={`open quests`} picture_class={built_quests?.projects.length <= 0 ? "grayscale opacity-50" : ""}
+                        force_png={true} />
+                </Icon>
+                <Label>Quests</Label>
+            </Button>
+            <Button class="flex-1" variant="raised" disabled={built_quests?.projects.length <= 0}
+                on:click={() => open_quest_simulator = true}
+            >
+                <Icon class="material-icons">description</Icon>
+                <Label>Simulator</Label>
+            </Button>
+        </div>
+
     </div>
     <div class="project-list" class:compact-project-list={compact_projects}>
         <!-- list -->
@@ -221,6 +232,7 @@
         on:rebuild={buildQuests}
         on:update_inventory={updateInventory}
     />
+    <QuestSimulator bind:open={open_quest_simulator} bind:session_projects={session_projects} />
 </section>
 
 <style>

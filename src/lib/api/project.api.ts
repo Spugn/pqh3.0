@@ -77,16 +77,20 @@ export default (() => {
      * @param {Inventory} inv - user inventory object
      * @param {Language} language - game region to take recipe from
      * @param {IgnoredRarities} ignored_rarities - item rarities to ignore during build
+     * @param {boolean} silent - if console.time should be used
      * @returns {ProjectCheckStatus} project check status containing details if a user can complete a project or not
      */
     function check(
         project : Project,
         inv : Inventory,
         language : Language = "UNKNOWN",
-        ignored_rarities : IgnoredRarities = {}
+        ignored_rarities : IgnoredRarities = {},
+        silent : boolean = false
     ) : ProjectCheckStatus {
         const time_key = `api.project#check: (${language} | ${project.date})`;
-        console.time(time_key);
+        if (!silent) {
+            console.time(time_key);
+        }
         const result = build(project, inv, language, ignored_rarities);
         const result_copy = JSON.parse(JSON.stringify(result)); // copy results to return later
         for (const id in result) {
@@ -95,7 +99,9 @@ export default (() => {
                 delete result[id];
             }
         }
-        console.timeEnd(time_key);
+        if (!silent) {
+            console.timeEnd(time_key);
+        }
         return {
             success: Object.keys(result).length <= 0,
             remaining: result,

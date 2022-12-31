@@ -272,11 +272,18 @@ interface QuestBuild2Results {
     projects : Project[],
 };
 
+interface QuestSimulatorResults {
+    stamina: number; // total number of stamina spent
+    quests: { id: string; stamina: number; total_stamina: number; drops: Recipe }[]; // quests ran
+    total_drops: Recipe; // all drops collected
+    required: Recipe; // original collection of items required
+};
+
 export {
     Data, CharacterData, Character, EquipmentData, Equipment, QuestData, Quest,
     Fragment, EquipmentRecipeData, QuestItem, Recipe, Inventory, CharacterProject, ItemProject, BasicProject,
     Project, IgnoredRarities, Language, ProjectType, ProjectCheckStatus, QuestScore, Settings,
     QuestSettings, SavedCharacter, SavedCharacters, UserState, ProjectProgressResult, Projects, RankDetails,
     SessionProjects, EquipmentCatalogData, EquipmentCatalog, RegionOption, DropBuffOption,
-    QuestBuild2Results,
+    QuestBuild2Results, QuestSimulatorResults
 };
