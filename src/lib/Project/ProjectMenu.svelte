@@ -57,6 +57,15 @@
                     </SecondaryText>
                 </Text>
             </Item>
+            {#if project_type === "character"}
+                <Item on:SMUI:action={() => startDispatch("partial_complete")}>
+                    <Graphic class="material-icons">checklist</Graphic>
+                    <Text>
+                        <PrimaryText>Partially Complete</PrimaryText>
+                        <SecondaryText>Partially complete this project.</SecondaryText>
+                    </Text>
+                </Item>
+            {/if}
             <Item on:SMUI:action={() => startDispatch("complete")}>
                 <Graphic class="material-icons">check</Graphic>
                 <Text>

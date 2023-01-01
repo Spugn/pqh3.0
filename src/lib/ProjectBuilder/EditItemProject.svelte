@@ -59,6 +59,7 @@
             details: {
                 name: project_name,
                 ignored_rarities: session_ignored,
+                ...((project && project?.details.priority_level) && { priority_level: project?.details.priority_level })
             },
             required: buildRequiredItems(),
         };

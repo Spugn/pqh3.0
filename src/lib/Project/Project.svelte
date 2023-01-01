@@ -12,12 +12,13 @@
     import { base } from '$app/paths';
     import CharacterContent from "./CharacterContent.svelte";
     import ItemContent from "./ItemContent.svelte";
-    import { constants, project as projectAPI, user, inventory as inventoryAPI, recipe as recipeAPI } from '$lib/api/api';
+    import { constants, project as projectAPI, user, inventory as inventoryAPI, recipe as recipeAPI, character } from '$lib/api/api';
     import { createEventDispatcher } from 'svelte';
     import MiniProjectTitle from './MiniProjectTitle.svelte';
     import ProjectMenu from './ProjectMenu.svelte';
     import PriorityStar from "./PriorityStar.svelte";
     import AmountButtons from "$lib/QuestList/AmountButtons.svelte";
+    import ItemButton from "$lib/Item/Button.svelte";
 </script>
 
 <script lang="ts">
@@ -41,7 +42,20 @@
     interface PrioritizeProjectDialogData {
         open : boolean; // dialog visible or not
         level : number; // 1 - 10, higher = more priority
-    }
+    };
+    interface PartiallyCompleteProjectDialogData {
+        open : boolean; // dialog visible or not
+        save : boolean; // (character projects only) save character start result to user characters?
+        consume : boolean; // consume items from inventory?
+        min_rank : number; // smallest rank possible
+        max_rank : number; // highest rank possible
+        rank : number; // new start rank
+        start_equips : [boolean, boolean, boolean, boolean, boolean, boolean]; // start equips
+        end_equips : [boolean, boolean, boolean, boolean, boolean, boolean]; // end equips
+        equips : [boolean, boolean, boolean, boolean, boolean, boolean]; // new equips
+        displayed_equips : string[]; // item ids to display
+        valid : boolean; // if OK button should be disabled or not
+    };
     interface CompleteProjectDialogData {
         open : boolean; // dialog visible or not
         save : boolean; // (character projects only) save character end result to user characters?
@@ -51,7 +65,7 @@
         open : boolean; // dialog visible or not
         confirm : boolean; // manages confirmation that user is 100% sure they want to delete the project
     };
-    import type { CharacterProject, ItemProject, ProjectProgressResult } from '$lib/api/api.d';
+    import type { CharacterProject, ItemProject, ProjectProgressResult, Recipe } from '$lib/api/api.d';
     export let show_menu : boolean; // used to show/hide miyako menu open icon
     export let project_displayed : boolean; // used to show/hide other projects if this project is expanded
     export let project_id : string; // project id to get project data to display
@@ -92,7 +106,20 @@
     let priority_edit_dialog : PrioritizeProjectDialogData = {
         open: false,
         level: 1,
-    }
+    };
+    let partially_complete_project_dialog : PartiallyCompleteProjectDialogData = {
+        open: false,
+        save: true,
+        consume: true,
+        min_rank: 1,
+        max_rank: 1,
+        rank: 1,
+        start_equips: [false, false, false, false, false, false],
+        end_equips: [false, false, false, false, false, false],
+        equips: [false, false, false, false, false, false],
+        displayed_equips: [],
+        valid: false,
+    };
     let complete_project_dialog : CompleteProjectDialogData = {
         open: false,
         save: true,
@@ -280,7 +307,7 @@
         }
     }
     function completePriorityEdit() {
-        inventory_edit_dialog.open = false;
+        priority_edit_dialog.open = false;
         priority_edit_dialog.level = Math.floor(priority_edit_dialog.level);
         if (isNaN(priority_edit_dialog.level) || priority_edit_dialog.level <= 1) {
             // deprioritize project if its prioritized
@@ -313,7 +340,159 @@
                 },
             });
         });
+    }
 
+    function openPartiallyCompleteProjectDialog() {
+        partially_complete_project_dialog = {
+            open: true,
+            save: true,
+            consume: true,
+            min_rank: (project as CharacterProject).details.start?.rank || 1,
+            max_rank: (project as CharacterProject).details.end?.rank || 1,
+            rank: (project as CharacterProject).details.start?.rank || 1,
+            start_equips: (project as CharacterProject).details.start?.equipment || [false, false, false, false, false, false],
+            end_equips: (project as CharacterProject).details.end?.equipment || [false, false, false, false, false, false],
+            equips: [...(project as CharacterProject).details.start?.equipment] || [false, false, false, false, false, false],
+            displayed_equips: getPartiallyCompleteProjectDialogItems((project as CharacterProject).details.start?.rank || 1),
+            valid: false,
+        };
+    }
+    function onchangePartiallyCompleteProject() {
+        if (isNaN(partially_complete_project_dialog.rank)) {
+            partially_complete_project_dialog.rank = partially_complete_project_dialog.min_rank;
+        }
+        partially_complete_project_dialog.rank = Math.floor(partially_complete_project_dialog.rank);
+        if (partially_complete_project_dialog.rank < partially_complete_project_dialog.min_rank) {
+            partially_complete_project_dialog.rank = partially_complete_project_dialog.min_rank;
+        }
+        if (partially_complete_project_dialog.rank > partially_complete_project_dialog.max_rank) {
+            partially_complete_project_dialog.rank = partially_complete_project_dialog.max_rank;
+        }
+        // load items here
+        partially_complete_project_dialog.displayed_equips = getPartiallyCompleteProjectDialogItems(partially_complete_project_dialog.rank);
+        if (partially_complete_project_dialog.rank === partially_complete_project_dialog.min_rank) {
+            partially_complete_project_dialog.equips = [...partially_complete_project_dialog.start_equips];
+        }
+        else {
+            partially_complete_project_dialog.equips = [false, false, false, false, false, false];
+        }
+        validatePartialCompleteProject();
+    }
+    function getPartiallyCompleteProjectDialogItems(rank : number) {
+        return character.equipment((project as CharacterProject).details.avatar_id, rank) as string[];
+    }
+    function validatePartialCompleteProject() {
+        if (partially_complete_project_dialog.rank === partially_complete_project_dialog.min_rank) {
+            if (JSON.stringify(partially_complete_project_dialog.start_equips) === JSON.stringify(partially_complete_project_dialog.equips)) {
+                // min rank and nothing changed
+                partially_complete_project_dialog.valid = false;
+                return;
+            }
+        }
+        partially_complete_project_dialog.valid = true;
+    }
+    function completePartialCompleteProject() {
+        partially_complete_project_dialog.open = false;
+        let items : Recipe = {};
+        let item_id : string;
+        for (let i = partially_complete_project_dialog.min_rank ; i <= partially_complete_project_dialog.rank ; i++) {
+            for (let j = 0 ; j < 6 ; j++) {
+                const avatar_id = (project as CharacterProject).details.avatar_id;
+                item_id = (character.equipment(avatar_id, i) as string[])[j] || constants.placeholder_id;
+                if (item_id === constants.placeholder_id) {
+                    // ignore placeholder/misisng items
+                    continue;
+                }
+                if (partially_complete_project_dialog.min_rank === partially_complete_project_dialog.rank) {
+                    // original starting rank and desired end rank is same
+                    // add whatever start doesnt have but end does
+                    // we can assume that end has every item start has
+                    if (!partially_complete_project_dialog.start_equips[j] && partially_complete_project_dialog.equips[j]) {
+                        increment();
+                    }
+                }
+                else if (i === partially_complete_project_dialog.rank && partially_complete_project_dialog.equips[j]) {
+                    // we are looking at the desired end rank
+                    // only add items that are selected
+                    increment();
+                }
+                else if (i < partially_complete_project_dialog.rank) {
+                    if (i === partially_complete_project_dialog.min_rank && partially_complete_project_dialog.start_equips[j]) {
+                        // we are looking at the start rank
+                        // ignore items that start already has
+                        continue;
+                    }
+                    increment();
+                }
+            }
+        }
+        project.partially_completed = true;
+        let update = false;
+        let inv = user.inventory.get();
+        console.table(items);
+        for (const id in items) {
+            if (!project.required[id]) {
+                // item doesn't exist in project required for some reason (partially completed?)
+                continue;
+            }
+            if (items[id] > project.required[id]) {
+                // items to remove is greater than whats in required, so just set it to match
+                items[id] = project.required[id];
+            }
+            project.required[id] -= items[id];
+            if (project.required[id] <= 0) {
+                // project no longer needs this item, deleting
+                delete project.required[id];
+            }
+            if (partially_complete_project_dialog.consume) {
+                // remove items from inventory
+                const recipe = recipeAPI.build(id, items[id], user.region.get(), project.details.ignored_rarities);
+                inv = inventoryAPI.removeRecipe(inv, recipe);
+                // take note if updateInventory() needs to be run or not later
+                if (!update) {
+                    update = JSON.stringify(inv) === _inventory_string; // no changes to inventory requires manual update
+                }
+            }
+        }
+        if (partially_complete_project_dialog.consume) {
+            dispatch("update_inventory", {
+                data: {
+                    inventory: inv,
+                },
+            });
+            if (update) {
+                // manually update progress because inventory wasn't changed
+                updateInventory();
+            }
+        }
+        else {
+            // trigger update, dispatch in other condition will be calling this as well
+            updateInventory();
+        }
+        // save new start to user save data
+        if (partially_complete_project_dialog.save) {
+            user.character.setCharacter((project as CharacterProject).details.avatar_id,
+                partially_complete_project_dialog.rank,
+                partially_complete_project_dialog.equips,
+            );
+        }
+
+        // update project in user state
+        (project as CharacterProject).details.start = {
+            rank: partially_complete_project_dialog.rank,
+            equipment: partially_complete_project_dialog.equips,
+        };
+        updateProject(); // updating card text (start rank to be specific)
+        dispatch("update_project", {
+            data: {
+                project_id: project.date,
+                project,
+            },
+        });
+
+        function increment() {
+            items[item_id] = items[item_id] ? items[item_id] + 1 : 1;
+        }
     }
 
     function openCompleteProjectDialog() {
@@ -600,6 +779,96 @@
             </div>
         </Actions>
     </Dialog>
+    <!-- partial complete project modal -->
+    <Dialog bind:open={partially_complete_project_dialog.open} class="text-black z-[1001]">
+        <!-- z-index needs to be above miyako menu button (z-index 1000) -->
+        <div class="dialog-title pl-2 pt-1">Partially Complete Project</div>
+        <DialogContent>
+            <MiniProjectTitle {thumbnail} project_type={project.type} priority={project.priority}
+                priority_level={project.details.priority_level || 2} {project_name} {subtitle} {start_rank} {end_rank}
+                progress={project_progress.progress}
+            />
+            <div class="pb-4">
+                <div class="flex flex-row items-center justify-center gap-2 select-none mt-2 mb-2">
+                    {#each partially_complete_project_dialog.displayed_equips as item_id, i (`${item_id}-${i}`)}
+                        <ItemButton id={item_id} ignore_amount
+                            {...((
+                                    // what the heck is this logic crap lol
+                                    // allow clicks if rank is not the start/end
+                                    (partially_complete_project_dialog.rank !== partially_complete_project_dialog.min_rank
+                                        && partially_complete_project_dialog.rank !== partially_complete_project_dialog.max_rank)
+                                    // allow clicks if rank is min rank (not same as max rank) and start doesnt have it
+                                    || ((partially_complete_project_dialog.rank === partially_complete_project_dialog.min_rank
+                                            && partially_complete_project_dialog.min_rank !== partially_complete_project_dialog.max_rank)
+                                        && !partially_complete_project_dialog.start_equips[i]
+                                        && item_id !== constants.placeholder_id)
+                                    // allow clicks if rank is max rank (not same as min rank) and end does have it
+                                    || ((partially_complete_project_dialog.rank === partially_complete_project_dialog.max_rank
+                                            && partially_complete_project_dialog.min_rank !== partially_complete_project_dialog.max_rank)
+                                        && partially_complete_project_dialog.end_equips[i]
+                                        && item_id !== constants.placeholder_id)
+                                    // allow clicks if rank == min rank == max rank and start doesn't have and end has
+                                    || ((partially_complete_project_dialog.rank === partially_complete_project_dialog.min_rank
+                                            && partially_complete_project_dialog.min_rank === partially_complete_project_dialog.max_rank)
+                                        && !partially_complete_project_dialog.start_equips[i]
+                                        && partially_complete_project_dialog.end_equips[i]
+                                        && item_id !== constants.placeholder_id)
+                                )
+                                && { click: () => {
+                                    partially_complete_project_dialog.equips[i] = !partially_complete_project_dialog.equips[i];
+                                    validatePartialCompleteProject();
+                                }})}
+                            class={"transition-all h-12 w-12"
+                                + (partially_complete_project_dialog.equips[i]
+                                    || item_id === constants.placeholder_id
+                                    || (partially_complete_project_dialog.rank === partially_complete_project_dialog.min_rank && partially_complete_project_dialog.start_equips[i])
+                                    || (partially_complete_project_dialog.rank === partially_complete_project_dialog.max_rank && !partially_complete_project_dialog.end_equips[i])
+                                        ? "" : " hover:grayscale-0 grayscale opacity-50 hover:opacity-80")
+                                + (item_id === constants.placeholder_id
+                                    || (partially_complete_project_dialog.rank === partially_complete_project_dialog.min_rank && partially_complete_project_dialog.start_equips[i])
+                                    || (partially_complete_project_dialog.rank === partially_complete_project_dialog.max_rank && !partially_complete_project_dialog.end_equips[i])
+                                        ? " opacity-30" : "")
+                            }
+                        />
+                    {/each}
+                </div>
+                <Textfield bind:value={partially_complete_project_dialog.rank} label="New Start Rank" class="w-full"
+                    on:change={onchangePartiallyCompleteProject}
+                    type="number" input$min={partially_complete_project_dialog.min_rank}
+                    input$max={partially_complete_project_dialog.max_rank}
+                >
+                    <HelperText slot="helper">
+                        New start rank ({partially_complete_project_dialog.min_rank} - {partially_complete_project_dialog.max_rank})
+                    </HelperText>
+                </Textfield>
+            </div>
+            <div class="pb-4 font-bold">Are you sure you want to partially complete this project?</div>
+            <FormField class="pb-4">
+                <Checkbox bind:checked={partially_complete_project_dialog.save} />
+                <span slot="label">
+                    Save Character?<br/>
+                    <small class="opacity-70">Save the character's new start result to your collection.</small>
+                </span>
+            </FormField>
+            <FormField class="pb-4">
+                <Checkbox bind:checked={partially_complete_project_dialog.consume} />
+                <span slot="label">
+                    Consume Inventory?<br/>
+                    <small class="opacity-70">Remove consumed project items from inventory.</small>
+                </span>
+            </FormField>
+        </DialogContent>
+        <Actions>
+            <Button color="secondary" variant="outlined">
+                <Label>Cancel</Label>
+            </Button>
+            <Button variant="raised" disabled={!partially_complete_project_dialog.valid}
+                on:click={completePartialCompleteProject}
+            >
+                <Label>OK</Label>
+            </Button>
+        </Actions>
+    </Dialog>
     <!-- complete project modal -->
     <Dialog bind:open={complete_project_dialog.open} class="text-black z-[1001]">
         <!-- z-index needs to be above miyako menu button (z-index 1000) -->
@@ -713,6 +982,7 @@
             });
         }}
         on:prioritize={openPriorityEditDialog}
+        on:partial_complete={openPartiallyCompleteProjectDialog}
         on:complete={openCompleteProjectDialog}
         on:delete={openDeleteProjectDialog}
     />

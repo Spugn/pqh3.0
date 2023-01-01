@@ -1,4 +1,4 @@
-import { equipment, character } from './api';
+import { equipment, character, user, constants } from './api';
 import type {
     EquipmentRecipeData, Recipe, Inventory, Project, IgnoredRarities, Language, ProjectCheckStatus,
     ProjectProgressResult, CharacterProject, ItemProject
@@ -204,6 +204,133 @@ export default (() => {
         return result;
     }
 
+    function bulkCreateProjects(unit_ids : string[], rank : number,
+        equips : [boolean, boolean, boolean, boolean, boolean, boolean],
+        ignored_rarities : IgnoredRarities = {},
+        use_saved_characters = true
+    ) : CharacterProject[] {
+        let saved_characters;
+        if (use_saved_characters) {
+            saved_characters = user.character.get();
+        }
+        else {
+            saved_characters = {};
+        }
+
+        let projects : CharacterProject[] = [];
+        for (const id of unit_ids) {
+            // validation stuff
+            const saved_rank = saved_characters[id]?.rank || 1;
+            if (saved_rank > rank) {
+                // saved rank is greater than target rank, meaning this would be a downgrade, so skip
+                continue;
+            }
+            const saved_equips = saved_characters[id]?.equipment || [false, false, false, false, false, false];
+            let used_equips : [boolean, boolean, boolean, boolean, boolean, boolean]
+                = [false, false, false, false, false, false]; // total equips in end result
+            if (saved_rank === rank) {
+                // start rank same as end rank, make sure theres at least 1 new equip selected
+                let new_count = 0;
+                for (let i = 0 ; i < 6 ; i++) {
+                    if (saved_equips[i]) {
+                        used_equips[i] = true;
+                        continue;
+                    }
+                    if (equips[i]) {
+                        used_equips[i] = true;
+                        new_count++;
+                    }
+                }
+                if (new_count <= 0) {
+                    // no new items, cant make project
+                    continue;
+                }
+            }
+            else if (saved_rank + 1 === rank
+                && saved_equips.filter(Boolean).length === 6
+                && equips.filter(Boolean).length === 0
+            ) {
+                // no new items are selected
+                continue;
+            }
+            else {
+                // everything seems fine? (start rank lower than end rank with new stuff)
+                // replace used_equips with the target equips
+                used_equips = equips;
+            }
+
+            const result : CharacterProject = {
+                type: "character",
+                date: Date.now() + unit_ids.indexOf(id), // trying to make sure dates are all unique
+                priority: false,
+                details: {
+                    avatar_id: id,
+                    formal_name: `${character.name(id, user.region.get())} (${id})`,
+                    name: "",
+                    start: {
+                        rank: saved_rank,
+                        equipment: saved_equips,
+                    },
+                    end: {
+                        rank: rank,
+                        equipment: used_equips,
+                    },
+                    memory_piece: 0,
+                    pure_memory_piece: 0,
+                    ignored_rarities: ignored_rarities,
+                },
+                required: buildRequiredItems(),
+            };
+            if (Object.keys(result.required).length <= 0) {
+                // no items in result required
+                continue;
+            }
+            projects.push(result);
+
+            function buildRequiredItems() {
+                let items : Recipe = {};
+                let item_id : string;
+                for (let i = saved_rank ; i <= rank ; i++) {
+                    for (let j = 0 ; j < 6 ; j++) {
+                        item_id = (character.equipment(id, i) as string[])[j] || constants.placeholder_id;
+                        if (item_id === constants.placeholder_id) {
+                            // ignore placeholder/missing items
+                            used_equips[j] = false; // change this to false in end result equips
+                            continue;
+                        }
+                        if (saved_rank === rank) {
+                            // start and end rank is the same
+                            // add whatever item start doesn't have but end does
+                            // we can assume that end has every item start has (due to validation prior to this function)
+                            if (!saved_equips[j] && used_equips[j]) {
+                                increment();
+                            }
+                        }
+                        else if (i === rank && used_equips[j]) {
+                            // we are looking at the end rank
+                            // only add items that are selected
+                            increment();
+                        }
+                        else if (i < rank) {
+                            if (i === saved_rank && saved_equips[j]) {
+                                // we are looking at the start rank
+                                // ignore items that start already has
+                                continue;
+                            }
+                            increment();
+                        }
+                    }
+                }
+                return items;
+
+                function increment() {
+                    items[item_id] = items[item_id] ? items[item_id] + 1 : 1;
+                }
+            }
+        }
+        return projects;
+    }
+
     function getTestCharacterProject(items : number = 0) : CharacterProject {
         const required : Recipe = {};
         if (items > 0) {
@@ -292,6 +419,7 @@ export default (() => {
         consume,
         compile,
         progress,
+        bulkCreateProjects,
         getTestCharacterProject,
         getTestItemProject,
     };

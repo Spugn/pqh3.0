@@ -3,6 +3,35 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.1.6] - 2023-01-01
+Happy New Year! 2023
+### Added
+- Bulk Create Projects
+  - Suggested by `Wazhai#0161`
+  - Original idea from `pcredivewiki.tw`'s armory feature
+  - Create multiple projects of your **owned** characters with the same end target.
+  - Character's rank must be less than or equal to the target rank to be selectable for project creation
+  - Required items can be viewed before being added to project list, in case you want a non-destructive way of viewing
+    a project's required items but not interested adding it
+- (Bulk) Partially Complete Project
+  - Suggested by `Wazhai#0161`
+  - Although a "Partial Complete" feature technically already exists (expand project and click any required item), this
+    version includes moving the start of a project forward and saving the new start as the current character state
+  - This version also includes consuming inventory, but that was already a part of the other version so whatever
+  - This is for CHARACTER PROJECTS only. Item projects must continue using the manual one-at-a-time "Partial Complete"
+  - Bugs may exist, this was written pretty poorly lol
+### Fixed
+- Fixed some issues with Quest Simulator
+  - Fixed incorrect label for "Very Hard"'s select
+  - Removed the required items check because the "use inventory" feature exists
+    - People can now select completed projects and run the simulator if `Use Inventory?` is unchecked
+  - The "Start" button is now properly disabled if required items don't exist
+  - Changed some text
+  - Added a note to inform people to click WAIT if the "Page Unresponsive" error appears
+    - Page Unresponsive error will appear if there are a lot of required items
+- Fixed a bug where project priority level was not kept after editing a project
+- Fixed a bug where the priority edit dialog wouldn't close if ENTER was pressed
+
 ## [3.1.5] - 2022-12-31
 ### Added
 - Added some countermeasures to autofocusing the project name input for some devices

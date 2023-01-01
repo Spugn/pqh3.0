@@ -183,6 +183,7 @@
                 memory_piece: regular_count,
                 pure_memory_piece: pure_count,
                 ignored_rarities: session_ignored,
+                ...((project && project?.details.priority_level) && { priority_level: project?.details.priority_level })
             },
             required: buildRequiredItems(),
         };
