@@ -2834,6 +2834,24 @@
             }
         }
     },
+    "32047": {
+        "id": "32047",
+        "name": {
+            "JP": "ジュンのピュアメモリーピース"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "999999",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "32048": {
         "id": "32048",
         "name": {
