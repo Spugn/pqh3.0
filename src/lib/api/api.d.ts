@@ -165,6 +165,19 @@ interface Settings {
         projects: { [date : string] : boolean }; // array of enabled project id/dates
     }; // keep the enabled/disabled state of projects
     inventory_alternative_mode? : boolean; // display inventory page in an alternative way
+    simulator_stamina_overlay? : boolean; // enable quest simulator stamina overlay
+    simulator_dont_use_inventory? : boolean; // use inventory when calculating stamina for overlay
+    project_sort? : {
+        date : "asc" | "desc";
+        priority : "desc" | "asc" | "none";
+        unit_id : "none" | "asc" | "desc";
+        type : "none" | "desc" | "asc";
+        enabled : "none" | "desc" | "asc";
+        [type : string] : string;
+    }; // project sort options
+    session_ignored_rarities? : {
+        [rarity : string] : boolean;
+    }; // Session ignored rarities, used in creating projects, etc
     [key : string] : unknown;
 };
 

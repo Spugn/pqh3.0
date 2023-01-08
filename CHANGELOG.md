@@ -3,6 +3,40 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.1.7] - 2023-01-08
+### Added
+- "All Projects" display in Bulk Create Projects
+  - Suggested by `Wazhai#0161`
+  - Displays the combination of all required project items, initially selected by default
+- Display "Required Fragments" in Bulk Create Projects
+  - Suggested by `Wazhai#0161`
+  - Required Fragments will be calculated and displayed instead of just Required Items.
+- Quest Simulator Changes
+  - Suggested by `Wazhai#0161`
+  - Improved calculation, it now takes a lot less time (original method available as "precise" mode)
+  - Quest Settings now effect quest simulator
+- Quest Simulator - Stamina Overlay
+  - Suggested by `Wazhai#0161`
+  - New setting; if enabled, quest simulator will auto-run and display consumed stamina on top right of page.
+  - Overlay can be clicked to display usual simulator results (quests ran, item drops obtained, etc)
+  - Added "Don't Use Inventory" setting for moments where you don't want to include an existing inventory
+  - Results from Stamina Overlay are calculated via Imprecise Mode. Precise Mode is unavailable while using Stamina Overlay.
+  - "Simulator" button will be hidden if this is enabled due to it being unnecessary
+- Session Ignored Rarities are now saved and carry over between sessions
+  - Suggested by `Wazhai#0161`
+- Project List Sorting
+  - Suggested by `Tomo#5563`
+  - Project list can now be sorted by date, priority, unit ID, project type, and enabled status
+  - Sort settings will persist between sessions
+- Added button to access project menu while project is expanded
+  - Suggested by `Wazhai#0161`
+  - Project will un-expand if this is used
+    - Why? Because due to how project cards are designed and displayed, it will cause issues after a project is edited,
+      completed, deleted, etc.
+    - Specifically, when a project is completed/deleted in an expanded state there's little to no time to unexpand the
+      project without some funky stuff going on with reactivity. I'm sure there's a billion workarounds but it doesn't
+      feel worth my time to figure one out at the moment
+
 ## [3.1.6] - 2023-01-01
 Happy New Year! 2023
 ### Added

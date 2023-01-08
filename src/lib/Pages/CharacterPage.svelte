@@ -40,6 +40,7 @@
         step: number;
         generated_projects: CharacterProject[];
         selected_index: number;
+        required_fragments: Recipe;
     };
     let characters : CharacterButtonData[] = [];
     let search_query = ""; // text input for what to search for
@@ -65,10 +66,12 @@
         step: 0,
         generated_projects: [],
         selected_index: 0,
+        required_fragments: {},
     };
     $: if (open_bulk_create_dialog) {
         bulk_create_dialog_data.character = [];
         bulk_create_dialog_data.step = 0;
+        bulk_create_dialog_data.required_fragments = {};
         validateTargetRank();
     }
     function validateTargetRank() {
@@ -98,7 +101,6 @@
                 bulk_create_dialog_data.character = Array.from(temp_set);
             }
         }
-
     }
     const button_css = "inline-block dark-shadow-md rounded-md transition-opacity w-12 h-12 grayscale";
 
@@ -234,6 +236,10 @@
         }
         bulk_create_dialog_data.generated_projects = projs;
         bulk_create_dialog_data.selected_index = 0;
+
+        const p = bulk_create_dialog_data.generated_projects[bulk_create_dialog_data.selected_index];
+        bulk_create_dialog_data.required_fragments = projectAPI.build(p, {}, user.region.get(), p.details.ignored_rarities);
+
         bulk_create_dialog_data.step = 1;
     }
     function showBulkProjectError(message : string) {
@@ -243,6 +249,10 @@
     function completeBulkProject() {
         open_bulk_create_dialog = false;
         for (const proj of bulk_create_dialog_data.generated_projects) {
+            if (proj.details.avatar_id === "999999") {
+                // skip "All Projects" if needed
+                continue;
+            }
             user.projects.add(proj);
         }
     }
@@ -500,6 +510,7 @@
                                     if (!session_ignored[i + 1]) {
                                         delete session_ignored[i + 1];
                                     }
+                                    user.settings.setSavedSessionIgnoredRarities();
                                 }}
                                 class={"transition-all h-12 w-12"
                                     + (session_ignored[i + 1] ? " hover:grayscale-0 grayscale opacity-50 hover:opacity-80" : "")
@@ -522,7 +533,11 @@
                                 class:outline={bulk_create_dialog_data.selected_index === i}
                                 class:outline-4={bulk_create_dialog_data.selected_index === i}
                                 class:outline-pink-500={bulk_create_dialog_data.selected_index === i}
-                                on:click={() => bulk_create_dialog_data.selected_index = i}
+                                on:click={() => {
+                                    bulk_create_dialog_data.selected_index = i;
+                                    const p = bulk_create_dialog_data.generated_projects[bulk_create_dialog_data.selected_index];
+                                    bulk_create_dialog_data.required_fragments = projectAPI.build(p, {}, user.region.get(), p.details.ignored_rarities);
+                                }}
                             >
                                 <MiniProjectTitle thumbnail={p.details.avatar_id} project_type="character" priority={false}
                                     project_name="Untitled Project" subtitle={p.details.formal_name} start_rank={p.details.start.rank}
@@ -533,6 +548,17 @@
                     </div>
                 </div>
                 <div class="flex flex-col gap-1">
+                    <div class="title self-start">Required Fragments</div>
+                    <div class="flex flex-row flex-wrap gap-1 max-h-[300px] overflow-auto bg-black/[0.2] rounded-md p-1">
+                        {#each Object.keys(bulk_create_dialog_data.required_fragments) as req (`${req}-${bulk_create_dialog_data.required_fragments[req]}`)}
+                            <div class="relative">
+                                <ItemImage id={req} props={{ height: 40, width: 40 }} />
+                                <strong class="amount">
+                                    {bulk_create_dialog_data.required_fragments[req]}
+                                </strong>
+                            </div>
+                        {/each}
+                    </div>
                     <div class="title self-start">Required Items</div>
                     <div class="flex flex-row flex-wrap gap-1 max-h-[300px] overflow-auto bg-black/[0.2] rounded-md p-1">
                         {#each Object.keys(bulk_create_dialog_data.generated_projects[bulk_create_dialog_data.selected_index].required) as req (`${req}-${bulk_create_dialog_data.generated_projects[bulk_create_dialog_data.selected_index].required[req]}`)}

@@ -50,6 +50,18 @@
         user.settings.setInventoryAlternativeMode(inventory_alternative_mode);
     }
 
+    // quest simulator - stamina overlay
+    let simulator_stamina_overlay : boolean = user.settings.isSimulatorStaminaOverlay();
+    $: if (simulator_stamina_overlay !== user.settings.isSimulatorStaminaOverlay()) {
+        user.settings.setSimulatorStaminaOverlay(simulator_stamina_overlay);
+    }
+
+    // quest simulator - stamina overlay - use inventory
+    let simulator_dont_use_inventory : boolean = user.settings.isSimulatorDontUseInventory();
+    $: if (simulator_dont_use_inventory !== user.settings.isSimulatorDontUseInventory()) {
+        user.settings.setSimulatorDontUseInventory(simulator_dont_use_inventory);
+    }
+
     // specific item filter
     let open_item_filter_dialog : boolean = false;
     let filtered_items : string[] = user.settings.quest.getItemFilter();
@@ -197,6 +209,46 @@
             <p style="padding: 1rem;" class="text-black/70 mb-4">
                 Enable this to have items be displayed with an input below them for quick bulk inventory editing.
                 Loading the inventory page with this enabled may take longer than usual.
+            </p>
+        </Card>
+    </div>
+    <!-- Quest Simulator - Stamina Overlay -->
+    <div class="text-black mx-4 w-[90vw] max-w-[1000px]">
+        <Card>
+            <div style="padding: 1rem;" class="flex flex-row mb-2 items-center">
+                <div>
+                    <h1 class="font-bold text-xl">
+                        Quest Simulator - Stamina Overlay
+                    </h1>
+                    <h3 class="text-black/60">
+                        Auto-run quest simulator and display stamina used on top right of page.
+                    </h3>
+                </div>
+                <div class="ml-auto">
+                    <Switch bind:checked={simulator_stamina_overlay} />
+                </div>
+            </div>
+            <div style="padding: 1rem;" class="flex flex-row mb-2 items-center">
+                <div>
+                    <h1 class="font-bold text-xl">
+                        Stamina Overlay - Don't Use Inventory
+                    </h1>
+                    <h3 class="text-black/60">
+                        Start with an empty inventory in stamina calculations?
+                    </h3>
+                </div>
+                <div class="ml-auto">
+                    <Switch bind:checked={simulator_dont_use_inventory} />
+                </div>
+            </div>
+            <p style="padding: 1rem;" class="text-black/70 mb-4">
+                Enable this to auto-run and display quest simulator stamina results on the top right of page.
+                Non-precise mode will always be used in stamina calculation.
+                If "<strong>Don't Use Inventory</strong>" is enabled, calculations will start with a blank inventory
+                rather than an existing inventory.
+                <strong class="text-red-600 italic">Webpage may become slow if too many projects are enabled.</strong>
+                If this appears to be the case, <strong class="text-red-600">DISABLE</strong> the
+                "<strong>Stamina Overlay</strong>"
             </p>
         </Card>
     </div>

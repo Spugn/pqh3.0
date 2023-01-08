@@ -9,6 +9,7 @@
 
     const dispatch = createEventDispatcher();
     export let open : boolean = false;
+    export let expanded : boolean = false;
 
     // stuff for MiniProjectTitle
     export let thumbnail : string = "999999";
@@ -34,13 +35,15 @@
         <MiniProjectTitle {thumbnail} {project_type} {priority} {priority_level} {project_name}
             {subtitle} {start_rank} {end_rank} {progress} />
         <List twoLine>
-            <Item on:SMUI:action={() => startDispatch("expand")}>
-                <Graphic class="material-icons">open_in_full</Graphic>
-                <Text>
-                    <PrimaryText>Expand</PrimaryText>
-                    <SecondaryText>View more project details.</SecondaryText>
-                </Text>
-            </Item>
+            {#if !expanded}
+                <Item on:SMUI:action={() => startDispatch("expand")}>
+                    <Graphic class="material-icons">open_in_full</Graphic>
+                    <Text>
+                        <PrimaryText>Expand</PrimaryText>
+                        <SecondaryText>View more project details.</SecondaryText>
+                    </Text>
+                </Item>
+            {/if}
             <Item on:SMUI:action={() => startDispatch("edit")}>
                 <Graphic class="material-icons">edit</Graphic>
                 <Text>

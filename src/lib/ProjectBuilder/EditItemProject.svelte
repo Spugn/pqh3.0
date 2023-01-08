@@ -143,6 +143,10 @@
                             if (!session_ignored[i + 1]) {
                                 delete session_ignored[i + 1];
                             }
+                            if (!project) {
+                                // only save if this isnt an existing project
+                                user.settings.setSavedSessionIgnoredRarities();
+                            }
                         }}
                         class={"transition-all h-12 w-12"
                             + (session_ignored[i + 1] ? " hover:grayscale-0 grayscale opacity-50 hover:opacity-80" : "")

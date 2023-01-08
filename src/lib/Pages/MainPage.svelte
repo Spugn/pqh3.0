@@ -7,12 +7,14 @@
     import { onMount } from "svelte";
     import ProjectEditor from "$lib/ProjectBuilder/ProjectEditor.svelte";
     import QuestList from '$lib/QuestList/QuestList.svelte';
+    import QuestSimulator from '$lib/QuestList/QuestSimulator.svelte';
+    import ProjectSortOptions from "$lib/Project/ProjectSortOptions.svelte";
+    import MainPage from "./MainPage";
 </script>
 
 <script lang="ts">
     import type { CharacterProject, ItemProject, BasicProject, QuestBuild2Results,
         SessionProjects } from '$lib/api/api.d';
-    import QuestSimulator from '$lib/QuestList/QuestSimulator.svelte';
 
     export let show_menu : boolean;
     let project_displayed : boolean = false; // flag for if a project is expanded. if so, hide non-expanded projects
@@ -26,6 +28,15 @@
     let project_editor_project : number = -1;
     let built_quests : QuestBuild2Results;
     let compact_projects : boolean = user.settings.isCompactProjectCards();
+    let quest_simulator : QuestSimulator;
+    let hide_simulator_button : boolean = user.settings.isSimulatorStaminaOverlay();
+    let open_sort_options : boolean = false;
+    let sort_options_changed : boolean = false;
+
+    $: if (!open_sort_options && sort_options_changed) {
+        _project_keys = sortProjects();
+        sort_options_changed = false;
+    }
 
     onMount(async () => {
         session_projects = user.getSessionProjects();
@@ -61,18 +72,85 @@
     }
 
     function sortProjects() {
+        MainPage.load(); // load settings if not loaded yet
         // sorting by priority or not, could do something more like sort by completion but kinda lazy
         // and also having to sort every time may be time consuming, idk
         let result = Object.keys(session_projects);
+        // date sort
         result.sort((a, b) => {
-            function getSortValue(project : CharacterProject | ItemProject | BasicProject) : number {
-                if (!project.priority) {
-                    return 0;
-                }
-                return 1000 + (project.details?.priority_level || 2);
+            if (MainPage.getDateSort() === "desc") {
+                return (session_projects[b].project.date as number || 0)
+                    - (session_projects[a].project.date as number || 0);
             }
-            return getSortValue(session_projects[b].project) - getSortValue(session_projects[a].project);
+            else {
+                return (session_projects[a].project.date as number || 0)
+                    - (session_projects[b].project.date as number || 0);
+            }
         });
+        // rarity sort
+        if (MainPage.getPrioritySort() !== "none") {
+            result.sort((a, b) => {
+                function getSortValue(project : CharacterProject | ItemProject | BasicProject) : number {
+                    if (!project.priority) {
+                        return 0;
+                    }
+                    return 1000 + (project.details?.priority_level || 2);
+                }
+                if (MainPage.getPrioritySort() === "desc") {
+                    return getSortValue(session_projects[b].project) - getSortValue(session_projects[a].project);
+                }
+                else {
+                    return getSortValue(session_projects[a].project) - getSortValue(session_projects[b].project);
+                }
+            });
+        }
+        // unit id sort
+        if (MainPage.getUnitIDSort() !== "none") {
+            result.sort((a, b) => {
+                function getSortValue(project : CharacterProject | ItemProject | BasicProject) : number {
+                    if (project.type !== "character") {
+                        // make sure non character projects appear on bottom
+                        return MainPage.getUnitIDSort() === "desc" ? 0 : Number.MAX_VALUE;
+                    }
+                    return parseInt((project as CharacterProject).details?.avatar_id) || 0;
+                }
+                if (MainPage.getUnitIDSort() === "desc") {
+                    return getSortValue(session_projects[b].project) - getSortValue(session_projects[a].project);
+                }
+                else {
+                    return getSortValue(session_projects[a].project) - getSortValue(session_projects[b].project);
+                }
+            });
+        }
+        // type sort
+        if (MainPage.getTypeSort() !== "none") {
+            result.sort((a, b) => {
+                function getSortValue(project : CharacterProject | ItemProject | BasicProject) : number {
+                    if (project.type !== "character") {
+                        return 0;
+                    }
+                    return 1;
+                }
+                if (MainPage.getTypeSort() === "desc") {
+                    return getSortValue(session_projects[b].project) - getSortValue(session_projects[a].project);
+                }
+                else {
+                    return getSortValue(session_projects[a].project) - getSortValue(session_projects[b].project);
+                }
+            });
+        }
+        // enabled sort
+        if (MainPage.getEnabledSort() !== "none") {
+            result.sort((a, b) => {
+                if (MainPage.getEnabledSort() === "desc") {
+                    return (session_projects[b].enabled ? 1 : 0) - (session_projects[a].enabled ? 1 : 0);
+                }
+                else {
+                    return (session_projects[a].enabled ? 1 : 0) - (session_projects[b].enabled ? 1 : 0);
+                }
+            });
+        }
+
         return result;
     }
 
@@ -155,17 +233,29 @@
             session_projects,
             use_inventory: true,
         });
+        quest_simulator.updateStaminaOverlay(session_projects);
+
+        if (MainPage.getEnabledSort() !== "none" && !open_quest_list) {
+            // only sort via enabled if quest list isnt open
+            _project_keys = sortProjects();
+        }
     }
 </script>
 
 <section>
     <div class="my-1 flex flex-col items-center justify-center gap-2">
         <!-- buttons (create project, open quests) -->
-        <Button class="w-[90vw]" variant="raised" on:click={() => open_project_creator = true}>
-            <Icon class="material-icons">add</Icon>
-            <Label>Create Project</Label>
-        </Button>
-        <div class="w-[90vw] flex flex-row gap-1">
+        <div class="w-[90vw] flex flex-row gap-2">
+            <Button class="flex-1" variant="raised" on:click={() => open_project_creator = true}>
+                <Icon class="material-icons">add</Icon>
+                <Label>Create Project</Label>
+            </Button>
+            <Button color="secondary" class="flex-1" variant="raised" on:click={() => open_sort_options = true}>
+                <Icon class="material-icons">sort</Icon>
+                <Label>Sort</Label>
+            </Button>
+        </div>
+        <div class="w-[90vw] flex flex-row gap-2">
             <Button class="flex-1" variant="raised" disabled={built_quests?.projects.length <= 0}
                 on:click={() => open_quest_list = true}
             >
@@ -175,14 +265,15 @@
                 </Icon>
                 <Label>Quests</Label>
             </Button>
-            <Button class="flex-1" variant="raised" disabled={built_quests?.projects.length <= 0}
-                on:click={() => open_quest_simulator = true}
-            >
-                <Icon class="material-icons">description</Icon>
-                <Label>Simulator</Label>
-            </Button>
+            {#if !hide_simulator_button}
+                <Button class="flex-1" variant="raised" disabled={built_quests?.projects.length <= 0}
+                    on:click={() => open_quest_simulator = true}
+                >
+                    <Icon class="material-icons">description</Icon>
+                    <Label>Simulator</Label>
+                </Button>
+            {/if}
         </div>
-
     </div>
     <div class="project-list" class:compact-project-list={compact_projects}>
         <!-- list -->
@@ -232,7 +323,10 @@
         on:rebuild={buildQuests}
         on:update_inventory={updateInventory}
     />
-    <QuestSimulator bind:open={open_quest_simulator} bind:session_projects={session_projects} />
+    <QuestSimulator bind:this={quest_simulator}
+        bind:open={open_quest_simulator} bind:session_projects={session_projects}
+    />
+    <ProjectSortOptions bind:open={open_sort_options} bind:changed={sort_options_changed} />
 </section>
 
 <style>

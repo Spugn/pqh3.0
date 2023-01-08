@@ -579,7 +579,7 @@
                             <Label>{enabled ? "Enabled" : "Disabled"}</Label>
                         </Button>
                     </div>
-                    <div class="more-options" >
+                    <div class="more-options">
                         <IconButton
                             size="mini"
                             class="material-icons"
@@ -621,6 +621,25 @@
                             <div>{fragment_progress}</div>
                         </div>
                         <div class="content">
+                            <div>
+                                <FormField class="text-white flex flex-row items-center gap-2">
+                                    <IconButton
+                                        size="mini"
+                                        class="material-icons"
+                                        on:click={() => {
+                                            // a lot of things go wrong when project menu stuff is done with the
+                                            // project expanded
+                                            expand(false);
+                                            project_menu_open = true;
+                                        }}
+                                        title="More options">
+                                        more_vert
+                                    </IconButton>
+                                    <span slot="label">
+                                        Options
+                                    </span>
+                                </FormField>
+                            </div>
                             {#if project.type === "character"}
                                 <CharacterContent bind:project bind:project_progress
                                     on:open_partial_completion_dialog={openPartialCompletionDialog}
@@ -969,7 +988,7 @@
     <ProjectMenu bind:open={project_menu_open}
         {thumbnail} project_type={project.type} priority={project.priority}
         priority_level={project.details.priority_level || 2} {project_name} {subtitle} {start_rank} {end_rank}
-        progress={project_progress.progress}
+        progress={project_progress.progress} {expanded}
         on:expand={() => expand(true)}
         on:edit={() => {
             // temp fix, edit wont have this functionality when completed. this prevents scroll from being locked
@@ -1294,6 +1313,7 @@
 
     /** full-detail only, is the scrollable content area */
     div.full-detail div.detail-content div.content {
+        position: relative;
         max-height: 70vh;
         overflow-y: auto;
         white-space: pre-line;

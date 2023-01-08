@@ -328,6 +328,37 @@ export default (() => {
                 }
             }
         }
+        // build "all projects" project
+        if (projects.length >= 2) {
+            const all : CharacterProject = {
+                type: "character",
+                date: Date.now() + projects.length, // trying to make sure dates are all unique
+                priority: false,
+                details: {
+                    avatar_id: "999999",
+                    formal_name: "All Projects",
+                    name: "",
+                    start: {
+                        rank: 1,
+                        equipment: [false, false, false, false, false, false],
+                    },
+                    end: {
+                        rank: 1,
+                        equipment: [false, false, false, false, false, false],
+                    },
+                    memory_piece: 0,
+                    pure_memory_piece: 0,
+                    ignored_rarities: ignored_rarities,
+                },
+                required: {},
+            };
+            for (const p of projects) {
+                for (const id in p.required) {
+                    all.required[id] = (all.required[id] || 0) + p.required[id];
+                }
+            }
+            projects.unshift(all);
+        }
         return projects;
     }
 

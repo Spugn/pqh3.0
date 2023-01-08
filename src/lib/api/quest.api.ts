@@ -728,10 +728,11 @@ export default (() => {
     }
 
     interface QuestSimulatorSettings {
-        normal_drop : number;
-        hard_drop : number;
-        very_hard_drop : number;
-        use_inventory : boolean;
+        normal_drop : number; // normal quest drop multiplier
+        hard_drop : number; // H drop multiplier
+        very_hard_drop : number; // VH drop multiplier
+        use_inventory : boolean; // copy user's initial inventory or not
+        precise? : boolean; // use precise mode or not
     };
     function questSimulator(session_projects : SessionProjects,
         settings : QuestSimulatorSettings = {
@@ -739,10 +740,11 @@ export default (() => {
             hard_drop: 1,
             very_hard_drop: 1,
             use_inventory: true,
+            precise: false,
         },
         init_build_results : QuestBuild2Results | undefined = undefined
     ) {
-        const time_key = `api.quest#questSimulator: (${Date.now().toLocaleString()})`;
+        const time_key = `api.quest#questSimulator: (${Date.now().toLocaleString()};precise:${settings.precise || false})`;
         console.time(time_key);
 
         interface QuestResult {
@@ -764,19 +766,7 @@ export default (() => {
             build_results = JSON.parse(JSON.stringify(init_build_results));
         }
         else {
-            // need to use inventory to track progress, the setting is ONLY for if saved inventory should be used
-            build_results = build2({ session_projects, inventory, use_inventory: true, silent: true,
-                settings: {
-                    drop_buff: {
-                        "Normal": settings.normal_drop,
-                        "Hard": settings.hard_drop,
-                        "Very Hard": settings.very_hard_drop,
-                    },
-                    sort: {
-                        list: true, // descending
-                    },
-                }
-            });
+            build_results = rebuild();
         }
         let quests : QuestResult[] = []; // quests performed + what dropped
         let stamina = 0; // total stamina used
@@ -784,20 +774,12 @@ export default (() => {
         const original_required = JSON.parse(JSON.stringify(build_results.required));
 
         while (build_results.quest_scores.length > 0) {
-            simulateQuestDrops(build_results.quest_scores[0].id, user.region.get());
-            // need to use inventory to keep track of progress, the setting is ONLY for if saved inventory should be used
-            build_results = build2({ session_projects, inventory, use_inventory: true, silent: true,
-                settings: {
-                    drop_buff: {
-                        "Normal": settings.normal_drop,
-                        "Hard": settings.hard_drop,
-                        "Very Hard": settings.very_hard_drop,
-                    },
-                    sort: {
-                        list: true, // descending
-                    },
-                }
-            });
+            const should_rebuild = simulateQuestDrops(build_results.quest_scores[0].id, user.region.get());
+            if (settings.precise || should_rebuild) {
+                // rebuild quests regardless of item completion if settings.precise
+                // keep repeating quest sim until 1 item is consumed totally if not settings.precise
+                build_results = rebuild();
+            }
         }
         console.timeEnd(time_key);
         return {
@@ -807,7 +789,15 @@ export default (() => {
             required: original_required
         };
 
+        function rebuild() {
+            // need to use inventory to keep track of progress, the setting is ONLY for if saved inventory should be used
+            return build2({ session_projects, inventory, use_inventory: true, silent: true,
+                settings: user.settings.quest.get()
+            });
+        }
+
         function simulateQuestDrops(quest_id : string, language : Language) {
+            let completed_item = false; // if true, at least 1 item has been completed
             const drop_amount = isEvent(quest_id) ? 1
                 : isVeryHard(quest_id) ? settings.very_hard_drop || 1
                 : isHard(quest_id) ? settings.hard_drop || 1
@@ -828,6 +818,12 @@ export default (() => {
                         ? total_drops[memory_piece.item] + drop_amount : drop_amount;
                     drops[memory_piece.item] = (drops[memory_piece.item])
                         ? drops[memory_piece.item] + drop_amount : drop_amount;
+                    if (build_results.required_clean[memory_piece.item] // item is required
+                        && build_results.required[memory_piece.item] > 0 // since last build, still required
+                        && inventory[memory_piece.item] >= build_results.required_clean[memory_piece.item] // is item completed now?
+                    ) {
+                        completed_item = true;
+                    }
                 }
             }
             // possible to draw more than 1 main drop
@@ -842,6 +838,12 @@ export default (() => {
                     total_drops[drop.item] = (total_drops[drop.item])
                         ? total_drops[drop.item] + drop_amount : drop_amount;
                     drops[drop.item] = (drops[drop.item]) ? drops[drop.item] + drop_amount : drop_amount;
+                    if (build_results.required_clean[drop.item] // item is required
+                        && build_results.required[drop.item] > 0 // since last build, still required
+                        && inventory[drop.item] >= build_results.required_clean[drop.item] // is item completed now?
+                    ) {
+                        completed_item = true;
+                    }
                 }
             }
             // pull only 1 out of all subdrops
@@ -858,6 +860,12 @@ export default (() => {
                     total_drops[drop.item] = (total_drops[drop.item])
                         ? total_drops[drop.item] + drop_amount : drop_amount;
                     drops[drop.item] = (drops[drop.item]) ? drops[drop.item] + drop_amount : drop_amount;
+                    if (build_results.required_clean[drop.item] // item is required
+                        && build_results.required[drop.item] > 0 // since last build, still required
+                        && inventory[drop.item] >= build_results.required_clean[drop.item] // is item completed now?
+                    ) {
+                        completed_item = true;
+                    }
                     break;
                 }
             }
@@ -867,6 +875,7 @@ export default (() => {
                 total_stamina: stamina,
                 drops,
             });
+            return completed_item;
         }
     }
 

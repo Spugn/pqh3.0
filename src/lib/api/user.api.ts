@@ -8,7 +8,7 @@ class Session {
     static user_state : UserState;
     static force_no_localstorage : boolean; // force code to act like localstorage doesn't exist, for testing reasons
     static projects : SessionProjects = {}; // collections of projects with enabled/disabled flag so it can persist between pages
-    static create_project_ignored_rarities : IgnoredRarities = {}; // used to remember user preferred ignored rarities when creating projects
+    static create_project_ignored_rarities : IgnoredRarities | undefined = undefined; // used to remember user preferred ignored rarities when creating projects
 }
 
 export default (() => {
@@ -212,16 +212,6 @@ export default (() => {
      */
     function getSessionProjects() : SessionProjects {
         return Session.projects;
-    }
-
-    /**
-     * get the session ignored rarities (for creating projects so the user doesn't have to keep clicking rarities
-     * every project they make for this session)
-     *
-     * @returns {IgnoredRarities} session ignored rarities
-     */
-    function getSessionIgnoredRarities() : IgnoredRarities {
-        return Session.create_project_ignored_rarities;
     }
 
     /**
@@ -557,6 +547,61 @@ export default (() => {
             set("inventory_alternative_mode", value);
         }
 
+        /**
+         * enable quest simulator stamina overlay.
+         * quest simulator will auto run and display used stamina on top right of page
+         * if enabled, the simulator button will be hidden
+         *
+         * @returns {boolean} - true if stamina overlay is enabled, false otherwise
+         */
+        function isSimulatorStaminaOverlay() : boolean {
+            return Session.user_state.settings.simulator_stamina_overlay || false;
+        }
+
+        /**
+         * set the value of `simulator_stamina_overlay`
+         *
+         * @param {boolean} value - true if stamina overlay should be enabled, false otherwise
+         */
+        function setSimulatorStaminaOverlay(value : boolean) {
+            set("simulator_stamina_overlay", value);
+        }
+
+        /**
+         * use existing inventory or not in quest simulator stamina overlay
+         *
+         * @returns {boolean} - true if existing inventory should be used, false otherwise
+         */
+        function isSimulatorDontUseInventory() : boolean {
+            return Session.user_state.settings.simulator_dont_use_inventory || false;
+        }
+
+        /**
+         * set the value of `simulator_use_inventory`
+         *
+         * @param {boolean} value - true if existing inventory should be enabled, false otherwise
+         */
+        function setSimulatorDontUseInventory(value : boolean) {
+            set("simulator_dont_use_inventory", value);
+        }
+
+        /**
+         * get project sort options
+         *
+         * @returns {{ [type : string] : string }} project sort options
+         */
+        function getProjectSortOptions() {
+            return Session.user_state.settings.project_sort || undefined;
+        }
+
+        function getSavedSessionIgnoredRarities() : IgnoredRarities {
+            return Session.user_state.settings.session_ignored_rarities || {};
+        }
+
+        function setSavedSessionIgnoredRarities() {
+            set("session_ignored_rarities", Session.create_project_ignored_rarities);
+        }
+
         const quest = (() => {
             function initQuestSettings() {
                 if (!Session.user_state.settings.quest) {
@@ -726,6 +771,13 @@ export default (() => {
             setAutoEnableProjects,
             isInventoryAlternativeMode,
             setInventoryAlternativeMode,
+            isSimulatorStaminaOverlay,
+            setSimulatorStaminaOverlay,
+            isSimulatorDontUseInventory,
+            setSimulatorDontUseInventory,
+            getProjectSortOptions,
+            getSavedSessionIgnoredRarities,
+            setSavedSessionIgnoredRarities,
             isKeepEnabledProjects,
             setKeepEnabledProjectsEnabledState,
             setKeepEnabledProjectsEnabledProjects,
@@ -872,6 +924,21 @@ export default (() => {
             get,
         }
     })();
+
+    /**
+     * get the session ignored rarities (for creating projects so the user doesn't have to keep clicking rarities
+     * every project they make for this session)
+     *
+     * @returns {IgnoredRarities} session ignored rarities
+     */
+    function getSessionIgnoredRarities() : IgnoredRarities {
+        if (!Session.create_project_ignored_rarities) {
+            // init
+            console.log("loading session ignored rarities");
+            Session.create_project_ignored_rarities = settings.getSavedSessionIgnoredRarities();
+        }
+        return Session.create_project_ignored_rarities;
+    }
 
     return {
         init,
