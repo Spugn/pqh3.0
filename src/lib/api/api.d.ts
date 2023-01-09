@@ -181,6 +181,7 @@ interface Settings {
     }; // Session ignored rarities, used in creating projects, etc
     display_all_project? : boolean; // display the "all projects" project, which is a compilation of all items
     all_project_first? : boolean; // display the "all projects" project first in project list no matter what
+    all_project_ignored_rarities? : IgnoredRarities;
     [key : string] : unknown;
 };
 

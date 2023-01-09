@@ -6,12 +6,13 @@
     import Select, { Option } from '@smui/select';
     import Dialog, { Content as DialogContent, Actions } from '@smui/dialog';
     import ItemCatalog from "$lib/Catalog/ItemCatalog.svelte";
+    import { user, constants, equipment } from '$lib/api/api';
+    import QuestSettings from '$lib/QuestSettings.svelte';
+    import ItemButton from "$lib/Item/Button.svelte";
 </script>
 
 <script lang="ts">
-    import type { Language } from '$lib/api/api.d';
-    import { user, constants } from '$lib/api/api';
-    import QuestSettings from '$lib/QuestSettings.svelte';
+    import type { Language, IgnoredRarities } from '$lib/api/api.d';
 
     // game region
     let region_value : Language = user.region.get();
@@ -72,6 +73,12 @@
     let all_project_first : boolean = user.settings.isAllProjectFirst();
     $: if (all_project_first !== user.settings.isAllProjectFirst()) {
         user.settings.setAllProjectFirst(all_project_first);
+    }
+
+    // all project ignored rarities
+    let all_project_ignored_rarities : number[] = Array(equipment.getMaxRarity());
+    function forceUpdateAllProjectIgnoredRarities() {
+        all_project_ignored_rarities = all_project_ignored_rarities;
     }
 
     // specific item filter
@@ -291,6 +298,38 @@
                 </div>
                 <div class="ml-auto">
                     <Switch bind:checked={all_project_first} />
+                </div>
+            </div>
+            <div style="padding: 1rem;" class="flex flex-row mb-2 items-center gap-2">
+                <div>
+                    <h1 class="font-bold text-xl">
+                        [All Projects...] Project Ignored Rarities
+                    </h1>
+                    <h3 class="text-black/60">
+                        Modify ignored item rarities in [All Projects...] project.
+                    </h3>
+                </div>
+                <div class="ml-auto">
+                    {#each all_project_ignored_rarities as _, i (`${i}-${user.settings.getAllProjectIgnoredRarities()[i + 1]}`)}
+                        <ItemButton id={`99${i + 1}999`} ignore_amount
+                            click={() => {
+                                const ignored_rarities = {
+                                    ...user.settings.getAllProjectIgnoredRarities(),
+                                    [i + 1]: !(user.settings.getAllProjectIgnoredRarities()[i + 1] || false),
+                                };
+                                // @ts-ignore - warning about any type but can't add types here
+                                if (!ignored_rarities[i + 1]) {
+                                    // @ts-ignore - warning about any type but can't add types here
+                                    delete ignored_rarities[i + 1];
+                                }
+                                user.settings.setAllProjectIgnoredRarities(ignored_rarities);
+                                forceUpdateAllProjectIgnoredRarities();
+                            }}
+                            class={"transition-all h-12 w-12"
+                                + (user.settings.getAllProjectIgnoredRarities()[i + 1] ? " hover:grayscale-0 grayscale opacity-50 hover:opacity-80" : "")
+                            }
+                        />
+                    {/each}
                 </div>
             </div>
             <p style="padding: 1rem;" class="text-black/70 mb-4">

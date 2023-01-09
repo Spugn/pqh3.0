@@ -46,6 +46,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
     - By default, the [All Projects...] project will be influenced by sort options
     - If you would prefer the [All Projects...] project to appear first in list and ignore any sort option,
       enable this setting
+  - Added "[All Projects...] Project Ignored Rarities" setting
+    - Modify this to change ignored rarities for the [All Projects...] project
 
 ## [3.1.6] - 2023-01-01
 Happy New Year! 2023

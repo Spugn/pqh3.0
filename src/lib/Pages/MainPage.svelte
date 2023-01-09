@@ -91,13 +91,17 @@
                         all_item_project: true,
                         details: {
                             name: "[All Projects...]",
-                            ignored_rarities: {},
+                            ignored_rarities: user.settings.getAllProjectIgnoredRarities(),
                         },
                         required: required_all,
                     } as ItemProject,
                 };
             }
-            else if (JSON.stringify(session_projects[all_projects_key].project.required) !== JSON.stringify(required_all)) {
+            else if (
+                JSON.stringify(session_projects[all_projects_key].project.required) !== JSON.stringify(required_all)
+                || JSON.stringify(user.settings.getAllProjectIgnoredRarities())
+                    !== JSON.stringify(session_projects[all_projects_key].project.details?.ignored_rarities)
+            ) {
                 // update project data and keep enabled/disabled status
                 const current_date = Date.now();
                 session_projects[all_projects_key] = {
@@ -106,6 +110,10 @@
                     project: {
                         ...session_projects[all_projects_key].project,
                         date: current_date,
+                        details: {
+                            ...session_projects[all_projects_key].project.details,
+                            ignored_rarities: user.settings.getAllProjectIgnoredRarities(),
+                        },
                         required: required_all,
                     },
                 }

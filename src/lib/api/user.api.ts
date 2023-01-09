@@ -639,6 +639,14 @@ export default (() => {
             set("all_project_first", value);
         }
 
+        function getAllProjectIgnoredRarities() : IgnoredRarities {
+            return Session.user_state.settings.all_project_ignored_rarities || {};
+        }
+
+        function setAllProjectIgnoredRarities(value : IgnoredRarities) {
+            set("all_project_ignored_rarities", value);
+        }
+
         const quest = (() => {
             function initQuestSettings() {
                 if (!Session.user_state.settings.quest) {
@@ -819,6 +827,8 @@ export default (() => {
             setDisplayAllProject,
             isAllProjectFirst,
             setAllProjectFirst,
+            getAllProjectIgnoredRarities,
+            setAllProjectIgnoredRarities,
             isKeepEnabledProjects,
             setKeepEnabledProjectsEnabledState,
             setKeepEnabledProjectsEnabledProjects,
