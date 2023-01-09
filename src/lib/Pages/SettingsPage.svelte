@@ -62,6 +62,18 @@
         user.settings.setSimulatorDontUseInventory(simulator_dont_use_inventory);
     }
 
+    // display all project
+    let display_all_project : boolean = user.settings.isDisplayAllProject();
+    $: if (display_all_project !== user.settings.isDisplayAllProject()) {
+        user.settings.setDisplayAllProject(display_all_project);
+    }
+
+    // all project first
+    let all_project_first : boolean = user.settings.isAllProjectFirst();
+    $: if (all_project_first !== user.settings.isAllProjectFirst()) {
+        user.settings.setAllProjectFirst(all_project_first);
+    }
+
     // specific item filter
     let open_item_filter_dialog : boolean = false;
     let filtered_items : string[] = user.settings.quest.getItemFilter();
@@ -252,7 +264,49 @@
             </p>
         </Card>
     </div>
-    <!-- Quest Settings -->
+    <!-- [All Projects...] Project -->
+    <div class="text-black mx-4 w-[90vw] max-w-[1000px]">
+        <Card>
+            <div style="padding: 1rem;" class="flex flex-row mb-2 items-center">
+                <div>
+                    <h1 class="font-bold text-xl">
+                        Display [All Projects...] Project
+                    </h1>
+                    <h3 class="text-black/60">
+                        Enable the creation and display of the [All Projects...] project.
+                    </h3>
+                </div>
+                <div class="ml-auto">
+                    <Switch bind:checked={display_all_project} />
+                </div>
+            </div>
+            <div style="padding: 1rem;" class="flex flex-row mb-2 items-center">
+                <div>
+                    <h1 class="font-bold text-xl">
+                        Display [All Projects...] Project First
+                    </h1>
+                    <h3 class="text-black/60">
+                        Display the [All Projects...] project first regardless of sort settings.
+                    </h3>
+                </div>
+                <div class="ml-auto">
+                    <Switch bind:checked={all_project_first} />
+                </div>
+            </div>
+            <p style="padding: 1rem;" class="text-black/70 mb-4">
+                Enable this to create and display an [All Projects...] project in the project list.
+                This project is a compilation of all the required items from every project. It will be displayed when
+                there are two or more projects that exist and there is at least one required item.
+                The [All Projects...] project can NOT be edited normally like a regular project.<br />
+                By default, the [All Projects...] project will be effected by sorting. If you would prefer that it
+                appears at the front of the project list at all times, then enable
+                "<strong>Display [All Projects...] Project First</strong>".<br />
+                <strong class="text-red-600 italic">Webpage may become slow if too many projects exist.</strong>
+                If this appears to be the case, <strong class="text-red-600">DISABLE</strong>
+                "<strong>Display [All Projects...] Project</strong>"
+            </p>
+        </Card>
+    </div>    <!-- Quest Settings -->
     <div class="text-black mx-4 w-[90vw] max-w-[1000px]">
         <Card>
             <div style="padding: 1rem;" class="flex flex-row mb-2 items-center">

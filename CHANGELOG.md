@@ -36,6 +36,16 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
     - Specifically, when a project is completed/deleted in an expanded state there's little to no time to unexpand the
       project without some funky stuff going on with reactivity. I'm sure there's a billion workarounds but it doesn't
       feel worth my time to figure one out at the moment
+- [All Projects...] Project
+  - New Setting ; if enabled, an [All Projects...] project will be created that contains the items of all projects as
+    long as there is two or more projects and at least one required item.
+  - The [All Projects...] project can NOT be edited like a normal project (no partial completion, no deletion, no editing, etc)
+  - The [All Projects...] project can NOT be enabled like a normal project.
+  - Inventory editing will be available like usual by clicking any "Required Fragment" or "Missing Fragment"
+  - Added "Display [All Projects...] Project First" setting
+    - By default, the [All Projects...] project will be influenced by sort options
+    - If you would prefer the [All Projects...] project to appear first in list and ignore any sort option,
+      enable this setting
 
 ## [3.1.6] - 2023-01-01
 Happy New Year! 2023

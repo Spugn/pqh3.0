@@ -10,6 +10,7 @@
     const dispatch = createEventDispatcher();
     export let open : boolean = false;
     export let expanded : boolean = false;
+    export let all_project : boolean = false; // if true, this project should not be editable
 
     // stuff for MiniProjectTitle
     export let thumbnail : string = "999999";
@@ -44,46 +45,48 @@
                     </Text>
                 </Item>
             {/if}
-            <Item on:SMUI:action={() => startDispatch("edit")}>
-                <Graphic class="material-icons">edit</Graphic>
-                <Text>
-                    <PrimaryText>Edit</PrimaryText>
-                    <SecondaryText>Change project details.</SecondaryText>
-                </Text>
-            </Item>
-            <Item on:SMUI:action={() => startDispatch("prioritize")}>
-                <Graphic class="material-icons">star</Graphic>
-                <Text>
-                    <PrimaryText>Edit Priority</PrimaryText>
-                    <SecondaryText>
-                        Edit project priority status.
-                    </SecondaryText>
-                </Text>
-            </Item>
-            {#if project_type === "character"}
-                <Item on:SMUI:action={() => startDispatch("partial_complete")}>
-                    <Graphic class="material-icons">checklist</Graphic>
+            {#if !all_project}
+                <Item on:SMUI:action={() => startDispatch("edit")}>
+                    <Graphic class="material-icons">edit</Graphic>
                     <Text>
-                        <PrimaryText>Partially Complete</PrimaryText>
-                        <SecondaryText>Partially complete this project.</SecondaryText>
+                        <PrimaryText>Edit</PrimaryText>
+                        <SecondaryText>Change project details.</SecondaryText>
+                    </Text>
+                </Item>
+                <Item on:SMUI:action={() => startDispatch("prioritize")}>
+                    <Graphic class="material-icons">star</Graphic>
+                    <Text>
+                        <PrimaryText>Edit Priority</PrimaryText>
+                        <SecondaryText>
+                            Edit project priority status.
+                        </SecondaryText>
+                    </Text>
+                </Item>
+                {#if project_type === "character"}
+                    <Item on:SMUI:action={() => startDispatch("partial_complete")}>
+                        <Graphic class="material-icons">checklist</Graphic>
+                        <Text>
+                            <PrimaryText>Partially Complete</PrimaryText>
+                            <SecondaryText>Partially complete this project.</SecondaryText>
+                        </Text>
+                    </Item>
+                {/if}
+                <Item on:SMUI:action={() => startDispatch("complete")}>
+                    <Graphic class="material-icons">check</Graphic>
+                    <Text>
+                        <PrimaryText>Complete</PrimaryText>
+                        <SecondaryText>Complete this project.</SecondaryText>
+                    </Text>
+                </Item>
+                <Separator />
+                <Item on:SMUI:action={() => startDispatch("delete")}>
+                    <Graphic class="material-icons">delete</Graphic>
+                    <Text>
+                        <PrimaryText>Delete</PrimaryText>
+                        <SecondaryText>Remove this project.</SecondaryText>
                     </Text>
                 </Item>
             {/if}
-            <Item on:SMUI:action={() => startDispatch("complete")}>
-                <Graphic class="material-icons">check</Graphic>
-                <Text>
-                    <PrimaryText>Complete</PrimaryText>
-                    <SecondaryText>Complete this project.</SecondaryText>
-                </Text>
-            </Item>
-            <Separator />
-            <Item on:SMUI:action={() => startDispatch("delete")}>
-                <Graphic class="material-icons">delete</Graphic>
-                <Text>
-                    <PrimaryText>Delete</PrimaryText>
-                    <SecondaryText>Remove this project.</SecondaryText>
-                </Text>
-            </Item>
         </List>
     </DialogContent>
 </Dialog>

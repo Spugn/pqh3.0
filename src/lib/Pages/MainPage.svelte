@@ -14,7 +14,7 @@
 
 <script lang="ts">
     import type { CharacterProject, ItemProject, BasicProject, QuestBuild2Results,
-        SessionProjects } from '$lib/api/api.d';
+        SessionProjects, Recipe } from '$lib/api/api.d';
 
     export let show_menu : boolean;
     let project_displayed : boolean = false; // flag for if a project is expanded. if so, hide non-expanded projects
@@ -46,6 +46,7 @@
 
     function buildProjects() {
         const user_projects = user.projects.get();
+        const required_all : Recipe = {};
         for (const project_id in user_projects) {
             if (!session_projects[project_id]) {
                 // init project as session project
@@ -66,6 +67,52 @@
                     project: user_projects[project_id],
                 }
             }
+            if (user.settings.isDisplayAllProject()) {
+                for (const item in user_projects[project_id].required) {
+                    required_all[item] = (required_all[item] || 0) + user_projects[project_id].required[item];
+                }
+            }
+        }
+        // create "All Project"
+        const all_projects_key = "all_projects";
+        if (user.settings.isDisplayAllProject()
+            && Object.keys(user_projects).length >= 2 // there are at least 2 user projects
+            && Object.keys(required_all).length > 0 // there are at least some required items
+        ) {
+            if (!session_projects[all_projects_key]) {
+                // doesn't exist, create
+                session_projects[all_projects_key] = {
+                    enabled: false, // always disabled by default
+                    edited: Date.now(),
+                    project: {
+                        type: "item",
+                        date: Date.now(),
+                        priority: false,
+                        all_item_project: true,
+                        details: {
+                            name: "[All Projects...]",
+                            ignored_rarities: {},
+                        },
+                        required: required_all,
+                    } as ItemProject,
+                };
+            }
+            else if (JSON.stringify(session_projects[all_projects_key].project.required) !== JSON.stringify(required_all)) {
+                // update project data and keep enabled/disabled status
+                const current_date = Date.now();
+                session_projects[all_projects_key] = {
+                    ...session_projects[all_projects_key],
+                    edited: current_date,
+                    project: {
+                        ...session_projects[all_projects_key].project,
+                        date: current_date,
+                        required: required_all,
+                    },
+                }
+            }
+        }
+        else if (session_projects[all_projects_key]) {
+            delete session_projects[all_projects_key];
         }
         session_projects = session_projects; // force reaction
         buildQuests();
@@ -78,13 +125,17 @@
         let result = Object.keys(session_projects);
         // date sort
         result.sort((a, b) => {
+            function getSortValue(project : CharacterProject | ItemProject | BasicProject) : number {
+                if ((project as ItemProject).all_item_project) {
+                    return -1;
+                }
+                return project.date as number || 0;
+            }
             if (MainPage.getDateSort() === "desc") {
-                return (session_projects[b].project.date as number || 0)
-                    - (session_projects[a].project.date as number || 0);
+                return getSortValue(session_projects[b].project) - getSortValue(session_projects[a].project);
             }
             else {
-                return (session_projects[a].project.date as number || 0)
-                    - (session_projects[b].project.date as number || 0);
+                return getSortValue(session_projects[a].project) - getSortValue(session_projects[b].project);
             }
         });
         // rarity sort
@@ -148,6 +199,13 @@
                 else {
                     return (session_projects[a].enabled ? 1 : 0) - (session_projects[b].enabled ? 1 : 0);
                 }
+            });
+        }
+        // [All Projects...] project first
+        if (user.settings.isAllProjectFirst() && session_projects["all_projects"]) {
+            result.sort((a, b) => {
+                return ((session_projects[b].project as ItemProject).all_item_project ? 1 : 0)
+                    - ((session_projects[a].project as ItemProject).all_item_project ? 1 : 0);
             });
         }
 
@@ -290,6 +348,7 @@
                     <Project {project_id} bind:show_menu bind:project_displayed bind:_inventory_string
                         compact={compact_projects}
                         enabled={session_projects[project_id].enabled}
+                        {...(project_id === "all_projects" && { all_project: session_projects["all_projects"].project })}
                         on:update_inventory={updateInventory}
                         on:update_project={updateProject}
                         on:edit_project={editProject}

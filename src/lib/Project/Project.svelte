@@ -65,13 +65,14 @@
         open : boolean; // dialog visible or not
         confirm : boolean; // manages confirmation that user is 100% sure they want to delete the project
     };
-    import type { CharacterProject, ItemProject, ProjectProgressResult, Recipe } from '$lib/api/api.d';
+    import type { CharacterProject, ItemProject, Project, ProjectProgressResult, Recipe } from '$lib/api/api.d';
     export let show_menu : boolean; // used to show/hide miyako menu open icon
     export let project_displayed : boolean; // used to show/hide other projects if this project is expanded
     export let project_id : string; // project id to get project data to display
     export let _inventory_string : string; // used to know when inventory updates (sending object here causes unintended frequent updates)
     export let enabled : boolean; // flag for if the project is enabled or disabled
     export let compact : boolean = false; // compact version of non-expanded projects
+    export let all_project : Project | undefined = undefined;
 
     // component variables
     const dispatch = createEventDispatcher();
@@ -79,6 +80,7 @@
     let project : CharacterProject | ItemProject;
     let project_menu_open : boolean = false;
     let body_scroll_top : number = 0;
+    let is_all_project : boolean = false;
 
     // component text variables
     let thumbnail : string;
@@ -140,13 +142,21 @@
         updateInventory();
     };
     function updateProject() {
-        project = (user.projects.get()[project_id] as CharacterProject | ItemProject);
-        thumbnail = ((project as CharacterProject).details.avatar_id) // character project
+        if (all_project) {
+            project = all_project as ItemProject;
+            is_all_project = true;
+        }
+        else {
+            project = (user.projects.get()[project_id] as CharacterProject | ItemProject);
+        }
+        thumbnail = ((project as CharacterProject).details?.avatar_id) // character project
             || Object.keys(project.required)[Object.keys(project.required).length * Math.random() << 0] // item project
             || constants.placeholder_id; // has no required item for some reason
         date = new Date(project.date).toLocaleDateString();
         project_name = project.details.name || "Untitled Project";
-        subtitle = ((project as CharacterProject).details.formal_name) || "Item Project";
+        subtitle = ((project as CharacterProject).details.formal_name)
+            || (is_all_project ? "[All Projects...] Project" : undefined)
+            || "Item Project";
         start_rank = ((project as CharacterProject).details.start?.rank) || -1;
         end_rank = ((project as CharacterProject).details.end?.rank) || -1;
         still = ((project as CharacterProject).details.avatar_id) || getRandomStill();
@@ -564,21 +574,23 @@
                             <div>{fragment_progress}</div>
                         </div>
                     </div>
-                    <div class="enable-button">
-                        <Button variant="raised" color={enabled ? "primary" : "secondary"}
-                            on:click={() => {
-                                dispatch("toggle_enabled", {
-                                    data: {
-                                        project_id: project.date,
-                                        enabled: !enabled,
-                                    },
-                                });
-                            }}
-                        >
-                            <Icon class="material-icons">{enabled ? "check_box" : "check_box_outline_blank"}</Icon>
-                            <Label>{enabled ? "Enabled" : "Disabled"}</Label>
-                        </Button>
-                    </div>
+                    {#if !is_all_project}
+                        <div class="enable-button">
+                            <Button variant="raised" color={enabled ? "primary" : "secondary"}
+                                on:click={() => {
+                                    dispatch("toggle_enabled", {
+                                        data: {
+                                            project_id: project.date,
+                                            enabled: !enabled,
+                                        },
+                                    });
+                                }}
+                            >
+                                <Icon class="material-icons">{enabled ? "check_box" : "check_box_outline_blank"}</Icon>
+                                <Label>{enabled ? "Enabled" : "Disabled"}</Label>
+                            </Button>
+                        </div>
+                    {/if}
                     <div class="more-options">
                         <IconButton
                             size="mini"
@@ -648,6 +660,7 @@
                             {/if}
                             {#if project.type === "item"}
                                 <ItemContent bind:project bind:project_progress
+                                    {is_all_project}
                                     on:open_partial_completion_dialog={openPartialCompletionDialog}
                                     on:open_inventory_edit_dialog={openInventoryEditDialog}
                                 />
@@ -988,7 +1001,7 @@
     <ProjectMenu bind:open={project_menu_open}
         {thumbnail} project_type={project.type} priority={project.priority}
         priority_level={project.details.priority_level || 2} {project_name} {subtitle} {start_rank} {end_rank}
-        progress={project_progress.progress} {expanded}
+        progress={project_progress.progress} {expanded} all_project={is_all_project}
         on:expand={() => expand(true)}
         on:edit={() => {
             // temp fix, edit wont have this functionality when completed. this prevents scroll from being locked

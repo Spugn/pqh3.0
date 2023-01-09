@@ -602,6 +602,43 @@ export default (() => {
             set("session_ignored_rarities", Session.create_project_ignored_rarities);
         }
 
+        /**
+         * enable creation and display of the "All Project".
+         * This is a compilation of all project's required items
+         *
+         * @returns {boolean} - true if "All Project" is enabled, false otherwise
+         */
+        function isDisplayAllProject() : boolean {
+            return Session.user_state.settings.display_all_project || false;
+        }
+
+        /**
+         * set the value of `display_all_project`
+         *
+         * @param {boolean} value - true if "All Project" is enabled, false otherwise
+         */
+        function setDisplayAllProject(value : boolean) {
+            set("display_all_project", value);
+        }
+
+        /**
+         * display the "All Project" first in project list regardless of settings.
+         *
+         * @returns {boolean} - true if "All Project" should be displayed first, false otherwise
+         */
+        function isAllProjectFirst() : boolean {
+            return Session.user_state.settings.all_project_first || false;
+        }
+
+        /**
+         * set the value of `all_project_first`
+         *
+         * @param {boolean} value - true if "All Project" should be displayed first, false otherwise
+         */
+        function setAllProjectFirst(value : boolean) {
+            set("all_project_first", value);
+        }
+
         const quest = (() => {
             function initQuestSettings() {
                 if (!Session.user_state.settings.quest) {
@@ -778,6 +815,10 @@ export default (() => {
             getProjectSortOptions,
             getSavedSessionIgnoredRarities,
             setSavedSessionIgnoredRarities,
+            isDisplayAllProject,
+            setDisplayAllProject,
+            isAllProjectFirst,
+            setAllProjectFirst,
             isKeepEnabledProjects,
             setKeepEnabledProjectsEnabledState,
             setKeepEnabledProjectsEnabledProjects,
@@ -934,7 +975,6 @@ export default (() => {
     function getSessionIgnoredRarities() : IgnoredRarities {
         if (!Session.create_project_ignored_rarities) {
             // init
-            console.log("loading session ignored rarities");
             Session.create_project_ignored_rarities = settings.getSavedSessionIgnoredRarities();
         }
         return Session.create_project_ignored_rarities;

@@ -13,6 +13,7 @@
     import type { CharacterProject, ItemProject, ProjectProgressResult, Recipe } from '$lib/api/api.d';
     export let project : CharacterProject | ItemProject;
     export let project_progress : ProjectProgressResult;
+    export let is_all_project : boolean = false; // if true, disable partial completion
 
     // component state variables
     let required_items_open : boolean = false;
@@ -115,7 +116,8 @@
         <Content class="flex flex-wrap gap-1">
             {#each Object.entries(project.required) as [item_id, amount] (`${item_id}-${amount}`)}
                 <ItemButton id={item_id} amount={amount}
-                    click={() => { openPartialCompletionDialog(item_id, amount) }} />
+                    {...(!is_all_project && { click: () => { openPartialCompletionDialog(item_id, amount) } })}
+                />
             {/each}
         </Content>
     </Card>

@@ -104,6 +104,7 @@ interface ItemProject { // project containing a random assortment of items
     readonly date: number; // result from `Date.now()`, used as project id
     priority: boolean; // priority project flag
     partially_completed? : boolean; // partially completed flag, means user has removed items from required
+    all_item_project? : boolean; // flag for if this project is an "All Projects" project
     details: {
         name?: string; // required project name
         ignored_rarities: IgnoredRarities; // item rarities to ignore
@@ -178,6 +179,8 @@ interface Settings {
     session_ignored_rarities? : {
         [rarity : string] : boolean;
     }; // Session ignored rarities, used in creating projects, etc
+    display_all_project? : boolean; // display the "all projects" project, which is a compilation of all items
+    all_project_first? : boolean; // display the "all projects" project first in project list no matter what
     [key : string] : unknown;
 };
 
