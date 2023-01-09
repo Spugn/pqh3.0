@@ -48,6 +48,10 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
       enable this setting
   - Added "[All Projects...] Project Ignored Rarities" setting
     - Modify this to change ignored rarities for the [All Projects...] project
+### Changed
+- Changed some styling in QuestSettings to make it somewhate better for smaller width devices
+- The Quest Simulator dialog can now be closed via clicking on the black area or pressing ESC when stamina overlay is
+  enabled
 
 ## [3.1.6] - 2023-01-01
 Happy New Year! 2023

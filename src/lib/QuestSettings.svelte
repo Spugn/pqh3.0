@@ -115,7 +115,7 @@
 <div class="text-lg font-bold">Quest Sorting</div>
 <small class="text-black/60">Determines which quests should be displayed first in the quest list.</small>
 <div class="flex flex-col gap-2">
-    <div class="flex flex-row justify-start items-center gap-4 ml-auto">
+    <div class="flex flex-row justify-start items-center gap-4 ml-auto flex-wrap">
         <div class="text-right">
             Quest List Sorting<br />
             <small class="text-black/60">Sort by quest chapter and number.</small>
@@ -126,7 +126,7 @@
             </Segment>
         </SegmentedButton>
     </div>
-    <div class="flex flex-row justify-start items-center gap-4 ml-auto">
+    <div class="flex flex-row justify-start items-center gap-4 ml-auto flex-wrap">
         <div class="text-right">
             Quest Score Sorting<br />
             <small class="text-black/60">Sort by quest score.</small>
@@ -143,7 +143,7 @@
 <div class="text-lg font-bold">Event Drop Buff</div>
 <small class="text-black/60">Increase quest value for certain quest difficulties if there's a bonus drop event.</small>
 <div class="flex flex-col gap-2">
-    <div class="flex flex-row justify-start items-center gap-4 ml-auto">
+    <div class="flex flex-row justify-start items-center gap-4 ml-auto flex-wrap">
         <div class="text-right">
             Normal Drop Buff<br />
             <small class="text-black/60">Increase quest scores for NORMAL quests.</small>
@@ -154,7 +154,7 @@
             {/each}
         </Select>
     </div>
-    <div class="flex flex-row justify-start items-center gap-4 ml-auto">
+    <div class="flex flex-row justify-start items-center gap-4 ml-auto flex-wrap">
         <div class="text-right">
             Hard Drop Buff<br />
             <small class="text-black/60">Increase quest scores for HARD quests.</small>
@@ -165,7 +165,7 @@
             {/each}
         </Select>
     </div>
-    <div class="flex flex-row justify-start items-center gap-4 ml-auto">
+    <div class="flex flex-row justify-start items-center gap-4 ml-auto flex-wrap">
         <div class="text-right">
             Very Hard Drop Buff<br />
             <small class="text-black/60">Increase quest scores for VERY HARD quests.</small>

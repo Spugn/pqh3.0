@@ -300,7 +300,7 @@
                     <Switch bind:checked={all_project_first} />
                 </div>
             </div>
-            <div style="padding: 1rem;" class="flex flex-row mb-2 items-center gap-2">
+            <div style="padding: 1rem;" class="flex flex-row mb-2 items-center gap-2 flex-wrap">
                 <div>
                     <h1 class="font-bold text-xl">
                         [All Projects...] Project Ignored Rarities

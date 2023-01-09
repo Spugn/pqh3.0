@@ -178,8 +178,8 @@
 {/if}
 {#if build_results?.required || simulator_results}
     <Dialog bind:open={open} class="text-black z-[1001]"
-        scrimClickAction=""
-        escapeKeyAction=""
+        scrimClickAction={simulator_results ? undefined : ""}
+        escapeKeyAction={simulator_results ? undefined : ""}
     >
         <div class="title pl-2 pt-1">Quest Simulator</div>
         <DialogContent>
