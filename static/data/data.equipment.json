@@ -2122,6 +2122,26 @@
             }
         }
     },
+    "31166": {
+        "id": "31166",
+        "name": {
+            "JP": "カヤ（タイムトラベル）のメモリーピース",
+            "KR": "카야(시간 여행)의 메모리 피스",
+            "TW": "嘉夜（時空旅行）的記憶碎片"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "999999",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "32001": {
         "id": "32001",
         "name": {
@@ -24073,6 +24093,28 @@
             }
         }
     },
+    "108284": {
+        "id": "108284",
+        "name": {
+            "JP": "デモンズペインメイル"
+        },
+        "rarity": "8",
+        "fragment": {
+            "id": "128284",
+            "name": {
+                "JP": "デモンズペインメイルの設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "107493"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "108311": {
         "id": "108311",
         "name": {
@@ -24161,6 +24203,28 @@
                 "required_pieces": 15,
                 "required_items": [
                     "107312"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "108314": {
+        "id": "108314",
+        "name": {
+            "JP": "デモンズバインドアーマー"
+        },
+        "rarity": "8",
+        "fragment": {
+            "id": "128314",
+            "name": {
+                "JP": "デモンズバインドアーマーの設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "107253"
                 ],
                 "recipe_note": "JP"
             }
@@ -24300,6 +24364,28 @@
             }
         }
     },
+    "108374": {
+        "id": "108374",
+        "name": {
+            "JP": "カースドデモンズローブ"
+        },
+        "rarity": "8",
+        "fragment": {
+            "id": "128374",
+            "name": {
+                "JP": "カースドデモンズローブの設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "107463"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "108401": {
         "id": "108401",
         "name": {
@@ -24394,6 +24480,26 @@
             }
         }
     },
+    "108434": {
+        "id": "108434",
+        "name": {
+            "JP": "ディアブロスカルぺ"
+        },
+        "rarity": "8",
+        "fragment": {
+            "id": "118434",
+            "name": {
+                "JP": "ディアブロスカルぺ（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "108462": {
         "id": "108462",
         "name": {
@@ -24448,6 +24554,26 @@
             }
         }
     },
+    "108494": {
+        "id": "108494",
+        "name": {
+            "JP": "バリアントデモンズホーン"
+        },
+        "rarity": "8",
+        "fragment": {
+            "id": "118494",
+            "name": {
+                "JP": "バリアントデモンズホーン（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "108521": {
         "id": "108521",
         "name": {
@@ -24492,6 +24618,26 @@
             "id": "118523",
             "name": {
                 "JP": "薔薇術士の魔宴帽（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "108524": {
+        "id": "108524",
+        "name": {
+            "JP": "エンヴィデモンズホーン"
+        },
+        "rarity": "8",
+        "fragment": {
+            "id": "118524",
+            "name": {
+                "JP": "エンヴィデモンズホーン（欠片）"
             }
         },
         "recipes": {
