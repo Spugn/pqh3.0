@@ -17624,6 +17624,7 @@
         "name": {
             "JP": "ルビーローズチョーカー",
             "CN": "红宝石玫瑰项圈",
+            "EN": "Ruby Rose Choker",
             "KR": "루비 로즈 초커",
             "TW": "紅寶石玫瑰項圈"
         },
@@ -17633,6 +17634,7 @@
             "name": {
                 "JP": "ルビーローズチョーカー（欠片）",
                 "CN": "红宝石玫瑰项圈（碎片）",
+                "EN": "Ruby Rose Choker (Fragment)",
                 "KR": "루비 로즈 초커(조각)",
                 "TW": "紅寶石玫瑰項圈（碎片）"
             }
@@ -17647,6 +17649,11 @@
                 "required_pieces": 30,
                 "required_items": [],
                 "recipe_note": "CN"
+            },
+            "EN": {
+                "required_pieces": 30,
+                "required_items": [],
+                "recipe_note": "EN"
             },
             "KR": {
                 "required_pieces": 30,
@@ -17946,6 +17953,7 @@
         "name": {
             "JP": "エルフィンチョーカー",
             "CN": "妖精项圈",
+            "EN": "Elfin Choker",
             "KR": "엘핀 초커",
             "TW": "艾爾芬項圈"
         },
@@ -17955,6 +17963,7 @@
             "name": {
                 "JP": "エルフィンチョーカー（欠片）",
                 "CN": "妖精项圈（碎片）",
+                "EN": "Elfin Choker (Fragment)",
                 "KR": "엘핀 초커(조각)",
                 "TW": "艾爾芬項圈（碎片）"
             }
@@ -17969,6 +17978,11 @@
                 "required_pieces": 30,
                 "required_items": [],
                 "recipe_note": "CN"
+            },
+            "EN": {
+                "required_pieces": 30,
+                "required_items": [],
+                "recipe_note": "EN"
             },
             "KR": {
                 "required_pieces": 30,
@@ -18268,6 +18282,7 @@
         "name": {
             "JP": "ケイオティックチョーカー",
             "CN": "混沌无序项圈",
+            "EN": "Chaotic Choker",
             "KR": "카오틱 초커",
             "TW": "混沌無序項圈"
         },
@@ -18277,6 +18292,7 @@
             "name": {
                 "JP": "ケイオティックチョーカー（欠片）",
                 "CN": "混沌无序项圈（碎片）",
+                "EN": "Chaotic Choker (Fragment)",
                 "KR": "카오틱 초커(조각)",
                 "TW": "混沌無序項圈（碎片）"
             }
@@ -18291,6 +18307,11 @@
                 "required_pieces": 30,
                 "required_items": [],
                 "recipe_note": "CN"
+            },
+            "EN": {
+                "required_pieces": 30,
+                "required_items": [],
+                "recipe_note": "EN"
             },
             "KR": {
                 "required_pieces": 30,
