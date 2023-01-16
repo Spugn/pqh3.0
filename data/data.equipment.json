@@ -24712,13 +24712,15 @@
     "108553": {
         "id": "108553",
         "name": {
-            "JP": "エンシェントルビー"
+            "JP": "エンシェントルビー",
+            "TW": "古老紅寶石"
         },
         "rarity": "8",
         "fragment": {
             "id": "118553",
             "name": {
-                "JP": "エンシェントルビー（欠片）"
+                "JP": "エンシェントルビー（欠片）",
+                "TW": "古老紅寶石（碎片）"
             }
         },
         "recipes": {
@@ -24726,6 +24728,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -24813,13 +24820,15 @@
     "108583": {
         "id": "108583",
         "name": {
-            "JP": "エンシェントエメラルド"
+            "JP": "エンシェントエメラルド",
+            "TW": "古老綠寶石"
         },
         "rarity": "8",
         "fragment": {
             "id": "118583",
             "name": {
-                "JP": "エンシェントエメラルド（欠片）"
+                "JP": "エンシェントエメラルド（欠片）",
+                "TW": "古老綠寶石（碎片）"
             }
         },
         "recipes": {
@@ -24827,6 +24836,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -24914,13 +24928,15 @@
     "108613": {
         "id": "108613",
         "name": {
-            "JP": "エンシェントサファイア"
+            "JP": "エンシェントサファイア",
+            "TW": "古老藍寶石"
         },
         "rarity": "8",
         "fragment": {
             "id": "118613",
             "name": {
-                "JP": "エンシェントサファイア（欠片）"
+                "JP": "エンシェントサファイア（欠片）",
+                "TW": "古老藍寶石（碎片）"
             }
         },
         "recipes": {
@@ -24928,6 +24944,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
