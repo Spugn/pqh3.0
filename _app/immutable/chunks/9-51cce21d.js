@@ -1,1 +1,0 @@
-import{default as t}from"../components/pages/quests/_page.svelte-b51379e0.js";export{t as component};
