@@ -55,7 +55,7 @@ interface Quest {
 }
 
 interface Fragment { // fragment object in equipment data
-    readonly id: string; // fragment_id ; i.e. "122282" ; will be "999999" if does not exist
+    readonly id: string; // fragment_id ; i.e. "122282" ; will be "unknown" if does not exist
     readonly name: { // collection of fragment names for each server
         readonly [key : string]: string; // "language": "name" i.e. "EN": "Light Plate Armor Blueprint"
     };
@@ -68,7 +68,7 @@ interface EquipmentRecipeData { // equipment recipe data object in equipment dat
 }
 
 interface QuestItem { // quest item object in quest data
-    readonly item: string; // item_id ; i.e. "101011" ; if does not exist, will be "999999"
+    readonly item: string; // item_id ; i.e. "101011" ; if does not exist, will be "unknown"
     readonly drop_rate: number; // drop rate of the item ; if does not exist, will be 0
 }
 

@@ -1,10 +1,11 @@
 <script context="module">
     import Tooltip, { Wrapper, Title, Content } from "@smui/tooltip";
+    import Image from "$lib/Item/Image.svelte";
+    import { constants } from "$lib/api/api";
 </script>
 
 <script lang="ts">
     import type { RankDetails } from "$lib/api/api.d";
-    import Image from "$lib/Item/Image.svelte";
     export let start : RankDetails;
     export let end : RankDetails;
 </script>
@@ -15,7 +16,7 @@
         <Tooltip>
             <Title>Rank {start.rank}</Title>
             <Content>
-                <Image id={"999999"} props={{
+                <Image id={constants.placeholder_id} props={{
                     height: 48,
                     width: 48,
                     //class: (equipped ? "" : "opacity-50 grayscale"),

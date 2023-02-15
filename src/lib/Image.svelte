@@ -1,6 +1,7 @@
 <script context="module">
     import { onMount } from "svelte";
     import { base } from '$app/paths';
+    import { constants } from "./api/api";
 </script>
 
 <script lang="ts">
@@ -48,8 +49,8 @@
 </script>
 
 <picture class={picture_class}>
-    <source srcset={type !== "webpage" ? `${base}/images/${type}_webp/999999.webp` : undefined} type="image/webp" bind:this={webp_elem} />
-    <img loading="lazy" src={type !== "webpage" ? `${base}/images/${type}/999999.png` : undefined} bind:this={png_elem}
+    <source srcset={type !== "webpage" ? `${base}/images/${type}_webp/${constants.placeholder_id}.webp` : undefined} type="image/webp" bind:this={webp_elem} />
+    <img loading="lazy" src={type !== "webpage" ? `${base}/images/${type}/${constants.placeholder_id}.png` : undefined} bind:this={png_elem}
         title="{!loaded ? "loading..." : failed ? `failed to load ${type} ${img}` : (alt || img)}"
         alt="{alt || img}" {...props}
     />

@@ -249,7 +249,7 @@
     function completeBulkProject() {
         open_bulk_create_dialog = false;
         for (const proj of bulk_create_dialog_data.generated_projects) {
-            if (proj.details.avatar_id === "999999") {
+            if (proj.details.avatar_id === constants.placeholder_id) {
                 // skip "All Projects" if needed
                 continue;
             }

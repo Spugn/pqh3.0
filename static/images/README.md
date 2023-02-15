@@ -13,12 +13,13 @@ These also include their `webp` counterpart.
 - [`996999.png`](items/996999.png) : Placeholder "red" rarity item image
 - [`997999.png`](items/997999.png) : Placeholder "green" rarity item image
 - [`998999.png`](items/998999.png) : Placeholder "orange" rarity item image
-- [`991999.png`](items/999999.png) : Placeholder generic item image
+- [`999999.png`](items/999999.png) : Placeholder "sky blue" item image
+- [`unknown.png`](items/unknown.png) : Placeholder generic item image
 
 ### Unit Icon
 - [`170101.png`](unit_icon/170101.png) : 环奈 (China server exclusive)
 - [`170201.png`](unit_icon/170201.png) : 环奈（振袖）(China server exclusive)
-- [`999999.png`](unit_icon/999999.png) : Placeholder unit icon image
+- [`unknown.png`](unit_icon/unknown.png) : Placeholder unit icon image
 
 ### Unit Still
 - [`170101.png`](unit_still/170101.png) : 环奈 (China server exclusive)

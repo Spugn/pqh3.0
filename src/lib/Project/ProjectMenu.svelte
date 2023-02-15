@@ -2,18 +2,18 @@
     import List, { Item, Graphic, Separator, Text, PrimaryText, SecondaryText } from "@smui/list";
     import { createEventDispatcher } from 'svelte';
     import Dialog, { Content as DialogContent, Actions } from '@smui/dialog';
+    import MiniProjectTitle from "./MiniProjectTitle.svelte";
+    import { constants } from "$lib/api/api";
 </script>
 
 <script lang="ts">
-    import MiniProjectTitle from "./MiniProjectTitle.svelte";
-
     const dispatch = createEventDispatcher();
     export let open : boolean = false;
     export let expanded : boolean = false;
     export let all_project : boolean = false; // if true, this project should not be editable
 
     // stuff for MiniProjectTitle
-    export let thumbnail : string = "999999";
+    export let thumbnail : string = constants.placeholder_id;
     export let project_type : "character" | string = "item";
     export let priority : boolean = false;
     export let priority_level : number = 2;

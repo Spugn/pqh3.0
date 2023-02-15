@@ -273,7 +273,7 @@ function write_equipment() {
                     },
                     rarity: get_rarity_id(full_id),
                     fragment: {
-                        id: "999999",
+                        id: "unknown",
                         name: {},
                     },
                     recipes: {
@@ -333,7 +333,7 @@ function write_equipment() {
                         },
                         rarity: "99",
                         fragment: {
-                            id: "999999",
+                            id: "unknown",
                             name: {},
                         },
                         recipes: {
@@ -512,12 +512,12 @@ function write_character() {
                 return;
             }
             data[`${row.unit_id}`].equipment[`rank_${row.promotion_level}`] = [
-                `${row.equip_slot_1}`,
-                `${row.equip_slot_2}`,
-                `${row.equip_slot_3}`,
-                `${row.equip_slot_4}`,
-                `${row.equip_slot_5}`,
-                `${row.equip_slot_6}`
+                `${row.equip_slot_1 === 999999 ? "unknown" : row.equip_slot_1}`,
+                `${row.equip_slot_2 === 999999 ? "unknown" : row.equip_slot_2}`,
+                `${row.equip_slot_3 === 999999 ? "unknown" : row.equip_slot_3}`,
+                `${row.equip_slot_4 === 999999 ? "unknown" : row.equip_slot_4}`,
+                `${row.equip_slot_5 === 999999 ? "unknown" : row.equip_slot_5}`,
+                `${row.equip_slot_6 === 999999 ? "unknown" : row.equip_slot_6}`
             ];
         });
 
@@ -562,12 +562,12 @@ function write_character() {
                 }
                 // console.log(`ADDING REGION LIMITED CHARACTER EQUIPS FOR ${row.unit_id} RANK ${row.promotion_level}`);
                 data[`${row.unit_id}`].equipment[`rank_${row.promotion_level}`] = [
-                    `${row.equip_slot_1}`,
-                    `${row.equip_slot_2}`,
-                    `${row.equip_slot_3}`,
-                    `${row.equip_slot_4}`,
-                    `${row.equip_slot_5}`,
-                    `${row.equip_slot_6}`
+                    `${row.equip_slot_1 === 999999 ? "unknown" : row.equip_slot_1}`,
+                    `${row.equip_slot_2 === 999999 ? "unknown" : row.equip_slot_2}`,
+                    `${row.equip_slot_3 === 999999 ? "unknown" : row.equip_slot_3}`,
+                    `${row.equip_slot_4 === 999999 ? "unknown" : row.equip_slot_4}`,
+                    `${row.equip_slot_5 === 999999 ? "unknown" : row.equip_slot_5}`,
+                    `${row.equip_slot_6 === 999999 ? "unknown" : row.equip_slot_6}`
                 ];
             });
         }
@@ -760,7 +760,7 @@ function write_quest() {
             }
             if (!data.memory_piece) {
                 data.memory_piece = {
-                    item: "999999",
+                    item: "unknown",
                     drop_rate: 0,
                 };
             }
@@ -894,37 +894,37 @@ function write_event_quest(quest_data) {
         let result;
         const drops = [
             {
-                "item": "999999",
+                "item": "unknown",
                 "drop_rate": 0
             },
             {
-                "item": "999999",
+                "item": "unknown",
                 "drop_rate": 0
             },
             {
-                "item": "999999",
+                "item": "unknown",
                 "drop_rate": 0
             },
         ];
         const subdrops = [
             {
-                "item": "999999",
+                "item": "unknown",
                 "drop_rate": 0
             },
             {
-                "item": "999999",
+                "item": "unknown",
                 "drop_rate": 0
             },
             {
-                "item": "999999",
+                "item": "unknown",
                 "drop_rate": 0
             },
             {
-                "item": "999999",
+                "item": "unknown",
                 "drop_rate": 0
             },
             {
-                "item": "999999",
+                "item": "unknown",
                 "drop_rate": 0
             },
         ];
@@ -993,7 +993,7 @@ function get_new_images(data) {
                 id = equipment.id,
                 fragment_id = equipment.fragment.id;
             // CHECK IF IMAGE ALREADY EXISTS
-            if (!fs.existsSync(path.join(DIRECTORY.IMAGE_OUTPUT, 'items', `${id}.png`)) && id !== "999999") {
+            if (!fs.existsSync(path.join(DIRECTORY.IMAGE_OUTPUT, 'items', `${id}.png`)) && id !== "unknown") {
                 if (id.substring(0, 2) === "31" || id.substring(0, 2) === "32") {
                     // EQUIPMENT IS A MEMORY PIECE
                     queue.push(`item_${id}`);
@@ -1003,7 +1003,7 @@ function get_new_images(data) {
                     queue.push(`equipment_${id}`);
                 }
             }
-            if (!fs.existsSync(path.join(DIRECTORY.IMAGE_OUTPUT, 'items', `${fragment_id}.png`)) && fragment_id !== "999999") {
+            if (!fs.existsSync(path.join(DIRECTORY.IMAGE_OUTPUT, 'items', `${fragment_id}.png`)) && fragment_id !== "unknown") {
                 queue.push(`equipment_${fragment_id}`);
             }
         }

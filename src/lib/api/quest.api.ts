@@ -62,16 +62,16 @@ export default (() => {
 
     /**
      * get the quest's memory piece. a quest may or may not have a memory piece, if this is the case the memory piece
-     * id will be assigned "999999" in data.json, but this function will return undefined.
+     * id will be assigned "unknown" in data.json, but this function will return undefined.
      *
      * @param {string} id - quest id
-     * @returns {QuestItem | undefined} QuestItem, or undefined if memory piece id equals "999999" or is not found
+     * @returns {QuestItem | undefined} QuestItem, or undefined if memory piece id equals "unknown" or is not found
      */
     function getMemoryPiece(id : string, language : Language) : QuestItem | undefined {
         const drop_table = data[id]?.drop_table[language];
         const memory_piece = (drop_table) ? drop_table.memory_piece : data[id]?.drop_table.JP.memory_piece;
 
-        // return undefined if memory piece is undefined or is "999999" (doesn't exist)
+        // return undefined if memory piece is undefined or is "unknown" (doesn't exist)
         return (memory_piece && memory_piece.item !== constants.placeholder_id) ? memory_piece : undefined;
     }
 
@@ -632,7 +632,7 @@ export default (() => {
      * check if an item or its fragment counterpart exists as a required component in a quest.
      * a requried component is if it exist as a main item, memory piece, or subdrop.
      *
-     * @param {string} item_id - full or fragment id to search for, can not be "999999" ; e.g. "101011"
+     * @param {string} item_id - full or fragment id to search for, can not be "unknown" ; e.g. "101011"
      * @param {string} quest_id - id of quest to search through ; e.g. "1-1", "1-2H", "3-1VH", "5-1E"
      * @param {Language} language - language/server of quest to search through
      * @returns {boolean} true if the item or its fragment exists in this quest, false otherwise

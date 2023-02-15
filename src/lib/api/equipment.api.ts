@@ -59,10 +59,10 @@ export default (() => {
 
     /**
      * get an equipment's fragment. equipment may or may not have a fragment, if this is the case the fragment id
-     * will be assigned "999999" in data.json, but this function will return undefined.
+     * will be assigned "unknown" in data.json, but this function will return undefined.
      *
      * @param {string} id - equipment id
-     * @returns {Fragment | undefined} fragment object, or undefined if not found or if fragment id equals "999999"
+     * @returns {Fragment | undefined} fragment object, or undefined if not found or if fragment id equals "unknown"
      */
     function getFragment(id : string) : Fragment | undefined {
         const fragment = data[id]?.fragment;
@@ -219,12 +219,12 @@ export default (() => {
 
     /**
      * convert a given fragment id to a full item id. by default, this will check if the end result
-     * is an actual full item id (if not it will return "999999"), but if the no_verify flag is set
+     * is an actual full item id (if not it will return "unknown"), but if the no_verify flag is set
      * then the conversion will be done without checking if the result is a full item id.
      *
      * @param {string} id - fragment id
      * @param {boolean} no_verify if true, conversion will be checked if it's a full item id
-     * @returns {string} full item id, or "999999" if resulting id is not a full item
+     * @returns {string} full item id, or "unknown" if resulting id is not a full item
      */
     function convertFragmentID(id : string, no_verify? : boolean) : string {
         // check for valid id before converting
@@ -272,7 +272,7 @@ export default (() => {
     }
 
     /**
-     * check if a full item has a fragment (assigned fragment id is not "999999")
+     * check if a full item has a fragment (assigned fragment id is not "unknown")
      *
      * @param {string} id - equipment id
      * @returns {boolean} true if full item has a fragment, false otherwise

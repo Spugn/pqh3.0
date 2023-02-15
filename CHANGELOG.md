@@ -3,6 +3,14 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.1.8] - 2023-02-15
+### Added
+- Added placeholder image for skyblue rarity: `items/999999.png`
+### Changed
+- Changed previous `999999.png` to `unknown.png` due to the latest skyblue rarity
+- Update updater script to use `unknown` instead of `999999`
+- Changed any reference to `999999` to use `unknown` instead
+
 ## [3.1.7] - 2023-01-08
 ### Added
 - "All Projects" display in Bulk Create Projects

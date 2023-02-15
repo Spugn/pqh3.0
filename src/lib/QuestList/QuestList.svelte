@@ -37,7 +37,7 @@
     let new_results : QuestScore[] = [];
 
     let edit_inventory_dialog = {
-        id: "999999",
+        id: constants.placeholder_id,
         inventory: 0,
         drop_rate: 0,
         required: 0,

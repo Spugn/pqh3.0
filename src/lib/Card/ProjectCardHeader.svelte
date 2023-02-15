@@ -1,10 +1,11 @@
 <script context="module">
+    import { constants } from '$lib/api/api';
     import Avatar from '$lib/Avatar/Avatar.svelte';
 </script>
 
 <script>
     /** @type {string} */
-    export let avatar = "999999";
+    export let avatar = constants.placeholder_id;
 
     /** @type {string} */
     export let type = "unit_icon";

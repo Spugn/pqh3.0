@@ -335,7 +335,7 @@ export default (() => {
                 date: Date.now() + projects.length, // trying to make sure dates are all unique
                 priority: false,
                 details: {
-                    avatar_id: "999999",
+                    avatar_id: constants.placeholder_id,
                     formal_name: "All Projects",
                     name: "",
                     start: {

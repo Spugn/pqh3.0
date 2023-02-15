@@ -27,7 +27,7 @@ export default (() => {
             fragment: 9999, // max amount for inventory
         }),
     });
-    const placeholder_id = "999999"; // item and character placeholder id
+    const placeholder_id = "unknown"; // item and character placeholder id
     const difficulty = Object.freeze({ // quest difficulties
         hard: "H",
         very_hard: "VH",

@@ -95,14 +95,14 @@
     let fragment_progress : string;
     let partial_complete_dialog : PartialCompleteDialogData = {
         open: false,
-        item_id: "999999",
+        item_id: constants.placeholder_id,
         amount: 0,
         max: 0,
         consume: false,
     };
     let inventory_edit_dialog : InventoryEditDialogData = {
         open: false,
-        item_id: "999999",
+        item_id: constants.placeholder_id,
         amount: 0,
     };
     let priority_edit_dialog : PrioritizeProjectDialogData = {
