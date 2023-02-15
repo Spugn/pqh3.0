@@ -241,6 +241,28 @@
             }
         }
     },
+    "31015": {
+        "id": "31015",
+        "name": {
+            "JP": "ミサトのメモリーピース",
+            "CN": "美里的记忆碎片",
+            "EN": "Misato's Memory Shard",
+            "KR": "미사토의 메모리 피스",
+            "TW": "美里的記憶碎片"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "999999",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "31016": {
         "id": "31016",
         "name": {
@@ -25055,6 +25077,192 @@
             "id": "118614",
             "name": {
                 "JP": "ラピスローズペンダント（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109011": {
+        "id": "109011",
+        "name": {
+            "JP": "デモンヴィクティムソード"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119011",
+            "name": {
+                "JP": "デモンヴィクティムソード（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109041": {
+        "id": "109041",
+        "name": {
+            "JP": "デモンズスカーブレード"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "129041",
+            "name": {
+                "JP": "デモンズスカーブレードの設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "107013"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109071": {
+        "id": "109071",
+        "name": {
+            "JP": "豪魔ノ爪刃"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119071",
+            "name": {
+                "JP": "豪魔ノ爪刃（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109101": {
+        "id": "109101",
+        "name": {
+            "JP": "デモンパニッシュフィスト"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119101",
+            "name": {
+                "JP": "デモンパニッシュフィスト（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109131": {
+        "id": "109131",
+        "name": {
+            "JP": "ディアブロマッシェーラ"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "129131",
+            "name": {
+                "JP": "ディアブロマッシェーラの設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "107343"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109161": {
+        "id": "109161",
+        "name": {
+            "JP": "デビルドミニオンランス"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119161",
+            "name": {
+                "JP": "デビルドミニオンランス（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109191": {
+        "id": "109191",
+        "name": {
+            "JP": "デモンズデストラクション"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "129191",
+            "name": {
+                "JP": "デモンズデストラクションの設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "107103"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109221": {
+        "id": "109221",
+        "name": {
+            "JP": "デモンズコアワンド"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119221",
+            "name": {
+                "JP": "デモンズコアワンド（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109251": {
+        "id": "109251",
+        "name": {
+            "JP": "ロッドオブデモンズハート"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119251",
+            "name": {
+                "JP": "ロッドオブデモンズハート（欠片）"
             }
         },
         "recipes": {
