@@ -116,15 +116,15 @@ describe("equipment api", () => {
         expect(equipment.isFragment("999999")).toBeFalsy(); // placeholder id
     });
     test("convertFragmentID", () => {
-        expect(equipment.convertFragmentID("")).toBe("999999"); // invalid id
+        expect(equipment.convertFragmentID("")).toBe("unknown"); // invalid id
         expect(equipment.convertFragmentID("101011")).toBe("101011"); // valid id ; full item
         expect(equipment.convertFragmentID("32075")).toBe("32075"); // valid id ; memory piece
         expect(equipment.convertFragmentID("122282")).toBe("102282"); // valid id ; fragment
-        expect(equipment.convertFragmentID("999999")).toBe("999999"); // "valid" id, but converts poorly
-        expect(equipment.convertFragmentID("99999")).toBe("999999"); // "valid" id ; memory piece
+        expect(equipment.convertFragmentID("999999")).toBe("unknown"); // "valid" id, but converts poorly
+        expect(equipment.convertFragmentID("99999")).toBe("unknown"); // "valid" id ; memory piece
     });
     test("convertFragmentID#no_verify", () => {
-        expect(equipment.convertFragmentID("", true)).toBe("999999"); // invalid id
+        expect(equipment.convertFragmentID("", true)).toBe("unknown"); // invalid id
         expect(equipment.convertFragmentID("101011", true)).toBe("101011"); // valid id ; full item
         expect(equipment.convertFragmentID("32075", true)).toBe("30075"); // valid id ; memory piece
         expect(equipment.convertFragmentID("122282", true)).toBe("102282"); // valid id ; fragment
@@ -136,7 +136,7 @@ describe("equipment api", () => {
         expect(equipment.getRarityFromID("101011")).toBe("1"); // valid id ; full item
         expect(equipment.getRarityFromID("32075")).toBe("99"); // valid id ; memory piece
         expect(equipment.getRarityFromID("122282")).toBe("2"); // valid id ; fragment
-        expect(equipment.getRarityFromID("999999")).toBe("-1"); // placeholder id
+        expect(equipment.getRarityFromID("unknown")).toBe("-1"); // placeholder id
         expect(equipment.getRarityFromID("99999")).toBe("-1"); // placeholder id ; invalid memory piece
     });
     test("hasFragment", () => {
