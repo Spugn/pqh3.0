@@ -3174,6 +3174,24 @@
             }
         }
     },
+    "32071": {
+        "id": "32071",
+        "name": {
+            "JP": "クリスティーナのピュアメモリーピース"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "unknown",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "32075": {
         "id": "32075",
         "name": {
