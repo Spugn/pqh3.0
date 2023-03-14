@@ -1476,6 +1476,7 @@
         "name": {
             "JP": "チエルのメモリーピース",
             "CN": "千爱瑠的记忆碎片",
+            "EN": "Chieru's Memory Shard",
             "KR": "치에루의 메모리 피스",
             "TW": "琪愛兒的記憶碎片"
         },
@@ -15290,6 +15291,7 @@
         "name": {
             "JP": "極南天の烈蒼鎧",
             "CN": "极南天之烈苍铠",
+            "EN": "Southerly Omnipotence",
             "KR": "극남천의 열창갑주",
             "TW": "極南天之烈蒼鎧"
         },
@@ -15299,6 +15301,7 @@
             "name": {
                 "JP": "極南天の烈蒼鎧の設計図",
                 "CN": "极南天之烈苍铠的设计图",
+                "EN": "Southerly Omnipotence Blueprint",
                 "KR": "극남천의 열창갑주 설계도",
                 "TW": "極南天之烈蒼鎧的設計圖"
             }
@@ -15319,6 +15322,14 @@
                     "103281"
                 ],
                 "recipe_note": "CN"
+            },
+            "EN": {
+                "required_pieces": 20,
+                "required_items": [
+                    "104011",
+                    "103281"
+                ],
+                "recipe_note": "EN"
             },
             "KR": {
                 "required_pieces": 20,
@@ -15706,6 +15717,7 @@
         "name": {
             "JP": "極北天の覇焔鎧",
             "CN": "极北天之霸焰铠",
+            "EN": "Northerly Omniscience",
             "KR": "극북천의 패염갑주",
             "TW": "極北天之霸焰鎧"
         },
@@ -15715,6 +15727,7 @@
             "name": {
                 "JP": "極北天の覇焔鎧（欠片）",
                 "CN": "极北天之霸焰铠（碎片）",
+                "EN": "Northerly Omniscience (Fragment)",
                 "KR": "극북천의 패염갑주(조각)",
                 "TW": "極北天之霸焰鎧（碎片）"
             }
@@ -15733,6 +15746,13 @@
                     "104161"
                 ],
                 "recipe_note": "CN"
+            },
+            "EN": {
+                "required_pieces": 30,
+                "required_items": [
+                    "104161"
+                ],
+                "recipe_note": "EN"
             },
             "KR": {
                 "required_pieces": 30,
@@ -16114,6 +16134,7 @@
         "name": {
             "JP": "極東天の碧風装",
             "CN": "极东天之碧风装",
+            "EN": "Easterly Benevolence",
             "KR": "극동천의 벽풍복",
             "TW": "極東天之碧風裝"
         },
@@ -16123,6 +16144,7 @@
             "name": {
                 "JP": "極東天の碧風装（欠片）",
                 "CN": "极东天之碧风装（碎片）",
+                "EN": "Easterly Benevolence (Fragment)",
                 "KR": "극동천의 벽풍복(조각)",
                 "TW": "極東天之碧風裝（碎片）"
             }
@@ -16141,6 +16163,13 @@
                     "103252"
                 ],
                 "recipe_note": "CN"
+            },
+            "EN": {
+                "required_pieces": 30,
+                "required_items": [
+                    "103252"
+                ],
+                "recipe_note": "EN"
             },
             "KR": {
                 "required_pieces": 30,
@@ -16526,6 +16555,7 @@
         "name": {
             "JP": "極西天の聖導衣",
             "CN": "极西天之圣导衣",
+            "EN": "Westerly Omnipresence",
             "KR": "극서천의 성도의",
             "TW": "極西天之聖導衣"
         },
@@ -16535,6 +16565,7 @@
             "name": {
                 "JP": "極西天の聖導衣の設計図",
                 "CN": "极西天之圣导衣的设计图",
+                "EN": "Westerly Omnipresence Blueprint",
                 "KR": "극서천의 성도의 설계도",
                 "TW": "極西天之聖導衣的設計圖"
             }
@@ -16555,6 +16586,14 @@
                     "103461"
                 ],
                 "recipe_note": "CN"
+            },
+            "EN": {
+                "required_pieces": 20,
+                "required_items": [
+                    "104372",
+                    "103461"
+                ],
+                "recipe_note": "EN"
             },
             "KR": {
                 "required_pieces": 20,
@@ -16928,6 +16967,7 @@
         "name": {
             "JP": "極翼天の聖靴",
             "CN": "极翼天之圣靴",
+            "EN": "Winged Warding Boots",
             "KR": "극익천의 성화",
             "TW": "極翼天之聖靴"
         },
@@ -16937,6 +16977,7 @@
             "name": {
                 "JP": "極翼天の聖靴（欠片）",
                 "CN": "极翼天之圣靴（碎片）",
+                "EN": "Winged Warding Boots (Fragment)",
                 "KR": "극익천의 성화(조각)",
                 "TW": "極翼天之聖靴（碎片）"
             }
@@ -16955,6 +16996,13 @@
                     "104432"
                 ],
                 "recipe_note": "CN"
+            },
+            "EN": {
+                "required_pieces": 30,
+                "required_items": [
+                    "104432"
+                ],
+                "recipe_note": "EN"
             },
             "KR": {
                 "required_pieces": 30,
@@ -17404,6 +17452,7 @@
         "name": {
             "JP": "極翼天の賢聖帽",
             "CN": "极翼天之圣贤帽",
+            "EN": "Winged Wisdom Helm",
             "KR": "극익천의 현성모",
             "TW": "極翼天之賢聖帽"
         },
@@ -17413,6 +17462,7 @@
             "name": {
                 "JP": "極翼天の賢聖帽の設計図",
                 "CN": "极翼天之圣贤帽的设计图",
+                "EN": "Winged Wisdom Helm Blueprint",
                 "KR": "극익천의 현성모 설계도",
                 "TW": "極翼天之賢聖帽的設計圖"
             }
@@ -17433,6 +17483,14 @@
                     "103522"
                 ],
                 "recipe_note": "CN"
+            },
+            "EN": {
+                "required_pieces": 20,
+                "required_items": [
+                    "104132",
+                    "103522"
+                ],
+                "recipe_note": "EN"
             },
             "KR": {
                 "required_pieces": 20,
