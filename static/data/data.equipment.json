@@ -23161,13 +23161,15 @@
     "108014": {
         "id": "108014",
         "name": {
-            "JP": "ローズインペリアルソード"
+            "JP": "ローズインペリアルソード",
+            "TW": "薔薇帝王之劍"
         },
         "rarity": "8",
         "fragment": {
             "id": "118014",
             "name": {
-                "JP": "ローズインペリアルソード（欠片）"
+                "JP": "ローズインペリアルソード（欠片）",
+                "TW": "薔薇帝王之劍（碎片）"
             }
         },
         "recipes": {
@@ -23175,6 +23177,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -23292,13 +23299,15 @@
     "108044": {
         "id": "108044",
         "name": {
-            "JP": "クルーエルローズブレード"
+            "JP": "クルーエルローズブレード",
+            "TW": "殘虐薔薇之刃"
         },
         "rarity": "8",
         "fragment": {
             "id": "128044",
             "name": {
-                "JP": "クルーエルローズブレードの設計図"
+                "JP": "クルーエルローズブレードの設計図",
+                "TW": "殘虐薔薇之刃的設計圖"
             }
         },
         "recipes": {
@@ -23308,6 +23317,13 @@
                     "107073"
                 ],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 15,
+                "required_items": [
+                    "107073"
+                ],
+                "recipe_note": "TW"
             }
         }
     },
@@ -23413,13 +23429,15 @@
     "108074": {
         "id": "108074",
         "name": {
-            "JP": "ソーンオブローゼズ"
+            "JP": "ソーンオブローゼズ",
+            "TW": "棘瑰凶刃"
         },
         "rarity": "8",
         "fragment": {
             "id": "118074",
             "name": {
-                "JP": "ソーンオブローゼズ（欠片）"
+                "JP": "ソーンオブローゼズ（欠片）",
+                "TW": "棘瑰凶刃（碎片）"
             }
         },
         "recipes": {
@@ -23427,6 +23445,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -23528,13 +23551,15 @@
     "108104": {
         "id": "108104",
         "name": {
-            "JP": "ローズペタルナックル"
+            "JP": "ローズペタルナックル",
+            "TW": "瑰瓣指虎"
         },
         "rarity": "8",
         "fragment": {
             "id": "118104",
             "name": {
-                "JP": "ローズペタルナックル（欠片）"
+                "JP": "ローズペタルナックル（欠片）",
+                "TW": "瑰瓣指虎（碎片）"
             }
         },
         "recipes": {
@@ -23542,6 +23567,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -23659,13 +23689,15 @@
     "108134": {
         "id": "108134",
         "name": {
-            "JP": "ベルアルクロゼ"
+            "JP": "ベルアルクロゼ",
+            "TW": "狂戰士薔薇"
         },
         "rarity": "8",
         "fragment": {
             "id": "128134",
             "name": {
-                "JP": "ベルアルクロゼの設計図"
+                "JP": "ベルアルクロゼの設計図",
+                "TW": "狂戰士薔薇的設計圖"
             }
         },
         "recipes": {
@@ -23675,6 +23707,13 @@
                     "107163"
                 ],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 15,
+                "required_items": [
+                    "107163"
+                ],
+                "recipe_note": "TW"
             }
         }
     },
@@ -23788,13 +23827,15 @@
     "108164": {
         "id": "108164",
         "name": {
-            "JP": "ランスオブカローラ"
+            "JP": "ランスオブカローラ",
+            "TW": "花冠長槍"
         },
         "rarity": "8",
         "fragment": {
             "id": "118164",
             "name": {
-                "JP": "ランスオブカローラ（欠片）"
+                "JP": "ランスオブカローラ（欠片）",
+                "TW": "花冠長槍（碎片）"
             }
         },
         "recipes": {
@@ -23802,6 +23843,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -23903,13 +23949,15 @@
     "108194": {
         "id": "108194",
         "name": {
-            "JP": "ローズクラッシャーアクス"
+            "JP": "ローズクラッシャーアクス",
+            "TW": "薔薇破壞者之斧"
         },
         "rarity": "8",
         "fragment": {
             "id": "128194",
             "name": {
-                "JP": "ローズクラッシャーアクスの設計図"
+                "JP": "ローズクラッシャーアクスの設計図",
+                "TW": "薔薇破壞者之斧的設計圖"
             }
         },
         "recipes": {
@@ -23919,6 +23967,13 @@
                     "107492"
                 ],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 15,
+                "required_items": [
+                    "107492"
+                ],
+                "recipe_note": "TW"
             }
         }
     },
@@ -24020,13 +24075,15 @@
     "108224": {
         "id": "108224",
         "name": {
-            "JP": "ローズステイメンワンド"
+            "JP": "ローズステイメンワンド",
+            "TW": "薔薇雄蕊權杖"
         },
         "rarity": "8",
         "fragment": {
             "id": "118224",
             "name": {
-                "JP": "ローズステイメンワンド（欠片）"
+                "JP": "ローズステイメンワンド（欠片）",
+                "TW": "薔薇雄蕊權杖（碎片）"
             }
         },
         "recipes": {
@@ -24034,6 +24091,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -24135,13 +24197,15 @@
     "108254": {
         "id": "108254",
         "name": {
-            "JP": "ローズピスティルスタッフ"
+            "JP": "ローズピスティルスタッフ",
+            "TW": "薔薇雌蕊權杖"
         },
         "rarity": "8",
         "fragment": {
             "id": "118254",
             "name": {
-                "JP": "ローズピスティルスタッフ（欠片）"
+                "JP": "ローズピスティルスタッフ（欠片）",
+                "TW": "薔薇雌蕊權杖（碎片）"
             }
         },
         "recipes": {
@@ -24149,6 +24213,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
