@@ -2170,6 +2170,46 @@
             }
         }
     },
+    "31168": {
+        "id": "31168",
+        "name": {
+            "JP": "タマキ（作業服）のメモリーピース",
+            "KR": "타마키(작업복)의 메모리 피스",
+            "TW": "珠希（工作服）的記憶碎片"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "unknown",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "31169": {
+        "id": "31169",
+        "name": {
+            "JP": "ミフユ（作業服）のメモリーピース",
+            "KR": "미후유(작업복)의 메모리 피스",
+            "TW": "美冬（工作服）的記憶碎片"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "unknown",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "32001": {
         "id": "32001",
         "name": {
@@ -25417,6 +25457,66 @@
             "id": "119251",
             "name": {
                 "JP": "ロッドオブデモンズハート（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109551": {
+        "id": "109551",
+        "name": {
+            "JP": "双角魔の首飾り"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119551",
+            "name": {
+                "JP": "双角魔の首飾り（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109581": {
+        "id": "109581",
+        "name": {
+            "JP": "ディアブロメンブランス"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119581",
+            "name": {
+                "JP": "ディアブロメンブランス（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109611": {
+        "id": "109611",
+        "name": {
+            "JP": "デモニックテールタイ"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119611",
+            "name": {
+                "JP": "デモニックテールタイ（欠片）"
             }
         },
         "recipes": {
