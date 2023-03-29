@@ -5134,7 +5134,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 5,
+                "required_pieces": 3,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -5404,7 +5404,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 5,
+                "required_pieces": 3,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -5452,7 +5452,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 5,
+                "required_pieces": 3,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -5616,7 +5616,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 5,
+                "required_pieces": 3,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -5881,7 +5881,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 5,
+                "required_pieces": 3,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -6156,7 +6156,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 5,
+                "required_pieces": 3,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -6320,7 +6320,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 5,
+                "required_pieces": 3,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -6489,7 +6489,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 5,
+                "required_pieces": 3,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -6537,7 +6537,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 5,
+                "required_pieces": 3,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -6865,7 +6865,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 5,
+                "required_pieces": 3,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -7009,7 +7009,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 5,
+                "required_pieces": 3,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -7384,7 +7384,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 5,
+                "required_pieces": 3,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -7432,7 +7432,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 10,
+                "required_pieces": 5,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -7480,7 +7480,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -7528,7 +7528,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -7576,7 +7576,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 25,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -7624,7 +7624,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 10,
+                "required_pieces": 5,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -7678,7 +7678,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [
                     "103013"
                 ],
@@ -7730,7 +7730,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -7784,7 +7784,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [
                     "104041"
                 ],
@@ -7842,7 +7842,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 10,
+                "required_pieces": 5,
                 "required_items": [
                     "103013"
                 ],
@@ -7894,7 +7894,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -7942,7 +7942,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -7996,7 +7996,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [
                     "104072"
                 ],
@@ -8057,7 +8057,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 10,
+                "required_pieces": 5,
                 "required_items": [
                     "103101",
                     "103552"
@@ -8111,7 +8111,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -8168,7 +8168,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [
                     "104101",
                     "103611"
@@ -8222,7 +8222,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 25,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -8279,7 +8279,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 10,
+                "required_pieces": 5,
                 "required_items": [
                     "103611",
                     "103132"
@@ -8333,7 +8333,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -8381,7 +8381,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -8429,7 +8429,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 25,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -8486,7 +8486,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 10,
+                "required_pieces": 5,
                 "required_items": [
                     "103162",
                     "103551"
@@ -8540,7 +8540,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -8594,7 +8594,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [
                     "104161"
                 ],
@@ -8646,7 +8646,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 25,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -8694,7 +8694,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 10,
+                "required_pieces": 5,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -8748,7 +8748,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [
                     "103553"
                 ],
@@ -8800,7 +8800,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -8848,7 +8848,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 25,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -8896,7 +8896,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 10,
+                "required_pieces": 5,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -8944,7 +8944,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -8992,7 +8992,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -9049,7 +9049,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [
                     "104221",
                     "104611"
@@ -9109,7 +9109,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 10,
+                "required_pieces": 5,
                 "required_items": [
                     "103222"
                 ],
@@ -9161,7 +9161,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -9221,7 +9221,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [
                     "104251",
                     "103614",
@@ -9277,7 +9277,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 25,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -9325,7 +9325,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 10,
+                "required_pieces": 5,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -9385,7 +9385,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [
                     "103282",
                     "103401",
@@ -9447,7 +9447,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [
                     "104281"
                 ],
@@ -9508,7 +9508,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [
                     "104281",
                     "104551"
@@ -9571,7 +9571,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 10,
+                "required_pieces": 5,
                 "required_items": [
                     "103583",
                     "103311"
@@ -9634,7 +9634,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [
                     "103283",
                     "103162"
@@ -9694,7 +9694,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [
                     "104282"
                 ],
@@ -9755,7 +9755,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [
                     "104312",
                     "104161"
@@ -9809,7 +9809,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 10,
+                "required_pieces": 5,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -9866,7 +9866,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [
                     "103072",
                     "103551"
@@ -9926,7 +9926,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [
                     "104341"
                 ],
@@ -9987,7 +9987,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [
                     "104342",
                     "104191"
@@ -10041,7 +10041,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 10,
+                "required_pieces": 5,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -10098,7 +10098,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [
                     "103614",
                     "103612"
@@ -10161,7 +10161,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [
                     "104372",
                     "104251"
@@ -10224,7 +10224,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 10,
+                "required_pieces": 5,
                 "required_items": [
                     "103583",
                     "103613"
@@ -10284,7 +10284,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [
                     "104401"
                 ],
@@ -10348,7 +10348,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 10,
+                "required_pieces": 5,
                 "required_items": [
                     "103431",
                     "103551",
@@ -10413,7 +10413,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [
                     "103582",
                     "103013"
@@ -10479,7 +10479,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [
                     "104432",
                     "103614",
@@ -10535,7 +10535,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 10,
+                "required_pieces": 5,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -10592,7 +10592,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [
                     "104461",
                     "103222"
@@ -10655,7 +10655,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [
                     "104461",
                     "104581"
@@ -10718,7 +10718,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 10,
+                "required_pieces": 5,
                 "required_items": [
                     "103583",
                     "102493"
@@ -10778,7 +10778,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 10,
+                "required_pieces": 5,
                 "required_items": [
                     "103614"
                 ],
@@ -10842,7 +10842,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [
                     "103583",
                     "103522",
@@ -10910,7 +10910,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [
                     "104521",
                     "103614",
@@ -10966,7 +10966,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -11014,7 +11014,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -11062,7 +11062,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 25,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -11110,7 +11110,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 25,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -11158,7 +11158,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -11206,7 +11206,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -11254,7 +11254,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 25,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -11302,7 +11302,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 15,
+                "required_pieces": 5,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -11350,7 +11350,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -11398,7 +11398,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 25,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -11446,7 +11446,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -11503,7 +11503,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104012",
                     "104011"
@@ -11566,7 +11566,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104431",
                     "103013"
@@ -11629,7 +11629,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104194",
                     "104013"
@@ -11692,7 +11692,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104164",
                     "104312"
@@ -11755,7 +11755,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104312",
                     "103012"
@@ -11808,7 +11808,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104071",
                     "103011"
@@ -11862,7 +11862,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -11910,7 +11910,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -11967,7 +11967,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104191",
                     "104042"
@@ -12030,7 +12030,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104553",
                     "104043"
@@ -12093,7 +12093,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104373",
                     "104041"
@@ -12156,7 +12156,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104042",
                     "103041"
@@ -12207,7 +12207,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [
                     "104072"
                 ],
@@ -12259,7 +12259,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -12319,7 +12319,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104071",
                     "104551",
@@ -12375,7 +12375,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -12432,7 +12432,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104104",
                     "104073"
@@ -12495,7 +12495,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104014",
                     "104551"
@@ -12558,7 +12558,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104012",
                     "103491"
@@ -12609,7 +12609,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [
                     "104551"
                 ],
@@ -12670,7 +12670,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104102",
                     "104582"
@@ -12724,7 +12724,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -12781,7 +12781,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "103101",
                     "104013"
@@ -12841,7 +12841,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [
                     "104101"
                 ],
@@ -12899,7 +12899,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [
                     "104104"
                 ],
@@ -12957,7 +12957,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [
                     "104101"
                 ],
@@ -13008,7 +13008,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104102",
                     "103551"
@@ -13074,7 +13074,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104133",
                     "103131",
@@ -13130,7 +13130,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -13178,7 +13178,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -13235,7 +13235,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104134",
                     "104133"
@@ -13295,7 +13295,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [
                     "104013"
                 ],
@@ -13353,7 +13353,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [
                     "104133"
                 ],
@@ -13402,7 +13402,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [
                     "104342"
                 ],
@@ -13454,7 +13454,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -13511,7 +13511,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104162",
                     "103552"
@@ -13565,7 +13565,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -13622,7 +13622,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104164",
                     "104313"
@@ -13682,7 +13682,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [
                     "104553"
                 ],
@@ -13740,7 +13740,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [
                     "104162"
                 ],
@@ -13791,7 +13791,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104222",
                     "103161"
@@ -13854,7 +13854,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104191",
                     "104462"
@@ -13908,7 +13908,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -13965,7 +13965,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104192",
                     "103614"
@@ -14025,7 +14025,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [
                     "104192"
                 ],
@@ -14086,7 +14086,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104193",
                     "103191"
@@ -14146,7 +14146,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [
                     "104191"
                 ],
@@ -14195,7 +14195,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [
                     "104192"
                 ],
@@ -14247,7 +14247,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -14295,7 +14295,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -14352,7 +14352,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104222",
                     "104131"
@@ -14415,7 +14415,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104314",
                     "104223"
@@ -14475,7 +14475,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [
                     "104224"
                 ],
@@ -14536,7 +14536,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104041",
                     "103222"
@@ -14589,7 +14589,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104131",
                     "103221"
@@ -14643,7 +14643,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -14700,7 +14700,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104252",
                     "103252"
@@ -14763,7 +14763,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104252",
                     "104611"
@@ -14823,7 +14823,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [
                     "104251"
                 ],
@@ -14884,7 +14884,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104433",
                     "104253"
@@ -14947,7 +14947,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104252",
                     "103553"
@@ -15000,7 +15000,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104522",
                     "103251"
@@ -15063,7 +15063,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104283",
                     "103072"
@@ -15126,7 +15126,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104282",
                     "103013"
@@ -15189,7 +15189,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104134",
                     "103282"
@@ -15249,7 +15249,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [
                     "104072"
                 ],
@@ -15310,7 +15310,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104343",
                     "103583"
@@ -15373,7 +15373,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104011",
                     "103281"
@@ -15426,7 +15426,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104311",
                     "103612"
@@ -15489,7 +15489,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104313",
                     "104431"
@@ -15552,7 +15552,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104311",
                     "103192"
@@ -15615,7 +15615,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104313",
                     "104491"
@@ -15678,7 +15678,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104193",
                     "104312"
@@ -15738,7 +15738,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [
                     "104282"
                 ],
@@ -15796,7 +15796,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [
                     "104161"
                 ],
@@ -15845,7 +15845,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [
                     "104191"
                 ],
@@ -15906,7 +15906,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104343",
                     "104491"
@@ -15969,7 +15969,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104611",
                     "103343"
@@ -16032,7 +16032,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104044",
                     "103342"
@@ -16092,7 +16092,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [
                     "104043"
                 ],
@@ -16153,7 +16153,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104463",
                     "104342"
@@ -16213,7 +16213,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [
                     "103252"
                 ],
@@ -16264,7 +16264,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104521",
                     "103192"
@@ -16327,7 +16327,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104552",
                     "104372"
@@ -16390,7 +16390,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104342",
                     "103222"
@@ -16453,7 +16453,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104613",
                     "104371"
@@ -16516,7 +16516,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104373",
                     "104372"
@@ -16576,7 +16576,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [
                     "104222"
                 ],
@@ -16637,7 +16637,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104372",
                     "103461"
@@ -16690,7 +16690,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104252",
                     "103341"
@@ -16756,7 +16756,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104402",
                     "103401",
@@ -16818,7 +16818,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [
                     "104402"
                 ],
@@ -16867,7 +16867,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [
                     "104162"
                 ],
@@ -16928,7 +16928,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104432",
                     "103132"
@@ -16988,7 +16988,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [
                     "104132"
                 ],
@@ -17046,7 +17046,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [
                     "104432"
                 ],
@@ -17107,7 +17107,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104463",
                     "103371"
@@ -17170,7 +17170,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104523",
                     "104431"
@@ -17221,7 +17221,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [
                     "104041"
                 ],
@@ -17282,7 +17282,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104072",
                     "103522"
@@ -17345,7 +17345,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104523",
                     "103222"
@@ -17408,7 +17408,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104522",
                     "103583"
@@ -17471,7 +17471,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104344",
                     "104522"
@@ -17534,7 +17534,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "104132",
                     "103522"
@@ -17588,7 +17588,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -17636,7 +17636,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -17684,7 +17684,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -17732,7 +17732,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -17780,7 +17780,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -17828,7 +17828,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -17869,7 +17869,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -17917,7 +17917,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -17965,7 +17965,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -18013,7 +18013,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -18061,7 +18061,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -18109,7 +18109,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -18157,7 +18157,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -18198,7 +18198,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -18246,7 +18246,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -18294,7 +18294,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -18342,7 +18342,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -18390,7 +18390,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -18438,7 +18438,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -18486,7 +18486,7 @@
                 "recipe_note": "EN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -18527,7 +18527,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 15,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -18572,7 +18572,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "105102"
                 ],
@@ -18621,7 +18621,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "105163"
                 ],
@@ -18670,7 +18670,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "105135"
                 ],
@@ -18719,7 +18719,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [
                     "105042"
                 ],
@@ -18768,7 +18768,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [
                     "105222"
                 ],
@@ -18817,7 +18817,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [
                     "105105"
                 ],
@@ -18866,7 +18866,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [
                     "105071"
                 ],
@@ -18915,7 +18915,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [
                     "105132"
                 ],
@@ -18964,7 +18964,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [
                     "105375"
                 ],
@@ -19013,7 +19013,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "105222"
                 ],
@@ -19062,7 +19062,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "105042"
                 ],
@@ -19111,7 +19111,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "105612"
                 ],
@@ -19160,7 +19160,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [
                     "105582"
                 ],
@@ -19209,7 +19209,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [
                     "105102"
                 ],
@@ -19258,7 +19258,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [
                     "105615"
                 ],
@@ -19307,7 +19307,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "105161"
                 ],
@@ -19356,7 +19356,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "105192"
                 ],
@@ -19405,7 +19405,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "105165"
                 ],
@@ -19454,7 +19454,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [
                     "105041"
                 ],
@@ -19503,7 +19503,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [
                     "105582"
                 ],
@@ -19552,7 +19552,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [
                     "105073"
                 ],
@@ -19601,7 +19601,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "105132"
                 ],
@@ -19650,7 +19650,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "105133"
                 ],
@@ -19699,7 +19699,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "105225"
                 ],
@@ -19748,7 +19748,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "105192"
                 ],
@@ -19797,7 +19797,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "105073"
                 ],
@@ -19846,7 +19846,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "105402"
                 ],
@@ -19895,7 +19895,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "105221"
                 ],
@@ -19944,7 +19944,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "105284"
                 ],
@@ -19993,7 +19993,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "105614"
                 ],
@@ -20042,7 +20042,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [
                     "105611"
                 ],
@@ -20091,7 +20091,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [
                     "105104"
                 ],
@@ -20140,7 +20140,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [
                     "105584"
                 ],
@@ -20189,7 +20189,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "105552"
                 ],
@@ -20238,7 +20238,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "105254"
                 ],
@@ -20287,7 +20287,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "105615"
                 ],
@@ -20336,7 +20336,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "105011"
                 ],
@@ -20385,7 +20385,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [
                     "105554"
                 ],
@@ -20434,7 +20434,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "105583"
                 ],
@@ -20483,7 +20483,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [
                     "105251"
                 ],
@@ -20532,7 +20532,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [
                     "105344"
                 ],
@@ -20581,7 +20581,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [
                     "105612"
                 ],
@@ -20630,7 +20630,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [
                     "105432"
                 ],
@@ -20679,7 +20679,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [
                     "105585"
                 ],
@@ -20728,7 +20728,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 10,
                 "required_items": [
                     "105194"
                 ],
@@ -20773,7 +20773,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -20814,7 +20814,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -20855,7 +20855,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -20896,7 +20896,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -20937,7 +20937,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -20978,7 +20978,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -21019,7 +21019,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -21060,7 +21060,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -21101,7 +21101,7 @@
                 "recipe_note": "CN"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 20,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -21137,7 +21137,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 15,
                 "required_items": [
                     "105616"
                 ],
@@ -21177,7 +21177,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 15,
                 "required_items": [
                     "105136"
                 ],
@@ -21215,7 +21215,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -21251,7 +21251,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [
                     "105196"
                 ],
@@ -21289,7 +21289,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -21325,7 +21325,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 15,
                 "required_items": [
                     "106191"
                 ],
@@ -21365,7 +21365,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [
                     "105166"
                 ],
@@ -21403,7 +21403,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -21437,7 +21437,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -21473,7 +21473,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 15,
                 "required_items": [
                     "105585"
                 ],
@@ -21513,7 +21513,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 15,
                 "required_items": [
                     "105557"
                 ],
@@ -21551,7 +21551,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -21587,7 +21587,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [
                     "105165"
                 ],
@@ -21625,7 +21625,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -21661,7 +21661,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 15,
                 "required_items": [
                     "105464"
                 ],
@@ -21701,7 +21701,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 15,
                 "required_items": [
                     "105555"
                 ],
@@ -21741,7 +21741,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 15,
                 "required_items": [
                     "105587"
                 ],
@@ -21779,7 +21779,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -21815,7 +21815,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [
                     "105346"
                 ],
@@ -21853,7 +21853,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -21889,7 +21889,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 15,
                 "required_items": [
                     "105317"
                 ],
@@ -21929,7 +21929,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 15,
                 "required_items": [
                     "105586"
                 ],
@@ -21969,7 +21969,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 15,
                 "required_items": [
                     "105375"
                 ],
@@ -22007,7 +22007,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -22043,7 +22043,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 15,
                 "required_items": [
                     "105556"
                 ],
@@ -22083,7 +22083,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 15,
                 "required_items": [
                     "105197"
                 ],
@@ -22121,7 +22121,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -22157,7 +22157,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 15,
                 "required_items": [
                     "105077"
                 ],
@@ -22197,7 +22197,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 15,
                 "required_items": [
                     "106071"
                 ],
@@ -22237,7 +22237,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 15,
                 "required_items": [
                     "106401"
                 ],
@@ -22275,7 +22275,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -22309,7 +22309,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -22345,7 +22345,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 15,
                 "required_items": [
                     "106281"
                 ],
@@ -22385,7 +22385,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 15,
                 "required_items": [
                     "105047"
                 ],
@@ -22425,7 +22425,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 15,
                 "required_items": [
                     "105617"
                 ],
@@ -22463,7 +22463,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -22499,7 +22499,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 15,
                 "required_items": [
                     "105403"
                 ],
@@ -22537,7 +22537,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -22573,7 +22573,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 15,
                 "required_items": [
                     "106371"
                 ],
@@ -22611,7 +22611,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -22647,7 +22647,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 20,
+                "required_pieces": 15,
                 "required_items": [
                     "106131"
                 ],
@@ -22685,7 +22685,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -22719,7 +22719,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -22753,7 +22753,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -22787,7 +22787,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -22821,7 +22821,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -22855,7 +22855,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -22889,7 +22889,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -22923,7 +22923,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -22957,7 +22957,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -22991,7 +22991,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -23025,7 +23025,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -23059,7 +23059,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "KR"
             },
@@ -23093,7 +23093,7 @@
                 "recipe_note": "JP"
             },
             "KR": {
-                "required_pieces": 30,
+                "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "KR"
             },
