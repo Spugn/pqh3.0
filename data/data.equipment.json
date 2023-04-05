@@ -2341,6 +2341,24 @@
             }
         }
     },
+    "32009": {
+        "id": "32009",
+        "name": {
+            "JP": "アンナのピュアメモリーピース"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "unknown",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "32010": {
         "id": "32010",
         "name": {
