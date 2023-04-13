@@ -1718,6 +1718,7 @@
         "name": {
             "JP": "マヒル（レンジャー）のメモリーピース",
             "CN": "真阳（游骑兵）的记忆碎片",
+            "EN": "Mahiru (Ranger)'s Memory Shard",
             "KR": "마히루(레인저)의 메모리 피스",
             "TW": "真陽（遊俠）的記憶碎片"
         },
@@ -11800,6 +11801,7 @@
         "name": {
             "JP": "神兎乃大剣",
             "CN": "神兔之大剑",
+            "EN": "Rabbit Broadblade",
             "KR": "신토끼의 대검",
             "TW": "神兔之大劍"
         },
@@ -11809,6 +11811,7 @@
             "name": {
                 "JP": "神兎乃大剣の設計図",
                 "CN": "神兔之大剑的设计图",
+                "EN": "Rabbit Broadblade Blueprint",
                 "KR": "신토끼의 대검 설계도",
                 "TW": "神兔之大劍的設計圖"
             }
@@ -11829,6 +11832,14 @@
                     "103011"
                 ],
                 "recipe_note": "CN"
+            },
+            "EN": {
+                "required_pieces": 20,
+                "required_items": [
+                    "104071",
+                    "103011"
+                ],
+                "recipe_note": "EN"
             },
             "KR": {
                 "required_pieces": 10,
@@ -12201,6 +12212,7 @@
         "name": {
             "JP": "旺鯉乃神刀",
             "CN": "旺鲤之神刀",
+            "EN": "Koi Scalesword",
             "KR": "아름다운 잉어의 신도",
             "TW": "旺鯉之神刀"
         },
@@ -12210,6 +12222,7 @@
             "name": {
                 "JP": "旺鯉乃神刀（欠片）",
                 "CN": "旺鲤之神刀（碎片）",
+                "EN": "Koi Scalesword (Fragment)",
                 "KR": "아름다운 잉어의 신도(조각)",
                 "TW": "旺鯉之神刀（碎片）"
             }
@@ -12228,6 +12241,13 @@
                     "104072"
                 ],
                 "recipe_note": "CN"
+            },
+            "EN": {
+                "required_pieces": 30,
+                "required_items": [
+                    "104072"
+                ],
+                "recipe_note": "EN"
             },
             "KR": {
                 "required_pieces": 15,
@@ -12603,6 +12623,7 @@
         "name": {
             "JP": "冥刃・鴉天狗",
             "CN": "冥刃·鸦天狗",
+            "EN": "Ravenedge Tengu",
             "KR": "명인 · 아천구",
             "TW": "冥刃‧鴉天狗"
         },
@@ -12612,6 +12633,7 @@
             "name": {
                 "JP": "冥刃・鴉天狗（欠片）",
                 "CN": "冥刃·鸦天狗（碎片）",
+                "EN": "Ravenedge Tengu (Fragment)",
                 "KR": "명인 · 아천구(조각)",
                 "TW": "冥刃‧鴉天狗（碎片）"
             }
@@ -12630,6 +12652,13 @@
                     "104551"
                 ],
                 "recipe_note": "CN"
+            },
+            "EN": {
+                "required_pieces": 30,
+                "required_items": [
+                    "104551"
+                ],
+                "recipe_note": "EN"
             },
             "KR": {
                 "required_pieces": 15,
@@ -13000,6 +13029,7 @@
         "name": {
             "JP": "通天手甲・犀打ち",
             "CN": "通天手甲·犀打",
+            "EN": "Hornoceros Fist",
             "KR": "통천수갑 · 코뿔소 치기",
             "TW": "通天手甲‧犀打"
         },
@@ -13009,6 +13039,7 @@
             "name": {
                 "JP": "通天手甲・犀打ちの設計図",
                 "CN": "通天手甲·犀打的设计图",
+                "EN": "Hornoceros Fist Blueprint",
                 "KR": "통천수갑 · 코뿔소 치기 설계도",
                 "TW": "通天手甲‧犀打的設計圖"
             }
@@ -13029,6 +13060,14 @@
                     "103551"
                 ],
                 "recipe_note": "CN"
+            },
+            "EN": {
+                "required_pieces": 20,
+                "required_items": [
+                    "104102",
+                    "103551"
+                ],
+                "recipe_note": "EN"
             },
             "KR": {
                 "required_pieces": 10,
@@ -13396,6 +13435,7 @@
         "name": {
             "JP": "天穿乃隼弓",
             "CN": "天穿之隼弓",
+            "EN": "Peregrine Arch",
             "KR": "하늘을 뚫는 매의 활",
             "TW": "天穿之隼弓"
         },
@@ -13405,6 +13445,7 @@
             "name": {
                 "JP": "天穿乃隼弓（欠片）",
                 "CN": "天穿之隼弓（碎片）",
+                "EN": "Peregrine Arch (Fragment)",
                 "KR": "하늘을 뚫는 매의 활(조각)",
                 "TW": "天穿之隼弓（碎片）"
             }
@@ -13423,6 +13464,13 @@
                     "104342"
                 ],
                 "recipe_note": "CN"
+            },
+            "EN": {
+                "required_pieces": 30,
+                "required_items": [
+                    "104342"
+                ],
+                "recipe_note": "EN"
             },
             "KR": {
                 "required_pieces": 15,
@@ -13783,6 +13831,7 @@
         "name": {
             "JP": "聖鹿槍アルマベナード",
             "CN": "圣鹿枪阿尔玛贝娜德",
+            "EN": "Antlerpike Venado",
             "KR": "성록창 알마 베나도",
             "TW": "聖鹿槍阿爾瑪貝納德"
         },
@@ -13792,6 +13841,7 @@
             "name": {
                 "JP": "聖鹿槍アルマベナードの設計図",
                 "CN": "圣鹿枪阿尔玛贝娜德的设计图",
+                "EN": "Antlerpike Venado Blueprint",
                 "KR": "성록창 알마 베나도 설계도",
                 "TW": "聖鹿槍阿爾瑪貝納德的設計圖"
             }
@@ -13812,6 +13862,14 @@
                     "103161"
                 ],
                 "recipe_note": "CN"
+            },
+            "EN": {
+                "required_pieces": 20,
+                "required_items": [
+                    "104222",
+                    "103161"
+                ],
+                "recipe_note": "EN"
             },
             "KR": {
                 "required_pieces": 10,
@@ -14189,6 +14247,7 @@
         "name": {
             "JP": "炎羆帝の爪戦斧",
             "CN": "炎熊帝之爪战斧",
+            "EN": "Flarebear's Claws",
             "KR": "염비제의 갈퀴 도끼",
             "TW": "炎羆帝之爪戰斧"
         },
@@ -14198,6 +14257,7 @@
             "name": {
                 "JP": "炎羆帝の爪戦斧（欠片）",
                 "CN": "炎熊帝之爪战斧（碎片）",
+                "EN": "Flarebear's Claws (Fragment)",
                 "KR": "염비제의 갈퀴 도끼(조각)",
                 "TW": "炎羆帝之爪戰斧（碎片）"
             }
@@ -14216,6 +14276,13 @@
                     "104192"
                 ],
                 "recipe_note": "CN"
+            },
+            "EN": {
+                "required_pieces": 30,
+                "required_items": [
+                    "104192"
+                ],
+                "recipe_note": "EN"
             },
             "KR": {
                 "required_pieces": 15,
@@ -14581,6 +14648,7 @@
         "name": {
             "JP": "黒蛇の魔炎杖",
             "CN": "黑蛇魔炎杖",
+            "EN": "Blacksnake Pyrostave",
             "KR": "흑사의 마염 지팡이",
             "TW": "黑蛇之魔炎杖"
         },
@@ -14590,6 +14658,7 @@
             "name": {
                 "JP": "黒蛇の魔炎杖の設計図",
                 "CN": "黑蛇魔炎杖的设计图",
+                "EN": "Blacksnake Pyrostave Blueprint",
                 "KR": "흑사의 마염 지팡이 설계도",
                 "TW": "黑蛇之魔炎杖的設計圖"
             }
@@ -14610,6 +14679,14 @@
                     "103221"
                 ],
                 "recipe_note": "CN"
+            },
+            "EN": {
+                "required_pieces": 20,
+                "required_items": [
+                    "104131",
+                    "103221"
+                ],
+                "recipe_note": "EN"
             },
             "KR": {
                 "required_pieces": 10,
@@ -14992,6 +15069,7 @@
         "name": {
             "JP": "白蛇の水聖杖",
             "CN": "白蛇水圣杖",
+            "EN": "Whitesnake Aquastave",
             "KR": "백사의 수성 지팡이",
             "TW": "白蛇之水聖杖"
         },
@@ -15001,6 +15079,7 @@
             "name": {
                 "JP": "白蛇の水聖杖の設計図",
                 "CN": "白蛇水圣杖的设计图",
+                "EN": "Whitesnake Aquastave Blueprint",
                 "KR": "백사의 수성 지팡이 설계도",
                 "TW": "白蛇之水聖杖的設計圖"
             }
@@ -15021,6 +15100,14 @@
                     "103251"
                 ],
                 "recipe_note": "CN"
+            },
+            "EN": {
+                "required_pieces": 20,
+                "required_items": [
+                    "104522",
+                    "103251"
+                ],
+                "recipe_note": "EN"
             },
             "KR": {
                 "required_pieces": 10,
