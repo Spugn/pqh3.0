@@ -25782,13 +25782,15 @@
     "108554": {
         "id": "108554",
         "name": {
-            "JP": "ローズルージュペンダント"
+            "JP": "ローズルージュペンダント",
+            "TW": "紅薔薇墜飾"
         },
         "rarity": "8",
         "fragment": {
             "id": "118554",
             "name": {
-                "JP": "ローズルージュペンダント（欠片）"
+                "JP": "ローズルージュペンダント（欠片）",
+                "TW": "紅薔薇墜飾（碎片）"
             }
         },
         "recipes": {
@@ -25796,6 +25798,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -25897,13 +25904,15 @@
     "108584": {
         "id": "108584",
         "name": {
-            "JP": "ローズベルテペンダント"
+            "JP": "ローズベルテペンダント",
+            "TW": "綠薔薇墜飾"
         },
         "rarity": "8",
         "fragment": {
             "id": "118584",
             "name": {
-                "JP": "ローズベルテペンダント（欠片）"
+                "JP": "ローズベルテペンダント（欠片）",
+                "TW": "綠薔薇墜飾（碎片）"
             }
         },
         "recipes": {
@@ -25911,6 +25920,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -26012,13 +26026,15 @@
     "108614": {
         "id": "108614",
         "name": {
-            "JP": "ラピスローズペンダント"
+            "JP": "ラピスローズペンダント",
+            "TW": "琉璃薔薇墜飾"
         },
         "rarity": "8",
         "fragment": {
             "id": "118614",
             "name": {
-                "JP": "ラピスローズペンダント（欠片）"
+                "JP": "ラピスローズペンダント（欠片）",
+                "TW": "琉璃薔薇墜飾（碎片）"
             }
         },
         "recipes": {
@@ -26026,6 +26042,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
