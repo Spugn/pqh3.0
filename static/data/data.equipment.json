@@ -26236,6 +26236,132 @@
             }
         }
     },
+    "109281": {
+        "id": "109281",
+        "name": {
+            "JP": "エプロンライトメイル"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "129281",
+            "name": {
+                "JP": "エプロンライトメイルの設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108191"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109311": {
+        "id": "109311",
+        "name": {
+            "JP": "アーマー・デ・タブリエ"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "129311",
+            "name": {
+                "JP": "アーマー・デ・タブリエの設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108071"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109341": {
+        "id": "109341",
+        "name": {
+            "JP": "ベテランシェフクロス"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119341",
+            "name": {
+                "JP": "ベテランシェフクロス（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109371": {
+        "id": "109371",
+        "name": {
+            "JP": "プロウェイトレスエプロン"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119371",
+            "name": {
+                "JP": "プロウェイトレスエプロン（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109401": {
+        "id": "109401",
+        "name": {
+            "JP": "ハイシールドソーサー"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "129401",
+            "name": {
+                "JP": "ハイシールドソーサーの設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108101"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109461": {
+        "id": "109461",
+        "name": {
+            "JP": "タッサ・タロン"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119461",
+            "name": {
+                "JP": "タッサ・タロン（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "109551": {
         "id": "109551",
         "name": {
