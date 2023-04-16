@@ -13,9 +13,11 @@
     <div class="text-[4vw] sm:text-2xl tracking-widest">
         Quest Helper
     </div>
+    <!--
     <div class="text-red-500 text-[4vw] sm:text-2xl tracking-widest">
         (BETA v2)
     </div>
+    -->
 </div>
 
 <style>

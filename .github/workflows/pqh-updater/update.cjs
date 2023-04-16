@@ -9,7 +9,6 @@ const fs = require('fs');
 const path = require('path');
 const sqlite3 = require('sqlite3').verbose();
 const { open } = require('sqlite');
-const { PythonShell } = require('python-shell');
 const core = require('@actions/core');
 const webp = require('webp-converter');
 
@@ -19,6 +18,7 @@ const DIRECTORY = Object.freeze({
     IMAGE_OUTPUT: `${__dirname}/../../../static/images`,
     DATABASE: `${__dirname}/database`,
     DATA_DIRECTORY: `${__dirname}/../../../static/data`,
+    PIE_RECIPE_OUTPUT: `${__dirname}/../../../pie.json`,
 });
 const DICTIONARY = Object.freeze({
     EQUIPMENT: {
@@ -33,6 +33,7 @@ const DICTIONARY = Object.freeze({
     }
 });
 const OTHER_REGIONS = Object.freeze(["CN", "EN", "KR", "TW"]);
+const new_unity_change = true;
 
 run();
 
@@ -1043,6 +1044,7 @@ function get_new_images(data) {
                 // FIND FILE HASH IN MANIFEST
                 const manifest = fs.readFileSync(path.join(DIRECTORY.DATABASE, 'manifest'), 'utf8');
                 let files = {};
+                let pie = {};
 
                 queue.forEach((file_name) => {
                     const index = manifest.indexOf(file_name),
@@ -1064,14 +1066,28 @@ function get_new_images(data) {
                         webp: path.join(DIRECTORY.IMAGE_OUTPUT, `${type}_webp`, `${(type !== 'unit_icon' && type !== 'unit_still')
                         ? decrypted_name : `${decrypted_name.substring(0, 4)}0${decrypted_name.substring(5)}`}.webp`)
                     };
+                    if (new_unity_change) {
+                        // we need to use `./static/images` because image extraction will take place while working directory is at root rather than .github/workflows/
+                        pie[files[file_name].hash] = {
+                            png: path.join(DIRECTORY.IMAGE_OUTPUT, type, `${(type !== 'unit_icon' && type !== 'unit_still')
+                                ? decrypted_name : `${decrypted_name.substring(0, 4)}0${decrypted_name.substring(5)}`}.png`),
+                            webp: path.join(DIRECTORY.IMAGE_OUTPUT, `${type}_webp`, `${(type !== 'unit_icon' && type !== 'unit_still')
+                                ? decrypted_name : `${decrypted_name.substring(0, 4)}0${decrypted_name.substring(5)}`}.webp`)
+                        }
+                    }
                 });
 
                 // DOWNLOAD ENCRYPTED .unity3d FILES FROM CDN
                 for (const file_name in files) {
-                    await get_asset(files[file_name].encrypted, files[file_name].hash);
-                    console.log(`DOWNLOADED ${file_name}.unity3d [${files[file_name].hash}] ; SAVED AS ${files[file_name].encrypted}`);
-                    deserialize(files[file_name].encrypted, files[file_name].decrypted, files[file_name].webp,
-                        files[file_name].type === "unit_still");
+                    if (new_unity_change) {
+                        // write pie recipe
+                        write_file(DIRECTORY.PIE_RECIPE_OUTPUT, pie);
+                    } else {
+                        await get_asset(files[file_name].encrypted, files[file_name].hash);
+                        console.log(`DOWNLOADED ${file_name}.unity3d [${files[file_name].hash}] ; SAVED AS ${files[file_name].encrypted}`);
+                        deserialize(files[file_name].encrypted, files[file_name].decrypted, files[file_name].webp,
+                            files[file_name].type === "unit_still");
+                    }
                 }
                 resolve(files);
             });
@@ -1089,21 +1105,9 @@ function get_new_images(data) {
             }
 
             function deserialize(import_path, export_path, webp_path, still = false, silent = false) {
-                return new Promise(async function(resolve) {
-                    PythonShell.run(`${__dirname}/deserialize.py`,
-                        { args: [import_path, export_path, still], pythonPath: 'python3' /* MAKE SURE TO RUN IN PYTHON 3, PYTHON 2 DOES NOT WORK */ },
-                        function (err, results) {
-                            if (err) throw err;
-                            if (!silent && results !== null) {
-                                for (let i of results) {
-                                    console.log('[deserialize.py]', i);
-                                }
-                            }
-                            convert_to_webp(export_path, webp_path);
-                            resolve();
-                        }
-                    );
-                });
+                console.log("deprecated");
+                return;
+
                 function convert_to_webp(input_path, output_path) {
                     webp.cwebp(input_path, output_path, "-q 70");
                 }

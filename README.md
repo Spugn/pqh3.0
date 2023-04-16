@@ -32,7 +32,7 @@ The following list is a task list that will (hopefully) eventually be completed 
 - [x] Character Data Page
 - [x] Quest Data Page
 - [x] Statistics Data Page
-- [ ] Webpage Multi-Language Support
+- [ ] ~~Webpage Multi-Language Support~~ Cancelled
 
 ## Importing Data from `expugn/priconne-quest-helper`
 To import your old project and inventory data from `expugn/priconne-quest-helper` (the original version of `priconne-quest-helper`), you may do the following:
@@ -87,3 +87,4 @@ All characters and assets belong to their respective owners.
 **Project** began on January 3, 2022.<br/>
 **Beta-Testing** began on February 13, 2022.<br/>
 **Beta v2-Testing** began on December 21, 2022.<br/>
+**"Complete" Release** began on April 16, 2023.<br/>

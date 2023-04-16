@@ -3,6 +3,20 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.1.9] - 2023-04-16
+End Beta v2, I guess.
+### Added
+- The ability to eat pies (yummy)
+  - aka, an alternate way to extract images due to the recent Unity update breaking everything
+  - pie == priconne-image-extractor, if that wasn't obvious
+### Removed
+- Removed the "(BETA v2)" text from title.
+  - Site looks pretty stable so far I think, or I havent gotten any complaints in months so I'll just remove the BETA deal.
+- Python Dependency
+- UnityPack
+  - Due to `priconne-jp`'s recent Unity update, this library no longer works to extract assets.
+- Image extraction from `.github/workflows/pqh-updater`
+
 ## [3.1.8] - 2023-02-15
 ### Added
 - Added placeholder image for skyblue rarity: `items/999999.png`
