@@ -169,7 +169,7 @@ function download(latest) {
             // icon manifest
             http.request({
                 host: 'prd-priconne-redive.akamaized.net',
-                path: `/dl/Resources/${latest.JP.version}/Jpn/AssetBundles/Windows/${manifest_path[0]}`,
+                path: `/dl/Resources/${latest.JP.version}/Jpn/AssetBundles/iOS/${manifest_path[0]}`,
                 method: 'GET',
             }, (res) => {
                 res.on('data', function(chunk) {
@@ -180,7 +180,7 @@ function download(latest) {
                     // unit manifest
                     http.request({
                         host: 'prd-priconne-redive.akamaized.net',
-                        path: `/dl/Resources/${latest.JP.version}/Jpn/AssetBundles/Windows/${manifest_path[1]}`,
+                        path: `/dl/Resources/${latest.JP.version}/Jpn/AssetBundles/iOS/${manifest_path[1]}`,
                         method: 'GET',
                     }, (res) => {
                         res.on('data', function(chunk) {
@@ -191,7 +191,7 @@ function download(latest) {
                             // bg manifest
                             http.request({
                                 host: 'prd-priconne-redive.akamaized.net',
-                                path: `/dl/Resources/${latest.JP.version}/Jpn/AssetBundles/Windows/${manifest_path[2]}`,
+                                path: `/dl/Resources/${latest.JP.version}/Jpn/AssetBundles/iOS/${manifest_path[2]}`,
                                 method: 'GET',
                             }, (res) => {
                                 res.on('data', function(chunk) {
@@ -1031,7 +1031,7 @@ function get_new_images(data) {
             return;
         }
 
-        console.log(`FOUND ${queue.length} MISSING IMAGES. DOWNLOADING AND DECRYPTING THEM NOW...`);
+        console.log(`FOUND ${queue.length} MISSING IMAGES. CREATING PIE RECIPE...`);
         console.log(queue);
         const files = await extract_images(queue);
         resolve();
