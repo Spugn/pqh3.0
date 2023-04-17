@@ -94,14 +94,16 @@ jobs:
           ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           This is an automated process. Issues may or may not have occured.'
           if test -f "./pie.json"; then
-            json=`cat ./pie.json`
-            git add ./static/images
-            git diff-index --quiet HEAD || git commit -m "[Bot] Extract Images" -m "
-            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-            This is an automated process. Issues may or may not have occured.
 
-            Extracted images using the following JSON instructions:
-            $json"
+          json=`cat ./pie.json`
+          git add ./static/images
+          git diff-index --quiet HEAD || git commit -m "[Bot] Extract Images" -m "
+          ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          This is an automated process. Issues may or may not have occured.
+
+          Extracted images using the following JSON instructions:
+          $json"
+
           fi
           git push
         env:
