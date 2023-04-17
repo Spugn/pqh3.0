@@ -39,8 +39,47 @@ jobs:
         id: update
         run: node ./.github/workflows/pqh-updater/update.cjs
 
+      - name: Check if pie.json exists
+        id: images
+        run: |
+          if test -f "./pie.json"; then
+            echo "pie.json exists"
+            echo "images=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Checkout Spugn/pie
+        if: ${{ steps.images.outputs.images }}
+        uses: actions/checkout@v3
+        with:
+          repository: 'Spugn/pie'
+          path: 'pie'
+
+      - name: Setup PHP with extensions
+        if: ${{ steps.images.outputs.images }}
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          extensions: imagick, lz4-kjdev/php-ext-lz4@0.4.3
+
+      # astcenc binaries will be saved to /opt/hostedtoolcache/astcenc/4.4.0/x64/bin/
+      - name: Setup astcenc
+        if: ${{ steps.images.outputs.images }}
+        uses: supplypike/setup-bin@v3
+        with:
+          uri: 'https://github.com/ARM-software/astc-encoder/releases/download/4.4.0/astcenc-4.4.0-linux-x64.zip'
+          name: 'astcenc'
+          version: '4.4.0'
+
+      - name: Setup ffmpeg
+        if: ${{ steps.images.outputs.images }}
+        uses: FedericoCarboni/setup-ffmpeg@v2
+
+      - name: eat pie
+        if: ${{ steps.images.outputs.images }}
+        run: php ./pie/pie.php
+
       # assuming there are new changes
-      - name: Update images on Git
+      - name: Update data on Git
         if: ${{ steps.update.outputs.success == 'true' }}
         run: |
           git config user.name $user_name
@@ -54,6 +93,16 @@ jobs:
           git diff-index --quiet HEAD || git commit -m "[Bot] Data Update" -m '
           ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           This is an automated process. Issues may or may not have occured.'
+          if test -f "./pie.json"; then
+            json=`cat ./pie.json`
+            git add ./static/images
+            git diff-index --quiet HEAD || git commit -m "[Bot] Extract Images" -m "
+            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            This is an automated process. Issues may or may not have occured.
+
+            Extracted images using the following JSON instructions:
+            $json"
+          fi
           git push
         env:
           user_name: 'Spugn'
