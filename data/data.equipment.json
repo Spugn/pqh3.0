@@ -3204,6 +3204,24 @@
             }
         }
     },
+    "32061": {
+        "id": "32061",
+        "name": {
+            "JP": "ムイミのピュアメモリーピース"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "unknown",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "32063": {
         "id": "32063",
         "name": {
