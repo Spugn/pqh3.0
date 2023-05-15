@@ -2215,6 +2215,46 @@
             }
         }
     },
+    "31171": {
+        "id": "31171",
+        "name": {
+            "JP": "シズル（サマー）のメモリーピース",
+            "KR": "시즈루(여름)의 메모리 피스",
+            "TW": "靜流（夏日）的記憶碎片"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "unknown",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "31174": {
+        "id": "31174",
+        "name": {
+            "JP": "ツムギ（サマー）のメモリーピース",
+            "KR": "츠무기(여름)의 메모리 피스",
+            "TW": "紡希（夏日）的記憶碎片"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "unknown",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "32001": {
         "id": "32001",
         "name": {
@@ -26090,6 +26130,26 @@
             }
         }
     },
+    "109012": {
+        "id": "109012",
+        "name": {
+            "JP": "秘剣訃雷返し"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119012",
+            "name": {
+                "JP": "秘剣訃雷返し（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "109041": {
         "id": "109041",
         "name": {
@@ -26107,6 +26167,28 @@
                 "required_pieces": 15,
                 "required_items": [
                     "107013"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109042": {
+        "id": "109042",
+        "name": {
+            "JP": "刺身刀・匠八"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "129042",
+            "name": {
+                "JP": "刺身刀・匠八の設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108521"
                 ],
                 "recipe_note": "JP"
             }
@@ -26132,6 +26214,26 @@
             }
         }
     },
+    "109072": {
+        "id": "109072",
+        "name": {
+            "JP": "クト・ドフィス"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119072",
+            "name": {
+                "JP": "クト・ドフィス（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "109101": {
         "id": "109101",
         "name": {
@@ -26142,6 +26244,26 @@
             "id": "119101",
             "name": {
                 "JP": "デモンパニッシュフィスト（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109102": {
+        "id": "109102",
+        "name": {
+            "JP": "鉄観音五百薬缶"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119102",
+            "name": {
+                "JP": "鉄観音五百薬缶（欠片）"
             }
         },
         "recipes": {
@@ -26174,6 +26296,28 @@
             }
         }
     },
+    "109132": {
+        "id": "109132",
+        "name": {
+            "JP": "スクィーザーボウ"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "129132",
+            "name": {
+                "JP": "スクィーザーボウの設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108371"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "109161": {
         "id": "109161",
         "name": {
@@ -26190,6 +26334,28 @@
             "JP": {
                 "required_pieces": 25,
                 "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109162": {
+        "id": "109162",
+        "name": {
+            "JP": "ランスオブフォルセッタ"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "129162",
+            "name": {
+                "JP": "ランスオブフォルセッタの設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108251"
+                ],
                 "recipe_note": "JP"
             }
         }
@@ -26216,6 +26382,26 @@
             }
         }
     },
+    "109192": {
+        "id": "109192",
+        "name": {
+            "JP": "ミートマレットアクス"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119192",
+            "name": {
+                "JP": "ミートマレットアクス（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "109221": {
         "id": "109221",
         "name": {
@@ -26236,6 +26422,26 @@
             }
         }
     },
+    "109222": {
+        "id": "109222",
+        "name": {
+            "JP": "ペール・ア・タルテ"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119222",
+            "name": {
+                "JP": "ペール・ア・タルテ（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "109251": {
         "id": "109251",
         "name": {
@@ -26246,6 +26452,26 @@
             "id": "119251",
             "name": {
                 "JP": "ロッドオブデモンズハート（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109252": {
+        "id": "109252",
+        "name": {
+            "JP": "マジカルレードルスタッフ"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119252",
+            "name": {
+                "JP": "マジカルレードルスタッフ（欠片）"
             }
         },
         "recipes": {
