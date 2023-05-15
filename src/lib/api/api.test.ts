@@ -312,7 +312,8 @@ describe("quest api", () => {
         // testing quest chapter filter
         let result = quest.search({
             required, priority_items,
-            settings:{
+            priority_levels: {},
+            settings: {
                 chapter: {
                     min: 999999,
                     max: 999999,
@@ -325,7 +326,8 @@ describe("quest api", () => {
         // testing disabled difficulties
         result = quest.search({
             required, priority_items,
-            settings:{
+            priority_levels: {},
+            settings: {
                 chapter: {
                     min: 18,
                     max: 18,
@@ -344,7 +346,8 @@ describe("quest api", () => {
         // testing item filter
         result = quest.search({
             required, priority_items,
-            settings:{
+            priority_levels: {},
+            settings: {
                 item_filter: ["101011"],
             },
             language:"JP",
@@ -355,7 +358,8 @@ describe("quest api", () => {
         // testing event multipliers
         result = quest.search({
             required, priority_items,
-            settings:{
+            priority_levels: {},
+            settings: {
                 drop_buff: {
                     "Normal": 1,
                     "Hard": 1,
@@ -369,7 +373,8 @@ describe("quest api", () => {
         // testing alternate sort options
         result = quest.search({
             required, priority_items,
-            settings:{
+            priority_levels: {},
+            settings: {
                 sort: {
                     score: true,
                     list: true,

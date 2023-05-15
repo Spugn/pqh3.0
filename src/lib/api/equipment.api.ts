@@ -156,7 +156,7 @@ export default (() => {
                 // hiragana to katakana => "あいあん" => [Iron Blade]
                 || Object.values(name_obj).some(n => n.indexOf(wanakana.toKatakana(query)) !== -1)
                 // romanji to kana => "aian" => [Iron Blade]
-                || Object.values(name_obj).some(n => n.indexOf(wanakana.toKana(query)) !== -1)
+                || Object.values(name_obj).some(n => wanakana.toRomaji(n).indexOf(query) !== -1)
             );
         });
     }

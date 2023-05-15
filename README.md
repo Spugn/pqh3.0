@@ -2,9 +2,12 @@
 
 # Princess Connect! Re:Dive Quest Helper<br/>(priconne-quest-helper)
 
-URL: <https://spugn.github.io/priconne-quest-helper/><br/>
-Changelog: [/priconne-quest-helper/CHANGELOG.md](CHANGELOG.md)
-<br/>
+URL: <https://spugn.github.io/priconne-quest-helper/><br/><br/>
+Character Data: <https://spugn.github.io/priconne-quest-helper/characters><br/>
+Item Data: <https://spugn.github.io/priconne-quest-helper/items><br/>
+Quest Data: <https://spugn.github.io/priconne-quest-helper/quests><br/>
+Statistics: <https://spugn.github.io/priconne-quest-helper/statistics><br/>
+Changelog: [/priconne-quest-helper/CHANGELOG.md](CHANGELOG.md)<br/>
 
 ## Information
 This is a tool to help you decide which is the best quest to farm to get
@@ -15,24 +18,6 @@ Compared to `expugn/priconne-quest-helper`, this edition of `priconne-quest-help
 2. Support for region exclusive characters not included in the `Japan` version.
 3. Automated updating process through the use of GitHub Actions.
 4. Use of item and unit IDs instead of fan English translated names.
-
-## Project Goals
-**`spugn/priconne-quest-helper` IS CURRENTLY INCOMPLETE AND A WORK-IN-PROGRESS!**<br />
-The following list is a task list that will (hopefully) eventually be completed over the course of development.
-
-- [x] User Character Box Editing
-- [x] User Inventory Editing
-- [x] Projects
-- [x] Quest Search
-- [x] Quest Settings (Sort, Drop Buff, Quest Range, Item Filter, ETC.)
-- [x] Saved User Information
-- [x] Automatic Updater
-- [x] Data Import and Export (includes importing from `expugn/priconne-quest-helper`, see notes below)
-- [x] Recipe Data Page
-- [x] Character Data Page
-- [x] Quest Data Page
-- [x] Statistics Data Page
-- [ ] ~~Webpage Multi-Language Support~~ Cancelled
 
 ## Importing Data from `expugn/priconne-quest-helper`
 To import your old project and inventory data from `expugn/priconne-quest-helper` (the original version of `priconne-quest-helper`), you may do the following:
@@ -55,6 +40,24 @@ If on a mobile phone, horizontal viewing is probably best.
 8. Repeat selecting optimal quests until you complete your enabled projects.
 9.  When your projects are complete, they will be marked as "Completed" on their project card.
 10. Click on the "`MORE VERT`" icon on the project card to reveal it's menu, select "COMPLETE" to complete the project.
+
+## Project Goals
+`spugn/priconne-quest-helper` is currently marked as complete for now due to lack of usage. Any further development
+will be bug fixes or from suggestions due to increased traffic.<br />
+
+- [x] User Character Box Editing
+- [x] User Inventory Editing
+- [x] Projects
+- [x] Quest Search
+- [x] Quest Settings (Sort, Drop Buff, Quest Range, Item Filter, ETC.)
+- [x] Saved User Information
+- [x] Automatic Updater
+- [x] Data Import and Export (includes importing from `expugn/priconne-quest-helper`, see notes below)
+- [x] Recipe Data Page
+- [x] Character Data Page
+- [x] Quest Data Page
+- [x] Statistics Data Page
+- [ ] ~~Webpage Multi-Language Support~~ Cancelled
 
 ## Bugs, Errors, Feature Suggestions, etc.
 The following can be submitted via `GitHub's Issue Tracker` (**PREFERRED**) or `Discord` (`S'pugn#2612`).

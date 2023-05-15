@@ -95,7 +95,7 @@ export default (() => {
                 // hiragana to katakana => "みやこ" => [Miyako, Miyako (Halloween), ...]
                 || Object.values(name_obj).some(n => n.indexOf(wanakana.toKatakana(query)) !== -1)
                 // romanji to kana => "kyaru" => [Karyl, Karyl (Summer), ...]
-                || Object.values(name_obj).some(n => n.indexOf(wanakana.toKana(query)) !== -1)
+                || Object.values(name_obj).some(n => wanakana.toRomaji(n).indexOf(query) !== -1)
             );
         });
     }
