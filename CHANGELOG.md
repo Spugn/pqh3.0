@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [3.1.10] - 2023-05-15
+### Added
+- Added support for "subdrops 2"
+  - Chapter 64 introduced a new quest mechanic where you can get 1 type of accessory every quest
+    - As of this writing: `50% Red` ; `25% Blue` ; `25% Green`
+  - Updated Quest Simulator to make it properly work with `subdrops_2`
+  - Updated `quests` page to display `subdrops_2`
+  - Updated quest list to display `subdrops_2`
 ### Changed
 - Improved character and item search a little
   - Romanji to Kana search isn't as strict now
@@ -11,6 +18,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
     - NEW: Searching for "`miy`" returns `[Miyako, Miyako (Halloween), Miyako (Christmas)]`
     - Basically, you don't need to type "`miya`" to get `Miyako (Christmas)` now
 - Updated README.md
+- Changed some styling for some pages
 
 ## [3.1.9] - 2023-04-16
 End Beta v2, I guess.

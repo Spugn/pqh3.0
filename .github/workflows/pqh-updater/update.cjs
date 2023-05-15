@@ -812,6 +812,27 @@ function write_quest() {
                         }
                     ];
                 }
+                else if (enemy_reward.reward_id_1 !== 0
+                    && enemy_reward.reward_id_2 !== 0
+                    && enemy_reward.reward_id_3 !== 0
+                    && enemy_reward.reward_id_4 === 0
+                    && enemy_reward.reward_id_5 === 0) {
+                    // WAVE GIVES SUBDROPS_2 (3 ACCESSORIES, ADDED CHAPTER 64+)
+                    data.subdrops_2 = [
+                        {
+                            item: `${enemy_reward.reward_id_1}`,
+                            drop_rate: enemy_reward.odds_1,
+                        },
+                        {
+                            item: `${enemy_reward.reward_id_2}`,
+                            drop_rate: enemy_reward.odds_2,
+                        },
+                        {
+                            item: `${enemy_reward.reward_id_3}`,
+                            drop_rate: enemy_reward.odds_3,
+                        },
+                    ];
+                }
                 else {
                     let enemy_reward_counter = 1;
                     while (enemy_reward_counter <= 5) {
@@ -867,6 +888,7 @@ function write_quest() {
                             memory_piece: quest_drops.memory_piece,
                             drops: quest_drops.drops,
                             subdrops: quest_drops.subdrops,
+                            ...(quest_drops.subdrops_2 && { subdrops_2: quest_drops.subdrops_2 }),
                         },
                     },
                 };
@@ -878,6 +900,7 @@ function write_quest() {
                     memory_piece: quest_drops.memory_piece,
                     drops: quest_drops.drops,
                     subdrops: quest_drops.subdrops,
+                    ...(quest_drops.subdrops_2 && { subdrops_2: quest_drops.subdrops_2 }),
                 };
             }
         }

@@ -15,6 +15,7 @@
         };
         drops : QuestItem[];
         subdrops : QuestItem[];
+        subdrops_2 : QuestItem[];
     };
     import type { Language, QuestItem } from "$lib/api/api.d";
     let selected : Language = "JP";
@@ -41,9 +42,11 @@
                 },
                 drops: [],
                 subdrops: [],
+                subdrops_2: [],
             };
             result.drops = questAPI.drops(id, selected);
             result.subdrops = questAPI.subdrops(id, selected);
+            result.subdrops_2 = questAPI.subdrops2(id, selected);
             const memory_piece = questAPI.memoryPiece(id, selected);
             if (memory_piece) {
                 result.memory_piece.exists = true;
@@ -89,7 +92,7 @@
         </SegmentedButton>
     </div>
 </div>
-<section class="flex flex-col gap-1 pb-10 sm:px-20">
+<section class="flex flex-col gap-1 pb-20 sm:px-20">
     {#each quests as quest}
         <div class="bg-black/[0.3] p-4 rounded-md text-white text-shadow-md">
             <div class="mb-2">
@@ -139,6 +142,21 @@
                         </div>
                     {/each}
                 </div>
+                {#if quest.subdrops_2.length > 0}
+                    <div class="inline-flex flex-row gap-1 mr-[1vw]">
+                        {#each quest.subdrops_2 as drop}
+                            <div class="inline-flex flex-col justify-center items-center">
+                                <img loading="lazy" src={`${base}/images/items/${drop.item}.png`}
+                                    width=48 height=48 title="{drop.item}" alt="{drop.item}"
+                                    draggable="false" class:opacity-50={drop.item === constants.placeholder_id}
+                                />
+                                <strong class:invisible={drop.drop_rate <= 0}>
+                                    {drop.drop_rate}%
+                                </strong>
+                            </div>
+                        {/each}
+                    </div>
+                {/if}
                 <div class="inline-flex flex-row gap-1 mr-[1vw]">
                     {#each quest.subdrops as drop}
                         <div class="inline-flex flex-col justify-center items-center">

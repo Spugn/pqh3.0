@@ -50,6 +50,7 @@ interface Quest {
             readonly memory_piece: QuestItem; // memory piece details
             readonly drops: QuestItem[]; // array of objects containing details of "main" quest drops
             readonly subdrops: QuestItem[]; // array of objects containing details of "sub" quest drops
+            readonly subdrops_2?: QuestItem[]; // array of objects containing details for a second group of "sub" quest drops
         }
     };
 }

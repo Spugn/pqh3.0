@@ -3,6 +3,7 @@
     import QuestHeader from "./QuestHeader.svelte";
     import QuestMainDrops from "./QuestMainDrops.svelte";
     import QuestSubDrops from "./QuestSubDrops.svelte";
+    import QuestSubDrops2 from "./QuestSubDrops2.svelte";
     import { createEventDispatcher } from 'svelte';
 </script>
 
@@ -51,6 +52,7 @@
         </div>
         <div>
             <QuestMainDrops {id} {build_results} on:click={handleDropClick}/>
+            <QuestSubDrops2 {id} {build_results} on:click={handleDropClick} />
             <QuestSubDrops {id} {build_results} on:click={handleDropClick} />
         </div>
     </div>

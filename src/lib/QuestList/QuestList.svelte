@@ -224,8 +224,9 @@
         const quest_memorypiece = questAPI.memoryPiece(quest_details_dialog.id, user.region.get());
         const quest_drops = questAPI.drops(quest_details_dialog.id, user.region.get());
         const quest_subdrops = questAPI.subdrops(quest_details_dialog.id, user.region.get());
+        const quest_subdrops2 = questAPI.subdrops2(quest_details_dialog.id, user.region.get());
         const drops : DetailedQuestDrop[] = [];
-        for (const drop of [...quest_drops, quest_memorypiece, ...quest_subdrops]) {
+        for (const drop of [...quest_drops, quest_memorypiece, ...quest_subdrops2, ...quest_subdrops]) {
             if (!drop) {
                 // drop is undefined (memory piece, probably)
                 continue;

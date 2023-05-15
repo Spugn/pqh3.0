@@ -101,6 +101,19 @@ export default (() => {
     }
 
     /**
+     * get the second group of subdrop quest drops (the 3 accessories, introduced chapter 64+).
+     * subdrops are usually hidden from the player.
+     *
+     * @param {string} id - quest id
+     * @returns {QuestItem[]} array of quest item drops
+     */
+    function getSubdrops2(id : string, language : Language) : QuestItem[] {
+        const drop_table = data[id]?.drop_table[language];
+        const subdrops = (drop_table) ? drop_table.subdrops_2 : data[id]?.drop_table.JP.subdrops_2;
+        return subdrops || [];
+    }
+
+    /**
      * check if a quest is normal difficulty based on its quest id.
      *
      * @param {string} id - quest id
@@ -550,6 +563,11 @@ export default (() => {
                 quest_score += getQuestScore(subdrop);
             }
 
+            // subdrops 2
+            for (const subdrop2 of getSubdrops2(quest_id, language)) {
+                quest_score += getQuestScore(subdrop2);
+            }
+
             // handle event multipliers
             if (isNormal(quest_id) && settings?.drop_buff?.["Normal"]) {
                 quest_score *= settings.drop_buff["Normal"];
@@ -674,6 +692,13 @@ export default (() => {
             }
         }
 
+        // check subdrops2
+        for (const subdrop2 of getSubdrops2(quest_id, language)) {
+            if (subdrop2.item === full || subdrop2.item === fragment) {
+                return true;
+            }
+        }
+
         // item not found in quest
         return false;
     }
@@ -715,6 +740,13 @@ export default (() => {
                 // check subdrops
                 for (const subdrop of getSubdrops(key, "JP")) {
                     if (compiled_fragments.hasOwnProperty(subdrop.item)) {
+                        return ++count;
+                    }
+                }
+
+                // check subdrops2
+                for (const subdrop2 of getSubdrops2(key, "JP")) {
+                    if (compiled_fragments.hasOwnProperty(subdrop2.item)) {
                         return ++count;
                     }
                 }
@@ -847,9 +879,32 @@ export default (() => {
                 }
             }
             // pull only 1 out of all subdrops
-            const rng = Math.random() * 100;
+            let rng = Math.random() * 100;
             let rate_count = 0;
             for (const drop of getSubdrops(quest_id, language)) {
+                if (drop.item === constants.placeholder_id) {
+                    continue;
+                }
+                rate_count += drop.drop_rate;
+                if (rng <= rate_count) {
+                    // item get
+                    inventory[drop.item] = (inventory[drop.item]) ? inventory[drop.item] + drop_amount : drop_amount;
+                    total_drops[drop.item] = (total_drops[drop.item])
+                        ? total_drops[drop.item] + drop_amount : drop_amount;
+                    drops[drop.item] = (drops[drop.item]) ? drops[drop.item] + drop_amount : drop_amount;
+                    if (build_results.required_clean[drop.item] // item is required
+                        && build_results.required[drop.item] > 0 // since last build, still required
+                        && inventory[drop.item] >= build_results.required_clean[drop.item] // is item completed now?
+                    ) {
+                        completed_item = true;
+                    }
+                    break;
+                }
+            }
+            // pull only 1 out of all subdrop2s
+            rng = Math.random() * 100;
+            rate_count = 0;
+            for (const drop of getSubdrops2(quest_id, language)) {
                 if (drop.item === constants.placeholder_id) {
                     continue;
                 }
@@ -891,6 +946,7 @@ export default (() => {
         memoryPiece : getMemoryPiece,
         drops : getDrops,
         subdrops : getSubdrops,
+        subdrops2 : getSubdrops2,
         isNormal,
         isHard,
         isVeryHard,

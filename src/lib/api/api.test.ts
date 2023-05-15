@@ -191,6 +191,13 @@ describe("quest api", () => {
         expect(quest.subdrops("1-1", "UNKNOWN")).toBeTruthy(); // valid id, unknown language
         expect(quest.subdrops("1-1", "JP")).toEqual(quest.subdrops("1-1", "UNKNOWN")); // unknown language default to JP
     });
+    test("subdrops2 (getSubdrops2)", () => {
+        expect(quest.subdrops2("", "JP").length).toBeLessThanOrEqual(0); // invalid id, must return an empty array
+        expect(quest.subdrops2("", "UNKNOWN").length).toBeLessThanOrEqual(0); // invalid id, unknown language, must return an empty array
+        expect(quest.subdrops2("1-1", "JP").length).toBeLessThanOrEqual(0); // valid id, but quest has no subdrops_2
+        expect(quest.subdrops2("1-1", "UNKNOWN").length).toBeLessThanOrEqual(0); // valid id, unknown language, but quest has no subdrops_2
+        expect(quest.subdrops2("64-1", "JP")).toBeTruthy(); // valid id, quest has subdrops_2
+    });
     test("isNormal", () => {
         expect(quest.isNormal("")).toBeFalsy(); // invalid id
         expect(quest.isNormal("1-1")).toBeTruthy(); // valid id ; normal quest
