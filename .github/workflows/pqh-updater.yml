@@ -85,6 +85,9 @@ jobs:
           git config user.name $user_name
           git config user.email $user_email
           git add ./static/data/version.json
+          git diff-index --quiet HEAD || git commit -m "[Bot] Version File Update" -m '
+          ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          This is an automated process. Issues may or may not have occured.'
           git add ./static/data/data.json
           git add ./static/data/data.character.json
           git add ./static/data/data.equipment.json
