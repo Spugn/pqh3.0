@@ -84,19 +84,23 @@ jobs:
         run: |
           git config user.name $user_name
           git config user.email $user_email
+
           git diff-index --quiet HEAD || git add ./static/data/version.json && git commit -m "[Bot] Version File Update" -m '
           ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           This is an automated process. Issues may or may not have occured.'
+
           git add ./static/data/data.json
           git add ./static/data/data.character.json
           git add ./static/data/data.equipment.json
           git add ./static/data/data.quest.json
           git add ./src/lib/api/data.min.json
+          if [[ `git diff --name-only --cached` ]]; then
           git diff-index --quiet HEAD || git commit -m "[Bot] Data Update" -m '
           ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           This is an automated process. Issues may or may not have occured.'
-          if test -f "./pie.json"; then
+          fi
 
+          if test -f "./pie.json"; then
           json=`cat ./pie.json`
           git add ./static/images
           git diff-index --quiet HEAD || git commit -m "[Bot] Extract Images" -m "
@@ -105,8 +109,8 @@ jobs:
 
           Extracted images using the following JSON instructions:
           $json"
-
           fi
+
           git push
         env:
           user_name: 'Spugn'
