@@ -141,7 +141,7 @@ interface ProjectCheckStatus {
     recipe: Recipe; // recipe object containing all items
 }
 
-type Language = "JP" | "CN" | "EN" | "KR" | "TW" | "UNKNOWN"; // available language/region codes
+type Language = "JP" | "CN" | "EN" | "KR" | "TH" | "TW" | "UNKNOWN"; // available language/region codes
 
 type Project = CharacterProject | ItemProject | BasicProject;
 

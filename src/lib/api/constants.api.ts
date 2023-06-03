@@ -49,6 +49,7 @@ export default (() => {
         { language: "CN", text: "China (CN)" },
         { language: "EN", text: "English (EN)" },
         { language: "KR", text: "Korea (KR)" },
+        { language: "TH", text: "Thailand (TH)" },
         { language: "TW", text: "Taiwan (TW)" },
     ];
     const drop_buff_options : DropBuffOption[] = [

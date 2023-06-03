@@ -32,7 +32,7 @@ const DICTIONARY = Object.freeze({
         VERY_HARD: "13",
     }
 });
-const OTHER_REGIONS = Object.freeze(["CN", "EN", "KR", "TW"]);
+const OTHER_REGIONS = Object.freeze(["CN", "EN", "KR", "TH", "TW"]);
 const new_unity_change = true;
 
 run();
@@ -133,6 +133,7 @@ function download(latest) {
             dl("en"),
             dl("jp"),
             dl("kr"),
+            dl("th"),
             dl("tw"),
             dl_manifest(),
         ]);
@@ -141,6 +142,7 @@ function download(latest) {
             fs.existsSync(path.join(DIRECTORY.DATABASE, `master_en.db`)) &&
             fs.existsSync(path.join(DIRECTORY.DATABASE, `master_jp.db`)) &&
             fs.existsSync(path.join(DIRECTORY.DATABASE, `master_kr.db`)) &&
+            fs.existsSync(path.join(DIRECTORY.DATABASE, `master_th.db`)) &&
             fs.existsSync(path.join(DIRECTORY.DATABASE, `master_tw.db`)) &&
             fs.existsSync(path.join(DIRECTORY.DATABASE, `manifest`))
         );

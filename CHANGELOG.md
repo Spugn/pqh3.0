@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.1.11] - 2023-06-03
+### Added
+- Thai Region Support
+  - Added support for the Thai region of the game (characters/equipment/quest data).
+
 ## [3.1.10] - 2023-05-15
 ### Added
 - Added support for "subdrops 2"
