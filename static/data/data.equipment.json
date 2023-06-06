@@ -2482,6 +2482,24 @@
             }
         }
     },
+    "32008": {
+        "id": "32008",
+        "name": {
+            "JP": "ユキのピュアメモリーピース"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "unknown",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "32009": {
         "id": "32009",
         "name": {
