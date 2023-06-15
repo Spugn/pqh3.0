@@ -29563,6 +29563,26 @@
             }
         }
     },
+    "109552": {
+        "id": "109552",
+        "name": {
+            "JP": "紅色花飾菓子切包丁"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119552",
+            "name": {
+                "JP": "紅色花飾菓子切包丁（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "109581": {
         "id": "109581",
         "name": {
@@ -29583,6 +29603,26 @@
             }
         }
     },
+    "109582": {
+        "id": "109582",
+        "name": {
+            "JP": "翡翠花飾箸"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119582",
+            "name": {
+                "JP": "翡翠花飾箸（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "109611": {
         "id": "109611",
         "name": {
@@ -29593,6 +29633,26 @@
             "id": "119611",
             "name": {
                 "JP": "デモニックテールタイ（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109612": {
+        "id": "109612",
+        "name": {
+            "JP": "サファイアフォークヘアピン"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119612",
+            "name": {
+                "JP": "サファイアフォークヘアピン（欠片）"
             }
         },
         "recipes": {
