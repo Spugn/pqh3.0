@@ -29050,13 +29050,15 @@
     "109011": {
         "id": "109011",
         "name": {
-            "JP": "デモンヴィクティムソード"
+            "JP": "デモンヴィクティムソード",
+            "TW": "惡魔祭品之劍"
         },
         "rarity": "9",
         "fragment": {
             "id": "119011",
             "name": {
-                "JP": "デモンヴィクティムソード（欠片）"
+                "JP": "デモンヴィクティムソード（欠片）",
+                "TW": "惡魔祭品之劍（碎片）"
             }
         },
         "recipes": {
@@ -29064,6 +29066,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -29090,13 +29097,15 @@
     "109041": {
         "id": "109041",
         "name": {
-            "JP": "デモンズスカーブレード"
+            "JP": "デモンズスカーブレード",
+            "TW": "惡魔傷痕之刃"
         },
         "rarity": "9",
         "fragment": {
             "id": "129041",
             "name": {
-                "JP": "デモンズスカーブレードの設計図"
+                "JP": "デモンズスカーブレードの設計図",
+                "TW": "惡魔傷痕之刃的設計圖"
             }
         },
         "recipes": {
@@ -29106,6 +29115,13 @@
                     "107013"
                 ],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 15,
+                "required_items": [
+                    "107013"
+                ],
+                "recipe_note": "TW"
             }
         }
     },
@@ -29134,13 +29150,15 @@
     "109071": {
         "id": "109071",
         "name": {
-            "JP": "豪魔ノ爪刃"
+            "JP": "豪魔ノ爪刃",
+            "TW": "豪魔之爪刃"
         },
         "rarity": "9",
         "fragment": {
             "id": "119071",
             "name": {
-                "JP": "豪魔ノ爪刃（欠片）"
+                "JP": "豪魔ノ爪刃（欠片）",
+                "TW": "豪魔之爪刃（碎片）"
             }
         },
         "recipes": {
@@ -29148,6 +29166,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -29174,13 +29197,15 @@
     "109101": {
         "id": "109101",
         "name": {
-            "JP": "デモンパニッシュフィスト"
+            "JP": "デモンパニッシュフィスト",
+            "TW": "惡魔懲處拳套"
         },
         "rarity": "9",
         "fragment": {
             "id": "119101",
             "name": {
-                "JP": "デモンパニッシュフィスト（欠片）"
+                "JP": "デモンパニッシュフィスト（欠片）",
+                "TW": "惡魔懲處拳套（碎片）"
             }
         },
         "recipes": {
@@ -29188,6 +29213,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -29214,13 +29244,15 @@
     "109131": {
         "id": "109131",
         "name": {
-            "JP": "ディアブロマッシェーラ"
+            "JP": "ディアブロマッシェーラ",
+            "TW": "惡魔假面之弓"
         },
         "rarity": "9",
         "fragment": {
             "id": "129131",
             "name": {
-                "JP": "ディアブロマッシェーラの設計図"
+                "JP": "ディアブロマッシェーラの設計図",
+                "TW": "惡魔假面之弓的設計圖"
             }
         },
         "recipes": {
@@ -29230,6 +29262,13 @@
                     "107343"
                 ],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 15,
+                "required_items": [
+                    "107343"
+                ],
+                "recipe_note": "TW"
             }
         }
     },
@@ -29258,13 +29297,15 @@
     "109161": {
         "id": "109161",
         "name": {
-            "JP": "デビルドミニオンランス"
+            "JP": "デビルドミニオンランス",
+            "TW": "惡魔爪牙長槍"
         },
         "rarity": "9",
         "fragment": {
             "id": "119161",
             "name": {
-                "JP": "デビルドミニオンランス（欠片）"
+                "JP": "デビルドミニオンランス（欠片）",
+                "TW": "惡魔爪牙長槍（碎片）"
             }
         },
         "recipes": {
@@ -29272,6 +29313,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -29300,13 +29346,15 @@
     "109191": {
         "id": "109191",
         "name": {
-            "JP": "デモンズデストラクション"
+            "JP": "デモンズデストラクション",
+            "TW": "惡魔滅殺之斧"
         },
         "rarity": "9",
         "fragment": {
             "id": "129191",
             "name": {
-                "JP": "デモンズデストラクションの設計図"
+                "JP": "デモンズデストラクションの設計図",
+                "TW": "惡魔滅殺之斧的設計圖"
             }
         },
         "recipes": {
@@ -29316,6 +29364,13 @@
                     "107103"
                 ],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 15,
+                "required_items": [
+                    "107103"
+                ],
+                "recipe_note": "TW"
             }
         }
     },
@@ -29342,13 +29397,15 @@
     "109221": {
         "id": "109221",
         "name": {
-            "JP": "デモンズコアワンド"
+            "JP": "デモンズコアワンド",
+            "TW": "惡魔核心之杖"
         },
         "rarity": "9",
         "fragment": {
             "id": "119221",
             "name": {
-                "JP": "デモンズコアワンド（欠片）"
+                "JP": "デモンズコアワンド（欠片）",
+                "TW": "惡魔核心之杖（碎片）"
             }
         },
         "recipes": {
@@ -29356,6 +29413,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -29382,13 +29444,15 @@
     "109251": {
         "id": "109251",
         "name": {
-            "JP": "ロッドオブデモンズハート"
+            "JP": "ロッドオブデモンズハート",
+            "TW": "惡魔之心長杖"
         },
         "rarity": "9",
         "fragment": {
             "id": "119251",
             "name": {
-                "JP": "ロッドオブデモンズハート（欠片）"
+                "JP": "ロッドオブデモンズハート（欠片）",
+                "TW": "惡魔之心長杖（碎片）"
             }
         },
         "recipes": {
@@ -29396,6 +29460,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
