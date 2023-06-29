@@ -52,7 +52,7 @@
     }
 </script>
 
-<div class="flex gap-4 m-4 flex-wrap">
+<div class="flex gap-4 mx-4 mt-4 mb-32 flex-wrap">
     <Card class="text-black drop-shadow-lg">
         <Content class="m-auto">
             {#if Object.keys(project.details.ignored_rarities).length > 0}

@@ -60,14 +60,14 @@ will be bug fixes or from suggestions due to increased traffic.<br />
 - [ ] ~~Webpage Multi-Language Support~~ Cancelled
 
 ## Bugs, Errors, Feature Suggestions, etc.
-The following can be submitted via `GitHub's Issue Tracker` (**PREFERRED**) or `Discord` (`S'pugn#2612`).
+The following can be submitted via `GitHub's Issue Tracker` (**PREFERRED**) or `Discord` (`@spugn`).
 1. Bugs found while using the tool.
 2. Errors found in the data.
 3. Feature Suggestions on how to make using this tool more easier.
 4. Comments, Constructive Criticism, etc.
 
 Note that for `Discord`, ***I do not accept random friend requests.*** <br/>
-Please join the Discord-partnered server (<https://discord.com/invite/priconne>) to send me (`S'pugn#2612`) a direct message or mention.
+Please join the Discord-partnered server (<https://discord.com/invite/priconne>) to send me (`@spugn`) a direct message or mention.
 
 ## For Developers
 ### Updating priconne-quest-helper 3.0

@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.1.12] - 2023-06-29
+### Changed
+- Increased bottom margin size for character and item projects to hopefully prevent cut-off
+  - <https://github.com/Expugn/priconne-quest-helper/issues/48>
+
 ## [3.1.11] - 2023-06-03
 ### Added
 - Thai Region Support
