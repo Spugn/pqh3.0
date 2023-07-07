@@ -3290,6 +3290,24 @@
             }
         }
     },
+    "32054": {
+        "id": "32054",
+        "name": {
+            "JP": "ツムギのピュアメモリーピース"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "unknown",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "32055": {
         "id": "32055",
         "name": {
