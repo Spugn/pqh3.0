@@ -2356,6 +2356,46 @@
             }
         }
     },
+    "31175": {
+        "id": "31175",
+        "name": {
+            "JP": "ミツキ（オーエド）のメモリーピース",
+            "KR": "미츠키(오에도)의 메모리 피스",
+            "TW": "深月（大江戶）的記憶碎片"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "unknown",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "31178": {
+        "id": "31178",
+        "name": {
+            "JP": "ニノン（ハロウィン）のメモリーピース",
+            "KR": "니논(할로윈)의 메모리 피스",
+            "TW": "妮諾（萬聖節）的記憶碎片"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "unknown",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "32001": {
         "id": "32001",
         "name": {
@@ -29841,6 +29881,28 @@
             }
         }
     },
+    "109282": {
+        "id": "109282",
+        "name": {
+            "JP": "ライトセイラークロス"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "129282",
+            "name": {
+                "JP": "ライトセイラークロスの設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108431"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "109311": {
         "id": "109311",
         "name": {
@@ -29858,6 +29920,28 @@
                 "required_pieces": 15,
                 "required_items": [
                     "108071"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109312": {
+        "id": "109312",
+        "name": {
+            "JP": "ヘビーマリナークロス"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "129312",
+            "name": {
+                "JP": "ヘビーマリナークロスの設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108072"
                 ],
                 "recipe_note": "JP"
             }
@@ -29903,6 +29987,26 @@
             }
         }
     },
+    "109372": {
+        "id": "109372",
+        "name": {
+            "JP": "シーナビゲイタークロス"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119372",
+            "name": {
+                "JP": "シーナビゲイタークロス（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "109401": {
         "id": "109401",
         "name": {
@@ -29925,6 +30029,48 @@
             }
         }
     },
+    "109402": {
+        "id": "109402",
+        "name": {
+            "JP": "エスクード・デ・ボランテ"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "129402",
+            "name": {
+                "JP": "エスクード・デ・ボランテの設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108102"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109432": {
+        "id": "109432",
+        "name": {
+            "JP": "ウォーターラインランナー"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119432",
+            "name": {
+                "JP": "ウォーターラインランナー（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "109461": {
         "id": "109461",
         "name": {
@@ -29935,6 +30081,26 @@
             "id": "119461",
             "name": {
                 "JP": "タッサ・タロン（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109522": {
+        "id": "109522",
+        "name": {
+            "JP": "ホライゾンウォッチャー"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119522",
+            "name": {
+                "JP": "ホライゾンウォッチャー（欠片）"
             }
         },
         "recipes": {
