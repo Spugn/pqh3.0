@@ -2489,6 +2489,24 @@
             }
         }
     },
+    "32005": {
+        "id": "32005",
+        "name": {
+            "JP": "マツリのピュアメモリーピース"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "unknown",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "32006": {
         "id": "32006",
         "name": {
