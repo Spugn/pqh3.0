@@ -91,6 +91,29 @@
             }
         }
     },
+    "31006": {
+        "id": "31006",
+        "name": {
+            "JP": "アカリのメモリーピース",
+            "CN": "茜里的记忆碎片",
+            "EN": "Akari's Memory Shard",
+            "KR": "아카리의 메모리 피스",
+            "TH": "เมโมรี่พีซของอาคาริ",
+            "TW": "茜里的記憶碎片"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "unknown",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "31008": {
         "id": "31008",
         "name": {
@@ -2404,12 +2427,53 @@
             }
         }
     },
+    "31176": {
+        "id": "31176",
+        "name": {
+            "JP": "ユキ（オーエド）のメモリーピース",
+            "CN": "雪（大江户）的记忆碎片",
+            "KR": "유키(오에도)의 메모리 피스",
+            "TW": "雪（大江戶）的記憶碎片"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "unknown",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "31178": {
         "id": "31178",
         "name": {
             "JP": "ニノン（ハロウィン）のメモリーピース",
             "KR": "니논(할로윈)의 메모리 피스",
             "TW": "妮諾（萬聖節）的記憶碎片"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "unknown",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "31192": {
+        "id": "31192",
+        "name": {
+            "JP": "マヒル（クリスマス）のメモリーピース",
+            "KR": "마히루(크리스마스)의 메모리 피스",
+            "TW": "真陽（聖誕節）的記憶碎片"
         },
         "rarity": "99",
         "fragment": {
@@ -29599,13 +29663,15 @@
     "109012": {
         "id": "109012",
         "name": {
-            "JP": "秘剣訃雷返し"
+            "JP": "秘剣訃雷返し",
+            "TW": "秘劍訃雷鏟"
         },
         "rarity": "9",
         "fragment": {
             "id": "119012",
             "name": {
-                "JP": "秘剣訃雷返し（欠片）"
+                "JP": "秘剣訃雷返し（欠片）",
+                "TW": "秘劍訃雷鏟（碎片）"
             }
         },
         "recipes": {
@@ -29613,6 +29679,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -29670,13 +29741,15 @@
     "109042": {
         "id": "109042",
         "name": {
-            "JP": "刺身刀・匠八"
+            "JP": "刺身刀・匠八",
+            "TW": "生魚片刀‧匠八"
         },
         "rarity": "9",
         "fragment": {
             "id": "129042",
             "name": {
-                "JP": "刺身刀・匠八の設計図"
+                "JP": "刺身刀・匠八の設計図",
+                "TW": "生魚片刀‧匠八的設計圖"
             }
         },
         "recipes": {
@@ -29686,6 +29759,13 @@
                     "108521"
                 ],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108521"
+                ],
+                "recipe_note": "TW"
             }
         }
     },
@@ -29741,13 +29821,15 @@
     "109072": {
         "id": "109072",
         "name": {
-            "JP": "クト・ドフィス"
+            "JP": "クト・ドフィス",
+            "TW": "小菜刀"
         },
         "rarity": "9",
         "fragment": {
             "id": "119072",
             "name": {
-                "JP": "クト・ドフィス（欠片）"
+                "JP": "クト・ドフィス（欠片）",
+                "TW": "小菜刀（碎片）"
             }
         },
         "recipes": {
@@ -29755,6 +29837,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -29808,13 +29895,15 @@
     "109102": {
         "id": "109102",
         "name": {
-            "JP": "鉄観音五百薬缶"
+            "JP": "鉄観音五百薬缶",
+            "TW": "鐵觀音五百茶壺"
         },
         "rarity": "9",
         "fragment": {
             "id": "119102",
             "name": {
-                "JP": "鉄観音五百薬缶（欠片）"
+                "JP": "鉄観音五百薬缶（欠片）",
+                "TW": "鐵觀音五百茶壺（碎片）"
             }
         },
         "recipes": {
@@ -29822,6 +29911,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -29879,13 +29973,15 @@
     "109132": {
         "id": "109132",
         "name": {
-            "JP": "スクィーザーボウ"
+            "JP": "スクィーザーボウ",
+            "TW": "擠花弓"
         },
         "rarity": "9",
         "fragment": {
             "id": "129132",
             "name": {
-                "JP": "スクィーザーボウの設計図"
+                "JP": "スクィーザーボウの設計図",
+                "TW": "擠花弓的設計圖"
             }
         },
         "recipes": {
@@ -29895,6 +29991,13 @@
                     "108371"
                 ],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108371"
+                ],
+                "recipe_note": "TW"
             }
         }
     },
@@ -29950,13 +30053,15 @@
     "109162": {
         "id": "109162",
         "name": {
-            "JP": "ランスオブフォルセッタ"
+            "JP": "ランスオブフォルセッタ",
+            "TW": "餐叉槍"
         },
         "rarity": "9",
         "fragment": {
             "id": "129162",
             "name": {
-                "JP": "ランスオブフォルセッタの設計図"
+                "JP": "ランスオブフォルセッタの設計図",
+                "TW": "餐叉槍的設計圖"
             }
         },
         "recipes": {
@@ -29966,6 +30071,13 @@
                     "108251"
                 ],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108251"
+                ],
+                "recipe_note": "TW"
             }
         }
     },
@@ -30023,13 +30135,15 @@
     "109192": {
         "id": "109192",
         "name": {
-            "JP": "ミートマレットアクス"
+            "JP": "ミートマレットアクス",
+            "TW": "肉錘斧"
         },
         "rarity": "9",
         "fragment": {
             "id": "119192",
             "name": {
-                "JP": "ミートマレットアクス（欠片）"
+                "JP": "ミートマレットアクス（欠片）",
+                "TW": "肉錘斧（碎片）"
             }
         },
         "recipes": {
@@ -30037,6 +30151,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -30092,13 +30211,15 @@
     "109222": {
         "id": "109222",
         "name": {
-            "JP": "ペール・ア・タルテ"
+            "JP": "ペール・ア・タルテ",
+            "TW": "蛋糕鏟刀"
         },
         "rarity": "9",
         "fragment": {
             "id": "119222",
             "name": {
-                "JP": "ペール・ア・タルテ（欠片）"
+                "JP": "ペール・ア・タルテ（欠片）",
+                "TW": "蛋糕鏟刀（碎片）"
             }
         },
         "recipes": {
@@ -30106,6 +30227,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -30159,13 +30285,15 @@
     "109252": {
         "id": "109252",
         "name": {
-            "JP": "マジカルレードルスタッフ"
+            "JP": "マジカルレードルスタッフ",
+            "TW": "魔法湯勺權杖"
         },
         "rarity": "9",
         "fragment": {
             "id": "119252",
             "name": {
-                "JP": "マジカルレードルスタッフ（欠片）"
+                "JP": "マジカルレードルスタッフ（欠片）",
+                "TW": "魔法湯勺權杖（碎片）"
             }
         },
         "recipes": {
@@ -30173,6 +30301,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -30543,6 +30676,26 @@
             }
         }
     },
+    "109553": {
+        "id": "109553",
+        "name": {
+            "JP": "紅海のホイールブローチ"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119553",
+            "name": {
+                "JP": "紅海のホイールブローチ（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "109581": {
         "id": "109581",
         "name": {
@@ -30590,6 +30743,26 @@
             }
         }
     },
+    "109583": {
+        "id": "109583",
+        "name": {
+            "JP": "碧海のアンカーブローチ"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119583",
+            "name": {
+                "JP": "碧海のアンカーブローチ（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "109611": {
         "id": "109611",
         "name": {
@@ -30627,6 +30800,26 @@
             "id": "119612",
             "name": {
                 "JP": "サファイアフォークヘアピン（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109613": {
+        "id": "109613",
+        "name": {
+            "JP": "蒼海のフローターブローチ"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119613",
+            "name": {
+                "JP": "蒼海のフローターブローチ（欠片）"
             }
         },
         "recipes": {
