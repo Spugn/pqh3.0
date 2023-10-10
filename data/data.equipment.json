@@ -2769,6 +2769,24 @@
             }
         }
     },
+    "32014": {
+        "id": "32014",
+        "name": {
+            "JP": "カスミのピュアメモリーピース"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "unknown",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "32015": {
         "id": "32015",
         "name": {
