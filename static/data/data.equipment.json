@@ -2491,6 +2491,26 @@
             }
         }
     },
+    "31208": {
+        "id": "31208",
+        "name": {
+            "JP": "ルカ（ニューイヤー）のメモリーピース",
+            "KR": "루카(새해)의 메모리 피스",
+            "TW": "流夏（新年）的記憶碎片"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "unknown",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "32001": {
         "id": "32001",
         "name": {
@@ -30427,6 +30447,28 @@
             }
         }
     },
+    "109283": {
+        "id": "109283",
+        "name": {
+            "JP": "恋染紅葉秋模様"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "129283",
+            "name": {
+                "JP": "恋染紅葉秋模様の設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108192"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "109311": {
         "id": "109311",
         "name": {
@@ -30480,6 +30522,28 @@
             }
         }
     },
+    "109313": {
+        "id": "109313",
+        "name": {
+            "JP": "唐紅姫武将大鎧"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "129313",
+            "name": {
+                "JP": "唐紅姫武将大鎧の設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108012"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "109341": {
         "id": "109341",
         "name": {
@@ -30504,6 +30568,26 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "TW"
+            }
+        }
+    },
+    "109343": {
+        "id": "109343",
+        "name": {
+            "JP": "秋風裂装・紅"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119343",
+            "name": {
+                "JP": "秋風裂装・紅（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
             }
         }
     },
@@ -30550,6 +30634,28 @@
             "JP": {
                 "required_pieces": 25,
                 "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109373": {
+        "id": "109373",
+        "name": {
+            "JP": "姫法師秋草装"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "129373",
+            "name": {
+                "JP": "姫法師秋草装の設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108252"
+                ],
                 "recipe_note": "JP"
             }
         }
@@ -30651,6 +30757,46 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "TW"
+            }
+        }
+    },
+    "109463": {
+        "id": "109463",
+        "name": {
+            "JP": "鳴降遊靴アキヨナガ"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119463",
+            "name": {
+                "JP": "鳴降遊靴アキヨナガ（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109493": {
+        "id": "109493",
+        "name": {
+            "JP": "秋天紅兜アキシグレ"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119493",
+            "name": {
+                "JP": "秋天紅兜アキシグレ（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
             }
         }
     },
