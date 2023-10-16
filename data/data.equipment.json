@@ -30850,13 +30850,15 @@
     "109552": {
         "id": "109552",
         "name": {
-            "JP": "紅色花飾菓子切包丁"
+            "JP": "紅色花飾菓子切包丁",
+            "TW": "紅色花飾點心切刀"
         },
         "rarity": "9",
         "fragment": {
             "id": "119552",
             "name": {
-                "JP": "紅色花飾菓子切包丁（欠片）"
+                "JP": "紅色花飾菓子切包丁（欠片）",
+                "TW": "紅色花飾點心切刀（碎片）"
             }
         },
         "recipes": {
@@ -30864,6 +30866,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -30917,13 +30924,15 @@
     "109582": {
         "id": "109582",
         "name": {
-            "JP": "翡翠花飾箸"
+            "JP": "翡翠花飾箸",
+            "TW": "翡翠花飾筷子"
         },
         "rarity": "9",
         "fragment": {
             "id": "119582",
             "name": {
-                "JP": "翡翠花飾箸（欠片）"
+                "JP": "翡翠花飾箸（欠片）",
+                "TW": "翡翠花飾筷子（碎片）"
             }
         },
         "recipes": {
@@ -30931,6 +30940,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -30984,13 +30998,15 @@
     "109612": {
         "id": "109612",
         "name": {
-            "JP": "サファイアフォークヘアピン"
+            "JP": "サファイアフォークヘアピン",
+            "TW": "藍寶石三叉髮簪"
         },
         "rarity": "9",
         "fragment": {
             "id": "119612",
             "name": {
-                "JP": "サファイアフォークヘアピン（欠片）"
+                "JP": "サファイアフォークヘアピン（欠片）",
+                "TW": "藍寶石三叉髮簪（碎片）"
             }
         },
         "recipes": {
@@ -30998,6 +31014,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
