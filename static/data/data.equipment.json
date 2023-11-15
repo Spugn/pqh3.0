@@ -2472,6 +2472,27 @@
             }
         }
     },
+    "31190": {
+        "id": "31190",
+        "name": {
+            "JP": "イオ（ノワール）のメモリーピース",
+            "CN": "伊绪（黑暗）的记忆碎片",
+            "KR": "이오(느와르)의 메모리 피스",
+            "TW": "伊緒（黑暗）的記憶碎片"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "unknown",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "31192": {
         "id": "31192",
         "name": {
@@ -2498,6 +2519,26 @@
             "JP": "ルカ（ニューイヤー）のメモリーピース",
             "KR": "루카(새해)의 메모리 피스",
             "TW": "流夏（新年）的記憶碎片"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "unknown",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "31212": {
+        "id": "31212",
+        "name": {
+            "JP": "ラビリスタ（オーバーロード）のメモリーピース",
+            "KR": "라비리스타(오버로드)의 메모리 피스",
+            "TW": "拉比林斯達（超載）的記憶碎片"
         },
         "rarity": "99",
         "fragment": {
@@ -29843,6 +29884,26 @@
             }
         }
     },
+    "109014": {
+        "id": "109014",
+        "name": {
+            "JP": "皇蓉楓刃"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119014",
+            "name": {
+                "JP": "皇蓉楓刃（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "109041": {
         "id": "109041",
         "name": {
@@ -29927,6 +29988,28 @@
             }
         }
     },
+    "109044": {
+        "id": "109044",
+        "name": {
+            "JP": "大業物・紅一文字"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "129044",
+            "name": {
+                "JP": "大業物・紅一文字の設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108222"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "109071": {
         "id": "109071",
         "name": {
@@ -30001,6 +30084,26 @@
             }
         }
     },
+    "109074": {
+        "id": "109074",
+        "name": {
+            "JP": "襲楓裂爪・葉"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119074",
+            "name": {
+                "JP": "襲楓裂爪・葉（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "109101": {
         "id": "109101",
         "name": {
@@ -30065,6 +30168,26 @@
             "id": "119103",
             "name": {
                 "JP": "海賊王の義手（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109104": {
+        "id": "109104",
+        "name": {
+            "JP": "紅蛙手甲・拳楓"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119104",
+            "name": {
+                "JP": "紅蛙手甲・拳楓（欠片）"
             }
         },
         "recipes": {
@@ -30159,6 +30282,28 @@
             }
         }
     },
+    "109134": {
+        "id": "109134",
+        "name": {
+            "JP": "錦秋弓蔦紅葉"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "129134",
+            "name": {
+                "JP": "錦秋弓蔦紅葉の設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108163"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "109161": {
         "id": "109161",
         "name": {
@@ -30227,6 +30372,26 @@
             "id": "119163",
             "name": {
                 "JP": "ツインオールランス（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109164": {
+        "id": "109164",
+        "name": {
+            "JP": "天傘紅槍アキサメ"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119164",
+            "name": {
+                "JP": "天傘紅槍アキサメ（欠片）"
             }
         },
         "recipes": {
@@ -30317,6 +30482,28 @@
             }
         }
     },
+    "109194": {
+        "id": "109194",
+        "name": {
+            "JP": "撃槌ツルベオトシ"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "129194",
+            "name": {
+                "JP": "撃槌ツルベオトシの設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108193"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "109221": {
         "id": "109221",
         "name": {
@@ -30381,6 +30568,26 @@
             "id": "119223",
             "name": {
                 "JP": "ステアリングホイーラー（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "109224": {
+        "id": "109224",
+        "name": {
+            "JP": "公孫樹杖・銀天"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119224",
+            "name": {
+                "JP": "公孫樹杖・銀天（欠片）"
             }
         },
         "recipes": {
@@ -30465,6 +30672,26 @@
             }
         }
     },
+    "109254": {
+        "id": "109254",
+        "name": {
+            "JP": "紅葉巫女之枝垂串"
+        },
+        "rarity": "9",
+        "fragment": {
+            "id": "119254",
+            "name": {
+                "JP": "紅葉巫女之枝垂串（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "109281": {
         "id": "109281",
         "name": {
@@ -30499,13 +30726,15 @@
     "109282": {
         "id": "109282",
         "name": {
-            "JP": "ライトセイラークロス"
+            "JP": "ライトセイラークロス",
+            "TW": "閃耀水手服"
         },
         "rarity": "9",
         "fragment": {
             "id": "129282",
             "name": {
-                "JP": "ライトセイラークロスの設計図"
+                "JP": "ライトセイラークロスの設計図",
+                "TW": "閃耀水手服的設計圖"
             }
         },
         "recipes": {
@@ -30515,6 +30744,13 @@
                     "108431"
                 ],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108431"
+                ],
+                "recipe_note": "TW"
             }
         }
     },
@@ -30574,13 +30810,15 @@
     "109312": {
         "id": "109312",
         "name": {
-            "JP": "ヘビーマリナークロス"
+            "JP": "ヘビーマリナークロス",
+            "TW": "厚實海兵服"
         },
         "rarity": "9",
         "fragment": {
             "id": "129312",
             "name": {
-                "JP": "ヘビーマリナークロスの設計図"
+                "JP": "ヘビーマリナークロスの設計図",
+                "TW": "厚實海兵服的設計圖"
             }
         },
         "recipes": {
@@ -30590,6 +30828,13 @@
                     "108072"
                 ],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108072"
+                ],
+                "recipe_note": "TW"
             }
         }
     },
@@ -30692,13 +30937,15 @@
     "109372": {
         "id": "109372",
         "name": {
-            "JP": "シーナビゲイタークロス"
+            "JP": "シーナビゲイタークロス",
+            "TW": "海洋領航員服"
         },
         "rarity": "9",
         "fragment": {
             "id": "119372",
             "name": {
-                "JP": "シーナビゲイタークロス（欠片）"
+                "JP": "シーナビゲイタークロス（欠片）",
+                "TW": "海洋領航員服（碎片）"
             }
         },
         "recipes": {
@@ -30706,6 +30953,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -30765,13 +31017,15 @@
     "109402": {
         "id": "109402",
         "name": {
-            "JP": "エスクード・デ・ボランテ"
+            "JP": "エスクード・デ・ボランテ",
+            "TW": "船舵盾牌"
         },
         "rarity": "9",
         "fragment": {
             "id": "129402",
             "name": {
-                "JP": "エスクード・デ・ボランテの設計図"
+                "JP": "エスクード・デ・ボランテの設計図",
+                "TW": "船舵盾牌的設計圖"
             }
         },
         "recipes": {
@@ -30781,19 +31035,28 @@
                     "108102"
                 ],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108102"
+                ],
+                "recipe_note": "TW"
             }
         }
     },
     "109432": {
         "id": "109432",
         "name": {
-            "JP": "ウォーターラインランナー"
+            "JP": "ウォーターラインランナー",
+            "TW": "水線跑鞋"
         },
         "rarity": "9",
         "fragment": {
             "id": "119432",
             "name": {
-                "JP": "ウォーターラインランナー（欠片）"
+                "JP": "ウォーターラインランナー（欠片）",
+                "TW": "水線跑鞋（碎片）"
             }
         },
         "recipes": {
@@ -30801,6 +31064,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -30874,13 +31142,15 @@
     "109522": {
         "id": "109522",
         "name": {
-            "JP": "ホライゾンウォッチャー"
+            "JP": "ホライゾンウォッチャー",
+            "TW": "地平線看守者"
         },
         "rarity": "9",
         "fragment": {
             "id": "119522",
             "name": {
-                "JP": "ホライゾンウォッチャー（欠片）"
+                "JP": "ホライゾンウォッチャー（欠片）",
+                "TW": "地平線看守者（碎片）"
             }
         },
         "recipes": {
@@ -30888,6 +31158,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
