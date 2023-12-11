@@ -3763,6 +3763,24 @@
             }
         }
     },
+    "32066": {
+        "id": "32066",
+        "name": {
+            "JP": "イノリのピュアメモリーピース"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "unknown",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "32071": {
         "id": "32071",
         "name": {
