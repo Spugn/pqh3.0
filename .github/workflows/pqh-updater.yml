@@ -5,8 +5,9 @@ name: pqh-updater
 on:
   # run this task every minute 45 of every hr of every day
   # preload usually happens at minute 45? but actions fires 5mins later
-  schedule:
-  - cron: '45 * * * *'
+  # EDIT (JANUARY 15 2024): THERE HAS BEEN DATABASE CHANGES IN JP VERSION 10053000! UPDATING AT THIS TIME IS BROKEN
+  #schedule:
+  #- cron: '45 * * * *'
 
   # allow this task to be run manually from Actions tab
   workflow_dispatch:
