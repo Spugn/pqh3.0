@@ -2,8 +2,6 @@
 
 # Princess Connect! Re:Dive Quest Helper<br/>(priconne-quest-helper)
 
-## This project is on (possibly permanent) hiatus!<br>Read the [CHANGELOG.md](CHANGELOG.md) for more information.
-
 URL: <https://spugn.github.io/priconne-quest-helper/><br/><br/>
 Character Data: <https://spugn.github.io/priconne-quest-helper/characters><br/>
 Item Data: <https://spugn.github.io/priconne-quest-helper/items><br/>

@@ -14,6 +14,7 @@ These also include their `webp` counterpart.
 - [`997999.png`](items/997999.png) : Placeholder "green" rarity item image
 - [`998999.png`](items/998999.png) : Placeholder "orange" rarity item image
 - [`999999.png`](items/999999.png) : Placeholder "sky blue" item image
+- [`9910999.png`](items/9910999.png) : Placeholder "pink" item image
 - [`unknown.png`](items/unknown.png) : Placeholder generic item image
 
 ### Unit Icon

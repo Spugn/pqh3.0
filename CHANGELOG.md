@@ -3,6 +3,13 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.2.0] - 2024-03-05
+### Added
+- Obfuscated database support
+  - Updated updater script to work with the obfuscated JP database, this may break again in the future.
+  - Older versions of the JP database below `10053000` are no longer supported
+- Added placeholder image for pink rarity: `items/9910999.png`
+
 ## [3.1.12.1] - 2024-01-15
 Hiatus Announcement - Possibly Permanent
 ### Notice
