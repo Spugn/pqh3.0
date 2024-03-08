@@ -423,7 +423,14 @@ function write_equipment() {
             });
 
             // ADD REGIONAL NAME
-            result = await db.all('SELECT * FROM equipment_data');
+            if (["TW"].includes(region)) {
+                result = await db.all(`SELECT
+                    "117b0f03dced2b67f095ebc64a9e457e748ad48c29d05adf93c9973680910c80" as equipment_id,
+                    "75c6439b5ed7ca28c9c0fb19fc1e6988f0de438248b1012abf2b250559bcad3e" as equipment_name
+                    FROM v1_083ad81204aa4a8c48ca5634bc5edb02b89dc9067c8c86549346d01e6d8c52de`);
+            } else {
+                result = await db.all('SELECT * FROM equipment_data');
+            }
             result.forEach((row) => {
                 const full_id = (row.equipment_id).toString(),  // 101011
                     item_type = get_item_type(full_id),         // 10        (first 2 digits)
@@ -441,7 +448,15 @@ function write_equipment() {
             });
 
             // GET MEMORY PIECE NAMES
-            result = await db.all('SELECT * FROM item_data');
+            if (["TW"].includes(region)) {
+                result = await db.all(`SELECT
+                    "993210ad729a5b7b9fc8824808ca79aba005377696ddd4090beed7a8b33f086a" as item_id,
+                    "b4cbd9557674c9f93d9971e1b4bacc2d83c0b6c7429046845fd420329d16c04f" as item_name,
+                    "f0c2615f3f1b52e2e6f9fb4d37a78fa1682e4e458d4ced1b450d3f3c026f1718" as item_type
+                    FROM v1_0ed9943e72fc03f39c3ef3d8e5c8a62549bbce7de2b1974489742cd9701efe11`);
+            } else {
+                result = await db.all('SELECT * FROM item_data');
+            }
             result.forEach((row) => {
                 const memory_piece = data[`${row.item_id}`];
                 if (!memory_piece) {
@@ -451,7 +466,24 @@ function write_equipment() {
             });
 
             // GET REGIONAL RECIPE
-            result = await db.all('SELECT * FROM equipment_craft');
+            if (["TW"].includes(region)) {
+                result = await db.all(`SELECT
+                    "f05d2c56cf858e5ecd0e4411a34abc8dbd9d4234864304021ef43adc5ab8c48a" as equipment_id,
+                    "af908dfb77e40ce2bcee817d928d56b9af99f4507f139512529f654487b41441" as condition_equipment_id_1,
+                    "430b2c1ab094580fc896801738de9343f82876f00c899c320603331a68472522" as consume_num_1,
+                    "1143128db6b324325faf0560c83eddcf4d92a9aa488ed920939b530e9eb39bd6" as condition_equipment_id_2,
+                    "83f24dcde59e2043aeeef0ab1aba24550573a74f8a7e95df24453b31ce9dbc96" as condition_equipment_id_3,
+                    "d7657e4210e5d275d5d98c6ba392414fe0bc087b38b36ad6056647c7009127b1" as condition_equipment_id_4,
+                    "ca7ce0de7e38d0e5ae0eb81e6557e52bc112124cea4a6f66cc0a7d34bcedf474" as condition_equipment_id_5,
+                    "c9943b8ab792aaba410b94563be687bc2f76a0acf6929cb385e9bd4945049d83" as condition_equipment_id_6,
+                    "060f3b54258f39f4674539b8b22c7fb346530c16ead37a6c30d905e7de4f46b2" as condition_equipment_id_7,
+                    "fe183cf061a7ee28d1b3ccac6f5cd0832bffd1524aa5fa250805f91a844098f3" as condition_equipment_id_8,
+                    "4e6cdefe4a0954e8fca9144915da283ba14bc25c7140615a09fb0f1a53de3c75" as condition_equipment_id_9,
+                    "11d035f1151460d3163c2a839e34593efb3f5c1291797556a73ff63ee3fa92a5" as condition_equipment_id_10
+                    FROM v1_002b61c4e8da5d368b8e3ce110cee277bc3bd0ba44745e67c30574cdebb9bd60`);
+            } else {
+                result = await db.all('SELECT * FROM equipment_craft');
+            }
             result.forEach((row) => {
                 const equip_id = row.equipment_id;
                 let recipe = {
@@ -589,7 +621,15 @@ function write_character() {
                 driver: sqlite3.Database
             });
 
-            result = await db.all('SELECT * FROM unit_data WHERE unit_id < 190000');
+            if (["TW"].includes(region)) {
+                result = await db.all(`SELECT
+                    "d6b5352a2780d85233a5077f80b0d680d2d2f1a357efe1dc7482fe9783e009a1" as unit_id,
+                    "e11c46da2b701622247a88c464406d7dea16f7c33f10ed7777453750fcf28d08" as unit_name
+                    FROM v1_92fec1a41887606642d5ac246c109fc1cc9808b1a637e85ed8bbcd553756b07f
+                    WHERE "d6b5352a2780d85233a5077f80b0d680d2d2f1a357efe1dc7482fe9783e009a1" < 190000`);
+            } else {
+                result = await db.all('SELECT * FROM unit_data WHERE unit_id < 190000');
+            }
             result.forEach((row) => {
                 if (data[`${row.unit_id}`]) {
                     // add regional name to name
@@ -607,7 +647,21 @@ function write_character() {
                 };
             });
 
-            result = await db.all('SELECT * FROM unit_promotion WHERE unit_id < 190000');
+            if (["TW"].includes((region))) {
+                result = await db.all(`SELECT
+                    "12d73c57a39d9d27c7a4af0d0314fcf085f310b156db89ce2c50573d6854ff71" as unit_id,
+                    "bb66cebd6236536435a1a8e4658ed0096d14b1e4ee7e90bd52b14def775e3ecf" as promotion_level,
+                    "2d09359ad0638bd7e130bef872086208519ec360d728fb10010125f9c3c3878d" as equip_slot_1,
+                    "20dbfe9ee8946c34eaad90a47ba6764a5eae545c5d621afb7d168203975dd70b" as equip_slot_2,
+                    "786d2e2bf652a199eae0b454ab0507c91c1f8cf6845837a52fd2d6e0aeef385f" as equip_slot_3,
+                    "ef17207a8ae1429f1b0685d94b8d073f56468ea0474ab8bbfc6b24d600ca53e8" as equip_slot_4,
+                    "f8f4db9794a199fcf82aad0b410fd7ef9dae7939756283d5a1ecb3ab033d000e" as equip_slot_5,
+                    "cfccb04af93e9015e9e974b68549a85629f999bf2205ce0941d15518ea9be039" as equip_slot_6
+                    FROM v1_2e98e1112682328288566d0bd2bb62a02b4524873c7cf62a2529409431dbbb35
+                    WHERE "12d73c57a39d9d27c7a4af0d0314fcf085f310b156db89ce2c50573d6854ff71" < 190000`);
+            } else {
+                result = await db.all('SELECT * FROM unit_promotion WHERE unit_id < 190000');
+            }
             result.forEach((row) => {
                 if (!data[`${row.unit_id}`]) {
                     return;
@@ -668,7 +722,7 @@ function write_quest() {
             });
 
             // GET ALL QUESTS WITH quest_id < 14,000,000
-            if (["JP"].includes(region)) {
+            if (["JP", "TW"].includes(region)) {
                 result = await db.all(`SELECT
                     "1839b5b47535dafc3e83b013174ea6de1b71c20ab270054605b9479ca14892c7" as quest_id,
                     "fbee8fc0d3ff386954dc352ffaee10b8fc8196a138af9ca0cb41a3356b7c7621" as quest_name,
@@ -718,7 +772,7 @@ function write_quest() {
             });
 
             // COLLECT wave_group_data INFORMATION
-            if (["JP"].includes(region)) {
+            if (["JP", "TW"].includes(region)) {
                 result = await db.all(`SELECT
                     "5214d4f345605f85246bb9c84e149c38074e0a231f349a68b661fd332daf6f18" as wave_group_id,
                     "e3515d334da06748fa6eb3b5bb0d61cbb0243d141bbaaa5bd818b5d251bf39be" as drop_reward_id_1,
@@ -742,7 +796,7 @@ function write_quest() {
             });
 
             // COLLECT enemy_reward_data INFORMATION
-            if (["JP"].includes(region)) {
+            if (["JP", "TW"].includes(region)) {
                 result = await db.all(`SELECT
                     "144e6109a07897650ee2d4f82951073cbc7c2972765e760347800fcecbe85932" as drop_reward_id,
                     "3d23e9855d259107047329379a1496c18cdb4c3ac87709547ec13bf35a11abfe" as reward_type_1,
@@ -1058,7 +1112,7 @@ function write_event_quest(quest_data) {
                 filename: path.join(DIRECTORY.DATABASE, `master_${region.toLowerCase()}.db`),
                 driver: sqlite3.Database
             });
-            if (["JP"].includes(region)) {
+            if (["JP", "TW"].includes(region)) {
                 result = await db.all(`SELECT
                     "bc600eda08f1f351f82d7ec9580973b2588c65482633f340d0affa9de7468f04" as event_id,
                     "d10671945da63fd6a0b85abe83c98ee18cf6169e1e03706ac22775ef1cb82c03" as quest_name,

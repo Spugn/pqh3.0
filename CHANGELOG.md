@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.2.1] - 2024-03-08
+### Addded
+- Obfuscated TW database support
+  - TW server has adopted the same obfuscation as JP database, this may break again in the future
+  - Older versions of the TW database below `00190002` are no longer supported
+
 ## [3.2.0] - 2024-03-05
 ### Added
 - Obfuscated database support
