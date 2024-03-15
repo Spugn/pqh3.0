@@ -2301,6 +2301,27 @@
             }
         }
     },
+    "31164": {
+        "id": "31164",
+        "name": {
+            "JP": "ユニ（聖学祭）のメモリーピース",
+            "CN": "优妮（圣学祭）的记忆碎片",
+            "KR": "유니(성학제)의 메모리 피스",
+            "TW": "優妮（聖學祭）的記憶碎片"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "unknown",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "31165": {
         "id": "31165",
         "name": {
@@ -30330,13 +30351,15 @@
     "109014": {
         "id": "109014",
         "name": {
-            "JP": "皇蓉楓刃"
+            "JP": "皇蓉楓刃",
+            "TW": "皇蓉楓刃"
         },
         "rarity": "9",
         "fragment": {
             "id": "119014",
             "name": {
-                "JP": "皇蓉楓刃（欠片）"
+                "JP": "皇蓉楓刃（欠片）",
+                "TW": "皇蓉楓刃（碎片）"
             }
         },
         "recipes": {
@@ -30344,6 +30367,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -30461,13 +30489,15 @@
     "109044": {
         "id": "109044",
         "name": {
-            "JP": "大業物・紅一文字"
+            "JP": "大業物・紅一文字",
+            "TW": "大業物‧紅一文字"
         },
         "rarity": "9",
         "fragment": {
             "id": "129044",
             "name": {
-                "JP": "大業物・紅一文字の設計図"
+                "JP": "大業物・紅一文字の設計図",
+                "TW": "大業物‧紅一文字的設計圖"
             }
         },
         "recipes": {
@@ -30477,6 +30507,13 @@
                     "108222"
                 ],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108222"
+                ],
+                "recipe_note": "TW"
             }
         }
     },
@@ -30578,13 +30615,15 @@
     "109074": {
         "id": "109074",
         "name": {
-            "JP": "襲楓裂爪・葉"
+            "JP": "襲楓裂爪・葉",
+            "TW": "襲楓裂爪‧葉"
         },
         "rarity": "9",
         "fragment": {
             "id": "119074",
             "name": {
-                "JP": "襲楓裂爪・葉（欠片）"
+                "JP": "襲楓裂爪・葉（欠片）",
+                "TW": "襲楓裂爪‧葉（碎片）"
             }
         },
         "recipes": {
@@ -30592,6 +30631,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -30693,13 +30737,15 @@
     "109104": {
         "id": "109104",
         "name": {
-            "JP": "紅蛙手甲・拳楓"
+            "JP": "紅蛙手甲・拳楓",
+            "TW": "紅蛙手甲‧拳楓"
         },
         "rarity": "9",
         "fragment": {
             "id": "119104",
             "name": {
-                "JP": "紅蛙手甲・拳楓（欠片）"
+                "JP": "紅蛙手甲・拳楓（欠片）",
+                "TW": "紅蛙手甲‧拳楓（碎片）"
             }
         },
         "recipes": {
@@ -30707,6 +30753,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -30824,13 +30875,15 @@
     "109134": {
         "id": "109134",
         "name": {
-            "JP": "錦秋弓蔦紅葉"
+            "JP": "錦秋弓蔦紅葉",
+            "TW": "錦秋弓蔦紅葉"
         },
         "rarity": "9",
         "fragment": {
             "id": "129134",
             "name": {
-                "JP": "錦秋弓蔦紅葉の設計図"
+                "JP": "錦秋弓蔦紅葉の設計図",
+                "TW": "錦秋弓蔦紅葉的設計圖"
             }
         },
         "recipes": {
@@ -30840,6 +30893,13 @@
                     "108163"
                 ],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108163"
+                ],
+                "recipe_note": "TW"
             }
         }
     },
@@ -30947,13 +31007,15 @@
     "109164": {
         "id": "109164",
         "name": {
-            "JP": "天傘紅槍アキサメ"
+            "JP": "天傘紅槍アキサメ",
+            "TW": "天傘紅槍秋雨"
         },
         "rarity": "9",
         "fragment": {
             "id": "119164",
             "name": {
-                "JP": "天傘紅槍アキサメ（欠片）"
+                "JP": "天傘紅槍アキサメ（欠片）",
+                "TW": "天傘紅槍秋雨（碎片）"
             }
         },
         "recipes": {
@@ -30961,6 +31023,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -31072,13 +31139,15 @@
     "109194": {
         "id": "109194",
         "name": {
-            "JP": "撃槌ツルベオトシ"
+            "JP": "撃槌ツルベオトシ",
+            "TW": "擊槌釣瓶落"
         },
         "rarity": "9",
         "fragment": {
             "id": "129194",
             "name": {
-                "JP": "撃槌ツルベオトシの設計図"
+                "JP": "撃槌ツルベオトシの設計図",
+                "TW": "擊槌釣瓶落的設計圖"
             }
         },
         "recipes": {
@@ -31088,6 +31157,13 @@
                     "108193"
                 ],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108193"
+                ],
+                "recipe_note": "TW"
             }
         }
     },
@@ -31189,13 +31265,15 @@
     "109224": {
         "id": "109224",
         "name": {
-            "JP": "公孫樹杖・銀天"
+            "JP": "公孫樹杖・銀天",
+            "TW": "公孫樹杖‧銀天"
         },
         "rarity": "9",
         "fragment": {
             "id": "119224",
             "name": {
-                "JP": "公孫樹杖・銀天（欠片）"
+                "JP": "公孫樹杖・銀天（欠片）",
+                "TW": "公孫樹杖‧銀天（碎片）"
             }
         },
         "recipes": {
@@ -31203,6 +31281,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -31304,13 +31387,15 @@
     "109254": {
         "id": "109254",
         "name": {
-            "JP": "紅葉巫女之枝垂串"
+            "JP": "紅葉巫女之枝垂串",
+            "TW": "紅葉巫女之枝垂串"
         },
         "rarity": "9",
         "fragment": {
             "id": "119254",
             "name": {
-                "JP": "紅葉巫女之枝垂串（欠片）"
+                "JP": "紅葉巫女之枝垂串（欠片）",
+                "TW": "紅葉巫女之枝垂串（碎片）"
             }
         },
         "recipes": {
@@ -31318,6 +31403,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -32538,6 +32628,66 @@
             "id": "11025032",
             "name": {
                 "JP": "ロッドオブガブリエル（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "10055032": {
+        "id": "10055032",
+        "name": {
+            "JP": "リングオブメタトロン"
+        },
+        "rarity": "10",
+        "fragment": {
+            "id": "11055032",
+            "name": {
+                "JP": "リングオブメタトロン（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "10058032": {
+        "id": "10058032",
+        "name": {
+            "JP": "リングオブセフィロト"
+        },
+        "rarity": "10",
+        "fragment": {
+            "id": "11058032",
+            "name": {
+                "JP": "リングオブセフィロト（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "10061032": {
+        "id": "10061032",
+        "name": {
+            "JP": "リングオブサンダルフォン"
+        },
+        "rarity": "10",
+        "fragment": {
+            "id": "11061032",
+            "name": {
+                "JP": "リングオブサンダルフォン（欠片）"
             }
         },
         "recipes": {
