@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.2.2] - 2024-03-18
+### Fixed
+- Fixed issue with priority amounts in quest list inventory editor
+
 ## [3.2.1] - 2024-03-08
 ### Addded
 - Obfuscated TW database support

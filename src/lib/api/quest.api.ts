@@ -426,7 +426,7 @@ export default (() => {
             required_clean,
             quest_scores,
             priority_items,
-            priority_amount,
+            priority_amount: results.priority_amount,
             projects: enabled_projects,
         };
     }
