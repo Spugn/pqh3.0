@@ -268,6 +268,11 @@ export default (() => {
             // invalid memory piece
             return "-1";
         }
+        if (id.length >= 8) {
+            // for equipment_10000000 and higher
+            return `${parseInt(`${id}`.substring(2, 3)) + 10}`;
+        }
+        // for regular 6 digit equipment ids
         return id[2];
     }
 

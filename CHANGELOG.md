@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ## [3.2.2] - 2024-03-18
 ### Fixed
 - Fixed issue with priority amounts in quest list inventory editor
+- Fixed issue where rarity 10 items could not be seen in "Inventory Page - Alternate Mode" due to outdated rarity ID logic
 
 ## [3.2.1] - 2024-03-08
 ### Addded
