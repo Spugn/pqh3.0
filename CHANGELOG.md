@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.2.3] - 2024-04-01
+### Added
+- Obfuscated JP database support v2
+  - Updated updater script to work with JP `10065610`, this may break again in the future
+  - Older versions of the JP database (`10065600` and below) are no longer supported
+
 ## [3.2.2] - 2024-03-18
 ### Fixed
 - Fixed issue with priority amounts in quest list inventory editor
