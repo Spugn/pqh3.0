@@ -265,9 +265,9 @@ function write_equipment() {
         // GET ALL EQUIPMENT DATA
         // result = await db.all('SELECT * FROM equipment_data');
         result = await db.all(`SELECT
-            "117b0f03dced2b67f095ebc64a9e457e748ad48c29d05adf93c9973680910c80" as equipment_id,
-            "75c6439b5ed7ca28c9c0fb19fc1e6988f0de438248b1012abf2b250559bcad3e" as equipment_name
-            FROM v1_083ad81204aa4a8c48ca5634bc5edb02b89dc9067c8c86549346d01e6d8c52de`);
+            "84b3dd3ea4ca92f592961fb0798c63c4ef784f4cc5b5a163baecd267a22c38e0" as equipment_id,
+            "0d6fd061913e48be364da345b1ff21306c5e445ec78f22e558322394db899670" as equipment_name
+            FROM v1_d65c3cc9733623f0bac516331b5826f94b173b99fecd3dd6c6286c139aef70bd`);
         result.forEach((row) => {
             const full_id = (row.equipment_id).toString(),  // 101011
                 item_type = get_item_type(full_id),         // 10        (first 2 digits)
@@ -306,9 +306,9 @@ function write_equipment() {
         let memory_pieces = {};
         // result = await db.all('SELECT * FROM quest_data');
         result = await db.all(`SELECT
-            "1839b5b47535dafc3e83b013174ea6de1b71c20ab270054605b9479ca14892c7" as quest_id,
-            "ccf9c5a087abd939497eb2d4067cc9c912aabf3df143ce62cf6adfe56b354db2" as reward_image_1
-            FROM v1_44c40227050196c418afee6bb66bfc7a991242f03509a6da081ca925311d6d23`);
+            "79ec733e128d9f8475e465408b6fedb1eddfac69543efe4a45e8cec2b62ff0bf" as quest_id,
+            "1e44805f81fd89f5f1b659cf9beda01ff99aad0d4873bb29543b3dc0d7ad8634" as reward_image_1
+            FROM v1_c862b668c7528703f868f52c293de9a8f69262f379763672a740ddd6a7ee0cbe`);
         result.forEach((row) => {
             const quest_id = (row.quest_id).toString(),
                 quest_type = quest_id.substring(0, 2);
@@ -324,8 +324,8 @@ function write_equipment() {
         // GET CHARACTER MEMORY PIECES AVAILABLE FROM EVENT QUESTS
         // result = await db.all('SELECT * FROM shiori_quest');
         result = await db.all(`SELECT
-            "abdd5563be620111de55554a82fdaf92553929b149c1ef835e2de367fc688b41" as drop_reward_id
-            FROM v1_742d3ecd7e301cdff955127e3a344b73f24a0290523d0efcea89771a6528ad1d`);
+            "064564d36904439bc99b21fcb9319370b4a725f7d9bd319783a5eb8062074be0" as drop_reward_id
+            FROM v1_291b3010eb85ce3dd58a4dbeec4dca27ac1d4565cd6305a3cbd770fec6553a9c`);
         result.forEach((row) => {
             if (row.drop_reward_id !== 0) {
                 memory_pieces[`${row.drop_reward_id}`] = true;
@@ -335,10 +335,10 @@ function write_equipment() {
         // ADD MEMORY PIECES TO EQUIPMENT DATA
         // result = await db.all('SELECT * FROM item_data');
         result = await db.all(`SELECT
-            "993210ad729a5b7b9fc8824808ca79aba005377696ddd4090beed7a8b33f086a" as item_id,
-            "b4cbd9557674c9f93d9971e1b4bacc2d83c0b6c7429046845fd420329d16c04f" as item_name,
-            "f0c2615f3f1b52e2e6f9fb4d37a78fa1682e4e458d4ced1b450d3f3c026f1718" as item_type
-            FROM v1_0ed9943e72fc03f39c3ef3d8e5c8a62549bbce7de2b1974489742cd9701efe11`);
+            "02407971b30435ddb8ac8720af83695aabe3e14c87a63b5d16c78b1a29229197" as item_id,
+            "b7d066f106136056d8cd569cff7d97702219ca91e0e64fc4706c626619c6aa22" as item_name,
+            "9a31f2ee58a2e2081e72e0414a53d032300135092bd5c0197bf78f3ffd26ec17" as item_type
+            FROM v1_54c8b972655bc2bab6f1259903c6b619cbaeaf79c440d7bde75f8d337ea8e747`);
         result.forEach((row) => {
             if (row.item_type === 11        // MEMORY PIECE
                 || row.item_type === 18) {  // PURE MEMORY PIECE
@@ -370,19 +370,19 @@ function write_equipment() {
         // ADD JAPANESE RECIPE
         // result = await db.all('SELECT * FROM equipment_craft');
         result = await db.all(`SELECT
-            "f05d2c56cf858e5ecd0e4411a34abc8dbd9d4234864304021ef43adc5ab8c48a" as equipment_id,
-            "af908dfb77e40ce2bcee817d928d56b9af99f4507f139512529f654487b41441" as condition_equipment_id_1,
-            "430b2c1ab094580fc896801738de9343f82876f00c899c320603331a68472522" as consume_num_1,
-            "1143128db6b324325faf0560c83eddcf4d92a9aa488ed920939b530e9eb39bd6" as condition_equipment_id_2,
-            "83f24dcde59e2043aeeef0ab1aba24550573a74f8a7e95df24453b31ce9dbc96" as condition_equipment_id_3,
-            "d7657e4210e5d275d5d98c6ba392414fe0bc087b38b36ad6056647c7009127b1" as condition_equipment_id_4,
-            "ca7ce0de7e38d0e5ae0eb81e6557e52bc112124cea4a6f66cc0a7d34bcedf474" as condition_equipment_id_5,
-            "c9943b8ab792aaba410b94563be687bc2f76a0acf6929cb385e9bd4945049d83" as condition_equipment_id_6,
-            "060f3b54258f39f4674539b8b22c7fb346530c16ead37a6c30d905e7de4f46b2" as condition_equipment_id_7,
-            "fe183cf061a7ee28d1b3ccac6f5cd0832bffd1524aa5fa250805f91a844098f3" as condition_equipment_id_8,
-            "4e6cdefe4a0954e8fca9144915da283ba14bc25c7140615a09fb0f1a53de3c75" as condition_equipment_id_9,
-            "11d035f1151460d3163c2a839e34593efb3f5c1291797556a73ff63ee3fa92a5" as condition_equipment_id_10
-            FROM v1_002b61c4e8da5d368b8e3ce110cee277bc3bd0ba44745e67c30574cdebb9bd60`);
+            "31944ef6a38ab7c4dcadc257a6c24da5bf716d40f87271b99e1ec3e989eaa940" as equipment_id,
+            "6150ea072f0151707e5190fc3b2be7ad46bd4613842e433a156ac2f41dbe8dbe" as condition_equipment_id_1,
+            "3ebe66a84e4ed917291beea05b029af3175cef631d125492383e8e2972ede424" as consume_num_1,
+            "8bb2cfca3501d08e54339f0f98b1a36d12e16aa9232b6217d5a093586d4eb9e4" as condition_equipment_id_2,
+            "614a8f32df83a318ed82620dc116c35cda05bbac1f8221eaca935ed1f783b0e8" as condition_equipment_id_3,
+            "27a460347f86267186162ce21b5e7aed98d00fec6ab557d6a67cd19b7d454f54" as condition_equipment_id_4,
+            "56f3acb3d134f2749c8728d3ffe0f17693bec8cd2f95d3c574dea41715fbdd17" as condition_equipment_id_5,
+            "1440da987f69e352b72b404e3d80ce4006666b12789299d97d0cff587774c9b1" as condition_equipment_id_6,
+            "115edfe8dc7d88b57f10fb7251e5e28087e7aaa604643b0557d1a92fd09b2cc6" as condition_equipment_id_7,
+            "890d2e8795384a19f5abfbc57a2e2cc68214ba2bf1e21be14f7668b6d4dd5205" as condition_equipment_id_8,
+            "aee0b1e411e4e6c13ba532bd52b31779dcb972a6089ac9ea06fb7fbb6e5b4f41" as condition_equipment_id_9,
+            "08e0822f14098bd041975f43f9f187647393f9debb55b6baa4a5b7dbfffb7a06" as condition_equipment_id_10
+            FROM v1_ee00719358a5873ca8ac1277e6b229c226027aa42adbbb96a003731c2cf9089c`);
         result.forEach((row) => {
             const equip_id = row.equipment_id;
             if (get_item_type(equip_id) !== DICTIONARY.EQUIPMENT.FULL) {
@@ -599,10 +599,10 @@ function write_character() {
         // GET ALL PLAYABLE CHARACTERS WITH unit_id < 190,000
         // result = await db.all('SELECT * FROM unit_data WHERE unit_id < 190000');
         result = await db.all(`SELECT
-            "d6b5352a2780d85233a5077f80b0d680d2d2f1a357efe1dc7482fe9783e009a1" as unit_id,
-            "e11c46da2b701622247a88c464406d7dea16f7c33f10ed7777453750fcf28d08" as unit_name
-            FROM v1_92fec1a41887606642d5ac246c109fc1cc9808b1a637e85ed8bbcd553756b07f
-            WHERE "d6b5352a2780d85233a5077f80b0d680d2d2f1a357efe1dc7482fe9783e009a1" < 190000`);
+            "783ed63a9964b6fbf27cf40684139bafdfd4e6dc1529c0a08e4b7e20e03c85cd" as unit_id,
+            "6c9b14792df9f66ddc7e251edf579f096cfd0982c8f301f5db5f70389cfc1dad" as unit_name
+            FROM v1_c634df482cdc1dfa51ab922b541610f4e22659f48be60c9f88bc246ec44137e3
+            WHERE "783ed63a9964b6fbf27cf40684139bafdfd4e6dc1529c0a08e4b7e20e03c85cd" < 190000`);
         result.forEach((row) => {
             data[`${row.unit_id}`] = {
                 id: `${row.unit_id}`,
@@ -616,16 +616,16 @@ function write_character() {
         // GET UNIT PROMOTION REQUIREMENTS FOR unit_id < 190,000
         // result = await db.all('SELECT * FROM unit_promotion WHERE unit_id < 190000');
         result = await db.all(`SELECT
-            "12d73c57a39d9d27c7a4af0d0314fcf085f310b156db89ce2c50573d6854ff71" as unit_id,
-            "bb66cebd6236536435a1a8e4658ed0096d14b1e4ee7e90bd52b14def775e3ecf" as promotion_level,
-            "2d09359ad0638bd7e130bef872086208519ec360d728fb10010125f9c3c3878d" as equip_slot_1,
-            "20dbfe9ee8946c34eaad90a47ba6764a5eae545c5d621afb7d168203975dd70b" as equip_slot_2,
-            "786d2e2bf652a199eae0b454ab0507c91c1f8cf6845837a52fd2d6e0aeef385f" as equip_slot_3,
-            "ef17207a8ae1429f1b0685d94b8d073f56468ea0474ab8bbfc6b24d600ca53e8" as equip_slot_4,
-            "f8f4db9794a199fcf82aad0b410fd7ef9dae7939756283d5a1ecb3ab033d000e" as equip_slot_5,
-            "cfccb04af93e9015e9e974b68549a85629f999bf2205ce0941d15518ea9be039" as equip_slot_6
-            FROM v1_2e98e1112682328288566d0bd2bb62a02b4524873c7cf62a2529409431dbbb35
-            WHERE "12d73c57a39d9d27c7a4af0d0314fcf085f310b156db89ce2c50573d6854ff71" < 190000`);
+            "de2b83a08ad7d784924a880a30ca49d7edae16749609c1c7af1e4d025794132f" as unit_id,
+            "ef3bb4409377eecf5a8b429b7a1cd57f7ade48f353eb289e46f884e3b6aeeb6e" as promotion_level,
+            "922f705db0318733ced777a22d4fadc135ffc1bf81ebd1f13711a6c6b92e259f" as equip_slot_1,
+            "41b0c14e4ca4158b0f56a92afe25a2772954e7854bf5170b81231500862fe4af" as equip_slot_2,
+            "a92df7bb37ca3bb419b8cf7866c268198e18fe0ab19198a343cce2fc4a525840" as equip_slot_3,
+            "13ba40253367c2c7515f6ad08286951444dfbab5ceb314a7d7efa4a36a187c28" as equip_slot_4,
+            "243ff2af8f1bc8cab4c34b4ba78b14f82ceac20f1a03451e587a9933a0458fc4" as equip_slot_5,
+            "b6d5b4a7e5f6069c7ec3939288bfe91ad2c51bc2d429741b07f3c08e990e1af7" as equip_slot_6
+            FROM v1_ded589f3508585295fb5d8f21c39f636819819d41301ac779b58643a3a722cbb
+            WHERE "de2b83a08ad7d784924a880a30ca49d7edae16749609c1c7af1e4d025794132f" < 190000`);
         result.forEach((row) => {
             if (!data[`${row.unit_id}`]) {
                 return;
@@ -776,7 +776,7 @@ function write_quest() {
             });
 
             // GET ALL QUESTS WITH quest_id < 14,000,000
-            if ([].includes(region)) {
+            if (["JP"].includes(region)) {
                 // v2 obfuscation
                 result = await db.all(`SELECT
                     "79ec733e128d9f8475e465408b6fedb1eddfac69543efe4a45e8cec2b62ff0bf" as quest_id,
@@ -789,7 +789,7 @@ function write_quest() {
                     "6eeaac508437aad33e4f606018ab97002568fbcfa7aab181cbc87c83cef148f0" as wave_group_id_3
                     FROM v1_c862b668c7528703f868f52c293de9a8f69262f379763672a740ddd6a7ee0cbe
                     WHERE "79ec733e128d9f8475e465408b6fedb1eddfac69543efe4a45e8cec2b62ff0bf" < 14000000`);
-            } else if (["JP", "TW"].includes(region)) {
+            } else if (["TW"].includes(region)) {
                 // v1 obfuscation
                 result = await db.all(`SELECT
                     "1839b5b47535dafc3e83b013174ea6de1b71c20ab270054605b9479ca14892c7" as quest_id,
@@ -840,7 +840,7 @@ function write_quest() {
             });
 
             // COLLECT wave_group_data INFORMATION
-            if ([].includes(region)) {
+            if (["JP"].includes(region)) {
                 // v2 obfuscation
                 result = await db.all(`SELECT
                     "7d28db7531e01f826299aaa0429b18125195cb504f4cc1bd04345be4d41fe1c2" as wave_group_id,
@@ -850,7 +850,7 @@ function write_quest() {
                     "b8d843eeb7e6c8bab6294a479db3ed4b99869ca642819dc638220c18d69f62c6" as drop_reward_id_4,
                     "d3953f7076132fe5570cc3c4efd550ebdf17c5720990144dc59e9dabbf7818a8" as drop_reward_id_5
                     FROM v1_ca8fdf1829dcda86ce6eafac8b12ce4b3f8959c318861a5a1dffc10644cadc17`);
-            } else if (["JP", "TW"].includes(region)) {
+            } else if (["TW"].includes(region)) {
                 // v1 obfuscation
                 result = await db.all(`SELECT
                     "5214d4f345605f85246bb9c84e149c38074e0a231f349a68b661fd332daf6f18" as wave_group_id,
@@ -875,7 +875,7 @@ function write_quest() {
             });
 
             // COLLECT enemy_reward_data INFORMATION
-            if ([].includes(region)) {
+            if (["JP"].includes(region)) {
                 // obfuscation v2
                 result = await db.all(`SELECT
                     "90f543e79ef03699a30de5cc016e37cd5fbee47715c07ac3230969ca4a2ffe1b" as drop_reward_id,
@@ -895,7 +895,7 @@ function write_quest() {
                     "c35fd528e5eef0935338518be6b3327803a9996305afd00f3241f760f0889da9" as reward_id_5,
                     "5cab241005ade7b5a531d68a551be10c2156671a06eaaceaf96843a7f618d240" as odds_5
                     FROM v1_8a5e26966c0f98ccf0ec230ec358f054d3d48ccfbf25e4006db91f7c8ed3a026`);
-            } else if (["JP", "TW"].includes(region)) {
+            } else if (["TW"].includes(region)) {
                 // obfuscation v1
                 result = await db.all(`SELECT
                     "144e6109a07897650ee2d4f82951073cbc7c2972765e760347800fcecbe85932" as drop_reward_id,
@@ -1212,7 +1212,7 @@ function write_event_quest(quest_data) {
                 filename: path.join(DIRECTORY.DATABASE, `master_${region.toLowerCase()}.db`),
                 driver: sqlite3.Database
             });
-            if ([].includes(region)) {
+            if (["JP"].includes(region)) {
                 result = await db.all(`SELECT
                     "b766e8e722c2b4a615d8f8e408b8c29a0145d6acb142f88a4643534c5b51c15f" as event_id,
                     "8b02eaca129b43c2bbc4b1a47102e2c0177bfea177edc8ad24ae44f25935827c" as quest_name,
@@ -1220,7 +1220,7 @@ function write_event_quest(quest_data) {
                     "064564d36904439bc99b21fcb9319370b4a725f7d9bd319783a5eb8062074be0" as drop_reward_id,
                     "c3e2f7e34c181bb2d94fb62b68ac1c1b96855ea39934702fc03718edadaef1fd" as drop_reward_odds
                     FROM v1_291b3010eb85ce3dd58a4dbeec4dca27ac1d4565cd6305a3cbd770fec6553a9c`);
-            } else if (["JP", "TW"].includes(region)) {
+            } else if (["TW"].includes(region)) {
                 result = await db.all(`SELECT
                     "bc600eda08f1f351f82d7ec9580973b2588c65482633f340d0affa9de7468f04" as event_id,
                     "d10671945da63fd6a0b85abe83c98ee18cf6169e1e03706ac22775ef1cb82c03" as quest_name,

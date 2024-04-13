@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.2.5] - 2024-04-13
+### Removed
+- Reverted Reverted Obfuscated JP database support v2
+  - They are using the new table/column names again, April Fools I guess
+
 ## [3.2.4] - 2024-04-06
 ### Removed
 - Reverted Obfuscated JP database support v2
