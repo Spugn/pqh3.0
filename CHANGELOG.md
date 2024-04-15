@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.2.6] - 2024-04-15
+### Fixed
+- Fixed image extractor, hash for image asset is now the 2nd one
+
 ## [3.2.5] - 2024-04-13
 ### Removed
 - Reverted Reverted Obfuscated JP database support v2

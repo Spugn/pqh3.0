@@ -1351,7 +1351,7 @@ function get_new_images(data) {
                         // file name can be item_###, equipment_###, unit_icon_unit_###, bg_still_unit_###...
                         decrypted_name = file_name.split('_')[(type !== "unit_icon" && type !== "unit_still") ? 1 : 3];
                     files[file_name] = {
-                        hash: file_data[1],
+                        hash: file_data.length >= 6 ? file_data[2] : file_data[1], // use 2nd hash
                         type,
                         encrypted: path.join(DIRECTORY.SETUP, 'encrypted', `${file_name}.unity3d`),
                         // CONVERT unit_icon IMAGE NAME BACK TO 0star RARITY SO IT CAN BE ACCESSED MORE EASILY
