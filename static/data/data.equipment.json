@@ -2628,6 +2628,26 @@
             }
         }
     },
+    "31221": {
+        "id": "31221",
+        "name": {
+            "JP": "アオイ（キャンプ）のメモリーピース",
+            "KR": "아오이(캠프)의 메모리 피스",
+            "TW": "碧（露營）的記憶碎片"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "unknown",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "32001": {
         "id": "32001",
         "name": {
@@ -32230,13 +32250,15 @@
     "109554": {
         "id": "109554",
         "name": {
-            "JP": "紅葉扇コチョウモミジ"
+            "JP": "紅葉扇コチョウモミジ",
+            "TW": "紅葉扇蝴蝶紅楓"
         },
         "rarity": "9",
         "fragment": {
             "id": "119554",
             "name": {
-                "JP": "紅葉扇コチョウモミジ（欠片）"
+                "JP": "紅葉扇コチョウモミジ（欠片）",
+                "TW": "紅葉扇蝴蝶紅楓（碎片）"
             }
         },
         "recipes": {
@@ -32244,6 +32266,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -32345,13 +32372,15 @@
     "109584": {
         "id": "109584",
         "name": {
-            "JP": "翠風扇カノコイチョウ"
+            "JP": "翠風扇カノコイチョウ",
+            "TW": "翠風扇鹿子銀杏"
         },
         "rarity": "9",
         "fragment": {
             "id": "119584",
             "name": {
-                "JP": "翠風扇カノコイチョウ（欠片）"
+                "JP": "翠風扇カノコイチョウ（欠片）",
+                "TW": "翠風扇鹿子銀杏（碎片）"
             }
         },
         "recipes": {
@@ -32359,6 +32388,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -32460,13 +32494,15 @@
     "109614": {
         "id": "109614",
         "name": {
-            "JP": "碧夜扇イノコカエデ"
+            "JP": "碧夜扇イノコカエデ",
+            "TW": "碧夜扇猛豬楓葉"
         },
         "rarity": "9",
         "fragment": {
             "id": "119614",
             "name": {
-                "JP": "碧夜扇イノコカエデ（欠片）"
+                "JP": "碧夜扇イノコカエデ（欠片）",
+                "TW": "碧夜扇猛豬楓葉（碎片）"
             }
         },
         "recipes": {
@@ -32474,6 +32510,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -32653,6 +32694,132 @@
             "id": "11025032",
             "name": {
                 "JP": "ロッドオブガブリエル（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "10028032": {
+        "id": "10028032",
+        "name": {
+            "JP": "妖精輝装クーフーリン"
+        },
+        "rarity": "10",
+        "fragment": {
+            "id": "12028032",
+            "name": {
+                "JP": "妖精輝装クーフーリンの設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108074"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "10031032": {
+        "id": "10031032",
+        "name": {
+            "JP": "妖精鎧甲オーベロン"
+        },
+        "rarity": "10",
+        "fragment": {
+            "id": "12031032",
+            "name": {
+                "JP": "妖精鎧甲オーベロンの設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108164"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "10034032": {
+        "id": "10034032",
+        "name": {
+            "JP": "妖精舞装アヌーン"
+        },
+        "rarity": "10",
+        "fragment": {
+            "id": "11034032",
+            "name": {
+                "JP": "妖精舞装アヌーン（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "10037032": {
+        "id": "10037032",
+        "name": {
+            "JP": "妖精麗装ティターニア"
+        },
+        "rarity": "10",
+        "fragment": {
+            "id": "12037032",
+            "name": {
+                "JP": "妖精麗装ティターニアの設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108104"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "10040032": {
+        "id": "10040032",
+        "name": {
+            "JP": "妖精叢盾スプリガン"
+        },
+        "rarity": "10",
+        "fragment": {
+            "id": "11040032",
+            "name": {
+                "JP": "妖精叢盾スプリガン（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "10046032": {
+        "id": "10046032",
+        "name": {
+            "JP": "妖精舞沓シルキー"
+        },
+        "rarity": "10",
+        "fragment": {
+            "id": "11046032",
+            "name": {
+                "JP": "妖精舞沓シルキー（欠片）"
             }
         },
         "recipes": {
