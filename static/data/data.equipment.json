@@ -2629,6 +2629,27 @@
             }
         }
     },
+    "31213": {
+        "id": "31213",
+        "name": {
+            "JP": "クルミ（ステージ）のメモリーピース",
+            "CN": "胡桃（舞台）的记忆碎片",
+            "KR": "쿠루미(무대)의 메모리 피스",
+            "TW": "胡桃（舞台）的記憶碎片"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "unknown",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "31221": {
         "id": "31221",
         "name": {
@@ -32183,13 +32204,15 @@
     "109284": {
         "id": "109284",
         "name": {
-            "JP": "アーマーオブパワー"
+            "JP": "アーマーオブパワー",
+            "TW": "能天使盔甲"
         },
         "rarity": "9",
         "fragment": {
             "id": "129284",
             "name": {
-                "JP": "アーマーオブパワーの設計図"
+                "JP": "アーマーオブパワーの設計図",
+                "TW": "能天使盔甲的設計圖"
             }
         },
         "recipes": {
@@ -32199,6 +32222,13 @@
                     "108523"
                 ],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108523"
+                ],
+                "recipe_note": "TW"
             }
         }
     },
@@ -32325,13 +32355,15 @@
     "109314": {
         "id": "109314",
         "name": {
-            "JP": "メイルオブヴァーチャー"
+            "JP": "メイルオブヴァーチャー",
+            "TW": "力天使鎧甲"
         },
         "rarity": "9",
         "fragment": {
             "id": "129314",
             "name": {
-                "JP": "メイルオブヴァーチャーの設計図"
+                "JP": "メイルオブヴァーチャーの設計図",
+                "TW": "力天使鎧甲的設計圖"
             }
         },
         "recipes": {
@@ -32341,6 +32373,13 @@
                     "108403"
                 ],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108403"
+                ],
+                "recipe_note": "TW"
             }
         }
     },
@@ -32521,13 +32560,15 @@
     "109374": {
         "id": "109374",
         "name": {
-            "JP": "ローブオブドミニオン"
+            "JP": "ローブオブドミニオン",
+            "TW": "主天使長袍"
         },
         "rarity": "9",
         "fragment": {
             "id": "129374",
             "name": {
-                "JP": "ローブオブドミニオンの設計図"
+                "JP": "ローブオブドミニオンの設計図",
+                "TW": "主天使長袍的設計圖"
             }
         },
         "recipes": {
@@ -32537,6 +32578,13 @@
                     "108103"
                 ],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108103"
+                ],
+                "recipe_note": "TW"
             }
         }
     },
@@ -32666,13 +32714,15 @@
     "109434": {
         "id": "109434",
         "name": {
-            "JP": "ヒールオブプリンシパリティ"
+            "JP": "ヒールオブプリンシパリティ",
+            "TW": "權天使高跟鞋"
         },
         "rarity": "9",
         "fragment": {
             "id": "119434",
             "name": {
-                "JP": "ヒールオブプリンシパリティ（欠片）"
+                "JP": "ヒールオブプリンシパリティ（欠片）",
+                "TW": "權天使高跟鞋（碎片）"
             }
         },
         "recipes": {
@@ -32680,6 +32730,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -32781,13 +32836,15 @@
     "109494": {
         "id": "109494",
         "name": {
-            "JP": "ティアラオブソロネ"
+            "JP": "ティアラオブソロネ",
+            "TW": "座天使之冠"
         },
         "rarity": "9",
         "fragment": {
             "id": "119494",
             "name": {
-                "JP": "ティアラオブソロネ（欠片）"
+                "JP": "ティアラオブソロネ（欠片）",
+                "TW": "座天使之冠（碎片）"
             }
         },
         "recipes": {
@@ -32795,6 +32852,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -32835,13 +32897,15 @@
     "109524": {
         "id": "109524",
         "name": {
-            "JP": "ハットオブケルビム"
+            "JP": "ハットオブケルビム",
+            "TW": "智天使帽"
         },
         "rarity": "9",
         "fragment": {
             "id": "119524",
             "name": {
-                "JP": "ハットオブケルビム（欠片）"
+                "JP": "ハットオブケルビム（欠片）",
+                "TW": "智天使帽（碎片）"
             }
         },
         "recipes": {
@@ -32849,6 +32913,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -33301,6 +33370,26 @@
             }
         }
     },
+    "10001033": {
+        "id": "10001033",
+        "name": {
+            "JP": "妖精煌剣アキレアナ"
+        },
+        "rarity": "10",
+        "fragment": {
+            "id": "11001033",
+            "name": {
+                "JP": "妖精煌剣アキレアナ（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "10004032": {
         "id": "10004032",
         "name": {
@@ -33318,6 +33407,28 @@
                 "required_pieces": 15,
                 "required_items": [
                     "108013"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "10004033": {
+        "id": "10004033",
+        "name": {
+            "JP": "妖精舞刀パトロクルス"
+        },
+        "rarity": "10",
+        "fragment": {
+            "id": "12004033",
+            "name": {
+                "JP": "妖精舞刀パトロクルスの設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108254"
                 ],
                 "recipe_note": "JP"
             }
@@ -33343,6 +33454,26 @@
             }
         }
     },
+    "10007033": {
+        "id": "10007033",
+        "name": {
+            "JP": "妖精夢刃ダイダミア"
+        },
+        "rarity": "10",
+        "fragment": {
+            "id": "11007033",
+            "name": {
+                "JP": "妖精夢刃ダイダミア（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "10010032": {
         "id": "10010032",
         "name": {
@@ -33353,6 +33484,26 @@
             "id": "11010032",
             "name": {
                 "JP": "フィストオブウリエル（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "10010033": {
+        "id": "10010033",
+        "name": {
+            "JP": "妖精幻手カシカモ"
+        },
+        "rarity": "10",
+        "fragment": {
+            "id": "11010033",
+            "name": {
+                "JP": "妖精幻手カシカモ（欠片）"
             }
         },
         "recipes": {
@@ -33385,6 +33536,28 @@
             }
         }
     },
+    "10013033": {
+        "id": "10013033",
+        "name": {
+            "JP": "妖精梓弓タミュリス"
+        },
+        "rarity": "10",
+        "fragment": {
+            "id": "12013033",
+            "name": {
+                "JP": "妖精梓弓タミュリスの設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108494"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "10016032": {
         "id": "10016032",
         "name": {
@@ -33402,6 +33575,28 @@
                 "required_pieces": 15,
                 "required_items": [
                     "108253"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "10016033": {
+        "id": "10016033",
+        "name": {
+            "JP": "妖精翅槍メネラウス"
+        },
+        "rarity": "10",
+        "fragment": {
+            "id": "12016033",
+            "name": {
+                "JP": "妖精翅槍メネラウスの設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108224"
                 ],
                 "recipe_note": "JP"
             }
@@ -33427,6 +33622,28 @@
             }
         }
     },
+    "10019033": {
+        "id": "10019033",
+        "name": {
+            "JP": "妖精揚斧モンテズマ"
+        },
+        "rarity": "10",
+        "fragment": {
+            "id": "12019033",
+            "name": {
+                "JP": "妖精揚斧モンテズマの設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108014"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "10022032": {
         "id": "10022032",
         "name": {
@@ -33447,6 +33664,26 @@
             }
         }
     },
+    "10022033": {
+        "id": "10022033",
+        "name": {
+            "JP": "妖精崩杖キプリス"
+        },
+        "rarity": "10",
+        "fragment": {
+            "id": "11022033",
+            "name": {
+                "JP": "妖精崩杖キプリス（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "10025032": {
         "id": "10025032",
         "name": {
@@ -33457,6 +33694,26 @@
             "id": "11025032",
             "name": {
                 "JP": "ロッドオブガブリエル（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "10025033": {
+        "id": "10025033",
+        "name": {
+            "JP": "妖精回杖アナクシビア"
+        },
+        "rarity": "10",
+        "fragment": {
+            "id": "11025033",
+            "name": {
+                "JP": "妖精回杖アナクシビア（欠片）"
             }
         },
         "recipes": {
