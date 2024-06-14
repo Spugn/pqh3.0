@@ -33444,13 +33444,15 @@
     "10001032": {
         "id": "10001032",
         "name": {
-            "JP": "ソードオブミカエル"
+            "JP": "ソードオブミカエル",
+            "TW": "米迦勒之劍"
         },
         "rarity": "10",
         "fragment": {
             "id": "11001032",
             "name": {
-                "JP": "ソードオブミカエル（欠片）"
+                "JP": "ソードオブミカエル（欠片）",
+                "TW": "米迦勒之劍（碎片）"
             }
         },
         "recipes": {
@@ -33458,6 +33460,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -33484,13 +33491,15 @@
     "10004032": {
         "id": "10004032",
         "name": {
-            "JP": "ブレイドオブルシフェル"
+            "JP": "ブレイドオブルシフェル",
+            "TW": "路西法之刃"
         },
         "rarity": "10",
         "fragment": {
             "id": "12004032",
             "name": {
-                "JP": "ブレイドオブルシフェルの設計図"
+                "JP": "ブレイドオブルシフェルの設計図",
+                "TW": "路西法之刃的設計圖"
             }
         },
         "recipes": {
@@ -33500,6 +33509,13 @@
                     "108013"
                 ],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108013"
+                ],
+                "recipe_note": "TW"
             }
         }
     },
@@ -33528,13 +33544,15 @@
     "10007032": {
         "id": "10007032",
         "name": {
-            "JP": "エッジオブサタナエル"
+            "JP": "エッジオブサタナエル",
+            "TW": "撒但耶爾短劍"
         },
         "rarity": "10",
         "fragment": {
             "id": "11007032",
             "name": {
-                "JP": "エッジオブサタナエル（欠片）"
+                "JP": "エッジオブサタナエル（欠片）",
+                "TW": "撒但耶爾短劍（碎片）"
             }
         },
         "recipes": {
@@ -33542,6 +33560,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -33568,13 +33591,15 @@
     "10010032": {
         "id": "10010032",
         "name": {
-            "JP": "フィストオブウリエル"
+            "JP": "フィストオブウリエル",
+            "TW": "烏列爾拳套"
         },
         "rarity": "10",
         "fragment": {
             "id": "11010032",
             "name": {
-                "JP": "フィストオブウリエル（欠片）"
+                "JP": "フィストオブウリエル（欠片）",
+                "TW": "烏列爾拳套（碎片）"
             }
         },
         "recipes": {
@@ -33582,6 +33607,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -33608,13 +33638,15 @@
     "10013032": {
         "id": "10013032",
         "name": {
-            "JP": "ボウオブラファエル"
+            "JP": "ボウオブラファエル",
+            "TW": "拉斐爾之弓"
         },
         "rarity": "10",
         "fragment": {
             "id": "12013032",
             "name": {
-                "JP": "ボウオブラファエルの設計図"
+                "JP": "ボウオブラファエルの設計図",
+                "TW": "拉斐爾之弓的設計圖"
             }
         },
         "recipes": {
@@ -33624,6 +33656,13 @@
                     "108343"
                 ],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108343"
+                ],
+                "recipe_note": "TW"
             }
         }
     },
@@ -33652,13 +33691,15 @@
     "10016032": {
         "id": "10016032",
         "name": {
-            "JP": "ランスオブザドキエル"
+            "JP": "ランスオブザドキエル",
+            "TW": "薩基爾長槍"
         },
         "rarity": "10",
         "fragment": {
             "id": "12016032",
             "name": {
-                "JP": "ランスオブザドキエルの設計図"
+                "JP": "ランスオブザドキエルの設計図",
+                "TW": "薩基爾長槍的設計圖"
             }
         },
         "recipes": {
@@ -33668,6 +33709,13 @@
                     "108253"
                 ],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108253"
+                ],
+                "recipe_note": "TW"
             }
         }
     },
@@ -33696,13 +33744,15 @@
     "10019032": {
         "id": "10019032",
         "name": {
-            "JP": "アクスオブカマエル"
+            "JP": "アクスオブカマエル",
+            "TW": "卡麥爾之斧"
         },
         "rarity": "10",
         "fragment": {
             "id": "11019032",
             "name": {
-                "JP": "アクスオブカマエル（欠片）"
+                "JP": "アクスオブカマエル（欠片）",
+                "TW": "卡麥爾之斧（碎片）"
             }
         },
         "recipes": {
@@ -33710,6 +33760,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -33738,13 +33793,15 @@
     "10022032": {
         "id": "10022032",
         "name": {
-            "JP": "ワンドオブヨフィエル"
+            "JP": "ワンドオブヨフィエル",
+            "TW": "約斐爾之杖"
         },
         "rarity": "10",
         "fragment": {
             "id": "11022032",
             "name": {
-                "JP": "ワンドオブヨフィエル（欠片）"
+                "JP": "ワンドオブヨフィエル（欠片）",
+                "TW": "約斐爾之杖（碎片）"
             }
         },
         "recipes": {
@@ -33752,6 +33809,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
@@ -33778,13 +33840,15 @@
     "10025032": {
         "id": "10025032",
         "name": {
-            "JP": "ロッドオブガブリエル"
+            "JP": "ロッドオブガブリエル",
+            "TW": "加百列之杖"
         },
         "rarity": "10",
         "fragment": {
             "id": "11025032",
             "name": {
-                "JP": "ロッドオブガブリエル（欠片）"
+                "JP": "ロッドオブガブリエル（欠片）",
+                "TW": "加百列之杖（碎片）"
             }
         },
         "recipes": {
@@ -33792,6 +33856,11 @@
                 "required_pieces": 25,
                 "required_items": [],
                 "recipe_note": "JP"
+            },
+            "TW": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "TW"
             }
         }
     },
