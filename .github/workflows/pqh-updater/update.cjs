@@ -36,12 +36,12 @@ const DICTIONARY = Object.freeze({
 const OTHER_REGIONS = Object.freeze(["CN", "EN", "KR", "TH", "TW"]);
 const new_unity_change = true;
 
-if (!fs.existsSync(DATABASE_KEYS)) {
+if (!fs.existsSync(DIRECTORY.DATABASE_KEYS)) {
     core.error("database keys not found");
     return;
 }
 
-const database_keys = JSON.parse(fs.readFileSync(DATABASE_KEYS, 'utf8'));
+const database_keys = JSON.parse(fs.readFileSync(DIRECTORY.DATABASE_KEYS, 'utf8'));
 
 run();
 
