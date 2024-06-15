@@ -2673,6 +2673,26 @@
             }
         }
     },
+    "31224": {
+        "id": "31224",
+        "name": {
+            "JP": "ヒヨリ（サマー）のメモリーピース",
+            "KR": "히요리(여름)의 메모리 피스",
+            "TW": "日和（夏日）的記憶碎片"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "unknown",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "32001": {
         "id": "32001",
         "name": {
@@ -34030,6 +34050,26 @@
             }
         }
     },
+    "10055033": {
+        "id": "10055033",
+        "name": {
+            "JP": "妖精晶翅ヴァハ"
+        },
+        "rarity": "10",
+        "fragment": {
+            "id": "11055033",
+            "name": {
+                "JP": "妖精晶翅ヴァハ（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "10058032": {
         "id": "10058032",
         "name": {
@@ -34050,6 +34090,26 @@
             }
         }
     },
+    "10058033": {
+        "id": "10058033",
+        "name": {
+            "JP": "妖精踊翅ネヴァン"
+        },
+        "rarity": "10",
+        "fragment": {
+            "id": "11058033",
+            "name": {
+                "JP": "妖精踊翅ネヴァン（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "10061032": {
         "id": "10061032",
         "name": {
@@ -34060,6 +34120,26 @@
             "id": "11061032",
             "name": {
                 "JP": "リングオブサンダルフォン（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "10061033": {
+        "id": "10061033",
+        "name": {
+            "JP": "妖精環翅モーリアン"
+        },
+        "rarity": "10",
+        "fragment": {
+            "id": "11061033",
+            "name": {
+                "JP": "妖精環翅モーリアン（欠片）"
             }
         },
         "recipes": {
