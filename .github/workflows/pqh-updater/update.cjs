@@ -1456,7 +1456,7 @@ function write_event_quest(quest_data) {
                     "${database_keys.shiori_quest.drop_reward_id}" as drop_reward_id,
                     "${database_keys.shiori_quest.drop_reward_odds}" as drop_reward_odds
                     FROM ${database_keys.shiori_quest._table}`);
-            } if (["JP"].includes(region)) {
+            } else if ([].includes(region)) {
                 // v4 obfuscation
                 result = await db.all(`SELECT
                     "83dc06b28c936d105a6e041bb67ae1845eedb47fac65fdf0d5c4d0e66d765218" as event_id,
