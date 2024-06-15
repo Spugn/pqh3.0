@@ -19,6 +19,7 @@ const DIRECTORY = Object.freeze({
     DATABASE: `${__dirname}/database`,
     DATA_DIRECTORY: `${__dirname}/../../../static/data`,
     PIE_RECIPE_OUTPUT: `${__dirname}/../../../pie.json`,
+    DATABASE_KEYS: `${__dirname}/database_keys.json`,
 });
 const DICTIONARY = Object.freeze({
     EQUIPMENT: {
@@ -34,6 +35,13 @@ const DICTIONARY = Object.freeze({
 });
 const OTHER_REGIONS = Object.freeze(["CN", "EN", "KR", "TH", "TW"]);
 const new_unity_change = true;
+
+if (!fs.existsSync(DATABASE_KEYS)) {
+    core.error("database keys not found");
+    return;
+}
+
+const database_keys = JSON.parse(fs.readFileSync(DATABASE_KEYS, 'utf8'));
 
 run();
 
@@ -265,9 +273,9 @@ function write_equipment() {
         // GET ALL EQUIPMENT DATA
         // result = await db.all('SELECT * FROM equipment_data');
         result = await db.all(`SELECT
-            "7610913be1dcd5177b91b00e624f7a691ad7d06e7d840c26302c464292c3e4cb" as equipment_id,
-            "a6749b724440442eac0678ffae1fc892890b5e6dd5bbd60f7f07b7d8904d318c" as equipment_name
-            FROM v1_2352e872250b0dd60da9256c53ae6c8b4973dd66ee0e7a41e8862989f76fc3ff`);
+            "${database_keys.equipment_data.equipment_id}" as equipment_id,
+            "${database_keys.equipment_data.equipment_name}" as equipment_name
+            FROM ${database_keys.equipment_data._table}`);
         result.forEach((row) => {
             const full_id = (row.equipment_id).toString(),  // 101011
                 item_type = get_item_type(full_id),         // 10        (first 2 digits)
@@ -306,9 +314,9 @@ function write_equipment() {
         let memory_pieces = {};
         // result = await db.all('SELECT * FROM quest_data');
         result = await db.all(`SELECT
-            "ffa736951a17e4449d8c32a8edc125a65b09b6fc78cb4132b19d88392d7b2b36" as quest_id,
-            "d65968b489e04e58d26190805b95a9ecc3340a8905dbb9ecf1d2c320c2e730e8" as reward_image_1
-            FROM v1_71caf11836bb429791703811ec703e5368ec26a56e1f0fde343fe09c3890467b`);
+            "${database_keys.quest_data.quest_id}" as quest_id,
+            "${database_keys.quest_data.reward_image_1}" as reward_image_1
+            FROM ${database_keys.quest_data._table}`);
         result.forEach((row) => {
             const quest_id = (row.quest_id).toString(),
                 quest_type = quest_id.substring(0, 2);
@@ -324,8 +332,8 @@ function write_equipment() {
         // GET CHARACTER MEMORY PIECES AVAILABLE FROM EVENT QUESTS
         // result = await db.all('SELECT * FROM shiori_quest');
         result = await db.all(`SELECT
-            "11d57be6d0ad57b7d23ce4c1a4b5baddb9a993f3e474581f8d80786a3f48fea3" as drop_reward_id
-            FROM v1_17808def077ea1aa94785704801963da4378d0eef5df0d9c0f014a2948caeefb`);
+            "${database_keys.shiori_quest.drop_reward_id}" as drop_reward_id
+            FROM ${database_keys.shiori_quest._table}`);
         result.forEach((row) => {
             if (row.drop_reward_id !== 0) {
                 memory_pieces[`${row.drop_reward_id}`] = true;
@@ -335,10 +343,10 @@ function write_equipment() {
         // ADD MEMORY PIECES TO EQUIPMENT DATA
         // result = await db.all('SELECT * FROM item_data');
         result = await db.all(`SELECT
-            "ba34c16f7b59d8211c0ea6f0ddcb9451be26f57b1b27a3ed6810d9af218ddc90" as item_id,
-            "d37a505953cdd2cba6ddbf32de35cda63abef37e7f7fba95716ec41fb8f8c015" as item_name,
-            "ef6f510eef19a9971aab7d45a9789e9cb13049d1505f8c2d87df5b038cac7786" as item_type
-            FROM v1_19da1c39bd0fbad1bab6fcb49665d3661ca7266903db5b1f3e4f921b537986dc`);
+            "${database_keys.item_data.item_id}" as item_id,
+            "${database_keys.item_data.item_name}" as item_name,
+            "${database_keys.item_data.item_type}" as item_type
+            FROM ${database_keys.item_data._table}`);
         result.forEach((row) => {
             if (row.item_type === 11        // MEMORY PIECE
                 || row.item_type === 18) {  // PURE MEMORY PIECE
@@ -370,19 +378,19 @@ function write_equipment() {
         // ADD JAPANESE RECIPE
         // result = await db.all('SELECT * FROM equipment_craft');
         result = await db.all(`SELECT
-            "7d4bff76d19988c631aa9a0446b9f66b453ecea332f701bb07b4e432b00fbddd" as equipment_id,
-            "35dd53fba47ce24c57813f3382e3bcf6f55152f2afd8920dcdadcb6b6c46e811" as condition_equipment_id_1,
-            "9c6c89e71d38b6f5871fe696437703af75d9787f09a280e83e88024c7c48cfa2" as consume_num_1,
-            "b72de5c846803856673117d99bf0017a60c012786f7452e095c664ebcada0690" as condition_equipment_id_2,
-            "0430f2940f61a7be78477847ed41d0d20a194a3fc2f235a2c23d99929342a883" as condition_equipment_id_3,
-            "89bb436923041b88ace27d47a0a34e0e5ba7224f3775a188bddd64b857ae0527" as condition_equipment_id_4,
-            "3647bcff2ebafd9cce7b19b9525671fd71c070060d5ae375f275370f66ce281c" as condition_equipment_id_5,
-            "3753f342b7e6c918fa26e53887b625e9b8ff55d1c4bd56fe352c33fab0a2d5ae" as condition_equipment_id_6,
-            "f764a6bb54249fee771f1d3d3479203d4050fa1dabbe5fcde79c73bdf272d337" as condition_equipment_id_7,
-            "4cb9d3692a90e544969222f5905d9a80112e9a99e0e5f8d92b1fcd820a03b4b0" as condition_equipment_id_8,
-            "766eaee68c6f0956c33acafb42b3547db35cdd27d3add90ccf547695710a288c" as condition_equipment_id_9,
-            "9852bfac3089289e7478b2c99e1eaf234cb381b5e68602c6fa70fe036c983a0b" as condition_equipment_id_10
-            FROM v1_da731a5e2245c5b6d02d466a1c117e9a1dd23053c2c8e60b39ec25e37f398bd8`);
+            "${database_keys.equipment_craft.equipment_id}" as equipment_id,
+            "${database_keys.equipment_craft.condition_equipment_id_1}" as condition_equipment_id_1,
+            "${database_keys.equipment_craft.consume_num_1}" as consume_num_1,
+            "${database_keys.equipment_craft.condition_equipment_id_2}" as condition_equipment_id_2,
+            "${database_keys.equipment_craft.condition_equipment_id_3}" as condition_equipment_id_3,
+            "${database_keys.equipment_craft.condition_equipment_id_4}" as condition_equipment_id_4,
+            "${database_keys.equipment_craft.condition_equipment_id_5}" as condition_equipment_id_5,
+            "${database_keys.equipment_craft.condition_equipment_id_6}" as condition_equipment_id_6,
+            "${database_keys.equipment_craft.condition_equipment_id_7}" as condition_equipment_id_7,
+            "${database_keys.equipment_craft.condition_equipment_id_8}" as condition_equipment_id_8,
+            "${database_keys.equipment_craft.condition_equipment_id_9}" as condition_equipment_id_9,
+            "${database_keys.equipment_craft.condition_equipment_id_10}" as condition_equipment_id_10
+            FROM ${database_keys.equipment_craft._table}`);
         result.forEach((row) => {
             const equip_id = row.equipment_id;
             if (get_item_type(equip_id) !== DICTIONARY.EQUIPMENT.FULL) {
@@ -657,9 +665,9 @@ function write_character() {
         // GET ALL PLAYABLE CHARACTERS WITH unit_id < 190,000
         // result = await db.all('SELECT * FROM unit_data WHERE unit_id < 190000');
         result = await db.all(`SELECT
-            "a403a2b9766fceb5d9b1ae053dc90c4fd02c9a0b1164109cd083a22f025a520d" as unit_id,
-            "1674283c1055620962cdf653640f71f10296f0f9d8eb73ea89ead55e5c2979d9" as unit_name
-            FROM v1_e2a69483c615a820ec2d577d131a69cf62020c0525821852285198c118cfe9fa
+            "${database_keys.unit_data.unit_id}" as unit_id,
+            "${database_keys.unit_data.unit_name}" as unit_name
+            FROM ${database_keys.unit_data._table}
             WHERE unit_id < 190000`);
         result.forEach((row) => {
             data[`${row.unit_id}`] = {
@@ -674,15 +682,15 @@ function write_character() {
         // GET UNIT PROMOTION REQUIREMENTS FOR unit_id < 190,000
         // result = await db.all('SELECT * FROM unit_promotion WHERE unit_id < 190000');
         result = await db.all(`SELECT
-            "80d4d7d76e04e3656ab0dacbca672f49641e96b49d68d05fbb8bb025bab39782" as unit_id,
-            "f967258d4adb53ec8bc4c50f1139f3c1a1e50fa09c9b7639185a7109a95607f6" as promotion_level,
-            "40210b3751b1655a1ae703565496c4df86f973879eda7cc6a1f64fb738c27f01" as equip_slot_1,
-            "593ec9fd0ec1f5d827cf7f90f52b6e52c96220b18285d5f882a7315553e6b954" as equip_slot_2,
-            "638f56ea332b62ca88713a3e6e01a6c7bb71f8ace796c107865b32769cc4bc45" as equip_slot_3,
-            "9d2a82f591e69d80cb810fe9bb7a00cdeb2202f4e7be693afba3bd9f27a0d286" as equip_slot_4,
-            "3dad599f20aa7e40a510cd7c164c70bed0a640af6e8cffb218dbaf78bcf87e13" as equip_slot_5,
-            "d018836130f0e2c69a1b950da4a3bf7248d88469603aa2d383fbb05bee5c1b66" as equip_slot_6
-            FROM v1_f247da5fe73982d39d426b794dba1f4dd2e983014794bcfc79b37c695b17a330
+            "${database_keys.unit_promotion.unit_id}" as unit_id,
+            "${database_keys.unit_promotion.promotion_level}" as promotion_level,
+            "${database_keys.unit_promotion.equip_slot_1}" as equip_slot_1,
+            "${database_keys.unit_promotion.equip_slot_2}" as equip_slot_2,
+            "${database_keys.unit_promotion.equip_slot_3}" as equip_slot_3,
+            "${database_keys.unit_promotion.equip_slot_4}" as equip_slot_4,
+            "${database_keys.unit_promotion.equip_slot_5}" as equip_slot_5,
+            "${database_keys.unit_promotion.equip_slot_6}" as equip_slot_6
+            FROM ${database_keys.unit_promotion._table}
             WHERE unit_id < 190000`);
         result.forEach((row) => {
             if (!data[`${row.unit_id}`]) {
@@ -875,6 +883,19 @@ function write_quest() {
 
             // GET ALL QUESTS WITH quest_id < 14,000,000
             if (["JP"].includes(region)) {
+                // whatever latest version JP obfuscation is
+                result = await db.all(`SELECT
+                    "${database_keys.quest_data.quest_id}" as quest_id,
+                    "${database_keys.quest_data.quest_name}" as quest_name,
+                    "${database_keys.quest_data.stamina}" as stamina,
+                    "${database_keys.quest_data.clear_reward_group}" as clear_reward_group,
+                    "${database_keys.quest_data.rank_reward_group}" as rank_reward_group,
+                    "${database_keys.quest_data.wave_group_id_1}" as wave_group_id_1,
+                    "${database_keys.quest_data.wave_group_id_2}" as wave_group_id_2,
+                    "${database_keys.quest_data.wave_group_id_3}" as wave_group_id_3
+                    FROM ${database_keys.quest_data._table}
+                    WHERE quest_id < 14000000`);
+            } else if ([].includes(region)) {
                 // v4 obfuscation
                 result = await db.all(`SELECT
                     "ffa736951a17e4449d8c32a8edc125a65b09b6fc78cb4132b19d88392d7b2b36" as quest_id,
@@ -965,6 +986,16 @@ function write_quest() {
 
             // COLLECT wave_group_data INFORMATION
             if (["JP"].includes(region)) {
+                // whatever latest version JP obfuscation is
+                result = await db.all(`SELECT
+                    "${database_keys.wave_group_data.wave_group_id}" as wave_group_id,
+                    "${database_keys.wave_group_data.drop_reward_id_1}" as drop_reward_id_1,
+                    "${database_keys.wave_group_data.drop_reward_id_2}" as drop_reward_id_2,
+                    "${database_keys.wave_group_data.drop_reward_id_3}" as drop_reward_id_3,
+                    "${database_keys.wave_group_data.drop_reward_id_4}" as drop_reward_id_4,
+                    "${database_keys.wave_group_data.drop_reward_id_5}" as drop_reward_id_5
+                    FROM ${database_keys.wave_group_data._table}`);
+            } else if ([].includes(region)) {
                 // v4 obfuscation
                 result = await db.all(`SELECT
                     "8f7332e43ff5dd8a98bdfbc4c9c19f104a953c468e7abd05e30bbddb141b7a13" as wave_group_id,
@@ -1020,6 +1051,26 @@ function write_quest() {
 
             // COLLECT enemy_reward_data INFORMATION
             if (["JP"].includes(region)) {
+                // whatever latest version JP obfuscation is
+                result = await db.all(`SELECT
+                    "${database_keys.enemy_reward_data.drop_reward_id}" as drop_reward_id,
+                    "${database_keys.enemy_reward_data.reward_type_1}" as reward_type_1,
+                    "${database_keys.enemy_reward_data.reward_id_1}" as reward_id_1,
+                    "${database_keys.enemy_reward_data.odds_1}" as odds_1,
+                    "${database_keys.enemy_reward_data.reward_type_2}" as reward_type_2,
+                    "${database_keys.enemy_reward_data.reward_id_2}" as reward_id_2,
+                    "${database_keys.enemy_reward_data.odds_2}" as odds_2,
+                    "${database_keys.enemy_reward_data.reward_type_3}" as reward_type_3,
+                    "${database_keys.enemy_reward_data.reward_id_3}" as reward_id_3,
+                    "${database_keys.enemy_reward_data.odds_3}" as odds_3,
+                    "${database_keys.enemy_reward_data.reward_type_4}" as reward_type_4,
+                    "${database_keys.enemy_reward_data.reward_id_4}" as reward_id_4,
+                    "${database_keys.enemy_reward_data.odds_4}" as odds_4,
+                    "${database_keys.enemy_reward_data.reward_type_5}" as reward_type_5,
+                    "${database_keys.enemy_reward_data.reward_id_5}" as reward_id_5,
+                    "${database_keys.enemy_reward_data.odds_5}" as odds_5
+                    FROM ${database_keys.enemy_reward_data._table}`);
+            } else if ([].includes(region)) {
                 // obfuscation v4
                 result = await db.all(`SELECT
                     "fcb8479287443d603c414108710cecd08371019aa531a120d8e061948377136a" as drop_reward_id,
@@ -1397,6 +1448,15 @@ function write_event_quest(quest_data) {
                 driver: sqlite3.Database
             });
             if (["JP"].includes(region)) {
+                // whatever latest version JP obfuscation is
+                result = await db.all(`SELECT
+                    "${database_keys.shiori_quest.event_id}" as event_id,
+                    "${database_keys.shiori_quest.quest_name}" as quest_name,
+                    "${database_keys.shiori_quest.stamina}" as stamina,
+                    "${database_keys.shiori_quest.drop_reward_id}" as drop_reward_id,
+                    "${database_keys.shiori_quest.drop_reward_odds}" as drop_reward_odds
+                    FROM ${database_keys.shiori_quest._table}`);
+            } if (["JP"].includes(region)) {
                 // v4 obfuscation
                 result = await db.all(`SELECT
                     "83dc06b28c936d105a6e041bb67ae1845eedb47fac65fdf0d5c4d0e66d765218" as event_id,

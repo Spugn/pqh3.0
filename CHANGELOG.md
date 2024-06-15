@@ -3,6 +3,13 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.2.9] - 2024-06-15
+### Added
+- Obfuscated JP database support v5
+  - Updated updater script to work with JP `10056200`, this may break again in the future
+  - Older versions of the JP database (`10056100` and below) are no longer supported
+- No longer tracking past keys in updater script due to updating pains (seems to happen every 15days now)
+
 ## [3.2.8] - 2024-05-30
 ### Added
 - Obfuscated JP database support v4
