@@ -2653,6 +2653,27 @@
             }
         }
     },
+    "31216": {
+        "id": "31216",
+        "name": {
+            "JP": "イノリ（怪盗）のメモリーピース",
+            "CN": "祈梨（怪盗）的记忆碎片",
+            "KR": "이노리(괴도)의 메모리 피스",
+            "TW": "祈梨（怪盜）的記憶碎片"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "unknown",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "31221": {
         "id": "31221",
         "name": {
@@ -2681,6 +2702,26 @@
             "CN": "日和莉（夏日）的记忆碎片",
             "KR": "히요리(여름)의 메모리 피스",
             "TW": "日和（夏日）的記憶碎片"
+        },
+        "rarity": "99",
+        "fragment": {
+            "id": "unknown",
+            "name": {}
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 1,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "31228": {
+        "id": "31228",
+        "name": {
+            "JP": "ミソギ（サマー）のメモリーピース",
+            "KR": "미소기(여름)의 메모리 피스",
+            "TW": "禊（夏日）的記憶碎片"
         },
         "rarity": "99",
         "fragment": {
@@ -33953,6 +33994,28 @@
             }
         }
     },
+    "10028033": {
+        "id": "10028033",
+        "name": {
+            "JP": "白蓮閣の鱗鎧"
+        },
+        "rarity": "10",
+        "fragment": {
+            "id": "12028033",
+            "name": {
+                "JP": "白蓮閣の鱗鎧の設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108614"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "10031032": {
         "id": "10031032",
         "name": {
@@ -33970,6 +34033,28 @@
                 "required_pieces": 15,
                 "required_items": [
                     "108164"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "10031033": {
+        "id": "10031033",
+        "name": {
+            "JP": "鳳梨の重殻鎧"
+        },
+        "rarity": "10",
+        "fragment": {
+            "id": "12031033",
+            "name": {
+                "JP": "鳳梨の重殻鎧の設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108584"
                 ],
                 "recipe_note": "JP"
             }
@@ -34017,6 +34102,28 @@
             }
         }
     },
+    "10037033": {
+        "id": "10037033",
+        "name": {
+            "JP": "葡萄柚の霊装"
+        },
+        "rarity": "10",
+        "fragment": {
+            "id": "12037033",
+            "name": {
+                "JP": "葡萄柚の霊装の設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108554"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "10040032": {
         "id": "10040032",
         "name": {
@@ -34037,6 +34144,48 @@
             }
         }
     },
+    "10040033": {
+        "id": "10040033",
+        "name": {
+            "JP": "麝香猫果の薫盾"
+        },
+        "rarity": "10",
+        "fragment": {
+            "id": "12040033",
+            "name": {
+                "JP": "麝香猫果の薫盾の設計図"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 15,
+                "required_items": [
+                    "108524"
+                ],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "10043033": {
+        "id": "10043033",
+        "name": {
+            "JP": "翠華西瓜の海水駄"
+        },
+        "rarity": "10",
+        "fragment": {
+            "id": "11043033",
+            "name": {
+                "JP": "翠華西瓜の海水駄（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
     "10046032": {
         "id": "10046032",
         "name": {
@@ -34047,6 +34196,26 @@
             "id": "11046032",
             "name": {
                 "JP": "妖精舞沓シルキー（欠片）"
+            }
+        },
+        "recipes": {
+            "JP": {
+                "required_pieces": 25,
+                "required_items": [],
+                "recipe_note": "JP"
+            }
+        }
+    },
+    "10046033": {
+        "id": "10046033",
+        "name": {
+            "JP": "紅玉苺の短靴"
+        },
+        "rarity": "10",
+        "fragment": {
+            "id": "11046033",
+            "name": {
+                "JP": "紅玉苺の短靴（欠片）"
             }
         },
         "recipes": {
