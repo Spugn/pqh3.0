@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.2.10] - 2024-07-31
+### Addded
+- Obfuscated KR database support
+  - KR server has adopted the same obfuscation as JP database, this may break again in the future
+  - Older versions of the KR database below `10053800` are no longer supported
+
 ## [3.2.9] - 2024-06-15
 ### Added
 - Obfuscated JP database support v5
