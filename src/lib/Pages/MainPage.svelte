@@ -15,6 +15,7 @@
 <script lang="ts">
     import type { CharacterProject, ItemProject, BasicProject, QuestBuild2Results,
         SessionProjects, Recipe } from '$lib/api/api.d';
+    import Card from "@smui/card";
 
     export let show_menu : boolean;
     let project_displayed : boolean = false; // flag for if a project is expanded. if so, hide non-expanded projects
@@ -309,6 +310,27 @@
 </script>
 
 <section>
+    <!-- end of service announcement -->
+    <div class="my-1 flex flex-col items-center justify-center gap-2">
+        <div class="text-black mx-4 w-[90vw] max-w-[1000px]">
+            <Card>
+                <div style="padding: 1rem;" class="flex flex-row">
+                    <div>
+                        <h1 class="font-bold text-xl">
+                            <code class="text-[#D63384]">priconne-quest-helper</code> End of Service Announcement
+                        </h1>
+                    </div>
+                </div>
+                <p style="padding: 1rem;" class="text-black/70 mb-4">
+                    <code class="text-[#D63384]">priconne-quest-helper</code> will no longer be updated.<br>
+                    For more information:<br>
+                    <a class="text-blue-500 font-extrabold" href="https://github.com/Spugn/priconne-quest-helper?tab=readme-ov-file#end-of-service-announcement" target="_blank" rel="noreferrer">
+                        https://github.com/Spugn/priconne-quest-helper#end-of-service-announcement
+                    </a>
+                </p>
+            </Card>
+        </div>
+    </div>
     <div class="my-1 flex flex-col items-center justify-center gap-2">
         <!-- buttons (create project, open quests) -->
         <div class="w-[90vw] flex flex-row gap-2">

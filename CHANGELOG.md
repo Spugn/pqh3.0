@@ -3,8 +3,17 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.3.0] - 2024-08-15
+`priconne-quest-helper` END OF SERVICE
+### Added
+- End of Service announcement message to Main Page
+  - It is no longer worth it to keep figuring out Cygames' database obfuscation.
+  - Please read the README.md for more information.
+### Removed
+- Disabled `pqh-updater`
+
 ## [3.2.10] - 2024-07-31
-### Addded
+### Added
 - Obfuscated KR database support
   - KR server has adopted the same obfuscation as JP database, this may break again in the future
   - Older versions of the KR database below `10053800` are no longer supported

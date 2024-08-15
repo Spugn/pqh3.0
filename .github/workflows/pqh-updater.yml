@@ -7,8 +7,9 @@ on:
   # preload usually happens at minute 45? but actions fires 5mins later
   # EDIT (JANUARY 15 2024): THERE HAS BEEN DATABASE CHANGES IN JP VERSION 10053000! UPDATING AT THIS TIME IS BROKEN
   # EDIT (MARCH 5 2024): RESUMING OPERATIONS... FOR NOW
-  schedule:
-  - cron: '45 * * * *'
+  # EDIT (AUGUST 15 2024): priconne-quest-helper END OF SERVICE. DATABASE OBFUSCATION IS NO LONGER WORTH THE TIME TO FIGURE IT OUT
+  # schedule:
+  # - cron: '45 * * * *'
 
   # allow this task to be run manually from Actions tab
   workflow_dispatch:
